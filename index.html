@@ -26,7 +26,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-family: 'Azo Sans Regular', Arial, sans-serif;
             padding: 40px;
             background: #f4f4f9;
             color: #333;
@@ -245,6 +245,14 @@
             font-size: 11px;
             border-radius: 6px;
             white-space: pre-wrap;
+            font-family: ui-monospace, 
+                 'Cascadia Code', 
+                 'Source Code Pro', 
+                 Menlo, 
+                 Monaco, 
+                 'Consolas', 
+                 'DejaVu Sans Mono', 
+                 monospace;
             line-height: 1.4;
             word-wrap: break-word;
         }
@@ -297,6 +305,7 @@
 
         .filter-bar {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 30px;
             align-items: center;
@@ -309,6 +318,7 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+            min-width: 200px;
         }
 
         .filter-group label {
@@ -457,6 +467,9 @@
     let observer = null;
     let debounceTimer;
 
+    // 1. CALCULATE DYNAMIC BASE PATH
+    const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+
     // --- TOKENS-BASED HIGHLIGHTER ---
     function highlightHTML(code) {
         let text = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -488,15 +501,27 @@
         try {
             const response = await fetch(configFile);
             currentConfig = await response.json();
+
+            // 2. RESOLVE RELATIVE PATHS TO ABSOLUTE SLUGS
+            if (currentConfig.spriteUrl.startsWith('.')) {
+                currentConfig.spriteUrl = currentConfig.spriteUrl.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
+            }
+            if (currentConfig.spriteFile.startsWith('.')) {
+                currentConfig.spriteFile = currentConfig.spriteFile.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
+            }
+            
             document.getElementById('sprite-info').innerHTML = `
                 Sprite: <strong>${currentConfig.spriteName}</strong><br>
-                URL: ${currentConfig.spriteUrl}
+                URL: <code>${currentConfig.spriteUrl}</code>
             `;
+
             await loadSprite();
             setupFilters();
             renderIcons();
+
             const masterCss = document.getElementById('master-css-code');
             if (masterCss) masterCss.innerHTML = highlightCSS(masterCss.innerText);
+            
         } catch (e) { console.error("Config load failed", e); }
     }
 
@@ -597,6 +622,7 @@
         if (preview) preview.style.color = hex;
         const codeElement = document.getElementById(`code-${safeId}`);
         if (codeElement) {
+            // 3. THIS NOW AUTOMATICALLY USES THE FULL ABSOLUTE SLUG
             const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
             codeElement.innerHTML = highlightHTML(raw);
         }
@@ -611,14 +637,11 @@
         });
     }
 
-    // --- DOWNLOAD FUNCTIONS ---
     function downloadSVG(iconId, safeId) {
         if (!spriteText) return;
         const select = document.querySelector(`select[data-safe-id="${safeId}"]`);
         const [colorClass, colorHex] = select.value.split('|');
-
-        const symbolRegex = new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's');
-        const match = spriteText.match(symbolRegex);
+        const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
         if (!match) return;
 
         const viewBox = match[0].match(/viewBox="([^"]*)"/)?.[1] || '0 0 110 110';
@@ -628,7 +651,6 @@
             .replace(/fill="currentColor"/g, `fill="${colorHex}"`)
             .replace(/stroke="currentColor"/g, `stroke="${colorHex}"`);
 
-        // Final SVG Assembly with requested namespaces
         const svgString = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="110" height="110">
 ${content}
