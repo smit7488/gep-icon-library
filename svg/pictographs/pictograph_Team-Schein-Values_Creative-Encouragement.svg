@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 110 110" style="enable-background:new 0 0 110 110;fill:none;stroke:currentColor;stroke-width:1.5" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="20.2" y="16.623" width="68.8" height="77.075" />
+	</defs>
+	<clipPath id="SVGID_00000151529109494607504270000001633678084453545403_">
+		<use ns1:href="#SVGID_1_" style="overflow:visible;fill:none;stroke:currentColor;stroke-width:1.5" />
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000151529109494607504270000001633678084453545403_);fill:none;stroke:currentColor;stroke-width:1.5">
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M47.987,42.574    l2.185-6.729l2.185,6.729h7.078l-5.729,4.16l2.185,6.729l-5.729-4.16l-5.729,4.16l2.185-6.729l-5.729-4.16H47.987z" />
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M30.973,92.884V75.394    c0-11.784-9.96-14.655-9.96-29.252c0-18.757,13.377-28.705,31.576-28.705s27.136,14.632,27.136,30.205l8.251,15.271    c0.72,1.685-0.523,3.556-2.348,3.556h-4.927c-0.535,0-0.976,0.442-0.976,0.976v6.02c0,4.323-3.51,7.833-7.833,7.833H67.79    c-1.418,0-2.557,1.151-2.557,2.557v9.018" />
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M66.071,44.91    c0-8.751-7.089-15.84-15.84-15.84s-15.84,7.089-15.84,15.84c0,4.381,1.778,8.333,4.637,11.203c2.847,3.58,3.277,6.299,3.277,8.007    h16.015c0-1.86,0.511-4.893,4.044-8.937H62.27c2.371-2.766,3.8-6.357,3.8-10.285V44.91z" />
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M42.141,67.653h16.177" />
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M43.095,71.361H57.18" />
+		<path style="fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" d="M46.349,74.731h7.763" />
+	</g>
+</g>
+</svg>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEP Icon Guide</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            padding: 40px; 
+            background: #f4f4f9; 
+            color: #333; 
+            margin: 0;
+        }
+        .header { 
+            background: #002F6E; 
+            color: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            margin-bottom: 40px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        }
+        .header h1 { margin: 0 0 10px 0; }
+        .header p { margin: 5px 0; opacity: 0.9; }
+        .header code { 
+            background: rgba(255,255,255,0.1); 
+            padding: 2px 8px; 
+            border-radius: 4px; 
+        }
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .controls label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #002F6E;
+        }
+        .controls input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .controls button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #0072BC;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .controls button:hover { background: #005a96; }
+        .error {
+            background: #FEE9EA;
+            color: #ED1C24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 30px; 
+        }
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 25px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+            border: 1px solid #eee; 
+        }
+        .preview-area { 
+            height: 120px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: #fafafa; 
+            border-radius: 8px; 
+            margin-bottom: 15px; 
+        }
+        .preview-area svg { 
+            width: 100px; 
+            height: 100px; 
+            transition: color 0.3s ease; 
+        }
+        .label { 
+            font-weight: bold; 
+            margin-bottom: 15px; 
+            color: #002F6E; 
+            display: block; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap; 
+        }
+        select { 
+            width: 100%; 
+            padding: 10px; 
+            border-radius: 6px; 
+            border: 1px solid #ddd; 
+            background: white; 
+            font-size: 13px; 
+            cursor: pointer; 
+            margin-bottom: 10px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .download-btn {
+            flex: 1;
+            padding: 8px 12px;
+            background: #0072bc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .download-btn:hover { background: #0060A0; }
+        .code-block { 
+            position: relative; 
+            margin-top: 15px; 
+            min-height: 60px; 
+        }
+        code { 
+            display: block; 
+            background: #1e1e1e; 
+            color: #d4d4d4; 
+            padding: 12px; 
+            font-size: 11px; 
+            border-radius: 6px; 
+            white-space: pre-wrap; 
+            line-height: 1.4; 
+            word-wrap: break-word;
+        }
+        .copy-btn { 
+            position: absolute; 
+            top: 8px; 
+            right: 8px; 
+            background: #0072BC; 
+            color: white; 
+            border: none; 
+            padding: 5px 10px; 
+            font-size: 10px; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            z-index: 10; 
+        }
+        .copy-btn:hover { background: #005a96; }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6B6F70;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GEP Icon Guide &amp; Generator</h1>
+        <p id="sprite-info">Loading sprite information...</p>
+    </div>
+
+    <div class="controls" hidden>
+        <label for="config-file">Config File (relative to this HTML file):</label>
+        <input type="text" id="config-file" value="hs-pictographs-v2-config.json" placeholder="e.g., hs-pictographs-v2-config.json">
+        <button onclick="loadConfig()">Load Sprite</button>
+    </div>
+
+    <div id="error-container"></div>
+    <div id="sprite-container" style="display: none;"></div>
+    <div id="grid" class="grid"></div>
+<script>
+    let currentConfig = null;
+    let spriteElement = null;
+    let spriteText = '';
+
+    function showError(message) {
+        const errorDiv = document.getElementById('error-container');
+        errorDiv.innerHTML = `<div class="error">${message}</div>`;
+    }
+
+    function clearError() {
+        document.getElementById('error-container').innerHTML = '';
+    }
+
+    async function loadConfig() {
+        const configFile = document.getElementById('config-file').value;
+        clearError();
+        
+        try {
+            const response = await fetch(configFile);
+            if (!response.ok) throw new Error(`Failed to load ${configFile}`);
+            
+            currentConfig = await response.json();
+            document.getElementById('sprite-info').innerHTML = `
+                Sprite: <strong>${currentConfig.spriteName}</strong><br>
+                Production URL: <code>${currentConfig.spriteUrl}</code><br>
+                Icons: <strong>${currentConfig.icons.length}</strong>
+            `;
+            
+            await loadSprite();
+            renderIcons();
+        } catch (error) {
+            showError(`Error loading config: ${error.message}`);
+            console.error(error);
+        }
+    }
+
+    async function loadSprite() {
+        const spriteFile = currentConfig.spriteFile;
+        const container = document.getElementById('sprite-container');
+        
+        try {
+            const response = await fetch(spriteFile);
+            if (!response.ok) throw new Error(`Failed to load ${spriteFile}`);
+            
+            spriteText = await response.text();
+            container.innerHTML = spriteText;
+            spriteElement = container.querySelector('svg');
+        } catch (error) {
+            showError(`Error loading sprite: ${error.message}`);
+            throw error;
+        }
+    }
+
+    function renderIcons() {
+        const grid = document.getElementById('grid');
+        grid.innerHTML = '';
+
+        currentConfig.icons.forEach(icon => {
+            const card = createIconCard(icon);
+            grid.appendChild(card);
+        });
+
+        document.querySelectorAll('select').forEach(select => {
+            const iconId = select.getAttribute('data-icon');
+            const [cls, hex] = select.value.split('|');
+            updateIcon(iconId, cls, hex);
+        });
+    }
+
+    function createIconCard(icon) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const safeId = icon.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        const optionsHTML = buildColorOptions();
+
+        card.innerHTML = `
+            <span class="label" title="${icon.id}">${icon.id}</span>
+            <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
+                <svg style="width: 100%; height: 100%">
+                    <use href="${currentConfig.spriteUrl}#${icon.id}"></use>
+                </svg>
+            </div>
+            <select data-icon="${icon.id}" data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${icon.id}', cls, hex);">
+                ${optionsHTML}
+            </select>
+            <div class="button-group">
+                <button class="download-btn" onclick="downloadSVG('${icon.id}', '${safeId}')">Download SVG</button>
+            </div>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+                <code id="code-${safeId}">Loading...</code>
+            </div>
+        `;
+
+        return card;
+    }
+
+    function buildColorOptions() {
+        let html = '';
+        for (const [group, colors] of Object.entries(currentConfig.colors)) {
+            html += `<optgroup label="${group}">`;
+            for (const [cls, hex] of Object.entries(colors)) {
+                const selected = cls === 'icon-blue' ? 'selected' : '';
+                html += `<option value="${cls}|${hex}" ${selected}>${cls}</option>`;
+            }
+            html += '</optgroup>';
+        }
+        return html;
+    }
+
+    function updateIcon(iconId, colorClass, colorHex) {
+        const safeId = iconId.replace(/[^a-zA-Z0-9-_]/g, '_');
+        const previewArea = document.querySelector(`#preview-${safeId}`);
+        if (previewArea) previewArea.style.color = colorHex;
+        
+        const code = document.querySelector(`#code-${safeId}`);
+        if (code) {
+            code.innerText = `<svg class="icon ${colorClass}">\n  <use href="${currentConfig.spriteUrl}#${iconId}"></use>\n</svg>`;
+        }
+    }
+
+    function downloadSVG(iconId, safeId) {
+        if (!spriteText) {
+            alert('Sprite not loaded yet');
+            return;
+        }
+
+        // Get selected hex from the UI dropdown
+        const select = document.querySelector(`select[data-safe-id="${safeId}"]`);
+        const [colorClass, colorHex] = select.value.split('|');
+
+        const symbolRegex = new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's');
+        const match = spriteText.match(symbolRegex);
+        
+        if (!match) {
+            alert('Icon not found in sprite');
+            return;
+        }
+
+        const symbolFullTag = match[0];
+        let symbolContent = match[1];
+        
+        const viewBoxMatch = symbolFullTag.match(/viewBox="([^"]*)"/);
+        const viewBox = viewBoxMatch ? viewBoxMatch[1] : '0 0 110 110';
+        
+        /** * Logic: Replace "currentColor" with the hex, but leave "none" alone.
+         * Works for both inline styles and attributes.
+         */
+        let coloredContent = symbolContent
+            // Replace currentColor inside style attributes
+            .replace(/fill:\s*currentColor/g, `fill:${colorHex}`)
+            .replace(/stroke:\s*currentColor/g, `stroke:${colorHex}`)
+            // Replace currentColor in standalone attributes
+            .replace(/fill="currentColor"/g, `fill="${colorHex}"`)
+            .replace(/stroke="currentColor"/g, `stroke="${colorHex}"`);
+        
+        // Final SVG Assembly with all required namespaces
+        const svgString = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="110" height="110">
+${coloredContent}
+</svg>`;
+
+        const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${iconId}_${colorClass}.svg`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    function copyToClipboard(id, btn) {
+        const codeElement = document.getElementById(id);
+        if (!codeElement) return;
+        const text = codeElement.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = btn.innerText;
+            btn.innerText = "Copied!";
+            setTimeout(() => btn.innerText = originalText, 1500);
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', loadConfig);
+</script>
+    
+</body>
+</html>
