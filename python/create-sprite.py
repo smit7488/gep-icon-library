@@ -5,12 +5,17 @@ from xml.etree import ElementTree as ET
 
 def create_gep_sprite_system():
     # 1. Setup Configuration
-    file_name = input("Enter name for sprite file (e.g. hs-pictographs): ").strip() or "hs-pictographs"
+    file_name = input("Enter name for sprite file (e.g. hs-icons-v3): ").strip() or "hs-icons-v3"
     
     full_file_name = f"{file_name}.svg"
-    full_sprite_url = f"https://www.henryschein.com/images/assets/gep/{full_file_name}"
     
-    output_folder = "Generated_Sprites"
+    # Updated to relative path for better local testing/portability
+    relative_sprite_url = f"./dist/{full_file_name}"
+    
+    # Updated structure: Source is 'svg', Output is 'dist'
+    input_base_dir = "svg" 
+    output_folder = "dist"
+    
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
@@ -41,46 +46,73 @@ def create_gep_sprite_system():
     }
 
     sprite_root = ET.Element("svg", {"xmlns": "http://www.w3.org/2000/svg", "style": "display: none;"})
-    svgs = [f for f in os.listdir(".") if f.lower().endswith(".svg")]
-    
-    if not svgs:
-        sys.exit("Error: No individual SVG files found.")
-
-    # 3. Build sprite and collect icon metadata
     icon_metadata = []
-    
-    for svg_file in svgs:
-        icon_id = os.path.splitext(svg_file)[0]
-        try:
-            tree = ET.parse(svg_file)
-            root = tree.getroot()
-            viewBox = root.get("viewBox", "0 0 110 110")
+
+    # 3. Recursive search through the 'svg' directory
+    if not os.path.exists(input_base_dir):
+        sys.exit(f"Error: Folder '{input_base_dir}' not found.")
+
+    for root_dir, dirs, files in os.walk(input_base_dir):
+        for svg_file in files:
+            if not svg_file.lower().endswith(".svg"):
+                continue
+
+            file_path = os.path.join(root_dir, svg_file)
+            base_name = os.path.splitext(svg_file)[0]
             
-            # Add to sprite
-            symbol = ET.SubElement(sprite_root, "symbol", {"id": icon_id, "viewBox": viewBox})
-            for child in root:
-                symbol.append(child)
+            # Logic: [type]_[category]_[rest-of-name]
+            parts = base_name.split('_', 2)
             
-            # Collect metadata
-            icon_metadata.append({
-                "id": icon_id,
-                "viewBox": viewBox
-            })
-            
-            print(f"Merged: {icon_id}")
-        except Exception as e:
-            print(f"Error processing {svg_file}: {e}")
+            if len(parts) >= 3:
+                asset_type = parts[0]
+                category = parts[1]
+                icon_id = f"{category}_{parts[2]}" 
+            elif len(parts) == 2:
+                asset_type = parts[0]
+                category = "General"
+                icon_id = parts[1]
+            else:
+                asset_type = "unknown"
+                category = "General"
+                icon_id = base_name
+
+            try:
+                tree = ET.parse(file_path)
+                svg_content = tree.getroot()
+                viewBox = svg_content.get("viewBox", "0 0 110 110")
+                
+                # Add symbol to sprite
+                symbol = ET.SubElement(sprite_root, "symbol", {"id": icon_id, "viewBox": viewBox})
+                for child in svg_content:
+                    symbol.append(child)
+                
+                # Add to JSON list
+                icon_metadata.append({
+                    "id": icon_id,
+                    "viewBox": viewBox,
+                    "type": asset_type,
+                    "category": category
+                })
+                
+                print(f"Merged: {icon_id} from {root_dir}")
+            except Exception as e:
+                print(f"Error processing {file_path}: {e}")
+
+    if not icon_metadata:
+        sys.exit("Error: No SVG files were successfully processed.")
 
     # 4. Save SVG sprite
     sprite_path = os.path.join(output_folder, full_file_name)
     with open(sprite_path, "wb") as f:
         f.write(ET.tostring(sprite_root, encoding="utf-8", xml_declaration=True))
     
-    # 5. Save configuration JSON
+ # 5. Save configuration JSON
     config = {
         "spriteName": file_name,
-        "spriteUrl": full_sprite_url,
-        "spriteFile": full_file_name,
+        # The URL used by the fetch() command in your HTML
+        "spriteUrl": f"./dist/{full_file_name}", 
+        # The path to the file itself
+        "spriteFile": f"./dist/{full_file_name}", 
         "icons": icon_metadata,
         "colors": color_map
     }
@@ -89,12 +121,7 @@ def create_gep_sprite_system():
     with open(config_path, "w", encoding="utf-8") as f:
         json.dump(config, f, indent=2)
     
-    print(f"\n✓ Sprite saved: {sprite_path}")
-    print(f"✓ Config saved: {config_path}")
-    print(f"\nNext steps:")
-    print(f"1. Copy the HTML viewer to your output folder")
-    print(f"2. Update the config file name in the HTML if needed")
-    print(f"3. Open the HTML file in a browser")
+    print(f"\n✓ Done! Files saved in: {output_folder}")
 
 if __name__ == "__main__":
     create_gep_sprite_system()

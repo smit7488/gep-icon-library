@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEP Icon Guide</title>
+    <style>
+        @font-face {
+            font-family: "Azo Sans Regular";
+            src: url('https://assets.henryschein.com/AzoSans-Regular.woff2') format("woff2");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Azo Sans Bold";
+            src: url('https://assets.henryschein.com/AzoSans-Bold.woff2') format("woff2");
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet"
+        href="https://www.henryschein.com/dist/HSUSGEPAngularJSS/browser/styles.6249c727cf0dfab50d61.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            padding: 40px;
+            background: #f4f4f9;
+            color: #333;
+            margin: 0;
+        }
+
+        .header {
+            background: #002F6E;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+        }
+
+        .header p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+
+        .header code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .controls label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #002F6E;
+        }
+
+        .controls input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .controls button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #0072BC;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .controls button:hover {
+            background: #005a96;
+        }
+
+        .error {
+            background: #FEE9EA;
+            color: #ED1C24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eee;
+        }
+
+        /* Skeleton Loading Animation */
+        @keyframes pulse {
+            0% {
+                background-color: #eee;
+            }
+
+            50% {
+                background-color: #f5f5f5;
+            }
+
+            100% {
+                background-color: #eee;
+            }
+        }
+
+        .card.is-loading .label,
+        .card.is-loading .preview-area,
+        .card.is-loading select,
+        .card.is-loading .button-group,
+        .card.is-loading .code-block {
+            background: #eee;
+            animation: pulse 1.5s infinite ease-in-out;
+            border: none;
+            color: transparent !important;
+        }
+
+        .card.is-loading code {
+            display: none;
+        }
+
+        .card.is-loading svg {
+            display: none;
+        }
+
+        .preview-area {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .preview-area svg {
+
+            width: auto;
+            height: auto;
+            max-width: 110px;
+            max-height: 100%;
+
+            vector-effect: non-scaling-stroke;
+
+            display: block;
+            margin: auto;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #002F6E;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: white;
+            font-size: 13px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        input.filter-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: white;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            flex: 1;
+            padding: 8px 5px;
+            /* Less horizontal padding to fit two buttons */
+            font-size: 11px;
+            /* Slightly smaller font for the buttons */
+            background: #0072bc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #0060A0;
+        }
+
+
+        .code-block {
+            position: relative;
+            margin-top: 15px;
+            min-height: 60px;
+        }
+
+        code {
+            display: block;
+            background: #1e1e1e !important;
+            /* color: #d4d4d4; */
+            padding: 12px;
+            font-size: 11px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+        /* Syntax Highlighting Colors */
+.hljs-tag { color: #80cbc4; }       /* Tags: <svg, <use */
+.hljs-attr { color: #addb67; }      /* Attributes: class, href */
+.hljs-string { color: #ce9178; }    /* Values: "icon blue" */
+.hljs-comment { color: #6a9955; }   /* CSS Comments */
+.hljs-selector { color: #d7ba7d; }  /* CSS Selectors: .icon */
+.hljs-prop { color: #9cdcfe; }      /* CSS Props: color, fill */
+.hljs-val { color: #b5cea8; }       /* CSS Values: #0072BC */
+
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #0072BC;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .copy-btn:hover {
+            background: #005a96;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6B6F70;
+        }
+
+        /* Scrollbar styling for the master CSS block */
+        #master-css-code::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        #master-css-code::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+
+        #master-css-code::-webkit-scrollbar-thumb {
+            background: #0072BC;
+            border-radius: 3px;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            align-items: center;
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .filter-group label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #002F6E;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        .filter-bar select {
+            margin-bottom: 0;
+            /* Override default select margin */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row g-3 pt-2 mt-3 mb-5">
+            <div class="col-12 col-sm-6 p-2">
+                <h1>GEP Icon Guide &amp; Generator</h1>
+                <p id="sprite-info">Loading sprite information...</p>
+            </div>
+
+            <div class="col-12 col-sm-6 p-2">
+                   <label
+                        style="font-size: 11px; text-transform: uppercase; color: #fff; margin-bottom: 5px; display: block; opacity: 0.8;">
+                        Master System CSS
+                    </label>
+                <div class="code-block" style="margin-top: 0;">
+                 
+                    <button class="copy-btn" onclick="copyToClipboard('master-css-code', this)">Copy CSS</button>
+                    <code id="master-css-code" style="max-height: 180px; overflow-y: auto;">/* ==========================================================================
+   GEP ICON SYSTEM - Master CSS
+   ========================================================================== */
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;   
+    stroke: currentColor;
+    vertical-align: middle;
+    transition: color 0.2s ease; 
+}
+
+.icon-sm { width: 16px; height: 16px; }
+.icon-md { width: 32px; height: 32px; }
+.icon-lg { width: 48px; height: 48px; }
+
+/* DARK BLUE */
+.icon-dark-blue    { color: #002F6E; }
+.icon-dark-blue-t4 { color: #8098B7; }
+.icon-dark-blue-t3 { color: #B3C1D4; }
+.icon-dark-blue-t2 { color: #E6EBF1; }
+.icon-dark-blue-t1 { color: #F5F7F9; }
+
+/* BLUE - Primary Corporate */
+.icon-blue         { color: #0072BC; }
+.icon-blue-t4      { color: #80B9DE; }
+.icon-blue-t3      { color: #B3D5EB; }
+.icon-blue-t2      { color: #E6F1F9; }
+.icon-blue-t1      { color: #F5F9FC; }
+
+/* LIGHT BLUE */
+.icon-light-blue    { color: #3DB5E6; }
+.icon-light-blue-t4 { color: #9FDBF3; }
+.icon-light-blue-t3 { color: #C5E9F8; }
+.icon-light-blue-t2 { color: #ECF8FD; }
+.icon-light-blue-t1 { color: #F7FCFE; }
+
+/* GREEN */
+.icon-green         { color: #008996; }
+.icon-green-t4      { color: #80C5CB; }
+.icon-green-t3      { color: #B3DCE0; }
+.icon-green-t2      { color: #E6F4F5; }
+.icon-green-t1      { color: #F5FAFB; }
+
+/* RED */
+.icon-red    { color: #ED1C24; }
+.icon-red-t4 { color: #F7BE92; }
+.icon-red-t3 { color: #FABBB0; }
+.icon-red-t2 { color: #FEE9EA; }
+.icon-red-t1 { color: #FFF6F6; }
+
+/* VIOLET */
+.icon-violet    { color: #831A5B; }
+.icon-violet-t4 { color: #C2BDAE; }
+.icon-violet-t3 { color: #DABACE; }
+.icon-violet-t2 { color: #F3E9EF; }
+.icon-violet-t1 { color: #FAF6F8; }
+
+/* ORANGE */
+.icon-orange    { color: #F28B00; }
+.icon-orange-t1 { color: #FFFAF5; }
+.icon-orange-t2 { color: #FEF4E6; }
+.icon-orange-t3 { color: #FBDCB3; }
+.icon-orange-t4 { color: #F9C680; }
+
+/* GRAYSCALE */
+.icon-dark-gray    { color: #474F50; }
+.icon-gray         { color: #6B6F70; }
+.icon-light-gray-1 { color: #F7F7F6; }
+.icon-light-gray-2 { color: #E6E6E6; }
+.icon-black        { color: #000000; }
+.icon-white        { color: #FFFFFF; }</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls" hidden>
+        <label for="config-file">Config File (relative to this HTML file):</label>
+        <input type="text" id="config-file" value="./dist/hs-icons-v1-config.json"
+            placeholder="e.g., hs-icons-v1-config.json">
+        <button onclick="loadConfig()">Load Sprite</button>
+    </div>
+
+    <div id="error-container"></div>
+    <div id="sprite-container" style="display: none;"></div>
+    <div id="filter-container" class="filter-bar" style="display: none;">
+        <div class="filter-group">
+            <label>Search Icons</label>
+            <input class="filter-input" type="text" id="search-input" placeholder="Search by name..."
+                oninput="filterIcons()">
+        </div>
+        <div class="filter-group">
+            <label>Type</label>
+            <select id="type-filter" onchange="filterIcons()">
+                <option value="all">All Types</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Category</label>
+            <select id="category-filter" onchange="filterIcons()">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="grid" class="grid"></div>
+<script>
+    let currentConfig = null;
+    let spriteText = '';
+    let observer = null;
+    let debounceTimer;
+
+    // --- TOKENS-BASED HIGHLIGHTER ---
+    function highlightHTML(code) {
+        let text = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const tokens = [];
+        const tokenMask = (val, cls) => {
+            const id = `___TOKEN_${tokens.length}___`;
+            tokens.push(`<span class="${cls}">${val}</span>`);
+            return id;
+        };
+        text = text.replace(/"([^"]*)"/g, (m, p1) => `"${tokenMask(p1, 'hljs-string')}"`);
+        text = text.replace(/\b([a-z-]+)(?==)/gi, (m, p1) => tokenMask(p1, 'hljs-attr'));
+        text = text.replace(/(&lt;\/?[a-z1-6]+|&gt;)/gi, (m, p1) => tokenMask(p1, 'hljs-tag'));
+        tokens.forEach((t, i) => { text = text.replace(`___TOKEN_${i}___`, t); });
+        return text;
+    }
+
+    function highlightCSS(css) {
+        let text = css.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return text
+            .replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="hljs-comment">$1</span>')
+            .replace(/([\.#][a-z0-9-._ ]+)(?=[ {])/gi, '<span class="hljs-selector">$1</span>')
+            .replace(/([a-z-]+)(?=\s*:)/gi, '<span class="hljs-prop">$1</span>')
+            .replace(/:\s*([^;]+);/g, ': <span class="hljs-val">$1</span>;');
+    }
+
+    // --- SYSTEM LOGIC ---
+    async function loadConfig() {
+        const configFile = document.getElementById('config-file').value;
+        try {
+            const response = await fetch(configFile);
+            currentConfig = await response.json();
+            document.getElementById('sprite-info').innerHTML = `
+                Sprite: <strong>${currentConfig.spriteName}</strong><br>
+                URL: ${currentConfig.spriteUrl}
+            `;
+            await loadSprite();
+            setupFilters();
+            renderIcons();
+            const masterCss = document.getElementById('master-css-code');
+            if (masterCss) masterCss.innerHTML = highlightCSS(masterCss.innerText);
+        } catch (e) { console.error("Config load failed", e); }
+    }
+
+    async function loadSprite() {
+        const response = await fetch(currentConfig.spriteFile);
+        spriteText = await response.text();
+        document.getElementById('sprite-container').innerHTML = spriteText;
+    }
+
+    function setupFilters() {
+        const types = new Set();
+        const categories = new Set();
+        currentConfig.icons.forEach(i => { if(i.type) types.add(i.type); if(i.category) categories.add(i.category); });
+        const tSel = document.getElementById('type-filter');
+        const cSel = document.getElementById('category-filter');
+        types.forEach(t => tSel.innerHTML += `<option value="${t}">${t}</option>`);
+        categories.forEach(c => cSel.innerHTML += `<option value="${c}">${c}</option>`);
+        document.getElementById('filter-container').style.display = 'flex';
+    }
+
+    function filterIcons() {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            const q = document.getElementById('search-input').value.toLowerCase();
+            const t = document.getElementById('type-filter').value;
+            const c = document.getElementById('category-filter').value;
+            const filtered = currentConfig.icons.filter(i => 
+                i.id.toLowerCase().includes(q) && (t === 'all' || i.type === t) && (c === 'all' || i.category === c)
+            );
+            renderIcons(filtered);
+        }, 250);
+    }
+
+    function renderIcons(icons = currentConfig.icons) {
+        const grid = document.getElementById('grid');
+        grid.innerHTML = '';
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const card = e.target;
+                    const iconData = currentConfig.icons.find(i => i.id === card.dataset.id);
+                    loadActualContent(card, iconData);
+                    observer.unobserve(card);
+                }
+            });
+        }, { rootMargin: '300px' });
+
+        icons.forEach(i => {
+            const card = document.createElement('div');
+            const safeId = i.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+            card.className = 'card is-loading';
+            card.dataset.id = i.id;
+            card.id = `card-${safeId}`;
+            card.innerHTML = `<span class="label">${i.id}</span><div class="preview-area"></div><div class="code-block"></div>`;
+            grid.appendChild(card);
+            observer.observe(card);
+        });
+    }
+
+    function loadActualContent(card, icon) {
+        const safeId = icon.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        card.innerHTML = `
+            <span class="label">${icon.id}</span>
+            <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
+                <svg><use href="${currentConfig.spriteUrl}#${icon.id}"></use></svg>
+            </div>
+            <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${icon.id}', cls, hex);">
+                ${buildColorOptions()}
+            </select>
+            <div class="button-group">
+                <button class="download-btn" onclick="downloadSVG('${icon.id}', '${safeId}')">SVG</button>
+                <button class="download-btn" style="background:#474F50" onclick="downloadPNG('${icon.id}', '${safeId}')">PNG</button>
+            </div>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+                <code id="code-${safeId}"></code>
+            </div>
+        `;
+        card.classList.remove('is-loading');
+        updateIcon(icon.id, 'icon-blue', '#0072BC');
+    }
+
+    function buildColorOptions() {
+        let html = '';
+        for (const [group, colors] of Object.entries(currentConfig.colors)) {
+            html += `<optgroup label="${group}">`;
+            for (const [cls, hex] of Object.entries(colors)) {
+                html += `<option value="${cls}|${hex}" ${cls==='icon-blue'?'selected':''}>${cls}</option>`;
+            }
+            html += '</optgroup>';
+        }
+        return html;
+    }
+
+    function updateIcon(id, cls, hex) {
+        const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        const preview = document.getElementById(`preview-${safeId}`);
+        if (preview) preview.style.color = hex;
+        const codeElement = document.getElementById(`code-${safeId}`);
+        if (codeElement) {
+            const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
+            codeElement.innerHTML = highlightHTML(raw);
+        }
+    }
+
+    function copyToClipboard(id, btn) {
+        const el = document.getElementById(id);
+        navigator.clipboard.writeText(el.innerText).then(() => {
+            const old = btn.innerText;
+            btn.innerText = "Copied!";
+            setTimeout(() => btn.innerText = old, 1500);
+        });
+    }
+
+    // --- DOWNLOAD FUNCTIONS ---
+    function downloadSVG(iconId, safeId) {
+        if (!spriteText) return;
+        const select = document.querySelector(`select[data-safe-id="${safeId}"]`);
+        const [colorClass, colorHex] = select.value.split('|');
+
+        const symbolRegex = new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's');
+        const match = spriteText.match(symbolRegex);
+        if (!match) return;
+
+        const viewBox = match[0].match(/viewBox="([^"]*)"/)?.[1] || '0 0 110 110';
+        let content = match[1]
+            .replace(/fill:\s*currentColor/g, `fill:${colorHex}`)
+            .replace(/stroke:\s*currentColor/g, `stroke:${colorHex}`)
+            .replace(/fill="currentColor"/g, `fill="${colorHex}"`)
+            .replace(/stroke="currentColor"/g, `stroke="${colorHex}"`);
+
+        // Final SVG Assembly with requested namespaces
+        const svgString = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="110" height="110">
+${content}
+</svg>`;
+
+        const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${iconId}_${colorClass}.svg`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    function downloadPNG(iconId, safeId) {
+        const select = document.querySelector(`select[data-safe-id="${safeId}"]`);
+        if (!select) return;
+        const [colorClass, colorHex] = select.value.split('|');
+        const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
+        if (!match) return;
+
+        const viewBox = match[0].match(/viewBox="([^"]*)"/)?.[1] || '0 0 110 110';
+        let cleanContent = match[1]
+            .replace(/<(\/?)ns[0-9]+:/g, '<$1')
+            .replace(/\s+ns[0-9]+:[a-z-]+="[^"]*"/gi, '')
+            .replace(/sketch:type="[^"]*"/gi, '')
+            .replace(/currentColor/g, colorHex);
+
+        const svgHeader = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="512" height="512">${cleanContent}</svg>`;
+        const canvas = document.createElement('canvas');
+        canvas.width = 512; canvas.height = 512;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.onload = function() {
+            ctx.clearRect(0, 0, 512, 512);
+            ctx.drawImage(img, 0, 0, 512, 512);
+            const a = document.createElement("a");
+            a.href = canvas.toDataURL("image/png");
+            a.download = `${iconId}_${colorClass}.png`;
+            a.click();
+        };
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgHeader)));
+    }
+
+    window.addEventListener('DOMContentLoaded', loadConfig);
+</script>
+
+</body>
+
+</html>
