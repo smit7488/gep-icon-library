@@ -116,6 +116,16 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             border: 1px solid #eee;
         }
+        .type-badge {
+         
+   color: #0072bc;
+    background: #eee;
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 6px;
+    font-size: 11px;
+    margin-bottom: 1rem;
+        }
 
         /* Skeleton Loading Animation */
         @keyframes pulse {
@@ -178,7 +188,7 @@
 
         .label {
             font-weight: bold;
-            margin-bottom: 15px;
+          margin-bottom: .5rem;
             color: #002F6E;
             display: block;
             overflow: hidden;
@@ -461,7 +471,8 @@
     </div>
 
     <div id="grid" class="grid"></div>
-<script>
+
+    <script>
     let currentConfig = null;
     let spriteText = '';
     let observer = null;
@@ -502,7 +513,6 @@
             const response = await fetch(configFile);
             currentConfig = await response.json();
 
-            // 2. RESOLVE RELATIVE PATHS TO ABSOLUTE SLUGS
             if (currentConfig.spriteUrl.startsWith('.')) {
                 currentConfig.spriteUrl = currentConfig.spriteUrl.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
             }
@@ -575,7 +585,8 @@
             card.className = 'card is-loading';
             card.dataset.id = i.id;
             card.id = `card-${safeId}`;
-            card.innerHTML = `<span class="label">${i.id}</span><div class="preview-area"></div><div class="code-block"></div>`;
+            // Placeholder includes badge area
+            card.innerHTML = `<div class="type-badge-wrapper"><div class="type-badge"></div><span class="label">${i.id}</span><div class="preview-area"></div><div class="code-block"></div></div>`;
             grid.appendChild(card);
             observer.observe(card);
         });
@@ -583,8 +594,14 @@
 
     function loadActualContent(card, icon) {
         const safeId = icon.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        
+        // CAPITALIZE TYPE
+        const typeDisplay = icon.type ? icon.type.charAt(0).toUpperCase() + icon.type.slice(1) : 'General';
+
         card.innerHTML = `
+           
             <span class="label">${icon.id}</span>
+             <div class="type-badge-wrapper"><div class="type-badge">${typeDisplay}</div></div>
             <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
                 <svg><use href="${currentConfig.spriteUrl}#${icon.id}"></use></svg>
             </div>
@@ -622,7 +639,6 @@
         if (preview) preview.style.color = hex;
         const codeElement = document.getElementById(`code-${safeId}`);
         if (codeElement) {
-            // 3. THIS NOW AUTOMATICALLY USES THE FULL ABSOLUTE SLUG
             const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
             codeElement.innerHTML = highlightHTML(raw);
         }
