@@ -1,7 +1,7 @@
 {
-  "spriteName": "hs-icons-v1",
-  "spriteUrl": "./dist/hs-icons-v1.svg",
-  "spriteFile": "./dist/hs-icons-v1.svg",
+  "spriteName": "hs-icons-test",
+  "spriteUrl": "./dist/hs-icons-test.svg",
+  "spriteFile": "./dist/hs-icons-test.svg",
   "icons": [
     {
       "id": "Business_110",

@@ -8,13 +8,8 @@ def create_gep_sprite_system():
     file_name = input("Enter name for sprite file (e.g. hs-icons-v3): ").strip() or "hs-icons-v3"
     
     full_file_name = f"{file_name}.svg"
-    
-    # Updated to relative path for better local testing/portability
-    relative_sprite_url = f"./dist/{full_file_name}"
-    
-    # Updated structure: Source is 'svg', Output is 'dist'
-    input_base_dir = "svg" 
     output_folder = "dist"
+    input_base_dir = "svg" 
     
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -48,7 +43,6 @@ def create_gep_sprite_system():
     sprite_root = ET.Element("svg", {"xmlns": "http://www.w3.org/2000/svg", "style": "display: none;"})
     icon_metadata = []
 
-    # 3. Recursive search through the 'svg' directory
     if not os.path.exists(input_base_dir):
         sys.exit(f"Error: Folder '{input_base_dir}' not found.")
 
@@ -60,33 +54,31 @@ def create_gep_sprite_system():
             file_path = os.path.join(root_dir, svg_file)
             base_name = os.path.splitext(svg_file)[0]
             
-            # Logic: [type]_[category]_[rest-of-name]
             parts = base_name.split('_', 2)
-            
             if len(parts) >= 3:
-                asset_type = parts[0]
-                category = parts[1]
-                icon_id = f"{category}_{parts[2]}" 
+                asset_type, category, icon_id = parts[0], parts[1], f"{parts[1]}_{parts[2]}" 
             elif len(parts) == 2:
-                asset_type = parts[0]
-                category = "General"
-                icon_id = parts[1]
+                asset_type, category, icon_id = parts[0], "General", parts[1]
             else:
-                asset_type = "unknown"
-                category = "General"
-                icon_id = base_name
+                asset_type, category, icon_id = "unknown", "General", base_name
 
             try:
                 tree = ET.parse(file_path)
                 svg_content = tree.getroot()
                 viewBox = svg_content.get("viewBox", "0 0 110 110")
                 
-                # Add symbol to sprite
                 symbol = ET.SubElement(sprite_root, "symbol", {"id": icon_id, "viewBox": viewBox})
+                
+                # --- NEW LOGIC: Inject vector-effect ---
+                # Search for all shape elements and add the attribute
+                for element in svg_content.iter():
+                    # Check for path and common shape tags
+                    if any(tag in element.tag for tag in ['path', 'circle', 'rect', 'line', 'polyline', 'polygon']):
+                        element.set("vector-effect", "non-scaling-stroke")
+                
                 for child in svg_content:
                     symbol.append(child)
                 
-                # Add to JSON list
                 icon_metadata.append({
                     "id": icon_id,
                     "viewBox": viewBox,
@@ -94,7 +86,7 @@ def create_gep_sprite_system():
                     "category": category
                 })
                 
-                print(f"Merged: {icon_id} from {root_dir}")
+                print(f"Merged: {icon_id} (Non-scaling applied)")
             except Exception as e:
                 print(f"Error processing {file_path}: {e}")
 
@@ -106,12 +98,10 @@ def create_gep_sprite_system():
     with open(sprite_path, "wb") as f:
         f.write(ET.tostring(sprite_root, encoding="utf-8", xml_declaration=True))
     
- # 5. Save configuration JSON
+    # 5. Save configuration JSON
     config = {
         "spriteName": file_name,
-        # The URL used by the fetch() command in your HTML
         "spriteUrl": f"./dist/{full_file_name}", 
-        # The path to the file itself
         "spriteFile": f"./dist/{full_file_name}", 
         "icons": icon_metadata,
         "colors": color_map

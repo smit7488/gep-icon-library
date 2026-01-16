@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEP Icon Guide</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <style>
         @font-face {
             font-family: "Azo Sans Regular";
             src: url('https://assets.henryschein.com/AzoSans-Regular.woff2') format("woff2");
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
             font-family: "Azo Sans Bold";
             src: url('https://assets.henryschein.com/AzoSans-Bold.woff2') format("woff2");
-            font-display: swap;
+            font-display: block;
         }
     </style>
     <link rel="stylesheet"
@@ -26,7 +28,7 @@
         }
 
         body {
-            font-family: 'Azo Sans Regular', Arial, sans-serif;
+            font-family: 'Azo Sans Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             padding: 40px;
             background: #f4f4f9;
             color: #333;
@@ -36,10 +38,11 @@
         .header {
             background: #002F6E;
             color: white;
-            padding: 30px;
+            padding: 1rem;
             border-radius: 12px;
             margin-bottom: 40px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .header h1 {
@@ -76,7 +79,7 @@
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 6px;
+            border-radius: 4px;
             font-size: 14px;
         }
 
@@ -86,7 +89,7 @@
             background: #0072BC;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
         }
@@ -122,10 +125,13 @@
     background: #eee;
     display: inline-block;
     padding: 1px 6px;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 11px;
     margin-bottom: 1rem;
         }
+
+        .type-badge.pictograph { background: #831A5B; color: #fff; }
+        .type-badge.wireblock { background: #008996; color: #fff; }
 
         /* Skeleton Loading Animation */
         @keyframes pulse {
@@ -199,18 +205,18 @@
         select {
             width: 100%;
             padding: 10px;
-            border-radius: 6px;
+            border-radius: 4px;
             border: 1px solid #ddd;
             background: white;
             font-size: 13px;
             cursor: pointer;
-            margin-bottom: 10px;
+         
         }
 
         input.filter-input {
             width: 100%;
             padding: 10px;
-            border-radius: 6px;
+            border-radius: 4px;
             border: 1px solid #ddd;
             background: white;
             font-size: 13px;
@@ -232,7 +238,7 @@
             background: #0072bc;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
         }
 
@@ -253,7 +259,7 @@
             /* color: #d4d4d4; */
             padding: 12px;
             font-size: 11px;
-            border-radius: 6px;
+            border-radius: 4px;
             white-space: pre-wrap;
             font-family: ui-monospace, 
                  'Cascadia Code', 
@@ -343,18 +349,116 @@
             margin-bottom: 0;
             /* Override default select margin */
         }
+
+.png-download-container select {
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 11px;
+ 
+}
+
+
+
+
+        /* ==========================================================================
+   GEP ICON SYSTEM - Master CSS
+   ========================================================================== */
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;   
+    stroke: currentColor;
+    vertical-align: middle;
+    transition: color 0.2s ease; 
+}
+
+.icon-sm { width: 16px; height: 16px; }
+.icon-md { width: 32px; height: 32px; }
+.icon-lg { width: 48px; height: 48px; }
+
+/* DARK BLUE */
+.icon-dark-blue    { color: #002F6E; }
+.icon-dark-blue-t4 { color: #8098B7; }
+.icon-dark-blue-t3 { color: #B3C1D4; }
+.icon-dark-blue-t2 { color: #E6EBF1; }
+.icon-dark-blue-t1 { color: #F5F7F9; }
+
+/* BLUE - Primary Corporate */
+.icon-blue         { color: #0072BC; }
+.icon-blue-t4      { color: #80B9DE; }
+.icon-blue-t3      { color: #B3D5EB; }
+.icon-blue-t2      { color: #E6F1F9; }
+.icon-blue-t1      { color: #F5F9FC; }
+
+/* LIGHT BLUE */
+.icon-light-blue    { color: #3DB5E6; }
+.icon-light-blue-t4 { color: #9FDBF3; }
+.icon-light-blue-t3 { color: #C5E9F8; }
+.icon-light-blue-t2 { color: #ECF8FD; }
+.icon-light-blue-t1 { color: #F7FCFE; }
+
+/* GREEN */
+.icon-green         { color: #008996; }
+.icon-green-t4      { color: #80C5CB; }
+.icon-green-t3      { color: #B3DCE0; }
+.icon-green-t2      { color: #E6F4F5; }
+.icon-green-t1      { color: #F5FAFB; }
+
+/* RED */
+.icon-red    { color: #ED1C24; }
+.icon-red-t4 { color: #F7BE92; }
+.icon-red-t3 { color: #FABBB0; }
+.icon-red-t2 { color: #FEE9EA; }
+.icon-red-t1 { color: #FFF6F6; }
+
+/* VIOLET */
+.icon-violet    { color: #831A5B; }
+.icon-violet-t4 { color: #C2BDAE; }
+.icon-violet-t3 { color: #DABACE; }
+.icon-violet-t2 { color: #F3E9EF; }
+.icon-violet-t1 { color: #FAF6F8; }
+
+/* ORANGE */
+.icon-orange    { color: #F28B00; }
+.icon-orange-t1 { color: #FFFAF5; }
+.icon-orange-t2 { color: #FEF4E6; }
+.icon-orange-t3 { color: #FBDCB3; }
+.icon-orange-t4 { color: #F9C680; }
+
+/* GRAYSCALE */
+.icon-dark-gray    { color: #474F50; }
+.icon-gray         { color: #6B6F70; }
+.icon-light-gray-1 { color: #F7F7F6; }
+.icon-light-gray-2 { color: #E6E6E6; }
+.icon-black        { color: #000000; }
+.icon-white        { color: #FFFFFF; }
     </style>
 </head>
 
 <body>
     <div class="header">
+        <div class="container-lg" style="max-width: 1400px">
         <div class="row g-3 pt-2 mt-3 mb-5">
-            <div class="col-12 col-sm-6 p-2">
+            <div class="col-12 col-sm-6 p-2 d-flex flex-column justify-content-center" style="z-index: 1">
                 <h1>GEP Icon Guide &amp; Generator</h1>
                 <p id="sprite-info">Loading sprite information...</p>
             </div>
 
             <div class="col-12 col-sm-6 p-2">
+                <svg class="icon icon-blue" style="
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.6;
+">
+  <use href="./dist/hs-icons-v1.svg#Business_Administration"></use>
+</svg>
                    <label
                         style="font-size: 11px; text-transform: uppercase; color: #fff; margin-bottom: 5px; display: block; opacity: 0.8;">
                         Master System CSS
@@ -439,12 +543,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></div>
 
     <div class="controls" hidden>
         <label for="config-file">Config File (relative to this HTML file):</label>
-        <input type="text" id="config-file" value="./dist/hs-icons-v1-config.json"
-            placeholder="e.g., hs-icons-v1-config.json">
+        <input type="text" id="config-file" value="./dist/hs-icons-test-config.json"
+            placeholder="e.g., hs-icons-test-config.json">
         <button onclick="loadConfig()">Load Sprite</button>
     </div>
 
@@ -521,8 +625,8 @@
             }
             
             document.getElementById('sprite-info').innerHTML = `
-                Sprite: <strong>${currentConfig.spriteName}</strong><br>
-                URL: <code>${currentConfig.spriteUrl}</code>
+              
+                Sprite URL: <a href="${currentConfig.spriteUrl}">${currentConfig.spriteUrl}</a>
             `;
 
             await loadSprite();
@@ -595,28 +699,49 @@
     function loadActualContent(card, icon) {
         const safeId = icon.id.replace(/[^a-zA-Z0-9-_]/g, '_');
         
+        // 1. Create the lowercase class name (e.g., "business")
+    const typeClass = icon.type ? icon.type.toLowerCase() : 'general';
+
         // CAPITALIZE TYPE
         const typeDisplay = icon.type ? icon.type.charAt(0).toUpperCase() + icon.type.slice(1) : 'General';
 
-        card.innerHTML = `
-           
-            <span class="label">${icon.id}</span>
-             <div class="type-badge-wrapper"><div class="type-badge">${typeDisplay}</div></div>
-            <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
-                <svg><use href="${currentConfig.spriteUrl}#${icon.id}"></use></svg>
-            </div>
-            <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${icon.id}', cls, hex);">
-                ${buildColorOptions()}
+card.innerHTML = `
+    
+    <span class="label">${icon.id}</span>
+    <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
+    <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
+        <svg><use href="${currentConfig.spriteUrl}#${icon.id}"></use></svg>
+    </div>
+    
+    <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${icon.id}', cls, hex);">
+        ${buildColorOptions()}
+    </select>
+
+    <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
+        <button class="download-btn" onclick="downloadSVG('${icon.id}', '${safeId}')">SVG</button>
+        
+        <div class="png-download-container" style="display: flex; flex: 1;">
+            <select id="size-${safeId}" style="border-radius: 4px 0 0 4px; border-right: none; padding: 4px; flex: 1;">
+                <option value="1024">1024</option>
+                <option value="512" selected>512</option>
+                <option value="256">256</option>
+                <option value="128">128</option>
+                <option value="64">64</option>
+                
             </select>
-            <div class="button-group">
-                <button class="download-btn" onclick="downloadSVG('${icon.id}', '${safeId}')">SVG</button>
-                <button class="download-btn" style="background:#474F50" onclick="downloadPNG('${icon.id}', '${safeId}')">PNG</button>
-            </div>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
-                <code id="code-${safeId}"></code>
-            </div>
-        `;
+            <button class="download-btn" 
+                    style="background:#474F50; border-radius: 0 4px 4px 0; padding: 4px 8px; flex: 1;" 
+                    onclick="downloadPNG('${icon.id}', '${safeId}')">
+                PNG
+            </button>
+        </div>
+    </div>
+
+    <div class="code-block">
+        <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+        <code id="code-${safeId}"></code>
+    </div>
+`;
         card.classList.remove('is-loading');
         updateIcon(icon.id, 'icon-blue', '#0072BC');
     }
@@ -682,34 +807,44 @@ ${content}
     }
 
     function downloadPNG(iconId, safeId) {
-        const select = document.querySelector(`select[data-safe-id="${safeId}"]`);
-        if (!select) return;
-        const [colorClass, colorHex] = select.value.split('|');
-        const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
-        if (!match) return;
+    // 1. Get the color info from the color select
+    const colorSelect = document.querySelector(`select[data-safe-id="${safeId}"]`);
+    if (!colorSelect) return;
+    const [colorClass, colorHex] = colorSelect.value.split('|');
 
-        const viewBox = match[0].match(/viewBox="([^"]*)"/)?.[1] || '0 0 110 110';
-        let cleanContent = match[1]
-            .replace(/<(\/?)ns[0-9]+:/g, '<$1')
-            .replace(/\s+ns[0-9]+:[a-z-]+="[^"]*"/gi, '')
-            .replace(/sketch:type="[^"]*"/gi, '')
-            .replace(/currentColor/g, colorHex);
+    // 2. Get the size from the NEW size select
+    const sizeSelect = document.getElementById(`size-${safeId}`);
+    const size = parseInt(sizeSelect.value) || 512;
 
-        const svgHeader = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="512" height="512">${cleanContent}</svg>`;
-        const canvas = document.createElement('canvas');
-        canvas.width = 512; canvas.height = 512;
-        const ctx = canvas.getContext('2d');
-        const img = new Image();
-        img.onload = function() {
-            ctx.clearRect(0, 0, 512, 512);
-            ctx.drawImage(img, 0, 0, 512, 512);
-            const a = document.createElement("a");
-            a.href = canvas.toDataURL("image/png");
-            a.download = `${iconId}_${colorClass}.png`;
-            a.click();
-        };
-        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgHeader)));
-    }
+    const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
+    if (!match) return;
+
+    const viewBox = match[0].match(/viewBox="([^"]*)"/)?.[1] || '0 0 110 110';
+    let cleanContent = match[1]
+        .replace(/<(\/?)ns[0-9]+:/g, '<$1')
+        .replace(/\s+ns[0-9]+:[a-z-]+="[^"]*"/gi, '')
+        .replace(/sketch:type="[^"]*"/gi, '')
+        .replace(/currentColor/g, colorHex);
+
+    // Use the dynamic size for width and height
+    const svgHeader = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="${size}" height="${size}">${cleanContent}</svg>`;
+    
+    const canvas = document.createElement('canvas');
+    canvas.width = size; 
+    canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+
+    img.onload = function() {
+        ctx.clearRect(0, 0, size, size);
+        ctx.drawImage(img, 0, 0, size, size);
+        const a = document.createElement("a");
+        a.href = canvas.toDataURL("image/png");
+        a.download = `${iconId}_${size}px_${colorClass}.png`;
+        a.click();
+    };
+    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgHeader)));
+}
 
     window.addEventListener('DOMContentLoaded', loadConfig);
 </script>
