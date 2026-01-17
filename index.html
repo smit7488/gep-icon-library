@@ -7,6 +7,8 @@
     <title>GEP Icon Guide</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <style>
         @font-face {
             font-family: "Azo Sans Regular";
@@ -132,6 +134,7 @@
 
         .type-badge.pictograph { background: #831A5B; color: #fff; }
         .type-badge.wireblock { background: #008996; color: #fff; }
+        .type-badge.background { background: #F28B00; color: #fff; }
 
         /* Skeleton Loading Animation */
         @keyframes pulse {
@@ -357,6 +360,41 @@
  
 }
 
+/* Full-width container for Backgrounds */
+.full-width-section {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.section-header {
+    width: 100%;
+    font-family: "Azo Sans Bold", sans-serif;
+    font-size: 24px;
+    color: #002F6E;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0072BC;
+}
+
+/* Wide card style for Backgrounds */
+.card-wide {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preview-area-wide {
+    height: 400px; /* Much taller for full backgrounds */
+    width: 100%;
+    background-color: #0072BC;
+    border-radius: 8px;
+    /* Mask properties remain dynamic in JS */
+}
 
 
 
@@ -434,6 +472,53 @@
 .icon-light-gray-2 { color: #E6E6E6; }
 .icon-black        { color: #000000; }
 .icon-white        { color: #FFFFFF; }
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #0072BC; /* Your brand blue */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0; /* Hidden by default */
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background-color: #005a96;
+  transform: translateY(-3px);
+}
+
+/* Using the Mask Method for the arrow icon */
+.icon-arrow {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Color of the arrow */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-8 8h5v8h6v-8h5z'/%3E%3C/svg%3E") no-repeat center;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-8 8h5v8h6v-8h5z'/%3E%3C/svg%3E") no-repeat center;
+  mask-size: contain;
+}
+
+
     </style>
 </head>
 
@@ -573,8 +658,15 @@
             </select>
         </div>
     </div>
+    <div id="background-section" class="full-width-section" style="display: none;">
+    <h2 class="section-header">Background Patterns (Full Width)</h2>
+    <div id="background-list"></div>
+</div>
 
     <div id="grid" class="grid"></div>
+    <button id="backToTop" class="back-to-top" title="Go to top">
+  <span class="icon-arrow"></span>
+</button>
 
     <script>
     let currentConfig = null;
@@ -601,14 +693,26 @@
         return text;
     }
 
-    function highlightCSS(css) {
-        let text = css.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        return text
-            .replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="hljs-comment">$1</span>')
-            .replace(/([\.#][a-z0-9-._ ]+)(?=[ {])/gi, '<span class="hljs-selector">$1</span>')
-            .replace(/([a-z-]+)(?=\s*:)/gi, '<span class="hljs-prop">$1</span>')
-            .replace(/:\s*([^;]+);/g, ': <span class="hljs-val">$1</span>;');
-    }
+function highlightCSS(css) {
+    // 1. Standard escape
+    let text = css.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    
+    return text
+        // Highlight Comments
+        .replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="hljs-comment">$1</span>')
+        
+        // 2. SELECTORS: Handle .class, #id, ::pseudo, and > (which is &gt;)
+        // We match strings followed by {
+        .replace(/([\.#a-z0-9-._: &;]+)(?=\s*\{)/gi, '<span class="hljs-selector">$1</span>')
+        
+        // 3. PROPERTIES: Only match lowercase words followed by : 
+        // that are NOT http/https and NOT part of a pseudo-selector
+        .replace(/(^|\n|\s|;)(?!(http|https|&gt;))([a-z-]+)(?=\s*:)/gi, '$1<span class="hljs-prop">$3</span>')
+        
+        // 4. VALUES: Match content between : and ; 
+        // Ensure we don't grab the "::" from selectors by checking for a preceding property-like word
+        .replace(/(?<=<span class="hljs-prop">[^<]+<\/span>\s*):\s*([^;]+);/g, ': <span class="hljs-val">$1</span>;');
+}
 
     // --- SYSTEM LOGIC ---
     async function loadConfig() {
@@ -651,7 +755,11 @@
         currentConfig.icons.forEach(i => { if(i.type) types.add(i.type); if(i.category) categories.add(i.category); });
         const tSel = document.getElementById('type-filter');
         const cSel = document.getElementById('category-filter');
-        types.forEach(t => tSel.innerHTML += `<option value="${t}">${t}</option>`);
+        types.forEach(t => {
+  const cap = t.charAt(0).toUpperCase() + t.slice(1);
+  tSel.innerHTML += `<option value="${t}">${cap}</option>`;
+});
+
         categories.forEach(c => cSel.innerHTML += `<option value="${c}">${c}</option>`);
         document.getElementById('filter-container').style.display = 'flex';
     }
@@ -670,80 +778,118 @@
     }
 
     function renderIcons(icons = currentConfig.icons) {
-        const grid = document.getElementById('grid');
-        grid.innerHTML = '';
-        observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    const card = e.target;
-                    const iconData = currentConfig.icons.find(i => i.id === card.dataset.id);
-                    loadActualContent(card, iconData);
-                    observer.unobserve(card);
-                }
-            });
-        }, { rootMargin: '300px' });
+    const grid = document.getElementById('grid');
+    const bgSection = document.getElementById('background-section');
+    const bgList = document.getElementById('background-list');
+    
+    grid.innerHTML = '';
+    bgList.innerHTML = '';
+    bgSection.style.display = 'none';
 
-        icons.forEach(i => {
-            const card = document.createElement('div');
-            const safeId = i.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+    icons.forEach(i => {
+        const card = document.createElement('div');
+        const safeId = i.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        card.dataset.id = i.id;
+        card.id = `card-${safeId}`;
+
+        if (i.type === 'background') {
+            bgSection.style.display = 'block';
+            card.className = 'card-wide is-loading';
+            bgList.appendChild(card);
+        } else {
             card.className = 'card is-loading';
-            card.dataset.id = i.id;
-            card.id = `card-${safeId}`;
-            // Placeholder includes badge area
-            card.innerHTML = `<div class="type-badge-wrapper"><div class="type-badge"></div><span class="label">${i.id}</span><div class="preview-area"></div><div class="code-block"></div></div>`;
             grid.appendChild(card);
-            observer.observe(card);
-        });
-    }
+        }
 
-    function loadActualContent(card, icon) {
-        const safeId = icon.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        // Standard placeholder
+        card.innerHTML = `<div class="preview-area"></div>`;
         
-        // 1. Create the lowercase class name (e.g., "business")
-    const typeClass = icon.type ? icon.type.toLowerCase() : 'general';
+        // Re-run the actual content loader immediately or via observer
+        loadActualContent(card, i);
+    });
+}
 
-        // CAPITALIZE TYPE
-        const typeDisplay = icon.type ? icon.type.charAt(0).toUpperCase() + icon.type.slice(1) : 'General';
 
-card.innerHTML = `
-    
-    <span class="label">${icon.id}</span>
-    <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
-    <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
-        <svg><use href="${currentConfig.spriteUrl}#${icon.id}"></use></svg>
-    </div>
-    
-    <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${icon.id}', cls, hex);">
-        ${buildColorOptions()}
-    </select>
 
-    <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
-        <button class="download-btn" onclick="downloadSVG('${icon.id}', '${safeId}')">SVG</button>
+    function loadActualContent(card, item) {
+        const safeId = item.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+        const isMask = item.type === 'background';
+        const typeClass = item.type ? item.type.toLowerCase() : 'general';
+        const typeDisplay = item.type ? item.type.charAt(0).toUpperCase() + item.type.slice(1) : 'General';
         
-        <div class="png-download-container" style="display: flex; flex: 1;">
-            <select id="size-${safeId}" style="border-radius: 4px 0 0 4px; border-right: none; padding: 4px; flex: 1;">
-                <option value="1024">1024</option>
-                <option value="512" selected>512</option>
-                <option value="256">256</option>
-                <option value="128">128</option>
-                <option value="64">64</option>
-                
-            </select>
-            <button class="download-btn" 
-                    style="background:#474F50; border-radius: 0 4px 4px 0; padding: 4px 8px; flex: 1;" 
-                    onclick="downloadPNG('${icon.id}', '${safeId}')">
-                PNG
-            </button>
+        if (isMask) {
+    card.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <div>
+                <span class="label" style="font-size: 1.2rem;">${item.id}</span>
+                <div class="type-badge background">Background Wireblock</div>
+            </div>
+            <div style="width: 300px;">
+                <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SELECT COLOR</label>
+                <select onchange="const [cls, hex] = this.value.split('|'); updateMask('${item.id}', cls, hex, '${item.path}');">
+                    ${buildColorOptions()}
+                </select>
+            </div>
         </div>
-    </div>
 
-    <div class="code-block">
-        <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
-        <code id="code-${safeId}"></code>
-    </div>
-`;
-        card.classList.remove('is-loading');
-        updateIcon(icon.id, 'icon-blue', '#0072BC');
+        <div class="preview-area-wide" id="preview-${safeId}" 
+             style="-webkit-mask: url('${item.path}') no-repeat center; 
+                    mask: url('${item.path}') no-repeat center; 
+                    mask-size: cover; 
+                    -webkit-mask-size: cover; 
+                    background-color: #0072BC;">
+        </div>
+        
+        <div class="code-block">
+            <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy CSS</button>
+            <code id="code-${safeId}"></code>
+        </div>
+        <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
+    `;
+    card.classList.remove('is-loading');
+    updateMask(item.id, 'icon-blue', '#0072BC', item.path);
+}
+
+        else {
+            // Render regular icon card
+            card.innerHTML = `
+                <span class="label">${item.id}</span>
+                <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
+                <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
+                    <svg><use href="${currentConfig.spriteUrl}#${item.id}"></use></svg>
+                </div>
+                
+                <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${item.id}', cls, hex);">
+                    ${buildColorOptions()}
+                </select>
+
+                <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
+                    <button class="download-btn" onclick="downloadSVG('${item.id}', '${safeId}')">SVG</button>
+                    
+                    <div class="png-download-container" style="display: flex; flex: 1;">
+                        <select id="size-${safeId}" style="border-radius: 4px 0 0 4px; border-right: none; padding: 4px; flex: 1;">
+                            <option value="1024">1024</option>
+                            <option value="512" selected>512</option>
+                            <option value="256">256</option>
+                            <option value="128">128</option>
+                            <option value="64">64</option>
+                        </select>
+                        <button class="download-btn" 
+                                style="background:#474F50; border-radius: 0 4px 4px 0; padding: 4px 8px; flex: 1;" 
+                                onclick="downloadPNG('${item.id}', '${safeId}')">
+                            PNG
+                        </button>
+                    </div>
+                </div>
+
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+                    <code id="code-${safeId}"></code>
+                </div>
+            `;
+            card.classList.remove('is-loading');
+            updateIcon(item.id, 'icon-blue', '#0072BC');
+        }
     }
 
     function buildColorOptions() {
@@ -768,6 +914,25 @@ card.innerHTML = `
             codeElement.innerHTML = highlightHTML(raw);
         }
     }
+    function updateMask(id, colorClass, hex, path) {
+    const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
+    const preview = document.getElementById(`preview-${safeId}`);
+    const codeElement = document.getElementById(`code-${safeId}`);
+
+    // Update the visual preview area
+    if (preview) {
+        preview.style.backgroundColor = hex;
+    }
+
+    // Update the code block with the correct CSS
+    if (codeElement) {
+        const cssCode = `.full-background {position: relative !important;overflow: hidden!important;z-index: 1!important;}
+        
+.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: ${hex}; /* ${colorClass} */opacity: 0.6; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
+.full-background > .maincontent {position: relative;z-index: 2;}`;
+        codeElement.innerHTML = highlightCSS(cssCode);
+    }
+}
 
     function copyToClipboard(id, btn) {
         const el = document.getElementById(id);
@@ -805,6 +970,22 @@ ${content}
         a.click();
         URL.revokeObjectURL(url);
     }
+
+    // Ensure you have a way to download the raw SVG even if it's not in the sprite
+function downloadMaskSVG(id, path) {
+    fetch(path)
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${id}.svg`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        });
+}
+
 
     function downloadPNG(iconId, safeId) {
     // 1. Get the color info from the color select
@@ -847,6 +1028,20 @@ ${content}
 }
 
     window.addEventListener('DOMContentLoaded', loadConfig);
+
+    const backToTopButton = document.querySelector("#backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 </body>
