@@ -7,7 +7,7 @@
     <title>GEP Icon Guide</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <style>
         @font-face {
@@ -28,6 +28,9 @@
         * {
             box-sizing: border-box;
         }
+
+        code span {
+            font-family: inherit !important;}
 
         body {
             font-family: 'Azo Sans Regular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -275,14 +278,7 @@
             line-height: 1.4;
             word-wrap: break-word;
         }
-        /* Syntax Highlighting Colors */
-.hljs-tag { color: #80cbc4; }       /* Tags: <svg, <use */
-.hljs-attr { color: #addb67; }      /* Attributes: class, href */
-.hljs-string { color: #ce9178; }    /* Values: "icon blue" */
-.hljs-comment { color: #6a9955; }   /* CSS Comments */
-.hljs-selector { color: #d7ba7d; }  /* CSS Selectors: .icon */
-.hljs-prop { color: #9cdcfe; }      /* CSS Props: color, fill */
-.hljs-val { color: #b5cea8; }       /* CSS Values: #0072BC */
+     
 
         .copy-btn {
             position: absolute;
@@ -519,6 +515,8 @@ html {
 }
 
 
+
+
     </style>
 </head>
 
@@ -677,42 +675,30 @@ html {
     // 1. CALCULATE DYNAMIC BASE PATH
     const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
 
-    // --- TOKENS-BASED HIGHLIGHTER ---
-    function highlightHTML(code) {
-        let text = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        const tokens = [];
-        const tokenMask = (val, cls) => {
-            const id = `___TOKEN_${tokens.length}___`;
-            tokens.push(`<span class="${cls}">${val}</span>`);
-            return id;
-        };
-        text = text.replace(/"([^"]*)"/g, (m, p1) => `"${tokenMask(p1, 'hljs-string')}"`);
-        text = text.replace(/\b([a-z-]+)(?==)/gi, (m, p1) => tokenMask(p1, 'hljs-attr'));
-        text = text.replace(/(&lt;\/?[a-z1-6]+|&gt;)/gi, (m, p1) => tokenMask(p1, 'hljs-tag'));
-        tokens.forEach((t, i) => { text = text.replace(`___TOKEN_${i}___`, t); });
-        return text;
-    }
-
-function highlightCSS(css) {
-    // 1. Standard escape
-    let text = css.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    function formatColorLabel(cls) {
+    // Remove 'icon-' prefix
+    let label = cls.replace('icon-', '');
     
-    return text
-        // Highlight Comments
-        .replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="hljs-comment">$1</span>')
+    // Handle tint variations (t1, t2, t3, t4)
+    const tintMatch = label.match(/-t(\d)$/);
+    if (tintMatch) {
+        label = label.replace(/-t\d$/, '');
+        const tintNumber = tintMatch[1];
         
-        // 2. SELECTORS: Handle .class, #id, ::pseudo, and > (which is &gt;)
-        // We match strings followed by {
-        .replace(/([\.#a-z0-9-._: &;]+)(?=\s*\{)/gi, '<span class="hljs-selector">$1</span>')
+        // Capitalize each word
+        label = label.split('-').map(word => 
+            word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
         
-        // 3. PROPERTIES: Only match lowercase words followed by : 
-        // that are NOT http/https and NOT part of a pseudo-selector
-        .replace(/(^|\n|\s|;)(?!(http|https|&gt;))([a-z-]+)(?=\s*:)/gi, '$1<span class="hljs-prop">$3</span>')
-        
-        // 4. VALUES: Match content between : and ; 
-        // Ensure we don't grab the "::" from selectors by checking for a preceding property-like word
-        .replace(/(?<=<span class="hljs-prop">[^<]+<\/span>\s*):\s*([^;]+);/g, ': <span class="hljs-val">$1</span>;');
+        return `${label} Tint ${tintNumber}`;
+    }
+    
+    // For non-tint colors, just capitalize
+    return label.split('-').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
 }
+
 
     // --- SYSTEM LOGIC ---
     async function loadConfig() {
@@ -738,7 +724,10 @@ function highlightCSS(css) {
             renderIcons();
 
             const masterCss = document.getElementById('master-css-code');
-            if (masterCss) masterCss.innerHTML = highlightCSS(masterCss.innerText);
+            if (masterCss) {
+    masterCss.className = 'language-css';
+    hljs.highlightElement(masterCss);
+}
             
         } catch (e) { console.error("Config load failed", e); }
     }
@@ -809,111 +798,142 @@ function highlightCSS(css) {
     });
 }
 
-
-
-    function loadActualContent(card, item) {
-        const safeId = item.id.replace(/[^a-zA-Z0-9-_]/g, '_');
-        const isMask = item.type === 'background';
-        const typeClass = item.type ? item.type.toLowerCase() : 'general';
-        const typeDisplay = item.type ? item.type.charAt(0).toUpperCase() + item.type.slice(1) : 'General';
-        
-        if (isMask) {
-    card.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
-            <div>
-                <span class="label" style="font-size: 1.2rem;">${item.id}</span>
-                <div class="type-badge background">Background Wireblock</div>
-            </div>
-            <div style="width: 300px;">
-                <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SELECT COLOR</label>
-                <select onchange="const [cls, hex] = this.value.split('|'); updateMask('${item.id}', cls, hex, '${item.path}');">
-                    ${buildColorOptions()}
-                </select>
-            </div>
-        </div>
-
-        <div class="preview-area-wide" id="preview-${safeId}" 
-             style="-webkit-mask: url('${item.path}') no-repeat center; 
-                    mask: url('${item.path}') no-repeat center; 
-                    mask-size: cover; 
-                    -webkit-mask-size: cover; 
-                    background-color: #0072BC;">
-        </div>
-        
-        <div class="code-block">
-            <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy CSS</button>
-            <code id="code-${safeId}"></code>
-        </div>
-        <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
-    `;
-    card.classList.remove('is-loading');
-    updateMask(item.id, 'icon-blue', '#0072BC', item.path);
-}
-
-        else {
-            // Render regular icon card
-            card.innerHTML = `
-                <span class="label">${item.id}</span>
-                <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
-                <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
-                    <svg><use href="${currentConfig.spriteUrl}#${item.id}"></use></svg>
+function loadActualContent(card, item) {
+    const safeId = item.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+    const isMask = item.type === 'background';
+    const typeClass = item.type ? item.type.toLowerCase() : 'general';
+    const typeDisplay = item.type ? item.type.charAt(0).toUpperCase() + item.type.slice(1) : 'General';
+    
+    if (isMask) {
+        card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <div>
+                    <span class="label" style="font-size: 1.2rem;">${item.id}</span>
+                    <div class="type-badge background">Background Wireblock</div>
                 </div>
-                
-                <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${item.id}', cls, hex);">
-                    ${buildColorOptions()}
-                </select>
-
-                <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
-                    <button class="download-btn" onclick="downloadSVG('${item.id}', '${safeId}')">SVG</button>
-                    
-                    <div class="png-download-container" style="display: flex; flex: 1;">
-                        <select id="size-${safeId}" style="border-radius: 4px 0 0 4px; border-right: none; padding: 4px; flex: 1;">
-                            <option value="1024">1024</option>
-                            <option value="512" selected>512</option>
-                            <option value="256">256</option>
-                            <option value="128">128</option>
-                            <option value="64">64</option>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="width: 200px;">
+                        <label style="font-size: 11px; font-weight: bold; color: #002F6E;">WIREBLOCK COLOR</label>
+                        <select onchange="const [cls, hex] = this.value.split('|'); updateMask('${item.id}', cls, hex, '${item.path}');">
+                            ${buildColorOptions()}
                         </select>
-                        <button class="download-btn" 
-                                style="background:#474F50; border-radius: 0 4px 4px 0; padding: 4px 8px; flex: 1;" 
-                                onclick="downloadPNG('${item.id}', '${safeId}')">
-                            PNG
-                        </button>
+                    </div>
+                    <div style="width: 200px;">
+                        <label style="font-size: 11px; font-weight: bold; color: #002F6E;">PREVIEW BG COLOR</label>
+                        <select onchange="updateMaskBackground('${safeId}', this.value);">
+                            ${buildColorOptions('icon-white')}
+                        </select>
                     </div>
                 </div>
+            </div>
 
-                <div class="code-block">
-                    <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
-                    <code id="code-${safeId}"></code>
+            <div id="preview-wrapper-${safeId}" style="background-color: #FFFFFF; border-radius: 8px; padding: 0;">
+                <div class="preview-area-wide" id="preview-${safeId}" 
+                     style="-webkit-mask: url('${item.path}') no-repeat center; 
+                            mask: url('${item.path}') no-repeat center; 
+                            mask-size: cover; 
+                            -webkit-mask-size: cover; 
+                            background-color: #0072BC;">
                 </div>
-            `;
-            card.classList.remove('is-loading');
-            updateIcon(item.id, 'icon-blue', '#0072BC');
-        }
+            </div>
+            
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy CSS</button>
+                <code id="code-${safeId}"></code>
+            </div>
+            <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
+        `;
+        card.classList.remove('is-loading');
+        updateMask(item.id, 'icon-blue', '#0072BC', item.path);
     }
+    else {
+        // Render regular icon card
+        card.innerHTML = `
+            <span class="label">${item.id}</span>
+            <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
+            <div class="preview-area" id="preview-${safeId}" style="color: #0072BC;">
+                <svg><use href="${currentConfig.spriteUrl}#${item.id}"></use></svg>
+            </div>
+            
+            <select data-safe-id="${safeId}" onchange="const [cls, hex] = this.value.split('|'); updateIcon('${item.id}', cls, hex);">
+                ${buildColorOptions()}
+            </select>
 
-    function buildColorOptions() {
-        let html = '';
-        for (const [group, colors] of Object.entries(currentConfig.colors)) {
-            html += `<optgroup label="${group}">`;
-            for (const [cls, hex] of Object.entries(colors)) {
-                html += `<option value="${cls}|${hex}" ${cls==='icon-blue'?'selected':''}>${cls}</option>`;
-            }
-            html += '</optgroup>';
-        }
-        return html;
-    }
+            <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
+                <button class="download-btn" onclick="downloadSVG('${item.id}', '${safeId}')">SVG</button>
+                
+                <div class="png-download-container" style="display: flex; flex: 1;">
+                    <select id="size-${safeId}" style="border-radius: 4px 0 0 4px; border-right: none; padding: 4px; flex: 1;">
+                        <option value="1024">1024</option>
+                        <option value="512" selected>512</option>
+                        <option value="256">256</option>
+                        <option value="128">128</option>
+                        <option value="64">64</option>
+                    </select>
+                    <button class="download-btn" 
+                            style="background:#474F50; border-radius: 0 4px 4px 0; padding: 4px 8px; flex: 1;" 
+                            onclick="downloadPNG('${item.id}', '${safeId}')">
+                        PNG
+                    </button>
+                </div>
+            </div>
 
-    function updateIcon(id, cls, hex) {
-        const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
-        const preview = document.getElementById(`preview-${safeId}`);
-        if (preview) preview.style.color = hex;
-        const codeElement = document.getElementById(`code-${safeId}`);
-        if (codeElement) {
-            const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
-            codeElement.innerHTML = highlightHTML(raw);
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+                <code id="code-${safeId}"></code>
+            </div>
+        `;
+        card.classList.remove('is-loading');
+        updateIcon(item.id, 'icon-blue', '#0072BC');
+    }
+}
+
+// Update buildColorOptions to accept a default selection parameter
+function buildColorOptions(defaultSelection = 'icon-blue') {
+    let html = '';
+    for (const [group, colors] of Object.entries(currentConfig.colors)) {
+        html += `<optgroup label="${group}">`;
+        for (const [cls, hex] of Object.entries(colors)) {
+            const displayLabel = formatColorLabel(cls);
+            const isSelected = cls === defaultSelection ? 'selected' : '';
+            html += `<option value="${cls}|${hex}" ${isSelected}>${displayLabel}</option>`;
+        }
+        html += '</optgroup>';
+    }
+    return html;
+}
+
+// Add this new function to update the background wrapper color
+function updateMaskBackground(safeId, colorValue) {
+    const [colorClass, hex] = colorValue.split('|');
+    const wrapper = document.getElementById(`preview-wrapper-${safeId}`);
+    if (wrapper) {
+        wrapper.style.backgroundColor = hex;
+    }
+}
+
+
+function updateIcon(id, cls, hex) {
+    const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
+    const preview = document.getElementById(`preview-${safeId}`);
+    if (preview) preview.style.color = hex;
+    
+    const codeElement = document.getElementById(`code-${safeId}`);
+    if (codeElement) {
+        const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
+        
+        // Remove existing highlighting classes before re-highlighting
+        codeElement.className = '';
+        codeElement.removeAttribute('data-highlighted');
+        codeElement.textContent = raw; 
+        codeElement.className = 'language-xml';
+        
+        // Re-apply syntax highlighting
+        if (typeof hljs !== 'undefined') {
+            hljs.highlightElement(codeElement);
         }
     }
+}
     function updateMask(id, colorClass, hex, path) {
     const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
     const preview = document.getElementById(`preview-${safeId}`);
@@ -926,11 +946,20 @@ function highlightCSS(css) {
 
     // Update the code block with the correct CSS
     if (codeElement) {
-        const cssCode = `.full-background {position: relative !important;overflow: hidden!important;z-index: 1!important;}
-        
-.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: ${hex}; /* ${colorClass} */opacity: 0.6; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
+        const cssCode = `.full-background {position: relative !important;overflow: hidden!important;z-index: 1!important;}     
+.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: ${hex}; /* ${colorClass} */opacity: 1; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
 .full-background > .maincontent {position: relative;z-index: 2;}`;
-        codeElement.innerHTML = highlightCSS(cssCode);
+        
+        // Remove existing highlighting before re-highlighting
+        codeElement.className = '';
+        codeElement.removeAttribute('data-highlighted');
+        codeElement.textContent = cssCode;
+        codeElement.className = 'language-css';
+        
+        // Re-apply syntax highlighting
+        if (typeof hljs !== 'undefined') {
+            hljs.highlightElement(codeElement);
+        }
     }
 }
 
