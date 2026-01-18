@@ -16,29 +16,63 @@ def create_gep_sprite_system():
 
     # GEP Color Library
     color_map = {
-        "Primary Blues": {
-            "icon-blue": "#0072BC", "icon-blue-t4": "#80B9DE", "icon-blue-t3": "#B3D5EB", 
-            "icon-blue-t2": "#E6F1F9", "icon-blue-t1": "#F5F9FC",
-            "icon-dark-blue": "#002F6E", "icon-dark-blue-t4": "#8098B7", "icon-dark-blue-t3": "#B3C1D4", 
-            "icon-dark-blue-t2": "#E6EBF1", "icon-dark-blue-t1": "#F5F7F9",
-            "icon-light-blue": "#3DB5E6", "icon-light-blue-t4": "#9FDBF3", "icon-light-blue-t3": "#C5E9F8", 
-            "icon-light-blue-t2": "#ECF8FD", "icon-light-blue-t1": "#F7FCFE"
-        },
-        "Brand Accents": {
-            "icon-green": "#008996", "icon-green-t4": "#80C5CB", "icon-green-t3": "#B3DCE0", 
-            "icon-green-t2": "#E6F4F5", "icon-green-t1": "#F5FAFB",
-            "icon-red": "#ED1C24", "icon-red-t4": "#F7BE92", "icon-red-t3": "#FABBB0", 
-            "icon-red-t2": "#FEE9EA", "icon-red-t1": "#FFF6F6",
-            "icon-orange": "#F28B00", "icon-orange-t4": "#FFFAF5", "icon-orange-t3": "#FEF4E6", 
-            "icon-orange-t2": "#FBDCB3", "icon-orange-t1": "#F9C680",
-            "icon-violet": "#831A5B", "icon-violet-t4": "#C2BDAE", "icon-violet-t3": "#DABACE", 
-            "icon-violet-t2": "#F3E9EF", "icon-violet-t1": "#FAF6F8"
-        },
-        "Neutrals": {
-            "icon-dark-gray": "#474F50", "icon-gray": "#6B6F70", "icon-light-gray-1": "#F7F7F6", 
-            "icon-light-gray-2": "#E6E6E6", "icon-black": "#000000", "icon-white": "#FFFFFF"
-        }
+      "Quick Colors: Primary": {
+      "icon-blue": "#0072BC",
+      "icon-dark-blue": "#002F6E",
+      "icon-light-blue": "#3DB5E6",
+      "icon-green": "#008996",
+      "icon-red": "#ED1C24",
+      "icon-orange": "#F28B00",
+      "icon-violet": "#831A5B"
+    },
+    "Primary Blues": {
+      "icon-blue": "#0072BC",
+      "icon-blue-t4": "#80B9DE",
+      "icon-blue-t3": "#B3D5EB",
+      "icon-blue-t2": "#E6F1F9",
+      "icon-blue-t1": "#F5F9FC",
+      "icon-dark-blue": "#002F6E",
+      "icon-dark-blue-t4": "#8098B7",
+      "icon-dark-blue-t3": "#B3C1D4",
+      "icon-dark-blue-t2": "#E6EBF1",
+      "icon-dark-blue-t1": "#F5F7F9",
+      "icon-light-blue": "#3DB5E6",
+      "icon-light-blue-t4": "#9FDBF3",
+      "icon-light-blue-t3": "#C5E9F8",
+      "icon-light-blue-t2": "#ECF8FD",
+      "icon-light-blue-t1": "#F7FCFE"
+    },
+    "Brand Accents": {
+      "icon-green": "#008996",
+      "icon-green-t4": "#80C5CB",
+      "icon-green-t3": "#B3DCE0",
+      "icon-green-t2": "#E6F4F5",
+      "icon-green-t1": "#F5FAFB",
+      "icon-red": "#ED1C24",
+      "icon-red-t4": "#F78E92",
+      "icon-red-t3": "#FABBB0",
+      "icon-red-t2": "#FEE9EA",
+      "icon-red-t1": "#FFF6F6",
+      "icon-orange": "#F28B00",
+      "icon-orange-t1": "#FFFAF5",
+      "icon-orange-t2": "#FEF4E6",
+      "icon-orange-t3": "#FBDCB3",
+      "icon-orange-t4": "#F9C680",
+      "icon-violet": "#831A5B",
+      "icon-violet-t4": "#C28DAE",
+      "icon-violet-t3": "#DABACE",
+      "icon-violet-t2": "#F3E9EF",
+      "icon-violet-t1": "#FAF6F8"
+    },
+    "Neutrals": {
+      "icon-dark-gray": "#474F50",
+      "icon-gray": "#6B6F70",
+      "icon-light-gray-1": "#F7F7F6",
+      "icon-light-gray-2": "#E6E6E6",
+      "icon-black": "#000000",
+      "icon-white": "#FFFFFF"
     }
+  }
 
     sprite_root = ET.Element("svg", {"xmlns": "http://www.w3.org/2000/svg", "style": "display: none;"})
     icon_metadata = []
