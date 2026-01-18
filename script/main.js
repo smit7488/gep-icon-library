@@ -358,7 +358,7 @@ function loadActualContent(card, item) {
                 <div id="preview-bg-${safeId}" class="preview-full-background" style="position: relative; overflow: hidden; z-index: 1; height: 100%; width: 100%;">
                     <div class="preview-maincontent" style="position: relative; z-index: 2; padding: 40px; color: #002F6E;">
                         <h3 style="margin: 0 0 10px 0;">Preview</h3>
-                        <p style="margin: 0; opacity: 0.7;">This shows how the wireblock will appear as a background element on your page.</p>
+                        <p style="margin: 0; opacity: 0.7;">This shows how the wireblock will appear as a background element in the ContentHero component.</p>
                     </div>
                 </div>
             </div>
@@ -380,11 +380,11 @@ function loadActualContent(card, item) {
                     <div>
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">HORIZONTAL</label>
-                            <input type="number" id="h-pos-input-${safeId}" min="-100" max="100" value="10"
+                            <input type="number" id="h-pos-input-${safeId}" min="-300" max="300" value="10"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
                         </div>
-                        <input type="range" id="h-pos-${safeId}" min="-100" max="100" value="10" step="1"
+                        <input type="range" id="h-pos-${safeId}" min="-300" max="300" value="10" step="1"
                                oninput="updateMaskPosition('${safeId}')" 
                                style="width: 100%;">
                     </div>
@@ -392,16 +392,26 @@ function loadActualContent(card, item) {
                     <div>
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">VERTICAL</label>
-                            <input type="number" id="v-pos-input-${safeId}" min="-100" max="100" value="-25"
+                            <input type="number" id="v-pos-input-${safeId}" min="-300" max="300" value="-25"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
                         </div>
-                        <input type="range" id="v-pos-${safeId}" min="-100" max="100" value="-25" step="1"
+                        <input type="range" id="v-pos-${safeId}" min="-300" max="300" value="-25" step="1"
                                oninput="updateMaskPosition('${safeId}')" 
                                style="width: 100%;">
                     </div>
                 </div>
-                
+                <div style="margin-bottom: 15px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <label style="font-size: 11px; font-weight: bold; color: #002F6E;">ROTATION</label>
+        <input type="number" id="rotation-input-${safeId}" min="-180" max="180" value="0"
+               oninput="updateMaskRotationFromInput('${safeId}')"
+               style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+    </div>
+    <input type="range" id="rotation-${safeId}" min="-180" max="180" value="0" step="1"
+           oninput="updateMaskRotation('${safeId}')" 
+           style="width: 100%;">
+</div>
                 <div style="margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">OPACITY</label>
@@ -422,6 +432,7 @@ function loadActualContent(card, item) {
                     </label>
                 </div>
             </div>
+            <p class="small mb-0">Put the following CSS into a RichText component within a style tag at the top of your page in Sitecore to apply the background wireblock mask:</p>
 
             <div class="code-block">
                 <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">
@@ -633,9 +644,10 @@ function updateMask(id, colorClass, hex, path) {
     const hPos = document.getElementById(`h-pos-${safeId}`)?.value || '10';
     const vPos = document.getElementById(`v-pos-${safeId}`)?.value || '-25';
     const opacity = document.getElementById(`opacity-${safeId}`)?.value || '60';
+    const rotation = document.getElementById(`rotation-${safeId}`)?.value || '0';
     const hideMobile = document.getElementById(`hide-mobile-${safeId}`)?.checked || false;
 
-    // Create or update the dynamic style element for this specific preview
+    // Create or update the dynamic style element
     let styleEl = document.getElementById(`style-${safeId}`);
     if (!styleEl) {
         styleEl = document.createElement('style');
@@ -643,7 +655,10 @@ function updateMask(id, colorClass, hex, path) {
         document.head.appendChild(styleEl);
     }
 
-    // Update the preview with dynamic CSS that matches the output exactly
+    // Calculate transform origin (center of the element)
+    const transformOrigin = '50% 50%';
+
+    // Update the preview with dynamic CSS
     styleEl.textContent = `
         #preview-bg-${safeId}::before {
             content: "" !important;
@@ -662,14 +677,21 @@ function updateMask(id, colorClass, hex, path) {
             -webkit-mask-position: center right !important;
             mask-size: contain !important;
             -webkit-mask-size: contain !important;
+            transform: rotate(${rotation}deg) !important;
+            transform-origin: ${transformOrigin} !important;
             z-index: -1 !important;
             pointer-events: none !important;
         }
     `;
 
-    // Update the code block with the correct CSS
+    // Update the code block
     if (codeElement) {
-        let cssCode = `.full-background {
+        let cssCode = `
+/* If you have multiple ContentHero components on a page, make sure to adjust the selector accordingly */
+/* You can do this with section[id="db81b8ce-daf1-49c9-9ad0-87c5ed96291c"] .full-background ---- where the id is the actual id of the component*/
+
+
+.full-background {
   position: relative !important;
   overflow: hidden !important;
   z-index: 1 !important;
@@ -684,6 +706,8 @@ function updateMask(id, colorClass, hex, path) {
     height: ${scale}% !important;
     background-color: ${hex};
     opacity: ${parseFloat(opacity) / 100};
+    transform: rotate(${rotation}deg);
+    transform-origin: center center;
     mask-image: url('${path}') !important;
     -webkit-mask-image: url('${path}') !important;
     mask-repeat: no-repeat !important;
@@ -701,7 +725,6 @@ function updateMask(id, colorClass, hex, path) {
   z-index: 2;
 }`;
 
-        // Add mobile hide CSS if checked
         if (hideMobile) {
             cssCode += `
 
@@ -712,13 +735,11 @@ function updateMask(id, colorClass, hex, path) {
 }`;
         }
         
-        // Remove existing highlighting before re-highlighting
         codeElement.className = '';
         codeElement.removeAttribute('data-highlighted');
         codeElement.textContent = cssCode;
         codeElement.className = 'language-css';
         
-        // Re-apply syntax highlighting
         if (typeof hljs !== 'undefined') {
             hljs.highlightElement(codeElement);
         }
@@ -794,6 +815,35 @@ function updateMaskPositionFromInput(safeId) {
     // Sync sliders with inputs
     hSlider.value = hValue;
     vSlider.value = vValue;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskRotation(safeId) {
+    const slider = document.getElementById(`rotation-${safeId}`);
+    const input = document.getElementById(`rotation-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Sync input with slider
+    input.value = slider.value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskRotationFromInput(safeId) {
+    const slider = document.getElementById(`rotation-${safeId}`);
+    const input = document.getElementById(`rotation-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Clamp value to valid range
+    let value = parseInt(input.value) || 0;
+    value = Math.max(-180, Math.min(180, value));
+    input.value = value;
+    
+    // Sync slider with input
+    slider.value = value;
     
     // Trigger CSS update
     updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
