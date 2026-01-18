@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105" fill="none" stroke="currentColor" stroke-width="2">
+<ns0:path d="M90.4406 61.6481C98.3891 69.5966 98.3891 82.4922 90.4406 90.4407C82.4922 98.3891 69.5966 98.3891 61.6481 90.4407L90.4406 61.6481Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M43.2724 90.4407C35.3239 98.3891 22.4283 98.3891 14.4799 90.4407C6.5314 82.4922 6.5314 69.5966 14.4799 61.6481L43.2724 90.4407Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M14.4799 43.2724C6.5314 35.3239 6.5314 22.4283 14.4799 14.4799C22.4283 6.5314 35.3239 6.5314 43.2724 14.4799L14.4799 43.2724Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M61.6481 14.4799C69.5966 6.5314 82.4922 6.5314 90.4407 14.4799C98.3891 22.4283 98.3891 35.3239 90.4407 43.2724L61.6481 14.4799Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M52.5 5C47.2222 28.75 28.75 47.2222 5 52.5C28.75 57.7778 47.2222 76.25 52.5 100C57.7778 76.25 76.25 57.7778 100 52.5C76.25 47.2222 57.7778 28.75 52.5 5Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M52.5 71C62.7173 71 71 62.7173 71 52.5C71 42.2827 62.7173 34 52.5 34C42.2827 34 34 42.2827 34 52.5C34 62.7173 42.2827 71 52.5 71Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+</ns0:svg>

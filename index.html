@@ -7,8 +7,8 @@
     <title>GEP Icon Guide</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<script src="./script/highlight.js"></script>
     <style>
         @font-face {
             font-family: "Azo Sans Regular";
@@ -42,8 +42,12 @@
 
         .header {
             background: #002F6E;
+background: -webkit-linear-gradient(90deg, rgba(0, 47, 110, 1) 0%, rgba(0, 114, 188, 1) 100%);
+background: -moz-linear-gradient(90deg, rgba(0, 47, 110, 1) 0%, rgba(0, 114, 188, 1) 100%);
+background: linear-gradient(90deg, rgba(0, 47, 110, 1) 0%, rgba(0, 114, 188, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002F6E", endColorstr="#0072BC", GradientType=1);
             color: white;
-            padding: 1rem;
+           
             border-radius: 12px;
             margin-bottom: 40px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -206,6 +210,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: wrap;
+             word-wrap: break-word;  /* allows long words to break */
+  overflow-wrap: break-word; /* modern standard */
+  white-space: normal;    
+  hyphens: none;          /* prevents automatic hyphen insertion */
         }
 
         select {
@@ -280,23 +288,60 @@
         }
      
 
-        .copy-btn {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: #0072BC;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            font-size: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            z-index: 10;
-        }
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #0072BC;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+    
+    /* Animation & Layout */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        .copy-btn:hover {
-            background: #005a96;
-        }
+.copy-btn:hover {
+    background: #005a96;
+}
+
+/* THE CHECKMARK ICON */
+.checkmark-svg {
+    width: 12px;
+    height: 12px;
+    display: none; /* Hidden until copied */
+    stroke: white;
+    stroke-width: 4;
+    fill: none;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+}
+
+/* SUCCESS STATE */
+.copy-btn.copied {
+    background-color: #28a745 !important;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.copy-btn.copied .checkmark-svg {
+    display: block;
+    animation: drawCheck 0.4s ease forwards;
+}
+
+/* DRAWING ANIMATION */
+@keyframes drawCheck {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 
         .loading {
             text-align: center;
@@ -442,14 +487,14 @@
 
 /* RED */
 .icon-red    { color: #ED1C24; }
-.icon-red-t4 { color: #F7BE92; }
+.icon-red-t4 { color: #F78E92; }
 .icon-red-t3 { color: #FABBB0; }
 .icon-red-t2 { color: #FEE9EA; }
 .icon-red-t1 { color: #FFF6F6; }
 
 /* VIOLET */
 .icon-violet    { color: #831A5B; }
-.icon-violet-t4 { color: #C2BDAE; }
+.icon-violet-t4 { color: #C28DAE; }
 .icon-violet-t3 { color: #DABACE; }
 .icon-violet-t2 { color: #F3E9EF; }
 .icon-violet-t1 { color: #FAF6F8; }
@@ -692,31 +737,31 @@ html {
 .reset-link:hover {
     color: #002F6E;
 }
+
+
+.full-background {position: relative !important;overflow: hidden!important;z-index: 1!important; display: flex; width: 100%; height: 100%;}     
+.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: #0072BC; /* icon-blue */opacity: .6; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
+.full-background > .maincontent {position: relative;z-index: 2;}
+
+pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}
+
+
+
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="container-lg" style="max-width: 1400px">
-        <div class="row g-3 pt-2 mt-3 mb-5">
+        <div class="full-background">
+        <div class="container-lg mt-4 mb-4" style="max-width: 1400px">
+        <div class="row g-3 p-5 mt-3 mb-5">
             <div class="col-12 col-sm-6 p-2 d-flex flex-column justify-content-center" style="z-index: 1">
                 <h1>GEP Icon Guide &amp; Generator</h1>
                 <p id="sprite-info">Loading sprite information...</p>
             </div>
 
             <div class="col-12 col-sm-6 p-2">
-                <svg class="icon icon-blue" style="
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    opacity: 0.6;
-">
-  <use href="./dist/hs-icons-master.svg#Business_Administration"></use>
-</svg>
+     
                    <label
                         style="font-size: 11px; text-transform: uppercase; color: #fff; margin-bottom: 5px; display: block; opacity: 0.8;">
                         Master System CSS
@@ -772,24 +817,24 @@ html {
 
 /* RED */
 .icon-red    { color: #ED1C24; }
-.icon-red-t4 { color: #F7BE92; }
+.icon-red-t4 { color: #F78E92; }
 .icon-red-t3 { color: #FABBB0; }
 .icon-red-t2 { color: #FEE9EA; }
 .icon-red-t1 { color: #FFF6F6; }
 
 /* VIOLET */
 .icon-violet    { color: #831A5B; }
-.icon-violet-t4 { color: #C2BDAE; }
+.icon-violet-t4 { color: #C28DAE; }
 .icon-violet-t3 { color: #DABACE; }
 .icon-violet-t2 { color: #F3E9EF; }
 .icon-violet-t1 { color: #FAF6F8; }
 
 /* ORANGE */
 .icon-orange    { color: #F28B00; }
-.icon-orange-t1 { color: #FFFAF5; }
-.icon-orange-t2 { color: #FEF4E6; }
-.icon-orange-t3 { color: #FBDCB3; }
-.icon-orange-t4 { color: #F9C680; }
+.icon-orange-t4 { color: #FFFAF5; }
+.icon-orange-t3 { color: #FEF4E6; }
+.icon-orange-t2 { color: #FBDCB3; }
+.icon-orange-t1 { color: #F9C680; }
 
 /* GRAYSCALE */
 .icon-dark-gray    { color: #474F50; }
@@ -801,7 +846,7 @@ html {
                 </div>
             </div>
         </div>
-    </div></div>
+    </div></div></div>
 
     <div class="controls" hidden>
         <label for="config-file">Config File (relative to this HTML file):</label>
@@ -1146,15 +1191,15 @@ function loadActualContent(card, item) {
                     </div>
                     <div style="width: 200px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E; display: block; margin-bottom: 4px;">PREVIEW BG COLOR</label>
-                        ${createColorPicker(safeId, 'background', 'icon-white', 'updateMaskBackground')}
+                        ${createColorPicker(safeId, 'background', 'icon-blue-t1', 'updateMaskBackground')}
                     </div>
                 </div>
             </div>
 
-            <div id="preview-wrapper-${safeId}" style="background-color: #FFFFFF; border-radius: 8px; padding: 0;">
+            <div id="preview-wrapper-${safeId}" style="background-color: #F5F9FC; border-radius: 8px; padding: 0;">
                 <div class="preview-area-wide" id="preview-${safeId}" 
-                     style="-webkit-mask: url('${item.path}') no-repeat center; 
-                            mask: url('${item.path}') no-repeat center; 
+                     style="-webkit-mask: url('https://assets.henryschein.com/${item.id}.svg') no-repeat center; 
+                            mask: url('https://assets.henryschein.com/${item.id}.svg') no-repeat center; 
                             mask-size: cover; 
                             -webkit-mask-size: cover; 
                             background-color: #0072BC;">
@@ -1162,7 +1207,10 @@ function loadActualContent(card, item) {
             </div>
             
             <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy CSS</button>
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">
+    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span class="btn-text">Copy CSS</span>
+</button>
                 <code id="code-${safeId}"></code>
             </div>
             <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
@@ -1205,7 +1253,10 @@ function loadActualContent(card, item) {
             </div>
 
             <div class="code-block">
-                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">Copy</button>
+                <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">
+    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span class="btn-text">Copy</span>
+</button>
                 <code id="code-${safeId}"></code>
             </div>
         `;
@@ -1386,14 +1437,63 @@ function updateIcon(id, cls, hex) {
     }
 }
 
-    function copyToClipboard(id, btn) {
-        const el = document.getElementById(id);
-        navigator.clipboard.writeText(el.innerText).then(() => {
-            const old = btn.innerText;
-            btn.innerText = "Copied!";
-            setTimeout(() => btn.innerText = old, 1500);
+function copyToClipboard(id, btn) {
+    const el = document.getElementById(id);
+    const textToCopy = el.innerText;
+
+    // 1. Try the modern Navigator API
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            handleCopySuccess(btn);
+        }).catch(err => {
+            console.error('Modern copy failed, trying fallback', err);
+            fallbackCopy(textToCopy, btn);
         });
+    } else {
+        // 2. Fallback for non-HTTPS or older browsers
+        fallbackCopy(textToCopy, btn);
     }
+}
+
+// Fallback using a hidden textarea
+function fallbackCopy(text, btn) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    
+    // Ensure textarea is not visible but part of the DOM
+    textArea.style.position = "fixed";
+    textArea.style.left = "-9999px";
+    textArea.style.top = "0";
+    document.body.appendChild(textArea);
+    
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            handleCopySuccess(btn);
+        } else {
+            console.error('Fallback copy failed');
+        }
+    } catch (err) {
+        console.error('Fallback copy error', err);
+    }
+
+    document.body.removeChild(textArea);
+}
+
+// Helper to handle the button UI change
+function handleCopySuccess(btn) {
+    const oldText = btn.innerText;
+    btn.innerText = "Copied!";
+    btn.classList.add('copied'); // Optional: add a class for CSS styling
+    
+    setTimeout(() => {
+        btn.innerText = oldText;
+        btn.classList.remove('copied');
+    }, 1500);
+}
 
     function downloadSVG(iconId, safeId) {
     if (!spriteText) return;

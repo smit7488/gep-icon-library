@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+<ns0:path d="M84.9792 2L34.8333 30.9531V88.8594L84.9792 117.812V2Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M42.8594 99.276L76.9531 79.5938V40.2188L42.8594 20.5365V99.276Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M117.812 84.9792L88.8594 34.8333H30.9531L2 84.9792H117.812Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M20.5365 42.8542L40.2188 76.9531H79.5938L99.276 42.8542H20.5365Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+</ns0:svg>

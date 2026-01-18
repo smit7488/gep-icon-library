@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144" fill="none" stroke="currentColor" stroke-width="2">
+<ns0:rect width="144" height="144" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" />
+<ns0:path d="M72 128C102.928 128 128 102.928 128 72C128 41.0721 102.928 16 72 16C41.0721 16 16 41.0721 16 72C16 82.9382 19.136 93.1439 24.558 101.767L18.0801 125.943L44.1675 120.605C52.3664 125.31 61.869 128 72 128Z" stroke="currentColor" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" />
+</ns0:svg>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="90" height="94" viewBox="0 0 90 94" fill="none" stroke="currentColor" stroke-width="2">
+<ns0:path d="M88.1132 49.4693C88.1132 73.5097 68.6228 92.9948 44.5825 92.9948C20.5422 92.9948 1.05182 73.5097 1.05182 49.4693H88.1132ZM1 1H88.1132V12.5356C88.1132 26.8075 76.5413 38.3742 62.2746 38.3742H1V1Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+<ns0:path d="M1 44.5307C1 20.4852 20.4852 1 44.5255 1C68.571 1 88.0613 20.4852 88.0613 44.5307H1ZM88.1132 93H1V81.4592C1 67.1874 12.5667 55.6206 26.8386 55.6206H88.0613L88.1132 93Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" fill="none" vector-effect="non-scaling-stroke" />
+</ns0:svg>
