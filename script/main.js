@@ -1,12 +1,13 @@
 let currentConfig = null;
-    let spriteText = '';
-    let observer = null;
-    let debounceTimer;
+let spriteText = '';
+let observer = null;
+let debounceTimer;
+let currentTab = 'pictograph'; // Track current tab - default to Pictographs
 
-    // 1. CALCULATE DYNAMIC BASE PATH
-    const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+// 1. CALCULATE DYNAMIC BASE PATH
+const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
 
-    function formatColorLabel(cls) {
+function formatColorLabel(cls) {
     // Remove 'icon-' prefix
     let label = cls.replace('icon-', '');
     
@@ -30,66 +31,102 @@ let currentConfig = null;
     ).join(' ');
 }
 
+// --- SYSTEM LOGIC ---
+async function loadConfig() {
+    const configFile = document.getElementById('config-file').value;
+    try {
+        const response = await fetch(configFile);
+        currentConfig = await response.json();
 
-    // --- SYSTEM LOGIC ---
-    async function loadConfig() {
-        const configFile = document.getElementById('config-file').value;
-        try {
-            const response = await fetch(configFile);
-            currentConfig = await response.json();
-
-            if (currentConfig.spriteUrl.startsWith('.')) {
-                currentConfig.spriteUrl = currentConfig.spriteUrl.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
-            }
-            if (currentConfig.spriteFile.startsWith('.')) {
-                currentConfig.spriteFile = currentConfig.spriteFile.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
-            }
-            
-            document.getElementById('sprite-info').innerHTML = `
+        if (currentConfig.spriteUrl.startsWith('.')) {
+            currentConfig.spriteUrl = currentConfig.spriteUrl.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
+        }
+        if (currentConfig.spriteFile.startsWith('.')) {
+            currentConfig.spriteFile = currentConfig.spriteFile.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
+        }
+        
+        const spriteInfo = document.getElementById('sprite-info');
+        if (spriteInfo) {
+            spriteInfo.innerHTML = `
               
                 Sprite URL: <a href="${currentConfig.spriteUrl}">${currentConfig.spriteUrl}</a>
             `;
+        }
 
-            await loadSprite();
-            setupFilters();
-            renderIcons();
+        // INITIALIZE GLOBAL LIST
+        filteredIconsGlobal = currentConfig.icons;
 
-            const masterCss = document.getElementById('master-css-code');
-            if (masterCss) {
-    masterCss.className = 'language-css';
-    hljs.highlightElement(masterCss);
+        await loadSprite();
+        setupFilters();
+        
+        // Show tab navigation immediately
+        const tabNav = document.getElementById('tab-navigation');
+        if (tabNav) {
+            tabNav.style.display = 'flex';
+        }
+        
+        // Make sure the correct tab is active on load
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Set pictograph as active
+        const pictographBtn = document.querySelector('.tab-btn');
+        if (pictographBtn) pictographBtn.classList.add('active');
+        
+        const pictographTab = document.getElementById('pictograph-tab');
+        if (pictographTab) pictographTab.classList.add('active');
+        
+        // Initial render for the default tab (pictograph)
+        filterIcons();
+
+        const masterCss = document.getElementById('master-css-code');
+        if (masterCss && typeof hljs !== 'undefined') {
+            masterCss.className = 'language-css';
+            hljs.highlightElement(masterCss);
+        }
+        
+    } catch (e) { 
+        console.error("Config load failed", e);
+        const errorContainer = document.getElementById('error-container');
+        if (errorContainer) {
+            errorContainer.innerHTML = `<div style="color: red; padding: 20px;">Error loading config: ${e.message}</div>`;
+        }
+    }
 }
-            
-        } catch (e) { console.error("Config load failed", e); }
-    }
 
-    async function loadSprite() {
-        const response = await fetch(currentConfig.spriteFile);
-        spriteText = await response.text();
-        document.getElementById('sprite-container').innerHTML = spriteText;
-    }
+async function loadSprite() {
+    const response = await fetch(currentConfig.spriteFile);
+    spriteText = await response.text();
+    document.getElementById('sprite-container').innerHTML = spriteText;
+}
 
-    function setupFilters() {
-        const types = new Set();
-        const categories = new Set();
-        currentConfig.icons.forEach(i => { if(i.type) types.add(i.type); if(i.category) categories.add(i.category); });
-        const tSel = document.getElementById('type-filter');
-        const cSel = document.getElementById('category-filter');
-        types.forEach(t => {
-  const cap = t.charAt(0).toUpperCase() + t.slice(1);
-  tSel.innerHTML += `<option value="${t}">${cap}</option>`;
-});
-
-        categories.forEach(c => cSel.innerHTML += `<option value="${c}">${c}</option>`);
-        document.getElementById('filter-container').style.display = 'flex';
-    }
-
+function setupFilters() {
+    const categories = new Set();
+    currentConfig.icons.forEach(i => { if(i.category) categories.add(i.category); });
+    const cSel = document.getElementById('category-filter');
+    
+    // Clear existing options except "All Categories"
+    cSel.innerHTML = '<option value="all">All Categories</option>';
+    
+    // Add category options
+    categories.forEach(c => {
+        const option = document.createElement('option');
+        option.value = c;
+        option.textContent = c;
+        cSel.appendChild(option);
+    });
+    
+    document.getElementById('filter-container').style.display = 'flex';
+}
 
 // --- PAGINATION STATE ---
-let PAGE_SIZE = 20; // Changed from const to let
+let PAGE_SIZE = 20;
 let itemsToShow = 20;
 let filteredIconsGlobal = [];
-
 
 function updatePageSize() {
     const selector = document.getElementById('page-size-filter');
@@ -102,65 +139,39 @@ function updatePageSize() {
     renderIcons(true);
 }
 
-// Update loadConfig to initialize the global list
-async function loadConfig() {
-    const configFile = document.getElementById('config-file').value;
-    try {
-        const response = await fetch(configFile);
-        currentConfig = await response.json();
-
-        // Fix dynamic paths
-        if (currentConfig.spriteUrl.startsWith('.')) {
-            currentConfig.spriteUrl = currentConfig.spriteUrl.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
-        }
-        if (currentConfig.spriteFile.startsWith('.')) {
-            currentConfig.spriteFile = currentConfig.spriteFile.replace(/^\./, baseUrl).replace(/\/+/g, '/').replace(':/', '://');
-        }
-        
-        document.getElementById('sprite-info').innerHTML = `Sprite URL: <a href="${currentConfig.spriteUrl}">${currentConfig.spriteUrl}</a>`;
-
-        // INITIALIZE GLOBAL LIST
-        filteredIconsGlobal = currentConfig.icons;
-
-        await loadSprite();
-        setupFilters();
-        renderIcons(true); // Initial render
-
-        const masterCss = document.getElementById('master-css-code');
-        if (masterCss) {
-            masterCss.className = 'language-css';
-            hljs.highlightElement(masterCss);
-        }
-        
-    } catch (e) { console.error("Config load failed", e); }
-}
-
 function filterIcons() {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
         const q = document.getElementById('search-input').value.toLowerCase();
-        const t = document.getElementById('type-filter').value;
         const c = document.getElementById('category-filter').value;
         
-        filteredIconsGlobal = currentConfig.icons.filter(i => 
-            i.id.toLowerCase().includes(q) && (t === 'all' || i.type === t) && (c === 'all' || i.category === c)
-        );
+        filteredIconsGlobal = currentConfig.icons.filter(i => {
+            // Filter by current tab type
+            if (currentTab === 'ui' && i.type !== 'UI') return false;
+            if (currentTab === 'pictograph' && i.type !== 'pictograph') return false;
+            if (currentTab === 'wireblock' && i.type !== 'wireblock') return false;
+            if (currentTab === 'background' && i.type !== 'background') return false;
+            
+            return i.id.toLowerCase().includes(q) && 
+                   (c === 'all' || i.category === c);
+        });
 
-        // --- NO RESULTS LOGIC ---
         const noResults = document.getElementById('no-results');
-        const bgSection = document.getElementById('background-section');
-        const grid = document.getElementById('grid');
-        const loadMoreBtn = document.getElementById('load-more-btn');
+        const currentGrid = document.getElementById(`${currentTab}-grid`) || document.getElementById('background-list');
 
         if (filteredIconsGlobal.length === 0) {
             noResults.style.display = 'block';
-            bgSection.style.display = 'none';
-            grid.style.display = 'none';
+            if (currentGrid) currentGrid.style.display = 'none';
+            
+            // Hide load more button when no results
+            const tabContent = currentGrid?.parentElement;
+            const loadMoreBtn = tabContent?.querySelector('.load-more-btn');
             if (loadMoreBtn) loadMoreBtn.style.display = 'none';
         } else {
             noResults.style.display = 'none';
-            grid.style.display = 'grid'; // Or 'flex' depending on your CSS
-            // background-section display is handled inside renderIcons()
+            if (currentGrid) {
+                currentGrid.style.display = currentTab === 'background' ? 'block' : 'grid';
+            }
             itemsToShow = PAGE_SIZE;
             renderIcons(true);
         }
@@ -170,13 +181,29 @@ function filterIcons() {
 // Helper to clear everything
 function resetFilters() {
     document.getElementById('search-input').value = '';
-    document.getElementById('type-filter').value = 'all';
     document.getElementById('category-filter').value = 'all';
     filterIcons();
 }
 
 function handleLoadMore() {
-    const btn = document.getElementById('load-more-btn');
+    // Get current grid/list container
+    let currentContainer;
+    if (currentTab === 'background') {
+        currentContainer = document.getElementById('background-list');
+    } else {
+        currentContainer = document.getElementById(`${currentTab}-grid`);
+    }
+
+    if (!currentContainer) return;
+
+    // Get the parent tab content
+    const tabContent = currentContainer.parentElement;
+    
+    // Look for existing button in this tab
+    const btn = tabContent.querySelector('.load-more-btn');
+    
+    if (!btn) return;
+    
     const originalText = btn.innerHTML;
     
     // Quick visual feedback
@@ -191,19 +218,27 @@ function handleLoadMore() {
         
         btn.style.opacity = "1";
         btn.style.pointerEvents = "auto";
-        // updateLoadMoreButton() will handle the text reset via renderIcons()
     }, 100);
 }
 
 function renderIcons(resetGrid = true) {
-    const grid = document.getElementById('grid');
-    const bgSection = document.getElementById('background-section');
-    const bgList = document.getElementById('background-list');
+    const tabNav = document.getElementById('tab-navigation');
+    
+    // Show tab navigation
+    tabNav.style.display = 'flex';
+    
+    // Get the current grid container
+    let currentGrid;
+    if (currentTab === 'background') {
+        currentGrid = document.getElementById('background-list');
+    } else {
+        currentGrid = document.getElementById(`${currentTab}-grid`);
+    }
+    
+    if (!currentGrid) return;
     
     if (resetGrid) {
-        grid.innerHTML = '';
-        bgList.innerHTML = '';
-        bgSection.style.display = 'none';
+        currentGrid.innerHTML = '';
     }
 
     const start = resetGrid ? 0 : (itemsToShow - PAGE_SIZE);
@@ -215,22 +250,19 @@ function renderIcons(resetGrid = true) {
         card.dataset.id = i.id;
         card.id = `card-${safeId}`;
 
-        // 1. Add the animation class
-        card.classList.add('animate-in');
-        
-        // 2. Add staggered delay (e.g., 30ms per item)
-        // This makes the 20 items "cascade" in
-        card.style.animationDelay = `${index * 30}ms`;
-
-        if (i.type === 'background') {
-            bgSection.style.display = 'block';
-            card.className += ' card-wide is-loading';
-            bgList.appendChild(card);
-        } else {
-            card.className += ' card is-loading';
-            grid.appendChild(card);
+        // Only add animation class when resetGrid is true (new batch, not load more)
+        if (resetGrid) {
+            card.classList.add('animate-in');
+            card.style.animationDelay = `${index * 30}ms`;
         }
 
+        if (i.type === 'background') {
+            card.className += ' card-wide is-loading';
+        } else {
+            card.className += ' card is-loading';
+        }
+        
+        currentGrid.appendChild(card);
         card.innerHTML = `<div class="preview-area"></div>`;
         loadActualContent(card, i);
     });
@@ -239,17 +271,30 @@ function renderIcons(resetGrid = true) {
 }
 
 function updateLoadMoreButton() {
-    let btn = document.getElementById('load-more-btn');
     const remaining = filteredIconsGlobal.length - itemsToShow;
-    const grid = document.getElementById('grid');
+    
+    // Get current grid/list container
+    let currentContainer;
+    if (currentTab === 'background') {
+        currentContainer = document.getElementById('background-list');
+    } else {
+        currentContainer = document.getElementById(`${currentTab}-grid`);
+    }
 
+    if (!currentContainer) return;
+
+    // Get the parent tab content
+    const tabContent = currentContainer.parentElement;
+    
+    // Look for existing button in this tab
+    let btn = tabContent.querySelector('.load-more-btn');
+    
     if (!btn) {
         btn = document.createElement('button');
-        btn.id = 'load-more-btn';
         btn.className = 'load-more-btn';
         btn.onclick = handleLoadMore;
-        // Place it after the grid
-        grid.parentNode.insertBefore(btn, grid.nextSibling);
+        // Append to tab content (after the grid)
+        tabContent.appendChild(btn);
     }
 
     if (remaining > 0) {
@@ -259,6 +304,21 @@ function updateLoadMoreButton() {
         btn.style.display = 'none';
     }
 }
+function formatBackgroundLabel(id) {
+    // Pattern: HS_US_EN_Wireblock_non-scaling-stroke-2_[ACTUAL_NAME]
+    // We want to extract just the [ACTUAL_NAME] part
+    
+    // Use regex to match the prefix pattern and capture everything after it
+    const match = id.match(/^HS_US_EN_Wireblock_non-scaling-stroke-\d+_(.+)$/);
+    
+    if (match && match[1]) {
+        return match[1]; // Return the captured group (everything after the prefix)
+    }
+    
+    // Fallback: return the original id if pattern doesn't match
+    return id;
+}
+
 function loadActualContent(card, item) {
     const safeId = item.id.replace(/[^a-zA-Z0-9-_]/g, '_');
     const isMask = item.type === 'background';
@@ -273,9 +333,9 @@ function loadActualContent(card, item) {
     
     if (isMask) {
         card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 20px;">
                 <div>
-                    <span class="label" style="font-size: 1.2rem;">${item.id}</span>
+                    <span class="label" style="font-size: 1.2rem;">${formatBackgroundLabel(item.id)}</span>
                     <div class="type-badge background">Background Wireblock</div>
                 </div>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -290,21 +350,80 @@ function loadActualContent(card, item) {
                 </div>
             </div>
 
-            <div id="preview-wrapper-${safeId}" style="background-color: #F5F9FC; border-radius: 8px; padding: 0;">
-                <div class="preview-area-wide" id="preview-${safeId}" 
-                     style="-webkit-mask: url('https://assets.henryschein.com/${item.id}.svg') no-repeat center; 
-                            mask: url('https://assets.henryschein.com/${item.id}.svg') no-repeat center; 
-                            mask-size: cover; 
-                            -webkit-mask-size: cover; 
-                            background-color: #0072BC;">
+            <div id="preview-wrapper-${safeId}" class="preview-wrapper" style="background-color: #F5F9FC; border-radius: 8px; padding: 0; overflow: hidden; position: relative; height: 400px; margin-bottom: 20px;">
+                <div id="preview-bg-${safeId}" class="preview-full-background" style="position: relative; overflow: hidden; z-index: 1; height: 100%; width: 100%;">
+                    <div class="preview-maincontent" style="position: relative; z-index: 2; padding: 40px; color: #002F6E;">
+                        <h3 style="margin: 0 0 10px 0;">Preview</h3>
+                        <p style="margin: 0; opacity: 0.7;">This shows how the wireblock will appear as a background element on your page.</p>
+                    </div>
                 </div>
             </div>
             
+            <div style="margin-bottom: 20px;">
+                <div style="margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SCALE</label>
+                        <input type="number" id="scale-input-${safeId}" min="100" max="300" value="150"
+                               oninput="updateMaskScaleFromInput('${safeId}')"
+                               style="width: 70px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                    </div>
+                    <input type="range" id="scale-${safeId}" min="100" max="300" value="150" step="1"
+                           oninput="updateMaskScale('${safeId}')" 
+                           style="width: 100%;">
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 15px;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">HORIZONTAL</label>
+                            <input type="number" id="h-pos-input-${safeId}" min="-100" max="100" value="10"
+                                   oninput="updateMaskPositionFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                        </div>
+                        <input type="range" id="h-pos-${safeId}" min="-100" max="100" value="10" step="1"
+                               oninput="updateMaskPosition('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+                    
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">VERTICAL</label>
+                            <input type="number" id="v-pos-input-${safeId}" min="-100" max="100" value="-25"
+                                   oninput="updateMaskPositionFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                        </div>
+                        <input type="range" id="v-pos-${safeId}" min="-100" max="100" value="-25" step="1"
+                               oninput="updateMaskPosition('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <label style="font-size: 11px; font-weight: bold; color: #002F6E;">OPACITY</label>
+                        <input type="number" id="opacity-input-${safeId}" min="0" max="100" value="60"
+                               oninput="updateMaskOpacityFromInput('${safeId}')"
+                               style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                    </div>
+                    <input type="range" id="opacity-${safeId}" min="0" max="100" value="60" step="1"
+                           oninput="updateMaskOpacity('${safeId}')" 
+                           style="width: 100%;">
+                </div>
+                
+                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #E6EBF1;">
+                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E;">
+                        <input type="checkbox" id="hide-mobile-${safeId}" onchange="updateMaskMobile('${safeId}')" 
+                               style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
+                        <span style="font-weight: 600;">Hide wireblock on mobile devices (≤991px)</span>
+                    </label>
+                </div>
+            </div>
+
             <div class="code-block">
                 <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">
-    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span class="btn-text">Copy CSS</span>
-</button>
+                    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="btn-text">Copy CSS</span>
+                </button>
                 <code id="code-${safeId}"></code>
             </div>
             <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
@@ -348,9 +467,9 @@ function loadActualContent(card, item) {
 
             <div class="code-block">
                 <button class="copy-btn" onclick="copyToClipboard('code-${safeId}', this)">
-    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span class="btn-text">Copy</span>
-</button>
+                    <svg class="checkmark-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="btn-text">Copy</span>
+                </button>
                 <code id="code-${safeId}"></code>
             </div>
         `;
@@ -362,8 +481,6 @@ function loadActualContent(card, item) {
         updateIcon(item.id, 'icon-blue', '#0072BC');
     }
 }
-
-// Replace your buildColorOptions usage with this new function:
 
 function createColorPicker(safeId, type, defaultColor = 'icon-blue', onChangeCallback) {
     const pickerId = `color-picker-${type}-${safeId}`;
@@ -471,7 +588,7 @@ document.addEventListener('click', (e) => {
         });
     }
 });
-// Add this new function to update the background wrapper color
+
 function updateMaskBackground(safeId, colorValue) {
     const [colorClass, hex] = colorValue.split('|');
     const wrapper = document.getElementById(`preview-wrapper-${safeId}`);
@@ -479,7 +596,6 @@ function updateMaskBackground(safeId, colorValue) {
         wrapper.style.backgroundColor = hex;
     }
 }
-
 
 function updateIcon(id, cls, hex) {
     const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
@@ -502,21 +618,95 @@ function updateIcon(id, cls, hex) {
         }
     }
 }
-    function updateMask(id, colorClass, hex, path) {
+
+function updateMask(id, colorClass, hex, path) {
     const safeId = id.replace(/[^a-zA-Z0-9-_]/g, '_');
-    const preview = document.getElementById(`preview-${safeId}`);
+    const previewBg = document.getElementById(`preview-bg-${safeId}`);
     const codeElement = document.getElementById(`code-${safeId}`);
 
-    // Update the visual preview area
-    if (preview) {
-        preview.style.backgroundColor = hex;
+    // Get current slider values (or use defaults)
+    const scale = document.getElementById(`scale-${safeId}`)?.value || '150';
+    const hPos = document.getElementById(`h-pos-${safeId}`)?.value || '10';
+    const vPos = document.getElementById(`v-pos-${safeId}`)?.value || '-25';
+    const opacity = document.getElementById(`opacity-${safeId}`)?.value || '60';
+    const hideMobile = document.getElementById(`hide-mobile-${safeId}`)?.checked || false;
+
+    // Create or update the dynamic style element for this specific preview
+    let styleEl = document.getElementById(`style-${safeId}`);
+    if (!styleEl) {
+        styleEl = document.createElement('style');
+        styleEl.id = `style-${safeId}`;
+        document.head.appendChild(styleEl);
     }
+
+    // Update the preview with dynamic CSS that matches the output exactly
+    styleEl.textContent = `
+        #preview-bg-${safeId}::before {
+            content: "" !important;
+            position: absolute !important;
+            top: ${vPos}% !important;
+            width: ${scale}% !important;
+            right: ${hPos}% !important;
+            height: ${scale}% !important;
+            background-color: ${hex};
+            opacity: ${parseFloat(opacity) / 100};
+            mask-image: url('${path}') !important;
+            -webkit-mask-image: url('${path}') !important;
+            mask-repeat: no-repeat !important;
+            -webkit-mask-repeat: no-repeat !important;
+            mask-position: center right !important;
+            -webkit-mask-position: center right !important;
+            mask-size: contain !important;
+            -webkit-mask-size: contain !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+        }
+    `;
 
     // Update the code block with the correct CSS
     if (codeElement) {
-        const cssCode = `.full-background {position: relative !important;overflow: hidden!important;z-index: 1!important;}     
-.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: ${hex}; /* ${colorClass} */opacity: 1; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;mask-image: url('https://assets.henryschein.com/${safeId}.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
-.full-background > .maincontent {position: relative;z-index: 2;}`;
+        let cssCode = `.full-background {
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+.full-background::before {
+    content: "" !important;
+    position: absolute !important;
+    top: ${vPos}% !important;
+    width: ${scale}% !important;
+    right: ${hPos}% !important;
+    height: ${scale}% !important;
+    background-color: ${hex};
+    opacity: ${parseFloat(opacity) / 100};
+    mask-image: url('${path}') !important;
+    -webkit-mask-image: url('${path}') !important;
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center right !important;
+    -webkit-mask-position: center right !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+.full-background > .maincontent {
+  position: relative;
+  z-index: 2;
+}`;
+
+        // Add mobile hide CSS if checked
+        if (hideMobile) {
+            cssCode += `
+
+@media (max-width: 991px) {
+  .full-background::before {
+    display: none !important;
+  }
+}`;
+        }
         
         // Remove existing highlighting before re-highlighting
         codeElement.className = '';
@@ -529,6 +719,144 @@ function updateIcon(id, cls, hex) {
             hljs.highlightElement(codeElement);
         }
     }
+}
+
+// New function for mobile checkbox
+function updateMaskMobile(safeId) {
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// New functions for slider controls
+function updateMaskScale(safeId) {
+    const slider = document.getElementById(`scale-${safeId}`);
+    const input = document.getElementById(`scale-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Sync input with slider
+    input.value = slider.value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskScaleFromInput(safeId) {
+    const slider = document.getElementById(`scale-${safeId}`);
+    const input = document.getElementById(`scale-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Clamp value to valid range
+    let value = parseInt(input.value) || 150;
+    value = Math.max(100, Math.min(300, value));
+    input.value = value;
+    
+    // Sync slider with input
+    slider.value = value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskPosition(safeId) {
+    const hSlider = document.getElementById(`h-pos-${safeId}`);
+    const vSlider = document.getElementById(`v-pos-${safeId}`);
+    const hInput = document.getElementById(`h-pos-input-${safeId}`);
+    const vInput = document.getElementById(`v-pos-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Sync inputs with sliders
+    hInput.value = hSlider.value;
+    vInput.value = vSlider.value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskPositionFromInput(safeId) {
+    const hSlider = document.getElementById(`h-pos-${safeId}`);
+    const vSlider = document.getElementById(`v-pos-${safeId}`);
+    const hInput = document.getElementById(`h-pos-input-${safeId}`);
+    const vInput = document.getElementById(`v-pos-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Clamp values to valid range
+    let hValue = parseInt(hInput.value) || 10;
+    let vValue = parseInt(vInput.value) || -25;
+    hValue = Math.max(-100, Math.min(100, hValue));
+    vValue = Math.max(-100, Math.min(100, vValue));
+    hInput.value = hValue;
+    vInput.value = vValue;
+    
+    // Sync sliders with inputs
+    hSlider.value = hValue;
+    vSlider.value = vValue;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskOpacity(safeId) {
+    const slider = document.getElementById(`opacity-${safeId}`);
+    const input = document.getElementById(`opacity-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Sync input with slider
+    input.value = slider.value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMaskOpacityFromInput(safeId) {
+    const slider = document.getElementById(`opacity-${safeId}`);
+    const input = document.getElementById(`opacity-input-${safeId}`);
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Clamp value to valid range
+    let value = parseInt(input.value) || 60;
+    value = Math.max(0, Math.min(100, value));
+    input.value = value;
+    
+    // Sync slider with input
+    slider.value = value;
+    
+    // Trigger CSS update
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Tab switching function
+function switchTab(tab) {
+    // Don't do anything if already on this tab
+    if (currentTab === tab) return false;
+    
+    currentTab = tab;
+    
+    // Update tab buttons
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Find and activate the clicked button
+    const clickedBtn = Array.from(document.querySelectorAll('.tab-btn')).find(btn => 
+        btn.getAttribute('onclick').includes(`'${tab}'`)
+    );
+    if (clickedBtn) clickedBtn.classList.add('active');
+    
+    // Update tab content visibility
+    document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    document.getElementById(`${tab}-tab`).classList.add('active');
+    
+    // Reset pagination and filters
+    itemsToShow = PAGE_SIZE;
+    document.getElementById('search-input').value = '';
+    document.getElementById('category-filter').value = 'all';
+    
+    // Filter and render for the new tab
+    filterIcons();
+    
+    return false;
 }
 
 function copyToClipboard(id, btn) {
@@ -581,7 +909,7 @@ function fallbackCopy(text, btn) {
 function handleCopySuccess(btn) {
     const oldText = btn.innerText;
     btn.innerText = "Copied!";
-    btn.classList.add('copied'); // Optional: add a class for CSS styling
+    btn.classList.add('copied');
     
     setTimeout(() => {
         btn.innerText = oldText;
@@ -589,10 +917,10 @@ function handleCopySuccess(btn) {
     }, 1500);
 }
 
-    function downloadSVG(iconId, safeId) {
+function downloadSVG(iconId, safeId) {
     if (!spriteText) return;
     
-    // Get color from card dataset (FIXED - no longer uses select)
+    // Get color from card dataset
     const card = document.getElementById(`card-${safeId}`);
     const colorClass = card.dataset.currentColor || 'icon-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
@@ -620,7 +948,7 @@ ${content}
     a.click();
     URL.revokeObjectURL(url);
 }
-    // Ensure you have a way to download the raw SVG even if it's not in the sprite
+
 function downloadMaskSVG(id, path) {
     fetch(path)
         .then(response => response.blob())
@@ -635,9 +963,8 @@ function downloadMaskSVG(id, path) {
         });
 }
 
-
-    function downloadPNG(iconId, safeId) {
-    // Get color from card dataset (FIXED - no longer uses select)
+function downloadPNG(iconId, safeId) {
+    // Get color from card dataset
     const card = document.getElementById(`card-${safeId}`);
     const colorClass = card.dataset.currentColor || 'icon-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
@@ -675,18 +1002,18 @@ function downloadMaskSVG(id, path) {
     img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgHeader)));
 }
 
-    window.addEventListener('DOMContentLoaded', loadConfig);
+window.addEventListener('DOMContentLoaded', loadConfig);
 
-    const backToTopButton = document.querySelector("#backToTop");
+const backToTopButton = document.querySelector("#backToTop");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
-    backToTopButton.classList.add("show");
-  } else {
-    backToTopButton.classList.remove("show");
-  }
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
 });
 
 backToTopButton.addEventListener("click", () => {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 });

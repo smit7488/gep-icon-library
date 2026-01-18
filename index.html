@@ -110,10 +110,10 @@
 
 /* ORANGE */
 .icon-orange    { color: #F28B00; }
-.icon-orange-t4 { color: #FFFAF5; }
-.icon-orange-t3 { color: #FEF4E6; }
-.icon-orange-t2 { color: #FBDCB3; }
-.icon-orange-t1 { color: #F9C680; }
+.icon-orange-t1 { color: #FFFAF5; }
+.icon-orange-t2 { color: #FEF4E6; }
+.icon-orange-t3 { color: #FBDCB3; }
+.icon-orange-t4 { color: #F9C680; }
 
 /* GRAYSCALE */
 .icon-dark-gray    { color: #474F50; }
@@ -138,17 +138,22 @@
 
     <div id="error-container"></div>
     <div id="sprite-container" style="display: none;"></div>
+
+
+    <!-- Tab Navigation -->
+    <div class="tab-navigation" id="tab-navigation" style="display: none;">
+        <button type="button" class="tab-btn active" onclick="return switchTab('pictograph');">Pictographs</button>
+        <button type="button" class="tab-btn" onclick="return switchTab('ui');">UI Icons</button>
+        <button type="button" class="tab-btn" onclick="return switchTab('wireblock');">Wireblocks</button>
+        <button type="button" class="tab-btn" onclick="return switchTab('background');">Background Wireblock Generator</button>
+    </div>
+
+    <!-- Filter Bar (appears below tabs) -->
     <div id="filter-container" class="filter-bar" style="display: none;">
         <div class="filter-group">
-            <label>Search Icons</label>
+            <label>Search</label>
             <input class="filter-input" type="text" id="search-input" placeholder="Search by name..."
                 oninput="filterIcons()">
-        </div>
-        <div class="filter-group">
-            <label>Type</label>
-            <select id="type-filter" onchange="filterIcons()">
-                <option value="all">All Types</option>
-            </select>
         </div>
         <div class="filter-group">
             <label>Category</label>
@@ -166,6 +171,28 @@
             </select>
         </div>
     </div>
+
+    <!-- Pictographs Tab -->
+    <div id="pictograph-tab" class="tab-content active">
+        <div id="pictograph-grid" class="grid"></div>
+    </div>
+
+    <!-- UI Icons Tab -->
+    <div id="ui-tab" class="tab-content">
+        <div id="ui-grid" class="grid"></div>
+    </div>
+
+    <!-- Wireblocks Tab -->
+    <div id="wireblock-tab" class="tab-content">
+        <div id="wireblock-grid" class="grid"></div>
+    </div>
+
+    <!-- Background Wireblocks Tab -->
+    <div id="background-tab" class="tab-content">
+        <div id="background-section" class="full-width-section">
+            <div id="background-list"></div>
+        </div>
+    </div>
     <div id="no-results" class="no-results-container" style="display: none;">
         <div class="no-results-content">
             <span style="font-size: 3rem;">🔍</span>
@@ -174,12 +201,6 @@
             <button onclick="resetFilters()" class="reset-link">Clear all filters</button>
         </div>
     </div>
-    <div id="background-section" class="full-width-section" style="display: none;">
-        <h2 class="section-header">Background Patterns (Full Width)</h2>
-        <div id="background-list"></div>
-    </div>
-
-    <div id="grid" class="grid"></div>
     <button id="backToTop" class="back-to-top" title="Go to top">
         <span class="icon-arrow"></span>
     </button>

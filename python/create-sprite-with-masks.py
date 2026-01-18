@@ -83,7 +83,7 @@ def create_gep_sprite_system():
     for root_dir, dirs, files in os.walk(input_base_dir):
         # Identify folder name to check for backgrounds
         folder_name = os.path.basename(root_dir).lower()
-        is_background_folder = (folder_name == "backgrounds")
+        is_background_folder = (folder_name == "non-scaling")
 
         for svg_file in files:
             if not svg_file.lower().endswith(".svg"):
@@ -123,7 +123,7 @@ def create_gep_sprite_system():
                     "viewBox": viewBox,
                     "type": asset_type,
                     "category": category,
-                    "path": f"./svg/backgrounds/{svg_file}" if is_background_folder else None
+                    "path": f"https://assets.henryschein.com/{base_name}.svg" if is_background_folder else None
                 })
                 
                 print(f"Processed: {icon_id} (Type: {asset_type})")
