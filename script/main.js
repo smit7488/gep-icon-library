@@ -237,6 +237,9 @@ function renderIcons(resetGrid = true) {
     
     if (!currentGrid) return;
     
+    // Check if grid already has content (returning to a tab)
+    const hasExistingContent = currentGrid.children.length > 0;
+    
     if (resetGrid) {
         currentGrid.innerHTML = '';
     }
@@ -250,17 +253,18 @@ function renderIcons(resetGrid = true) {
         card.dataset.id = i.id;
         card.id = `card-${safeId}`;
 
-        // Only add animation class when resetGrid is true (new batch, not load more)
-        if (resetGrid) {
-            card.classList.add('animate-in');
-            card.style.animationDelay = `${index * 30}ms`;
-        }
-
         if (i.type === 'background') {
-            card.className += ' card-wide is-loading';
+            card.className = 'card-wide';
         } else {
-            card.className += ' card is-loading';
+            card.className = 'card';
         }
+        
+        // Only animate on first load, not when returning to tab
+        if (hasExistingContent && resetGrid) {
+            card.style.animation = 'none';
+        }
+        
+        card.className += ' is-loading';
         
         currentGrid.appendChild(card);
         card.innerHTML = `<div class="preview-area"></div>`;

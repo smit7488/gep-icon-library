@@ -660,26 +660,13 @@ html {
 .load-more-btn:active {
     transform: translateY(0);
 }
-/* Entry animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.card, .card-wide {
+    animation: simpleFadeIn 0.3s ease-in;
 }
 
-/* Apply this class to new cards */
-.animate-in {
-    animation: fadeInUp 0.4s ease forwards;
-}
-
-/* Optional: Smoothly transition the grid height */
-#grid, #background-list {
-    transition: all 0.5s ease;
+@keyframes simpleFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .no-results-container {
