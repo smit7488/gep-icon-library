@@ -6,6 +6,7 @@ let currentTab = 'pictograph'; // Track current tab - default to Pictographs
 
 // 1. CALCULATE DYNAMIC BASE PATH
 const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+let iconTagsData = null; // Will store the icon-tags.json data
 
 function formatColorLabel(cls) {
     // Remove 'icon-' prefix
@@ -30,6 +31,22 @@ function formatColorLabel(cls) {
         word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
 }
+
+// *** UPDATED: Load tags and categories from separate icon-tags.json file ***
+async function loadIconTags() {
+    try {
+        const response = await fetch('./dist/icon-tags.json');
+        if (response.ok) {
+            iconTagsData = await response.json();
+            console.log('✅ Loaded icon tags & categories from icon-tags.json');
+        } else {
+            console.log('ℹ️ No icon-tags.json file found (tags/categories feature optional)');
+        }
+    } catch (e) {
+        console.log('ℹ️ Tags file not available:', e.message);
+    }
+}
+
 
 // --- SYSTEM LOGIC ---
 async function loadConfig() {
@@ -57,6 +74,10 @@ async function loadConfig() {
         filteredIconsGlobal = currentConfig.icons;
 
         await loadSprite();
+        
+        // *** Load tags & categories from separate file ***
+        await loadIconTags();
+        
         setupFilters();
         
         // Show tab navigation immediately
@@ -104,19 +125,31 @@ async function loadSprite() {
     document.getElementById('sprite-container').innerHTML = spriteText;
 }
 
+// *** UPDATED: Build category dropdown from icon-tags.json ***
 function setupFilters() {
     const categories = new Set();
-    currentConfig.icons.forEach(i => { if(i.category) categories.add(i.category); });
-    const cSel = document.getElementById('category-filter');
     
-    // Clear existing options except "All Categories"
+    // Extract categories from icon-tags.json
+    if (iconTagsData) {
+        Object.values(iconTagsData).forEach(item => {
+            if (item.categories && Array.isArray(item.categories)) {
+                item.categories.forEach(cat => categories.add(cat));
+            }
+        });
+    }
+    
+    const cSel = document.getElementById('category-filter');
     cSel.innerHTML = '<option value="all">All Categories</option>';
     
-    // Add category options
-    categories.forEach(c => {
+    // Sort and capitalize categories
+    const sortedCategories = Array.from(categories).sort();
+    sortedCategories.forEach(c => {
         const option = document.createElement('option');
         option.value = c;
-        option.textContent = c;
+        // Capitalize first letter of each word
+        option.textContent = c.split('-').map(word => 
+            word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
         cSel.appendChild(option);
     });
     
@@ -139,6 +172,7 @@ function updatePageSize() {
     renderIcons(true);
 }
 
+// *** UPDATED: Filter icons by category AND search in tags ***
 function filterIcons() {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
@@ -152,8 +186,37 @@ function filterIcons() {
             if (currentTab === 'wireblock' && i.type !== 'wireblock') return false;
             if (currentTab === 'background' && i.type !== 'background') return false;
             
-            return i.id.toLowerCase().includes(q) && 
-                   (c === 'all' || i.category === c);
+            // *** UPDATED: Category filter from icon-tags.json ***
+            if (c !== 'all' && iconTagsData && iconTagsData[i.id]) {
+                const iconCategories = iconTagsData[i.id].categories || [];
+                if (!iconCategories.includes(c)) return false;
+            } else if (c !== 'all' && (!iconTagsData || !iconTagsData[i.id])) {
+                // If category is selected but icon has no tags data, exclude it
+                return false;
+            }
+            
+            // Search in name
+            const matchesName = i.id.toLowerCase().includes(q);
+            
+            // *** UPDATED: Search in tags AND categories from icon-tags.json ***
+            let matchesTags = false;
+            let matchesCategories = false;
+            
+            if (iconTagsData && iconTagsData[i.id]) {
+                // Search in tags
+                const tags = iconTagsData[i.id].tags || [];
+                matchesTags = tags.some(tag => 
+                    tag.toLowerCase().includes(q)
+                );
+                
+                // Search in categories
+                const categories = iconTagsData[i.id].categories || [];
+                matchesCategories = categories.some(cat => 
+                    cat.toLowerCase().includes(q)
+                );
+            }
+            
+            return matchesName || matchesTags || matchesCategories;
         });
 
         const noResults = document.getElementById('no-results');
@@ -163,7 +226,6 @@ function filterIcons() {
             noResults.style.display = 'block';
             if (currentGrid) currentGrid.style.display = 'none';
             
-            // Hide load more button when no results
             const tabContent = currentGrid?.parentElement;
             const loadMoreBtn = tabContent?.querySelector('.load-more-btn');
             if (loadMoreBtn) loadMoreBtn.style.display = 'none';
@@ -177,7 +239,6 @@ function filterIcons() {
         }
     }, 250);
 }
-
 // Helper to clear everything
 function resetFilters() {
     document.getElementById('search-input').value = '';

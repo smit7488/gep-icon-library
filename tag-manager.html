@@ -47,17 +47,12 @@
         }
 
         .alert {
-            background: #FFF3CD;
-            border: 2px solid #F28B00;
+            background: #E6F1F9;
+            border: 2px solid #0072BC;
             color: #002F6E;
             padding: 15px 20px;
             border-radius: 8px;
             margin-bottom: 20px;
-        }
-
-        .alert-success {
-            background: #D4EDDA;
-            border-color: #008996;
         }
 
         .controls {
@@ -135,11 +130,6 @@
             box-shadow: 0 4px 12px rgba(0, 114, 188, 0.2);
         }
 
-        .icon-card.selected {
-            border-color: #0072BC;
-            background: #E6F1F9;
-        }
-
         .icon-preview {
             height: 80px;
             display: flex;
@@ -163,11 +153,27 @@
             margin-bottom: 8px;
         }
 
+        .icon-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+
         .icon-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 4px;
             min-height: 24px;
+        }
+
+        .category-badge {
+            background: #831A5B;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
         }
 
         .tag {
@@ -176,19 +182,6 @@
             padding: 2px 8px;
             border-radius: 12px;
             font-size: 10px;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .tag .remove {
-            cursor: pointer;
-            font-weight: bold;
-            color: #0072BC;
-        }
-
-        .tag .remove:hover {
-            color: #ED1C24;
         }
 
         .tag-editor {
@@ -201,8 +194,10 @@
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
             z-index: 1000;
-            min-width: 400px;
-            max-width: 600px;
+            min-width: 500px;
+            max-width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
             display: none;
         }
 
@@ -225,35 +220,91 @@
             display: block;
         }
 
-        .tag-input-group {
+        .editor-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .editor-section h4 {
+            margin: 0 0 10px 0;
+            color: #002F6E;
+        }
+
+        .category-section {
+            background: #FAF6F8;
+            border: 2px solid #831A5B;
+        }
+
+        .category-section h4 {
+            color: #831A5B;
+        }
+
+        .quick-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .quick-tag {
+            background: white;
+            border: 1px solid #831A5B;
+            color: #831A5B;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-tag:hover, .quick-tag.active {
+            background: #831A5B;
+            color: white;
+        }
+
+        .input-group {
             display: flex;
             gap: 10px;
             margin-bottom: 15px;
         }
 
-        .tag-input {
+        .input-field {
             flex: 1;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
 
-        .current-tags {
+        .current-items {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            min-height: 60px;
+            min-height: 40px;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
         }
 
-        .current-tags .tag {
-            background: #0072BC;
-            color: white;
+        .current-items .category-badge,
+        .current-items .tag {
             padding: 6px 12px;
             font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .remove {
+            cursor: pointer;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+
+        .remove:hover {
+            opacity: 1;
+            color: #ED1C24;
         }
 
         .stats {
@@ -282,32 +333,6 @@
             text-transform: uppercase;
         }
 
-        .filter-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .filter-tag {
-            background: white;
-            border: 1px solid #ddd;
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-
-        .filter-tag:hover {
-            border-color: #0072BC;
-        }
-
-        .filter-tag.active {
-            background: #0072BC;
-            color: white;
-            border-color: #0072BC;
-        }
-
         .export-section {
             background: white;
             padding: 20px;
@@ -328,35 +353,19 @@
             background: #0072BC;
             transition: width 0.3s;
         }
-
-        .file-upload {
-            display: none;
-        }
-
-        .upload-area {
-            border: 2px dashed #0072BC;
-            padding: 30px;
-            text-align: center;
-            border-radius: 8px;
-            background: #f8f9fa;
-            cursor: pointer;
-        }
-
-        .upload-area:hover {
-            background: #E6F1F9;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>🏷️ GEP Icon Tag Manager</h1>
-            <p>Add custom tags to your icons - tags are saved separately and won't be overwritten by the Python script!</p>
+            <p>Organize icons with categories and tags - stored separately from Python-generated config</p>
         </div>
 
         <div class="alert">
-            <strong>💡 Important:</strong> Tags are stored in a separate <code>icon-tags.json</code> file. 
-            When you run your Python script, it will NOT overwrite your tags. Your main config and tags are kept separate!
+            <strong>💡 How It Works:</strong>
+            Categories (like "business", "medical") and tags (like "gear", "settings") are stored separately in 
+            <code>icon-tags.json</code>. Your Python script won't touch this file!
         </div>
 
         <div class="stats">
@@ -369,59 +378,57 @@
                 <div class="stat-label">Tagged Icons</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" id="total-tags">0</div>
-                <div class="stat-label">Unique Tags</div>
+                <div class="stat-number" id="total-categories">0</div>
+                <div class="stat-label">Categories</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" id="completion-rate">0%</div>
-                <div class="stat-label">Completion</div>
+                <div class="stat-number" id="total-tags">0</div>
+                <div class="stat-label">Unique Tags</div>
             </div>
         </div>
 
         <div class="controls">
             <div class="search-section">
                 <input type="text" class="search-input" id="search-input" placeholder="Search icons by name or tags...">
-                <select id="category-filter" class="search-input" style="max-width: 200px;">
+                <select id="category-filter" class="search-input" style="max-width: 250px;">
                     <option value="all">All Categories</option>
                 </select>
             </div>
-            
-            <div id="filter-tags" class="filter-tags"></div>
         </div>
 
         <div id="icon-grid" class="icon-grid"></div>
 
         <div class="export-section">
-            <h3>💾 Manage Your Tags</h3>
+            <h3>💾 Manage Your Tags & Categories</h3>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                 <div>
                     <h4>Export Tags (Backup)</h4>
-                    <p style="font-size: 12px; color: #6B6F70;">Download your tags as a separate JSON file. This file is safe from Python script overwrites!</p>
+                    <p style="font-size: 12px; color: #6B6F70;">Download as icon-tags.json - safe from Python overwrites!</p>
                     <button class="btn btn-success" onclick="exportTags()">📥 Download icon-tags.json</button>
                 </div>
                 
                 <div>
                     <h4>Import Tags (Restore)</h4>
-                    <p style="font-size: 12px; color: #6B6F70;">Load a previously saved icon-tags.json file to restore your work.</p>
-                    <input type="file" id="file-upload" class="file-upload" accept=".json" onchange="importTags(event)">
+                    <p style="font-size: 12px; color: #6B6F70;">Load a previously saved icon-tags.json file.</p>
+                    <input type="file" id="file-upload" style="display: none;" accept=".json" onchange="importTags(event)">
                     <button class="btn btn-warning" onclick="document.getElementById('file-upload').click()">📤 Upload icon-tags.json</button>
+                </div>
+                
+                <div>
+                    <h4>Clean Up Missing Icons</h4>
+                    <p style="font-size: 12px; color: #6B6F70;">Remove tags for icons that no longer exist in the config.</p>
+                    <button class="btn" style="background: #ED1C24;" onclick="removeMissingIcons()">🗑️ Remove Missing Icons</button>
                 </div>
             </div>
 
             <div class="progress-bar">
                 <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
             </div>
-
-            <div style="margin-top: 20px; padding: 15px; background: #E6F1F9; border-radius: 8px; font-size: 12px;">
-                <strong>📋 Workflow:</strong>
-                <ol style="margin: 10px 0; padding-left: 20px;">
-                    <li>Tag your icons using this tool</li>
-                    <li>Click "Download icon-tags.json" to save</li>
-                    <li>Keep this file safe (e.g., in your project folder)</li>
-                    <li>Run your Python script anytime - tags won't be affected</li>
-                    <li>To use tags in the main viewer, update your main.js (see documentation)</li>
-                </ol>
+            
+            <div id="cleanup-report" style="margin-top: 20px; display: none; padding: 15px; background: #FFF3CD; border: 2px solid #F28B00; border-radius: 8px;">
+                <h4 style="margin: 0 0 10px 0; color: #002F6E;">Cleanup Report</h4>
+                <div id="cleanup-details"></div>
             </div>
         </div>
     </div>
@@ -429,17 +436,49 @@
     <!-- Tag Editor Modal -->
     <div class="overlay" id="overlay" onclick="closeTagEditor()"></div>
     <div class="tag-editor" id="tag-editor">
-        <h3 id="editor-title">Edit Tags</h3>
+        <h3 id="editor-title">Edit Tags & Categories</h3>
         <div class="icon-preview" id="editor-preview"></div>
         
-        <div class="current-tags" id="current-tags"></div>
-        
-        <div class="tag-input-group">
-            <input type="text" class="tag-input" id="tag-input" placeholder="Add tags (comma-separated)" />
-            <button class="btn" onclick="addTags()">Add Tags</button>
+        <!-- Categories Section -->
+        <div class="editor-section category-section">
+            <h4>📁 Categories</h4>
+            <p style="font-size: 11px; margin: 0 0 10px 0; color: #6B6F70;">
+                Select one or more categories. Common categories provided for quick selection.
+            </p>
+            <div class="quick-tags" id="category-quick-tags">
+                <span class="quick-tag" onclick="toggleCategory('business')">business</span>
+                <span class="quick-tag" onclick="toggleCategory('corporate')">corporate</span>
+                <span class="quick-tag" onclick="toggleCategory('marketing')">marketing</span>
+                <span class="quick-tag" onclick="toggleCategory('medical')">medical</span>
+                <span class="quick-tag" onclick="toggleCategory('dental')">dental</span>
+                <span class="quick-tag" onclick="toggleCategory('product')">product</span>
+                <span class="quick-tag" onclick="toggleCategory('hs-cares')">hs-cares</span>
+                <span class="quick-tag" onclick="toggleCategory('service')">service</span>
+                <span class="quick-tag" onclick="toggleCategory('solutions')">solutions</span>
+                <span class="quick-tag" onclick="toggleCategory('team-schein')">team-schein</span>
+                <span class="quick-tag" onclick="toggleCategory('diversity')">diversity</span>
+            </div>
+            <div class="current-items" id="current-categories"></div>
+            <div class="input-group">
+                <input type="text" class="input-field" id="category-input" placeholder="Add custom category" />
+                <button class="btn" onclick="addCategories()">Add</button>
+            </div>
+        </div>
+
+        <!-- Tags Section -->
+        <div class="editor-section">
+            <h4>🏷️ Tags</h4>
+            <p style="font-size: 11px; margin: 0 0 10px 0; color: #6B6F70;">
+                Add descriptive tags (e.g., gear, settings, admin, gloves, safety)
+            </p>
+            <div class="current-items" id="current-tags"></div>
+            <div class="input-group">
+                <input type="text" class="input-field" id="tag-input" placeholder="Add tags (comma-separated)" />
+                <button class="btn" onclick="addTags()">Add Tags</button>
+            </div>
         </div>
         
-        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
             <button class="btn" style="background: #6B6F70;" onclick="closeTagEditor()">Close</button>
             <button class="btn btn-success" onclick="saveAndNext()">Save & Next →</button>
         </div>
@@ -449,37 +488,26 @@
 
     <script>
         let config = null;
-        let iconTags = {}; // { iconId: ['tag1', 'tag2'] }
+        let iconData = {}; // { iconId: { tags: [], categories: [] } }
         let currentIconId = null;
         let spriteText = '';
         let filteredIcons = [];
+        let allCategories = new Set();
         let allTags = new Set();
-        let tagsMetadata = {
-            lastUpdated: null,
-            totalTaggedIcons: 0,
-            totalUniqueTags: 0,
-            version: '1.0'
-        };
 
-        // Load configuration
         async function loadConfig() {
             try {
                 const response = await fetch('./dist/hs-icons-master-config.json');
                 config = await response.json();
                 
-                // Load sprite
                 const spriteResponse = await fetch(config.spriteFile);
                 spriteText = await spriteResponse.text();
                 document.getElementById('sprite-container').innerHTML = spriteText;
                 
-                // Load tags from localStorage (fallback)
                 loadFromLocalStorage();
+                await loadDataFromFile();
                 
-                // Try to load from icon-tags.json file (preferred)
-                await loadTagsFromFile();
-                
-                // Setup UI
-                setupCategories();
+                setupCategoryFilter();
                 renderIcons();
                 updateStats();
             } catch (e) {
@@ -488,83 +516,86 @@
             }
         }
 
-        async function loadTagsFromFile() {
+        async function loadDataFromFile() {
             try {
                 const response = await fetch('./dist/icon-tags.json');
                 if (response.ok) {
-                    const data = await response.json();
-                    if (data.tags) {
-                        iconTags = data.tags;
-                        tagsMetadata = data.metadata || tagsMetadata;
-                        
-                        // Rebuild allTags set
-                        allTags.clear();
-                        Object.values(iconTags).forEach(tags => {
-                            tags.forEach(tag => allTags.add(tag));
-                        });
-                        
-                        console.log('✅ Loaded tags from icon-tags.json');
-                        
-                        // Also save to localStorage as backup
-                        saveToLocalStorage();
-                    }
+                    iconData = await response.json();
+                    
+                    // Build category and tag sets
+                    allCategories.clear();
+                    allTags.clear();
+                    Object.values(iconData).forEach(item => {
+                        if (item.categories) {
+                            item.categories.forEach(cat => allCategories.add(cat));
+                        }
+                        if (item.tags) {
+                            item.tags.forEach(tag => allTags.add(tag));
+                        }
+                    });
+                    
+                    console.log('✅ Loaded data from icon-tags.json');
+                    saveToLocalStorage();
                 }
             } catch (e) {
-                console.log('No existing icon-tags.json file found (this is OK for first run)');
+                console.log('No existing icon-tags.json file found (OK for first run)');
             }
         }
 
         function loadFromLocalStorage() {
-            const saved = localStorage.getItem('icon-tags');
+            const saved = localStorage.getItem('icon-data');
             if (saved) {
-                const data = JSON.parse(saved);
-                iconTags = data.tags || {};
-                tagsMetadata = data.metadata || tagsMetadata;
+                iconData = JSON.parse(saved);
                 
-                // Build allTags set
-                Object.values(iconTags).forEach(tags => {
-                    tags.forEach(tag => allTags.add(tag));
+                Object.values(iconData).forEach(item => {
+                    if (item.categories) {
+                        item.categories.forEach(cat => allCategories.add(cat));
+                    }
+                    if (item.tags) {
+                        item.tags.forEach(tag => allTags.add(tag));
+                    }
                 });
             }
         }
 
-        function setupCategories() {
-            const categories = new Set();
-            config.icons.forEach(icon => {
-                if (icon.category) categories.add(icon.category);
-            });
-            
+        function setupCategoryFilter() {
             const select = document.getElementById('category-filter');
-            categories.forEach(cat => {
+            select.innerHTML = '<option value="all">All Categories</option>';
+            
+            const sortedCategories = Array.from(allCategories).sort();
+            sortedCategories.forEach(cat => {
                 const option = document.createElement('option');
                 option.value = cat;
-                option.textContent = cat;
+                option.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
                 select.appendChild(option);
             });
         }
 
         function renderIcons() {
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
-            const category = document.getElementById('category-filter').value;
-            const activeFilterTags = Array.from(document.querySelectorAll('.filter-tag.active'))
-                .map(el => el.textContent);
+            const selectedCategory = document.getElementById('category-filter').value;
             
             filteredIcons = config.icons.filter(icon => {
-                // Filter by type (only show pictographs, UI, and wireblocks - not backgrounds)
                 if (icon.type === 'background') return false;
                 
-                // Filter by category
-                if (category !== 'all' && icon.category !== category) return false;
+                const data = iconData[icon.id] || { tags: [], categories: [] };
                 
-                // Filter by search term
-                const tags = iconTags[icon.id] || [];
-                const matchesSearch = icon.id.toLowerCase().includes(searchTerm) ||
-                                     tags.some(tag => tag.toLowerCase().includes(searchTerm));
-                if (!matchesSearch) return false;
+                // Category filter
+                if (selectedCategory !== 'all') {
+                    if (!data.categories || !data.categories.includes(selectedCategory)) {
+                        return false;
+                    }
+                }
                 
-                // Filter by active tag filters
-                if (activeFilterTags.length > 0) {
-                    return activeFilterTags.every(filterTag => tags.includes(filterTag));
+                // Search filter
+                if (searchTerm) {
+                    const matchesName = icon.id.toLowerCase().includes(searchTerm);
+                    const matchesTags = data.tags && data.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+                    const matchesCategories = data.categories && data.categories.some(cat => cat.toLowerCase().includes(searchTerm));
+                    
+                    if (!matchesName && !matchesTags && !matchesCategories) {
+                        return false;
+                    }
                 }
                 
                 return true;
@@ -578,54 +609,41 @@
                 card.className = 'icon-card';
                 card.onclick = () => openTagEditor(icon.id);
                 
-                const tags = iconTags[icon.id] || [];
+                const data = iconData[icon.id] || { tags: [], categories: [] };
                 
                 card.innerHTML = `
                     <div class="icon-preview">
                         <svg><use href="${config.spriteUrl}#${icon.id}"></use></svg>
                     </div>
                     <div class="icon-name">${icon.id}</div>
+                    <div class="icon-categories">
+                        ${(data.categories || []).map(cat => `<span class="category-badge">📁 ${cat}</span>`).join('')}
+                    </div>
                     <div class="icon-tags">
-                        ${tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        ${(data.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('')}
                     </div>
                 `;
                 
                 grid.appendChild(card);
             });
-            
-            updateFilterTags();
-        }
-
-        function updateFilterTags() {
-            const container = document.getElementById('filter-tags');
-            container.innerHTML = '';
-            
-            if (allTags.size === 0) return;
-            
-            const sortedTags = Array.from(allTags).sort();
-            sortedTags.forEach(tag => {
-                const tagEl = document.createElement('div');
-                tagEl.className = 'filter-tag';
-                tagEl.textContent = tag;
-                tagEl.onclick = () => {
-                    tagEl.classList.toggle('active');
-                    renderIcons();
-                };
-                container.appendChild(tagEl);
-            });
         }
 
         function openTagEditor(iconId) {
             currentIconId = iconId;
-            const icon = config.icons.find(i => i.id === iconId);
             
-            document.getElementById('editor-title').textContent = `Edit Tags: ${iconId}`;
+            if (!iconData[iconId]) {
+                iconData[iconId] = { tags: [], categories: [] };
+            }
+            
+            document.getElementById('editor-title').textContent = `Edit: ${iconId}`;
             document.getElementById('editor-preview').innerHTML = `
                 <svg style="width: 80px; height: 80px; color: #0072BC;">
                     <use href="${config.spriteUrl}#${iconId}"></use>
                 </svg>
             `;
             
+            updateQuickCategoryButtons();
+            renderCurrentCategories();
             renderCurrentTags();
             
             document.getElementById('overlay').classList.add('active');
@@ -633,20 +651,97 @@
             document.getElementById('tag-input').focus();
         }
 
+        function updateQuickCategoryButtons() {
+            const categories = iconData[currentIconId]?.categories || [];
+            document.querySelectorAll('#category-quick-tags .quick-tag').forEach(btn => {
+                const category = btn.textContent.trim();
+                if (categories.includes(category)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        function toggleCategory(category) {
+            if (!iconData[currentIconId].categories) {
+                iconData[currentIconId].categories = [];
+            }
+            
+            const index = iconData[currentIconId].categories.indexOf(category);
+            if (index > -1) {
+                iconData[currentIconId].categories.splice(index, 1);
+            } else {
+                iconData[currentIconId].categories.push(category);
+                allCategories.add(category);
+            }
+            
+            updateQuickCategoryButtons();
+            renderCurrentCategories();
+            saveToLocalStorage();
+            updateStats();
+            setupCategoryFilter();
+            renderIcons();
+        }
+
+        function renderCurrentCategories() {
+            const categories = iconData[currentIconId]?.categories || [];
+            const container = document.getElementById('current-categories');
+            
+            if (categories.length === 0) {
+                container.innerHTML = '<div style="color: #6B6F70; font-size: 12px;">No categories selected</div>';
+            } else {
+                container.innerHTML = categories.map(cat => `
+                    <span class="category-badge">
+                        📁 ${cat}
+                        <span class="remove" onclick="removeCategory('${cat}')">×</span>
+                    </span>
+                `).join('');
+            }
+        }
+
         function renderCurrentTags() {
-            const tags = iconTags[currentIconId] || [];
+            const tags = iconData[currentIconId]?.tags || [];
             const container = document.getElementById('current-tags');
             
             if (tags.length === 0) {
-                container.innerHTML = '<div style="color: #6B6F70; font-size: 12px;">No tags yet. Add some below!</div>';
+                container.innerHTML = '<div style="color: #6B6F70; font-size: 12px;">No tags yet</div>';
             } else {
                 container.innerHTML = tags.map(tag => `
-                    <span class="tag">
+                    <span class="tag" style="background: #0072BC; color: white;">
                         ${tag}
                         <span class="remove" onclick="removeTag('${tag}')">×</span>
                     </span>
                 `).join('');
             }
+        }
+
+        function addCategories() {
+            const input = document.getElementById('category-input');
+            const newCategories = input.value.split(',')
+                .map(c => c.trim().toLowerCase())
+                .filter(c => c.length > 0);
+            
+            if (newCategories.length === 0) return;
+            
+            if (!iconData[currentIconId].categories) {
+                iconData[currentIconId].categories = [];
+            }
+            
+            newCategories.forEach(cat => {
+                if (!iconData[currentIconId].categories.includes(cat)) {
+                    iconData[currentIconId].categories.push(cat);
+                    allCategories.add(cat);
+                }
+            });
+            
+            input.value = '';
+            updateQuickCategoryButtons();
+            renderCurrentCategories();
+            saveToLocalStorage();
+            updateStats();
+            setupCategoryFilter();
+            renderIcons();
         }
 
         function addTags() {
@@ -657,13 +752,13 @@
             
             if (newTags.length === 0) return;
             
-            if (!iconTags[currentIconId]) {
-                iconTags[currentIconId] = [];
+            if (!iconData[currentIconId].tags) {
+                iconData[currentIconId].tags = [];
             }
             
             newTags.forEach(tag => {
-                if (!iconTags[currentIconId].includes(tag)) {
-                    iconTags[currentIconId].push(tag);
+                if (!iconData[currentIconId].tags.includes(tag)) {
+                    iconData[currentIconId].tags.push(tag);
                     allTags.add(tag);
                 }
             });
@@ -675,14 +770,23 @@
             renderIcons();
         }
 
+        function removeCategory(category) {
+            if (!iconData[currentIconId]?.categories) return;
+            
+            iconData[currentIconId].categories = iconData[currentIconId].categories.filter(c => c !== category);
+            
+            updateQuickCategoryButtons();
+            renderCurrentCategories();
+            saveToLocalStorage();
+            updateStats();
+            setupCategoryFilter();
+            renderIcons();
+        }
+
         function removeTag(tag) {
-            if (!iconTags[currentIconId]) return;
+            if (!iconData[currentIconId]?.tags) return;
             
-            iconTags[currentIconId] = iconTags[currentIconId].filter(t => t !== tag);
-            
-            if (iconTags[currentIconId].length === 0) {
-                delete iconTags[currentIconId];
-            }
+            iconData[currentIconId].tags = iconData[currentIconId].tags.filter(t => t !== tag);
             
             renderCurrentTags();
             saveToLocalStorage();
@@ -699,57 +803,38 @@
         function saveAndNext() {
             const currentIndex = filteredIcons.findIndex(i => i.id === currentIconId);
             const nextIcon = filteredIcons.find((icon, idx) => 
-                idx > currentIndex && (!iconTags[icon.id] || iconTags[icon.id].length === 0)
+                idx > currentIndex && (!iconData[icon.id] || 
+                    (!iconData[icon.id].tags?.length && !iconData[icon.id].categories?.length))
             );
             
             if (nextIcon) {
                 openTagEditor(nextIcon.id);
             } else {
-                alert('Great job! All visible icons are tagged. Try clearing filters to find more untagged icons.');
+                alert('Great job! All visible icons are tagged.');
                 closeTagEditor();
             }
         }
 
         function saveToLocalStorage() {
-            const data = {
-                tags: iconTags,
-                metadata: {
-                    lastUpdated: new Date().toISOString(),
-                    totalTaggedIcons: Object.keys(iconTags).length,
-                    totalUniqueTags: allTags.size,
-                    version: '1.0'
-                }
-            };
-            localStorage.setItem('icon-tags', JSON.stringify(data));
+            localStorage.setItem('icon-data', JSON.stringify(iconData));
         }
 
         function updateStats() {
             const totalIcons = config.icons.filter(i => i.type !== 'background').length;
-            const taggedIcons = Object.keys(iconTags).length;
+            const taggedIcons = Object.keys(iconData).filter(id => 
+                iconData[id].tags?.length > 0 || iconData[id].categories?.length > 0
+            ).length;
             const completionRate = Math.round((taggedIcons / totalIcons) * 100);
             
             document.getElementById('total-icons').textContent = totalIcons;
             document.getElementById('tagged-icons').textContent = taggedIcons;
+            document.getElementById('total-categories').textContent = allCategories.size;
             document.getElementById('total-tags').textContent = allTags.size;
-            document.getElementById('completion-rate').textContent = completionRate + '%';
             document.getElementById('progress-fill').style.width = completionRate + '%';
-            
-            tagsMetadata.totalTaggedIcons = taggedIcons;
-            tagsMetadata.totalUniqueTags = allTags.size;
         }
 
         function exportTags() {
-            const data = {
-                tags: iconTags,
-                metadata: {
-                    lastUpdated: new Date().toISOString(),
-                    totalTaggedIcons: Object.keys(iconTags).length,
-                    totalUniqueTags: allTags.size,
-                    version: '1.0'
-                }
-            };
-            
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const blob = new Blob([JSON.stringify(iconData, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
@@ -757,7 +842,7 @@
             a.click();
             URL.revokeObjectURL(url);
             
-            alert('✅ Tags exported to icon-tags.json!\n\nSave this file in your /dist folder. It will NOT be overwritten by your Python script.');
+            alert('✅ Exported to icon-tags.json!\n\nSave this file to /dist folder.');
         }
 
         function importTags(event) {
@@ -767,38 +852,148 @@
             const reader = new FileReader();
             reader.onload = function(e) {
                 try {
-                    const data = JSON.parse(e.target.result);
+                    iconData = JSON.parse(e.target.result);
                     
-                    if (data.tags) {
-                        iconTags = data.tags;
-                        tagsMetadata = data.metadata || tagsMetadata;
-                        
-                        // Rebuild allTags set
-                        allTags.clear();
-                        Object.values(iconTags).forEach(tags => {
-                            tags.forEach(tag => allTags.add(tag));
-                        });
-                        
-                        saveToLocalStorage();
-                        renderIcons();
-                        updateStats();
-                        
-                        alert('✅ Tags imported successfully!');
-                    } else {
-                        alert('❌ Invalid tags file format');
-                    }
+                    allCategories.clear();
+                    allTags.clear();
+                    Object.values(iconData).forEach(item => {
+                        if (item.categories) {
+                            item.categories.forEach(cat => allCategories.add(cat));
+                        }
+                        if (item.tags) {
+                            item.tags.forEach(tag => allTags.add(tag));
+                        }
+                    });
+                    
+                    saveToLocalStorage();
+                    setupCategoryFilter();
+                    renderIcons();
+                    updateStats();
+                    
+                    alert('✅ Tags imported successfully!');
                 } catch (err) {
-                    alert('❌ Failed to parse tags file: ' + err.message);
+                    alert('❌ Failed to parse file: ' + err.message);
                 }
             };
             reader.readAsText(file);
         }
 
-        // Event listeners
+        function removeMissingIcons() {
+            if (!config || !config.icons) {
+                alert('❌ No icon config loaded. Please refresh the page.');
+                return;
+            }
+            
+            // Confirm action
+            const confirmMsg = 'This will remove all tags and categories for icons that no longer exist in your config.\n\nAre you sure you want to continue?';
+            if (!confirm(confirmMsg)) {
+                return;
+            }
+            
+            // Get all valid icon IDs from config
+            const validIconIds = new Set(config.icons.map(icon => icon.id));
+            
+            // Find missing icons
+            const missingIcons = [];
+            const beforeCount = Object.keys(iconData).length;
+            
+            Object.keys(iconData).forEach(iconId => {
+                if (!validIconIds.has(iconId)) {
+                    missingIcons.push(iconId);
+                }
+            });
+            
+            if (missingIcons.length === 0) {
+                alert('✅ No missing icons found! Your tags file is clean.');
+                return;
+            }
+            
+            // Show what will be removed
+            const showDetails = missingIcons.length <= 20;
+            let confirmDetails = `Found ${missingIcons.length} icon(s) that no longer exist:\n\n`;
+            
+            if (showDetails) {
+                confirmDetails += missingIcons.slice(0, 20).join('\n');
+            } else {
+                confirmDetails += missingIcons.slice(0, 10).join('\n');
+                confirmDetails += `\n... and ${missingIcons.length - 10} more`;
+            }
+            
+            confirmDetails += '\n\nRemove these entries?';
+            
+            if (!confirm(confirmDetails)) {
+                return;
+            }
+            
+            // Remove missing icons
+            missingIcons.forEach(iconId => {
+                delete iconData[iconId];
+            });
+            
+            const afterCount = Object.keys(iconData).length;
+            
+            // Rebuild categories and tags sets
+            allCategories.clear();
+            allTags.clear();
+            Object.values(iconData).forEach(item => {
+                if (item.categories) {
+                    item.categories.forEach(cat => allCategories.add(cat));
+                }
+                if (item.tags) {
+                    item.tags.forEach(tag => allTags.add(tag));
+                }
+            });
+            
+            // Save and update UI
+            saveToLocalStorage();
+            setupCategoryFilter();
+            renderIcons();
+            updateStats();
+            
+            // Show cleanup report
+            const reportDiv = document.getElementById('cleanup-report');
+            const detailsDiv = document.getElementById('cleanup-details');
+            
+            let reportHtml = `
+                <p style="margin: 0 0 10px 0;">
+                    <strong>✅ Cleanup complete!</strong>
+                </p>
+                <ul style="margin: 0; padding-left: 20px; font-size: 12px;">
+                    <li>Icons before cleanup: ${beforeCount}</li>
+                    <li>Icons removed: ${missingIcons.length}</li>
+                    <li>Icons remaining: ${afterCount}</li>
+                </ul>
+            `;
+            
+            if (missingIcons.length <= 50) {
+                reportHtml += `
+                    <details style="margin-top: 10px;">
+                        <summary style="cursor: pointer; font-size: 12px; font-weight: bold;">
+                            Show removed icons (${missingIcons.length})
+                        </summary>
+                        <ul style="margin: 10px 0 0 0; padding-left: 20px; font-size: 11px; max-height: 200px; overflow-y: auto;">
+                            ${missingIcons.map(id => `<li>${id}</li>`).join('')}
+                        </ul>
+                    </details>
+                `;
+            }
+            
+            reportHtml += `
+                <p style="margin: 10px 0 0 0; font-size: 12px;">
+                    <strong>⚠️ Don't forget to export your cleaned tags!</strong>
+                </p>
+            `;
+            
+            detailsDiv.innerHTML = reportHtml;
+            reportDiv.style.display = 'block';
+            
+            // Scroll to report
+            reportDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
         document.getElementById('search-input').addEventListener('input', renderIcons);
         document.getElementById('category-filter').addEventListener('change', renderIcons);
 
-        // Keyboard shortcuts in tag editor
         document.getElementById('tag-input').addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 e.preventDefault();
@@ -806,7 +1001,13 @@
             }
         });
 
-        // Initialize
+        document.getElementById('category-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                addCategories();
+            }
+        });
+
         window.addEventListener('DOMContentLoaded', loadConfig);
     </script>
 </body>

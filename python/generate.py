@@ -92,16 +92,19 @@ def create_gep_sprite_system():
             file_path = os.path.join(root_dir, svg_file)
             base_name = os.path.splitext(svg_file)[0]
             
-            # Logic for IDs and Categories
-            parts = base_name.split('_', 2)
+            # Simplified: Determine type from filename pattern or folder
+            # Remove category logic - categories will be handled via tags
+            parts = base_name.split('_', 1)
+            
             if is_background_folder:
-                asset_type, category, icon_id = "background", "Backgrounds", base_name
-            elif len(parts) >= 3:
-                asset_type, category, icon_id = parts[0], parts[1], f"{parts[1]}_{parts[2]}" 
-            elif len(parts) == 2:
-                asset_type, category, icon_id = parts[0], "General", parts[1]
+                asset_type = "background"
+                icon_id = base_name
+            elif len(parts) >= 2:
+                asset_type = parts[0]
+                icon_id = parts[1]
             else:
-                asset_type, category, icon_id = "unknown", "General", base_name
+                asset_type = "general"
+                icon_id = base_name
 
             try:
                 tree = ET.parse(file_path)
@@ -117,12 +120,12 @@ def create_gep_sprite_system():
                     for child in svg_content:
                         symbol.append(child)
                 
-                # Metadata (Important: path uses the actual SVG location for masking)
+                # Metadata - NO CATEGORY FIELD
+                # Categories will be managed through tags in icon-tags.json
                 icon_metadata.append({
                     "id": icon_id,
                     "viewBox": viewBox,
                     "type": asset_type,
-                    "category": category,
                     "path": f"https://assets.henryschein.com/{base_name}.svg" if is_background_folder else None
                 })
                 
@@ -135,7 +138,7 @@ def create_gep_sprite_system():
     with open(sprite_path, "wb") as f:
         f.write(ET.tostring(sprite_root, encoding="utf-8", xml_declaration=True))
     
-    # 5. Save configuration JSON (Including spriteFile)
+    # 5. Save configuration JSON (NO categories in config)
     config = {
         "spriteName": file_name,
         "spriteUrl": f"./dist/{full_file_name}", 
@@ -149,6 +152,7 @@ def create_gep_sprite_system():
         json.dump(config, f, indent=2)
     
     print(f"\n✓ Done! Files saved in: {output_folder}")
+    print(f"ℹ️  Categories removed - use the Tag Manager to add category tags!")
 
 if __name__ == "__main__":
     create_gep_sprite_system()
