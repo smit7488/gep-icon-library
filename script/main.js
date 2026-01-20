@@ -354,7 +354,7 @@ function loadActualContent(card, item) {
                 </div>
             </div>
 
-            <div id="preview-wrapper-${safeId}" class="preview-wrapper" style="background-color: #F5F9FC; border-radius: 8px; padding: 0; overflow: hidden; position: relative; height: 400px; margin-bottom: 20px;">
+            <div id="preview-wrapper-${safeId}" class="preview-wrapper" style="background-color: #F5F9FC; border-radius: 8px; padding: 0; overflow: hidden; position: relative; height: 360px; margin-bottom: 20px;">
                 <div id="preview-bg-${safeId}" class="preview-full-background" style="position: relative; overflow: hidden; z-index: 1; height: 100%; width: 100%;">
                     <div class="preview-maincontent" style="position: relative; z-index: 2; padding: 40px; color: #002F6E;">
                         <h3 style="margin: 0 0 10px 0;">Preview</h3>

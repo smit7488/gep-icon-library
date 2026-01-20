@@ -1327,13 +1327,6 @@
       "path": null
     },
     {
-      "id": "Business_Gains",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Business",
-      "path": null
-    },
-    {
       "id": "Business_Gems",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1404,13 +1397,6 @@
       "path": null
     },
     {
-      "id": "Business_Progress",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Business",
-      "path": null
-    },
-    {
       "id": "Business_Quality-Management",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1440,13 +1426,6 @@
     },
     {
       "id": "Business_Shipping",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Business",
-      "path": null
-    },
-    {
-      "id": "Business_Society",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Business",
@@ -1530,13 +1509,6 @@
       "path": null
     },
     {
-      "id": "Business_Warehouse",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Business",
-      "path": null
-    },
-    {
       "id": "Business_Website",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1566,13 +1538,6 @@
     },
     {
       "id": "Corporate_Centers",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Corporate",
-      "path": null
-    },
-    {
-      "id": "Corporate_Citizenship",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Corporate",
@@ -1667,13 +1632,6 @@
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "HS-Cares",
-      "path": null
-    },
-    {
-      "id": "Marketing_Campaigns",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Marketing",
       "path": null
     },
     {
@@ -1908,21 +1866,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Burs-Carbide",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Burs-Diamond",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Burs-Steel",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -1958,13 +1902,6 @@
     },
     {
       "id": "Product-Categories_Ceiling-Mounted-Lighting",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Ceiling-Mounted",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2048,13 +1985,6 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Dental-Misc-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Dental-Pharmacy-Supplies-Grey",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -2119,13 +2049,6 @@
     },
     {
       "id": "Product-Categories_Discover-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Discs-Diamond",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2244,13 +2167,6 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Gloves",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Gutta_Percha",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -2335,13 +2251,6 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Instrument-Cleaning",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Instruments-Grey",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -2357,13 +2266,6 @@
     },
     {
       "id": "Product-Categories_Lab-Coats-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Lab-Equipment",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2413,13 +2315,6 @@
     },
     {
       "id": "Product-Categories_Medicaments-Grey (1)",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Medicaments-Grey",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2545,13 +2440,6 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Orthopedics",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Oxygen",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -2588,13 +2476,6 @@
     },
     {
       "id": "Product-Categories_Pharmaceuticals-Respiratory-Grey (1)",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Pharmaceuticals-Respiratory-Grey",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2714,13 +2595,6 @@
     },
     {
       "id": "Product-Categories_Putty-Paste",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Rapid-Diagnostic-Kits",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
@@ -2910,13 +2784,6 @@
     },
     {
       "id": "Product-Categories_Unwrap-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "category": "Product-Categories",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Vaccines",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "category": "Product-Categories",
