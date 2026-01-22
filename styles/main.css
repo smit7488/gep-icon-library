@@ -1,5 +1,4 @@
-
-        * {
+* {
             box-sizing: border-box;
         }
 
@@ -188,6 +187,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002F6E", endC
   overflow-wrap: break-word; /* modern standard */
   white-space: normal;    
   hyphens: none;          /* prevents automatic hyphen insertion */
+  min-height: 2.5em;      /* ensures consistent height for 1-2 lines */
+  line-height: 1.25em;    /* controls line spacing */
         }
 
         select {
@@ -788,4 +789,107 @@ input[type="range"]::-moz-range-thumb {
 
 input[type="range"]::-moz-range-thumb:hover {
     background: #005a96;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    width: 100% !important;
+    max-width: 1920px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #E6EBF1;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #002F6E;
+    font-size: 24px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #6B6F70;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: #F7F7F6;
+    color: #002F6E;
+}
+
+
+
+#modal-background-container .card-wide {
+    margin: 0;
+    animation: none;
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .modal {
+        padding: 0;
+    }
+    
+    .modal-content {
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .modal-header {
+        padding: 15px 20px;
+    }
+    
+   
 }

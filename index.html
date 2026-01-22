@@ -146,7 +146,6 @@
         <button type="button" class="tab-btn active" onclick="return switchTab('pictograph');">Pictographs</button>
         <button type="button" class="tab-btn" onclick="return switchTab('ui');">UI Icons</button>
         <button type="button" class="tab-btn" onclick="return switchTab('wireblock');">Wireblocks</button>
-        <button type="button" class="tab-btn" onclick="return switchTab('background');">Background Wireblock Generator</button>
     </div>
 
     <!-- Filter Bar (appears below tabs) -->
@@ -188,12 +187,19 @@
         <div id="wireblock-grid" class="grid"></div>
     </div>
 
-    <!-- Background Wireblocks Tab -->
-    <div id="background-tab" class="tab-content">
-        <div id="background-section" class="full-width-section">
-            <div id="background-list"></div>
+    <!-- Background Generator Modal -->
+    <div id="background-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Background Wireblock Generator</h2>
+                <button class="modal-close" onclick="closeBackgroundModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-background-container"></div>
+            </div>
         </div>
     </div>
+
     <div id="no-results" class="no-results-container" style="display: none;">
         <div class="no-results-content">
             <span style="font-size: 3rem;">🔍</span>

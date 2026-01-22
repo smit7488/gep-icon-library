@@ -8,6 +8,71 @@ let currentTab = 'pictograph'; // Track current tab - default to Pictographs
 const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
 let iconTagsData = null; // Will store the icon-tags.json data
 
+
+
+// Reset settings to defaults
+function resetToDefaults(safeId) {
+    const card = document.getElementById(`card-${safeId}`);
+    
+    // Update all inputs and sliders to default values
+    document.getElementById(`scale-${safeId}`).value = 150;
+    document.getElementById(`scale-input-${safeId}`).value = 150;
+    
+    document.getElementById(`h-pos-${safeId}`).value = 10;
+    document.getElementById(`h-pos-input-${safeId}`).value = 10;
+    
+    document.getElementById(`v-pos-${safeId}`).value = -25;
+    document.getElementById(`v-pos-input-${safeId}`).value = -25;
+    
+    document.getElementById(`rotation-${safeId}`).value = 0;
+    document.getElementById(`rotation-input-${safeId}`).value = 0;
+    
+    document.getElementById(`opacity-${safeId}`).value = 60;
+    document.getElementById(`opacity-input-${safeId}`).value = 60;
+    
+    document.getElementById(`hide-mobile-${safeId}`).checked = false;
+    
+    // Reset colors
+    card.dataset.currentColor = 'icon-blue';
+    card.dataset.currentHex = '#0072BC';
+    
+    // Update the mask
+    updateMask(card.dataset.id, 'icon-blue', '#0072BC', card.dataset.path);
+}
+
+// Increment/Decrement functions
+function incrementValue(safeId, controlName, step = 1) {
+    const input = document.getElementById(`${controlName}-input-${safeId}`);
+    const slider = document.getElementById(`${controlName}-${safeId}`);
+    
+    let currentValue = parseInt(input.value) || 0;
+    let min = parseInt(slider.min);
+    let max = parseInt(slider.max);
+    
+    let newValue = currentValue + step;
+    newValue = Math.max(min, Math.min(max, newValue));
+    
+    input.value = newValue;
+    slider.value = newValue;
+    
+    // Trigger the appropriate update function
+    const updateFunctions = {
+        'scale': updateMaskScaleFromInput,
+        'h-pos': updateMaskPositionFromInput,
+        'v-pos': updateMaskPositionFromInput,
+        'rotation': updateMaskRotationFromInput,
+        'opacity': updateMaskOpacityFromInput
+    };
+    
+    if (updateFunctions[controlName]) {
+        updateFunctions[controlName](safeId);
+    }
+}
+
+function decrementValue(safeId, controlName, step = 1) {
+    incrementValue(safeId, controlName, -step);
+}
+
 function formatColorLabel(cls) {
     // Remove 'icon-' prefix
     let label = cls.replace('icon-', '');
@@ -38,12 +103,12 @@ async function loadIconTags() {
         const response = await fetch('./dist/icon-tags.json');
         if (response.ok) {
             iconTagsData = await response.json();
-            console.log('✅ Loaded icon tags & categories from icon-tags.json');
+            console.log('âœ… Loaded icon tags & categories from icon-tags.json');
         } else {
-            console.log('ℹ️ No icon-tags.json file found (tags/categories feature optional)');
+            console.log('â„¹ï¸ No icon-tags.json file found (tags/categories feature optional)');
         }
     } catch (e) {
-        console.log('ℹ️ Tags file not available:', e.message);
+        console.log('â„¹ï¸ Tags file not available:', e.message);
     }
 }
 
@@ -184,7 +249,6 @@ function filterIcons() {
             if (currentTab === 'ui' && i.type !== 'UI') return false;
             if (currentTab === 'pictograph' && i.type !== 'pictograph') return false;
             if (currentTab === 'wireblock' && i.type !== 'wireblock') return false;
-            if (currentTab === 'background' && i.type !== 'background') return false;
             
             // *** UPDATED: Category filter from icon-tags.json ***
             if (c !== 'all' && iconTagsData && iconTagsData[i.id]) {
@@ -220,7 +284,7 @@ function filterIcons() {
         });
 
         const noResults = document.getElementById('no-results');
-        const currentGrid = document.getElementById(`${currentTab}-grid`) || document.getElementById('background-list');
+        const currentGrid = document.getElementById(`${currentTab}-grid`);
 
         if (filteredIconsGlobal.length === 0) {
             noResults.style.display = 'block';
@@ -232,7 +296,7 @@ function filterIcons() {
         } else {
             noResults.style.display = 'none';
             if (currentGrid) {
-                currentGrid.style.display = currentTab === 'background' ? 'block' : 'grid';
+                currentGrid.style.display = 'grid';
             }
             itemsToShow = PAGE_SIZE;
             renderIcons(true);
@@ -247,13 +311,8 @@ function resetFilters() {
 }
 
 function handleLoadMore() {
-    // Get current grid/list container
-    let currentContainer;
-    if (currentTab === 'background') {
-        currentContainer = document.getElementById('background-list');
-    } else {
-        currentContainer = document.getElementById(`${currentTab}-grid`);
-    }
+    // Get current grid container
+    const currentContainer = document.getElementById(`${currentTab}-grid`);
 
     if (!currentContainer) return;
 
@@ -289,12 +348,7 @@ function renderIcons(resetGrid = true) {
     tabNav.style.display = 'flex';
     
     // Get the current grid container
-    let currentGrid;
-    if (currentTab === 'background') {
-        currentGrid = document.getElementById('background-list');
-    } else {
-        currentGrid = document.getElementById(`${currentTab}-grid`);
-    }
+    const currentGrid = document.getElementById(`${currentTab}-grid`);
     
     if (!currentGrid) return;
     
@@ -313,12 +367,7 @@ function renderIcons(resetGrid = true) {
         const safeId = i.id.replace(/[^a-zA-Z0-9-_]/g, '_');
         card.dataset.id = i.id;
         card.id = `card-${safeId}`;
-
-        if (i.type === 'background') {
-            card.className = 'card-wide';
-        } else {
-            card.className = 'card';
-        }
+        card.className = 'card';
         
         // Only animate on first load, not when returning to tab
         if (hasExistingContent && resetGrid) {
@@ -338,13 +387,8 @@ function renderIcons(resetGrid = true) {
 function updateLoadMoreButton() {
     const remaining = filteredIconsGlobal.length - itemsToShow;
     
-    // Get current grid/list container
-    let currentContainer;
-    if (currentTab === 'background') {
-        currentContainer = document.getElementById('background-list');
-    } else {
-        currentContainer = document.getElementById(`${currentTab}-grid`);
-    }
+    // Get current grid container
+    const currentContainer = document.getElementById(`${currentTab}-grid`);
 
     if (!currentContainer) return;
 
@@ -398,11 +442,7 @@ function loadActualContent(card, item) {
     
     if (isMask) {
         card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 20px;">
-                <div>
-                    <span class="label" style="font-size: 1.2rem;">${formatBackgroundLabel(item.id)}</span>
-                    <div class="type-badge background">Background Wireblock</div>
-                </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0px;">
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <div style="width: 200px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E; display: block; margin-bottom: 4px;">WIREBLOCK COLOR</label>
@@ -413,7 +453,12 @@ function loadActualContent(card, item) {
                         ${createColorPicker(safeId, 'background', 'icon-blue-t1', 'updateMaskBackground')}
                     </div>
                 </div>
+                 <div>
+                    <button onclick="resetToDefaults(\'${safeId}\')" class="download-btn" style="background: #ED1C24; padding: 8px 16px; font-size: 12px; white-space: nowrap;">Reset to Defaults</button>
+                    </div>
             </div>
+
+                          
 
             <div id="preview-wrapper-${safeId}" class="preview-wrapper" style="background-color: #F5F9FC; border-radius: 8px; padding: 0; overflow: hidden; position: relative; height: 360px; margin-bottom: 20px;">
                 <div id="preview-bg-${safeId}" class="preview-full-background" style="position: relative; overflow: hidden; z-index: 1; height: 100%; width: 100%;">
@@ -424,50 +469,66 @@ function loadActualContent(card, item) {
                 </div>
             </div>
             
-            <div style="margin-bottom: 20px;">
+            <div class="grid" style="margin-bottom: 20px;">
                 <div style="margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SCALE</label>
-                        <input type="number" id="scale-input-${safeId}" min="100" max="300" value="150"
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <button onclick="decrementValue(\'${safeId}\', \'scale\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                            <input type="number" id="scale-input-${safeId}" min="100" max="300" value="150"
                                oninput="updateMaskScaleFromInput('${safeId}')"
                                style="width: 70px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                            <button onclick="incrementValue(\'${safeId}\', \'scale\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                        </div>
                     </div>
                     <input type="range" id="scale-${safeId}" min="100" max="300" value="150" step="1"
                            oninput="updateMaskScale('${safeId}')" 
                            style="width: 100%;">
                 </div>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 15px;">
-                    <div>
+               
+                    <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">HORIZONTAL</label>
-                            <input type="number" id="h-pos-input-${safeId}" min="-300" max="300" value="10"
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue(\'${safeId}\', \'h-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                                <input type="number" id="h-pos-input-${safeId}" min="-300" max="300" value="10"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue(\'${safeId}\', \'h-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
                         </div>
                         <input type="range" id="h-pos-${safeId}" min="-300" max="300" value="10" step="1"
                                oninput="updateMaskPosition('${safeId}')" 
                                style="width: 100%;">
                     </div>
                     
-                    <div>
+                   <div style="margin-bottom: 15px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">VERTICAL</label>
-                            <input type="number" id="v-pos-input-${safeId}" min="-300" max="300" value="-25"
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue(\'${safeId}\', \'v-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                                <input type="number" id="v-pos-input-${safeId}" min="-300" max="300" value="-25"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue(\'${safeId}\', \'v-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
                         </div>
                         <input type="range" id="v-pos-${safeId}" min="-300" max="300" value="-25" step="1"
                                oninput="updateMaskPosition('${safeId}')" 
                                style="width: 100%;">
                     </div>
-                </div>
+              
                 <div style="margin-bottom: 15px;">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">ROTATION</label>
-        <input type="number" id="rotation-input-${safeId}" min="-180" max="180" value="0"
+        <div style="display: flex; align-items: center; gap: 4px;">
+            <button onclick="decrementValue(\'${safeId}\', \'rotation\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+            <input type="number" id="rotation-input-${safeId}" min="-180" max="180" value="0"
                oninput="updateMaskRotationFromInput('${safeId}')"
                style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+            <button onclick="incrementValue(\'${safeId}\', \'rotation\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+        </div>
     </div>
     <input type="range" id="rotation-${safeId}" min="-180" max="180" value="0" step="1"
            oninput="updateMaskRotation('${safeId}')" 
@@ -476,23 +537,30 @@ function loadActualContent(card, item) {
                 <div style="margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">OPACITY</label>
-                        <input type="number" id="opacity-input-${safeId}" min="0" max="100" value="60"
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <button onclick="decrementValue(\'${safeId}\', \'opacity\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                            <input type="number" id="opacity-input-${safeId}" min="0" max="100" value="60"
                                oninput="updateMaskOpacityFromInput('${safeId}')"
                                style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                            <button onclick="incrementValue(\'${safeId}\', \'opacity\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                        </div>
                     </div>
                     <input type="range" id="opacity-${safeId}" min="0" max="100" value="60" step="1"
                            oninput="updateMaskOpacity('${safeId}')" 
                            style="width: 100%;">
                 </div>
                 
-                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #E6EBF1;">
-                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E;">
-                        <input type="checkbox" id="hide-mobile-${safeId}" onchange="updateMaskMobile('${safeId}')" 
-                               style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
-                        <span style="font-weight: 600;">Hide wireblock on mobile devices (≤991px)</span>
-                    </label>
-                </div>
+               
             </div>
+
+             <div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #E6EBF1; align-items: center; flex-wrap: wrap; juston-content: space-between;">
+                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E; flex: 1; min-width: 200px;">
+                        <input type="checkbox" id="hide-mobile-${safeId}" onchange="updateMaskMobile(\'${safeId}\')" 
+                               style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
+                        <span style="font-weight: 600;">Hide on mobile (≤991px)</span>
+                    </label>
+     
+                </div>
             <p class="small mb-0">Put the following CSS into a RichText component within a style tag at the top of your page in Sitecore to apply the background wireblock mask:</p>
 
             <div class="code-block">
@@ -513,6 +581,9 @@ function loadActualContent(card, item) {
         updateMask(item.id, 'icon-blue', '#0072BC', item.path);
     }
     else {
+        // Check if this is a wireblock to add the generate background button
+        const isWireblock = item.type === 'wireblock';
+        
         card.innerHTML = `
             <span class="label">${item.id}</span>
             <div class="type-badge-wrapper"><div class="type-badge ${typeClass}">${typeDisplay}</div></div>
@@ -521,6 +592,12 @@ function loadActualContent(card, item) {
             </div>
             
             ${createColorPicker(safeId, 'icon', 'icon-blue', 'updateIcon')}
+            
+            ${isWireblock ? `
+            <button class="download-btn" style="background: #008996; width: 100%; margin-top: 10px;" onclick="openBackgroundGenerator('${item.id}')">
+                Generate Background
+            </button>
+            ` : ''}
 
             <div class="button-group" style="display: flex; gap: 4px; margin-top: 10px;">
                 <button class="download-btn" onclick="downloadSVG('${item.id}', '${safeId}')">SVG</button>
@@ -804,7 +881,7 @@ function updateMask(id, colorClass, hex, path) {
         if (typeof hljs !== 'undefined') {
             hljs.highlightElement(codeElement);
         }
-    }
+}
 }
 
 // New function for mobile checkbox
@@ -1131,4 +1208,66 @@ window.addEventListener("scroll", () => {
 
 backToTopButton.addEventListener("click", () => {
     window.scrollTo(0, 0);
+});
+
+// Open background generator modal
+function openBackgroundGenerator(wireblockId) {
+    // Find the corresponding background wireblock
+    // Pattern: wireblock "Business-Concepts_Accomplish" -> background "HS_US_EN_Wireblock_non-scaling-stroke-2_Business-Concepts_Accomplish"
+    const backgroundId = `HS_US_EN_Wireblock_non-scaling-stroke-2_${wireblockId}`;
+    
+    // Check if this background exists
+    const backgroundWireblock = currentConfig.icons.find(i => i.id === backgroundId);
+    if (!backgroundWireblock) {
+        alert('Background version not found for this wireblock');
+        return;
+    }
+    
+    // Show the modal
+    const modal = document.getElementById('background-modal');
+    modal.style.display = 'flex';
+    
+    // Update modal title
+    document.getElementById('modal-title').textContent = `Background Generator: ${formatBackgroundLabel(backgroundId)}`;
+    
+    // Render the background wireblock in the modal
+    const container = document.getElementById('modal-background-container');
+    container.innerHTML = '';
+    
+    const card = document.createElement('div');
+    const safeId = backgroundWireblock.id.replace(/[^a-zA-Z0-9-_]/g, '_');
+    card.dataset.id = backgroundWireblock.id;
+    card.id = `card-${safeId}`;
+    card.className = 'card-wide is-loading';
+    
+    container.appendChild(card);
+    card.innerHTML = `<div class="preview-area"></div>`;
+    loadActualContent(card, backgroundWireblock);
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+}
+
+// Close background generator modal
+function closeBackgroundModal() {
+    const modal = document.getElementById('background-modal');
+    modal.style.display = 'none';
+    
+    // Re-enable body scroll
+    document.body.style.overflow = '';
+}
+
+// Close modal when clicking outside of it
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('background-modal');
+    if (e.target === modal) {
+        closeBackgroundModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeBackgroundModal();
+    }
 });
