@@ -4,6 +4,12 @@
   "spriteFile": "./dist/hs-icons-master.svg",
   "icons": [
     {
+      "id": "HS_US_EN_Wireblock_non-scaling-stroke-2_Business-Concepts_3D",
+      "viewBox": "0 0 120 121",
+      "type": "background",
+      "path": "https://assets.henryschein.com/HS_US_EN_Wireblock_non-scaling-stroke-2_Business-Concepts_3D.svg"
+    },
+    {
       "id": "HS_US_EN_Wireblock_non-scaling-stroke-2_Business-Concepts_Accomplish",
       "viewBox": "0 0 116 116",
       "type": "background",
