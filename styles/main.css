@@ -100,6 +100,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002F6E", endC
             padding: 25px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         .type-badge {
          
@@ -187,8 +190,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002F6E", endC
   overflow-wrap: break-word; /* modern standard */
   white-space: normal;    
   hyphens: none;          /* prevents automatic hyphen insertion */
-  min-height: 2.5em;      /* ensures consistent height for 1-2 lines */
-  line-height: 1.25em;    /* controls line spacing */
+
+  line-height: 1.5em;     /* controls line spacing */
         }
 
         select {
@@ -238,8 +241,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002F6E", endC
 
         .code-block {
             position: relative;
-
             min-height: 60px;
+            flex: 1 1 auto;
+            margin-top: auto;
         }
 
         code {
@@ -868,7 +872,9 @@ input[type="range"]::-moz-range-thumb:hover {
     color: #002F6E;
 }
 
-
+.modal-body {
+    padding: 30px;
+}
 
 #modal-background-container .card-wide {
     margin: 0;
@@ -891,5 +897,7 @@ input[type="range"]::-moz-range-thumb:hover {
         padding: 15px 20px;
     }
     
-   
+    .modal-body {
+        padding: 20px;
+    }
 }
