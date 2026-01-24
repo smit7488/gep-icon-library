@@ -35,7 +35,15 @@
             <div class="container-lg mt-4 mb-4" style="max-width: 1400px">
                 <div class="row g-3 p-3 mt-3 mb-5">
                     <div class="col-12 col-sm-6 p-2 d-flex flex-column justify-content-center" style="z-index: 1">
-                        <h1>GEP Icon Guide &amp; Generator</h1>
+                        <h1>
+                            GEP Icon Guide &amp; Generator
+                            <button class="help-icon-btn" onclick="openHelpModal()" title="About this tool" aria-label="About this tool">
+                                <svg class="help-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 16v.01M12 12c0-1.5 1.5-2 2-2.5s1-1 1-2c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </h1>
                         <p id="sprite-info">Loading sprite information...</p>
                     </div>
 
@@ -199,10 +207,112 @@
             </div>
         </div>
     </div>
+    <!-- Help/About Modal -->
+    <div id="help-modal" class="modal" style="display: none;">
+        <div class="modal-content help-modal-content">
+            <div class="modal-header">
+                <h2>About the GEP Icon Guide &amp; Generator</h2>
+                <button class="modal-close" onclick="closeHelpModal()">&times;</button>
+            </div>
+            <div class="modal-body help-modal-body">
+                <div class="help-section">
+                    <h3>What is this tool?</h3>
+                    <p>The GEP Icon Guide & Generator is a comprehensive, single-source-of-truth system for the Henry Schein Global eCommerce Platform (GEP) icon library. It consolidates over 1,000 icons—including Pictographs, UI Icons, and Wireblocks—into one unified, searchable interface that eliminates redundancy and drastically reduces site bloat.</p>
+                </div>
+
+                <div class="help-section">
+                    <h3>What does it do?</h3>
+                    <ul>
+                        <li><strong>Browse & Search:</strong> Explore 1,000+ icons with intelligent JSON-based tagging that makes finding the right icon fast and intuitive.</li>
+                        <li><strong>Copy-Ready Code:</strong> Generate production-ready SVG code instantly with proper class names and sizing—no manual markup required.</li>
+                        <li><strong>Color Variations:</strong> All icons use <code>currentColor</code> inheritance, meaning one SVG adapts to any brand color via CSS classes. No need for separate color variants.</li>
+                        <li><strong>Size Options:</strong> Test icons at multiple sizes (16px, 24px, 32px, 48px) to ensure they scale perfectly in your design.</li>
+                        <li><strong>Background Patterns:</strong> Generate custom wireblock patterns for backgrounds and headers with live preview and color customization.</li>
+                        <li><strong>Unified SVG Sprite:</strong> All icons live in a single SVG sprite file, eliminating the need to manage thousands of individual files in the DAM.</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Why This Tool is Essential</h3>
+                    <ul>
+                        <li><strong>Massive Site Optimization:</strong> By consolidating all icons into one sprite file, we eliminate the need for thousands of separate image files. This dramatically reduces HTTP requests, page weight, and load times across the entire GEP platform.</li>
+                        <li><strong>Single Source of Truth:</strong> No more icon hunting across folders, DAMs, or legacy files. Every approved icon lives here, ensuring teams always use the current, standardized version.</li>
+                        <li><strong>Zero Redundancy:</strong> Traditional icon systems require separate files for each color variant (blue icon, red icon, green icon, etc.). Our system uses one SVG that adapts to any color via CSS, reducing file count by 90%+.</li>
+                        <li><strong>Design System Adherence:</strong> All icons maintain consistent stroke weights (1.5px), viewBox dimensions, and styling, ensuring perfect alignment with Henry Schein's brand standards.</li>
+                        <li><strong>Instant Updates:</strong> When an icon is updated or added to the sprite, it's immediately available across all implementations—no need to re-upload or re-distribute files.</li>
+                        <li><strong>Developer Efficiency:</strong> Copy complete, production-ready code in one click. No more writing SVG paths by hand or wrestling with file formats.</li>
+                        <li><strong>Versatility:</strong> Works seamlessly in any environment—static HTML, React, Angular, Vue, or any framework. The SVG sprite is framework-agnostic.</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Technical Architecture</h3>
+                    <p>This system is built on a foundation of standardization and automation:</p>
+                    <ul>
+                        <li><strong>Consistent Stroke Weight:</strong> All icons maintain a 1.5px stroke width, ensuring visual consistency and crisp rendering at all sizes.</li>
+                        <li><strong>JSON-Based Metadata:</strong> Icon tags, categories, and relationships are managed through JSON configuration files (<code>icon-tags.json</code>, <code>hs-icons-master-config.json</code>), making the system searchable, scalable, and easy to maintain.</li>
+                        <li><strong>Unified Sprite File:</strong> Instead of managing 1,000+ individual SVG files for different colors and contexts, all icons are embedded in a single sprite. CSS handles color variations via <code>currentColor</code>, meaning one icon = infinite color possibilities.</li>
+                        <li><strong>CSS Color Inheritance:</strong> Icons use <code>fill: currentColor</code> and <code>stroke: currentColor</code>, allowing them to inherit color from parent elements or CSS classes. This eliminates the need for separate blue, red, or green versions of the same icon.</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Behind the Hood: How It Works</h3>
+                    <p>The GEP Icon System is powered by automated Python scripts that ensure consistency, quality, and maintainability:</p>
+                    <ul>
+                        <li><strong>SVG Optimization Scripts:</strong> Python automation cleans and optimizes raw SVG files, removing unnecessary metadata, normalizing viewBox dimensions, and standardizing stroke weights to exactly 1.5px.</li>
+                        <li><strong>JSON Generation:</strong> Scripts automatically generate the configuration files (<code>hs-icons-master-config.json</code>, <code>icon-tags.json</code>) that power the search, filtering, and categorization features.</li>
+                        <li><strong>Sprite Compilation:</strong> All individual icons are programmatically compiled into a single sprite file, reducing what would be thousands of DAM uploads to just one master file.</li>
+                        <li><strong>Tag Management:</strong> Metadata tagging is managed through JSON, allowing new icons to be categorized and made searchable without manual indexing or complex database systems.</li>
+                        <li><strong>Quality Control:</strong> Automated validation ensures every icon meets technical requirements (viewBox, stroke weight, path structure) before being added to the production sprite.</li>
+                    </ul>
+                    <p>This automation ensures that the icon system remains consistent, scalable, and adheres to strict standards—eliminating human error and reducing maintenance overhead.</p>
+                </div>
+
+                <div class="help-section">
+                    <h3>Icon Categories</h3>
+                    <ul>
+                        <li><strong>Pictographs:</strong> Illustrative icons representing concepts, products, and services. Perfect for marketing, navigation, and feature highlights.</li>
+                        <li><strong>UI Icons:</strong> Functional interface icons for buttons, controls, and interactive elements. Includes common actions like search, edit, delete, and navigation.</li>
+                        <li><strong>Wireblocks:</strong> Decorative geometric patterns and shapes used for backgrounds, dividers, and adding visual interest to layouts.</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>How to Use</h3>
+                    <ol>
+                        <li><strong>Browse:</strong> Use the tabs to switch between Pictographs, UI Icons, and Wireblocks.</li>
+                        <li><strong>Search:</strong> Type keywords in the search box—JSON-based tagging ensures accurate, fast results.</li>
+                        <li><strong>Filter:</strong> Use the category dropdown to narrow results by specific use cases.</li>
+                        <li><strong>Preview:</strong> Click any icon to view it in different sizes and colors.</li>
+                        <li><strong>Copy Code:</strong> Click "Copy SVG Code" to get production-ready markup with proper classes and structure.</li>
+                        <li><strong>Customize:</strong> Change the color by modifying the CSS class (e.g., <code>icon-blue</code>, <code>icon-green</code>, <code>icon-red</code>). One icon, infinite colors.</li>
+                    </ol>
+                </div>
+
+                <div class="help-section">
+                    <h3>Master CSS System</h3>
+                    <p>The tool includes a complete CSS framework for icon styling:</p>
+                    <ul>
+                        <li><strong>Base Icon Class:</strong> <code>.icon</code> sets the default 24px size with proper display properties and color inheritance.</li>
+                        <li><strong>Size Modifiers:</strong> <code>.icon-sm</code> (16px), <code>.icon-md</code> (32px), <code>.icon-lg</code> (48px)</li>
+                        <li><strong>Color Classes:</strong> 30+ color variations across 6 brand colors, each with 5 tint levels for subtle variations and accessibility.</li>
+                        <li><strong>Grayscale Options:</strong> Dark gray, gray, light grays, black, and white for neutral applications.</li>
+                    </ul>
+                    <p>Copy the Master CSS from the header and include it in your project's stylesheet. The CSS is optimized for performance and adheres to GEP standards.</p>
+                </div>
+
+                <div class="help-section help-footer">
+                    <p><strong>Questions or Issues?</strong> Contact <a href="mailto:trevor.smith@henryschein.com?subject=GEP%20Icon%20Guide%20Question" target="_blank">Trevor Smith</a> for support or to request new icons. This system is continuously maintained to ensure the icon library stays current and meets evolving design needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="no-results" class="no-results-container" style="display: none;">
         <div class="no-results-content">
-            <span style="font-size: 3rem;">🔍</span>
+            <img src="https://cd.henryschein.com/-/media/feature/henryschein/accountmanagement/dashboard/nodatafounddesign/nodatafoundicon.svg?h=104&amp;iar=0&amp;w=104&amp;hash=5A176C8A596314980D03AA13177D8874"/>
             <h3>No icons found</h3>
             <p>Try adjusting your search or filters to find what you're looking for.</p>
             <button onclick="resetFilters()" class="reset-link">Clear all filters</button>

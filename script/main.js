@@ -103,12 +103,12 @@ async function loadIconTags() {
         const response = await fetch('./dist/icon-tags.json');
         if (response.ok) {
             iconTagsData = await response.json();
-            console.log('âœ… Loaded icon tags & categories from icon-tags.json');
+            console.log('Ã¢Å“â€¦ Loaded icon tags & categories from icon-tags.json');
         } else {
-            console.log('â„¹ï¸ No icon-tags.json file found (tags/categories feature optional)');
+            console.log('Ã¢â€žÂ¹Ã¯Â¸Â No icon-tags.json file found (tags/categories feature optional)');
         }
     } catch (e) {
-        console.log('â„¹ï¸ Tags file not available:', e.message);
+        console.log('Ã¢â€žÂ¹Ã¯Â¸Â Tags file not available:', e.message);
     }
 }
 
@@ -474,7 +474,7 @@ function loadActualContent(card, item) {
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SCALE</label>
                         <div style="display: flex; align-items: center; gap: 4px;">
-                            <button onclick="decrementValue(\'${safeId}\', \'scale\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                            <button onclick="decrementValue(\'${safeId}\', \'scale\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
                             <input type="number" id="scale-input-${safeId}" min="100" max="300" value="150"
                                oninput="updateMaskScaleFromInput('${safeId}')"
                                style="width: 70px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
@@ -491,7 +491,7 @@ function loadActualContent(card, item) {
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">HORIZONTAL</label>
                             <div style="display: flex; align-items: center; gap: 4px;">
-                                <button onclick="decrementValue(\'${safeId}\', \'h-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                                <button onclick="decrementValue(\'${safeId}\', \'h-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
                                 <input type="number" id="h-pos-input-${safeId}" min="-300" max="300" value="10"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
@@ -507,7 +507,7 @@ function loadActualContent(card, item) {
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                             <label style="font-size: 11px; font-weight: bold; color: #002F6E;">VERTICAL</label>
                             <div style="display: flex; align-items: center; gap: 4px;">
-                                <button onclick="decrementValue(\'${safeId}\', \'v-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                                <button onclick="decrementValue(\'${safeId}\', \'v-pos\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
                                 <input type="number" id="v-pos-input-${safeId}" min="-300" max="300" value="-25"
                                    oninput="updateMaskPositionFromInput('${safeId}')"
                                    style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
@@ -523,7 +523,7 @@ function loadActualContent(card, item) {
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">ROTATION</label>
         <div style="display: flex; align-items: center; gap: 4px;">
-            <button onclick="decrementValue(\'${safeId}\', \'rotation\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+            <button onclick="decrementValue(\'${safeId}\', \'rotation\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
             <input type="number" id="rotation-input-${safeId}" min="-180" max="180" value="0"
                oninput="updateMaskRotationFromInput('${safeId}')"
                style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
@@ -538,7 +538,7 @@ function loadActualContent(card, item) {
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E;">OPACITY</label>
                         <div style="display: flex; align-items: center; gap: 4px;">
-                            <button onclick="decrementValue(\'${safeId}\', \'opacity\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">−</button>
+                            <button onclick="decrementValue(\'${safeId}\', \'opacity\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
                             <input type="number" id="opacity-input-${safeId}" min="0" max="100" value="60"
                                oninput="updateMaskOpacityFromInput('${safeId}')"
                                style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
@@ -557,7 +557,7 @@ function loadActualContent(card, item) {
                     <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E; flex: 1; min-width: 200px;">
                         <input type="checkbox" id="hide-mobile-${safeId}" onchange="updateMaskMobile(\'${safeId}\')" 
                                style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
-                        <span style="font-weight: 600;">Hide on mobile (≤991px)</span>
+                        <span style="font-weight: 600;">Hide on mobile (&#x2264;991px)</span>
                     </label>
      
                 </div>
@@ -570,7 +570,7 @@ function loadActualContent(card, item) {
                 </button>
                 <code id="code-${safeId}"></code>
             </div>
-            <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button>
+           <!-- <button class="download-btn" style="max-width: 200px;" onclick="downloadMaskSVG('${item.id}', '${item.path}')">Download Source SVG</button> -->
         `;
         card.classList.remove('is-loading');
         // Re-store the data after innerHTML wipe
@@ -644,7 +644,7 @@ function createColorPicker(safeId, type, defaultColor = 'icon-blue', onChangeCal
             <button type="button" class="color-picker-button" onclick="toggleColorPicker('${pickerId}')">
                 <span class="color-swatch" style="background-color: ${defaultColorData.hex};"></span>
                 <span>${formatColorLabel(defaultColor)}</span>
-                <span style="margin-left: auto;">▼</span>
+                <span style="margin-left: auto;">&#9660;</span>
             </button>
             <div id="${pickerId}" class="color-dropdown">
                 ${buildColorGrid(safeId, type, defaultColor, onChangeCallback)}
@@ -1269,5 +1269,35 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeBackgroundModal();
+    }
+});
+// Open help/about modal
+function openHelpModal() {
+    const modal = document.getElementById('help-modal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+// Close help/about modal
+function closeHelpModal() {
+    const modal = document.getElementById('help-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+// Close help modal when clicking outside or pressing Escape
+document.addEventListener('click', (e) => {
+    const helpModal = document.getElementById('help-modal');
+    if (e.target === helpModal) {
+        closeHelpModal();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const helpModal = document.getElementById('help-modal');
+        if (helpModal && helpModal.style.display === 'flex') {
+            closeHelpModal();
+        }
     }
 });
