@@ -91,7 +91,21 @@ function formatColorLabel(cls) {
         return `${label} Tint ${tintNumber}`;
     }
     
-    // For non-tint colors, just capitalize
+    // Handle shade variations (s1, s2, s3, s4)
+    const shadeMatch = label.match(/-s(\d)$/);
+    if (shadeMatch) {
+        label = label.replace(/-s\d$/, '');
+        const shadeNumber = shadeMatch[1];
+        
+        // Capitalize each word
+        label = label.split('-').map(word => 
+            word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ');
+        
+        return `${label} Shade ${shadeNumber}`;
+    }
+    
+    // For non-tint/shade colors, just capitalize
     return label.split('-').map(word => 
         word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
