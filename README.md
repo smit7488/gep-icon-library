@@ -235,29 +235,43 @@ Each primary color includes shade variations:
 
 ### Prerequisites
 - Python 3.6+ (for sprite generation)
+- Node.js with npm (for running local server)
 - Modern web browser (Chrome, Firefox, Safari, Edge)
-- No server required - runs locally
 
 ### Installation
 
 1. **Clone or download** the repository
-2. **Place SVG icons** in appropriate `/svg` subdirectories:
+
+2. **Install dependencies**:
+   ```bash
+   npm install -g serve
+   ```
+
+3. **Place SVG icons** in appropriate `/svg` subdirectories:
    - `svg/pictographs/` - Illustrative icons
    - `svg/ui icons/` - User interface icons
    - `svg/wireblocks/` - Wireframe/decorative
    - `svg/non-scaling/` - Icons with non-scaling strokes
 
-3. **Generate sprite sheet**:
+4. **Generate sprite sheet**:
    ```bash
    cd python
    python generate.py
    ```
 
-4. **Follow prompts** to specify sprite name and icon categories
+5. **Start local server**:
+   ```bash
+   npx serve
+   ```
+   Then open `http://localhost:3000` in your browser
 
-5. **Tag icons** using tag-manager.html
+6. **Access the tools**:
+   - Icon Viewer: `http://localhost:3000/index.html`
+   - Tag Manager: `http://localhost:3000/tag-manager.html`
 
-6. **View in index.html** with full customization features
+7. **Tag icons** using the tag manager interface
+
+8. **Customize and export** your icon configurations
 
 ---
 
@@ -449,52 +463,5 @@ A: Click "Download icon-tags.json" regularly. Save to Git or cloud storage.
 **Q: Can I edit the JSON file directly?**
 A: Yes! It's just JSON. But the tag manager is safer and easier.
 
----
-
-## 📋 Complete Checklist
-
-### Initial Setup
-- [ ] Replace Python script with no-categories version
-- [ ] Run Python script once
-- [ ] Save tag-manager-categories-tags.html
-- [ ] Update main.js with new code
-- [ ] Test category dropdown appears (empty at first)
-
-### Tagging Phase
-- [ ] Open tag manager
-- [ ] Tag first icon (both categories and tags)
-- [ ] Export icon-tags.json
-- [ ] Save to /dist folder
-- [ ] Refresh main viewer
-- [ ] Verify category appears in dropdown
-
-### Production
-- [ ] Tag all icons (or at least most important ones)
-- [ ] Export final icon-tags.json
-- [ ] Commit to version control
-- [ ] Document category naming conventions for team
-- [ ] Train team on tag manager usage
-
-### Maintenance
-- [ ] Export tags weekly (backup)
-- [ ] Run Python script when adding new icons
-- [ ] Tag new icons after Python run
-- [ ] Export updated icon-tags.json
-- [ ] Commit to version control
-
----
-
-## 🎉 You're All Set!
-
-Your icon system now has:
-- ✅ Flexible categories (stored separately)
-- ✅ Searchable tags (descriptive keywords)
-- ✅ Python-safe storage (won't be overwritten)
-- ✅ Category dropdown filter (dynamic from tags file)
-- ✅ Powerful search (across names, tags, categories)
-
-**Next Steps:**
-1. Start tagging your most-used icons
-2. Build up your category and tag vocabulary
-3. Export regularly
-4. Enjoy the flexibility! 🚀
+**Q: Why do I need npx serve?**
+A: The application uses JavaScript modules and local file references that require a proper HTTP server. Opening files directly in the browser won't work correctly.
