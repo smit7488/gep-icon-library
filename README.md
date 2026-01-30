@@ -1,18 +1,112 @@
-# 🎯 Complete Guide: Categories & Tags System
+# GEP Icon Library
 
-## 📊 System Overview
+A comprehensive icon management system for GEP (Global Enablement & Procurement) with visual generation, customization, and organizational tools.
 
-Your icon system now has:
-- **Python Script**: Generates sprite + basic config (NO categories)
-- **icon-tags.json**: Stores categories and tags (separate from Python)
-- **Tag Manager**: Interface to manage categories and tags
-- **Main Viewer**: Category dropdown + search (reads from icon-tags.json)
+## 📋 Overview
+
+GEP Icon Library is a complete icon management solution that allows you to:
+- **Generate SVG sprite sheets** from individual icon files
+- **Customize icons** with colors, scales, rotations, and effects
+- **Organize icons** with categories and searchable tags
+- **Manage metadata** through an intuitive tag manager interface
+- **Export reusable CSS** for implementing icons in applications
 
 ---
 
-## 📁 JSON Structure
+## 🎯 Key Features
+
+### 1. **Icon Viewer & Customizer**
+- Browse icons organized by category (Pictographs, UI Icons, Wireblocks, Non-scaling)
+- Preview icons with real-time customization:
+  - Color selection from an extensive GEP color palette
+  - Scale adjustment (100-200%)
+  - Positioning controls (horizontal/vertical)
+  - Rotation angles
+  - Opacity levels
+  - Mobile display toggles
+- Search functionality to find icons by name or tags
+- Copy individual icon CSS or bulk export
+
+### 2. **Tag Manager Interface**
+- Visually manage icon metadata
+- Add/edit categories for each icon
+- Create and assign searchable tags
+- Persist changes to `icon-tags.json`
+- Bulk operations support
+
+### 3. **Python Sprite Generator**
+- Automated SVG sprite sheet creation
+- Processes icons from organized subdirectories
+- Generates accompanying JSON configuration files
+- Supports batch processing across multiple icon sets
+
+---
+
+## 📁 Project Structure
+
+```
+gep-icon-library/
+├── index.html              # Main icon viewer & customizer interface
+├── tag-manager.html        # Tag and category management UI
+├── python/
+│   ├── generate.py         # Main sprite generation script
+│   └── helpers/            # Utility scripts for icon processing
+│       ├── background.py
+│       ├── category-generator.py
+│       ├── check_icons.py
+│       ├── convert-tags-format.py
+│       ├── create-sprite.py
+│       ├── icon_recolor-for-ui.py
+│       ├── identify-duplicates.py
+│       ├── non-scaling-stroke.py
+│       ├── recolor_svg-cssmethod.py
+│       └── remove-svg-dimensions.py
+├── script/
+│   ├── main.js             # Main application logic
+│   └── highlight.js        # Syntax highlighting
+├── styles/
+│   └── main.css            # Application styling
+├── svg/                    # Source icon files
+│   ├── pictographs/
+│   ├── ui icons/
+│   ├── wireblocks/
+│   └── non-scaling/
+├── meta/                   # Metadata & assets
+└── zbackup/               # Backup configurations
+```
+
+---
+
+## 🚀 Getting Started
+
+### View Icons
+1. Open `index.html` in a web browser
+2. Select icon categories from the dropdown
+3. Search for specific icons using tags or names
+4. Customize icons with color, scale, and positioning controls
+5. Copy CSS for individual icons or export the master CSS
+
+### Manage Icon Metadata
+1. Open `tag-manager.html` in a web browser
+2. Search for icons by filename
+3. Add categories and tags for organization
+4. Changes are saved to `icon-tags.json`
+
+### Generate Sprite Sheet
+1. Navigate to the `python/` directory
+2. Run: `python generate.py`
+3. Follow the prompts to specify:
+   - Sprite file name
+   - Icon categories to include
+4. Output files are generated in the `dist/` folder
+
+---
+
+## 📊 Data Structure
 
 ### icon-tags.json Format
+
+Icons are organized with metadata stored in `icon-tags.json`:
 
 ```json
 {
@@ -43,11 +137,8 @@ Your icon system now has:
       "business",
       "corporate"
     ]
-  },
-  "Medical_Gloves": {
-    "tags": [
-      "gloves",
-      "safety",
+  }
+}
       "protection",
       "ppe"
     ],
@@ -55,407 +146,267 @@ Your icon system now has:
       "medical",
       "product"
     ]
-  }
 }
 ```
 
-### Key Points
-
-1. **Top-level keys** = Icon IDs (matches your sprite)
-2. **tags** = Array of descriptive keywords
-3. **categories** = Array of organization categories
-4. Icons can have multiple categories!
+Each icon entry contains:
+- **tags**: Array of searchable keywords (5-15 descriptive terms)
+- **categories**: Array of organizational buckets (1-3 broad categories)
 
 ---
 
-## 🚀 Quick Start
+## 🎨 Color Palette
 
-### Step 1: Run Python Script (No Categories)
+The system includes an extensive GEP color library organized into groups:
 
-```bash
-python create-sprite-with-masks-no-categories.py
+### Quick Colors (Primary)
+- `icon-blue` (#0072BC)
+- `icon-dark-blue` (#002F6E)
+- `icon-light-blue` (#3DB5E6)
+- `icon-green` (#008996)
+- `icon-red` (#ED1C24)
+- `icon-orange` (#F28B00)
+- `icon-violet` (#831A5B)
+
+### Extended Palette
+Each primary color includes shade variations:
+- `-s1`: Shade (darker)
+- `-t1` through `-t4`: Tints (lighter variations)
+
+### Neutrals
+- `icon-dark-gray` (#474F50)
+- `icon-gray` (#6B6F70)
+- `icon-light-gray-1` (#F7F7F6)
+- `icon-light-gray-2` (#E6E6E6)
+- `icon-black` (#000000)
+- `icon-white` (#FFFFFF)
+
+---
+
+## 📖 Usage Guide
+
+### For Designers
+
+1. **Open index.html** in your browser
+2. **Browse icons** by category dropdown
+3. **Search** for icons by name, tag, or category
+4. **Customize** individual icons:
+   - Select color from palette
+   - Adjust scale (100-200%)
+   - Reposition (horizontal/vertical offset)
+   - Rotate to any angle
+   - Adjust opacity
+   - Toggle mobile visibility
+5. **Copy CSS** for individual icons or download master CSS
+
+### For Developers
+
+1. **Include Master CSS** from index.html
+2. **Use icon classes** in your HTML:
+   ```html
+   <svg class="icon icon-blue">
+     <use xlink:href="sprite.svg#IconName"></use>
+   </svg>
+   ```
+3. **Apply color classes**:
+   ```html
+   <svg class="icon icon-blue-t4 icon-lg">
+     <use xlink:href="sprite.svg#IconName"></use>
+   </svg>
+   ```
+4. **Size modifiers**: `icon-sm`, `icon-md`, `icon-lg`
+
+### For Icon Management
+
+1. **Open tag-manager.html**
+2. **Search for icons** by filename
+3. **Assign categories** (purple section):
+   - Click quick tags for common categories
+   - Add custom categories as needed
+4. **Add tags** (blue section):
+   - Enter descriptive keywords
+   - Separate with commas
+   - Can include visual, functional, and contextual terms
+5. **Save changes** - automatically updates `icon-tags.json`
+
+---
+
+## ⚙️ Setup & Configuration
+
+### Prerequisites
+- Python 3.6+ (for sprite generation)
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- No server required - runs locally
+
+### Installation
+
+1. **Clone or download** the repository
+2. **Place SVG icons** in appropriate `/svg` subdirectories:
+   - `svg/pictographs/` - Illustrative icons
+   - `svg/ui icons/` - User interface icons
+   - `svg/wireblocks/` - Wireframe/decorative
+   - `svg/non-scaling/` - Icons with non-scaling strokes
+
+3. **Generate sprite sheet**:
+   ```bash
+   cd python
+   python generate.py
+   ```
+
+4. **Follow prompts** to specify sprite name and icon categories
+
+5. **Tag icons** using tag-manager.html
+
+6. **View in index.html** with full customization features
+
+---
+
+## 🛠️ Python Helper Scripts
+
+Located in `python/helpers/`, these utilities assist with icon processing:
+
+- **create-sprite.py** - Core sprite sheet generation
+- **category-generator.py** - Bulk category assignment
+- **check_icons.py** - Validate icon files
+- **identify-duplicates.py** - Find similar/duplicate icons
+- **recolor_svg-cssmethod.py** - Apply CSS-based recoloring
+- **icon_recolor-for-ui.py** - Convert icons for UI use
+- **remove-svg-dimensions.py** - Strip fixed dimensions
+- **non-scaling-stroke.py** - Configure stroke scaling
+- **convert-tags-format.py** - Transform tag data formats
+- **background.py** - Add backgrounds to icons
+
+---
+
+## 🔍 Search & Filter Features
+
+### Search Operators
+- **By name**: Type icon filename (e.g., "business")
+- **By tag**: Search descriptive keywords (e.g., "gear", "settings")
+- **By category**: Filter using category dropdown
+- **Combined**: Select category AND search tags simultaneously
+
+### Example Searches
 ```
+Category: "Business" + Search: "settings"
+→ Shows business-related icons with "settings" tags
 
-**Generates:**
-- `hs-icons-master.svg` (sprite)
-- `hs-icons-master-config.json` (NO category field)
+Search: "medical gear"
+→ Shows icons tagged with both "medical" and "gear"
 
-### Step 2: Open Tag Manager
-
-```
-Open: tag-manager-categories-tags.html
-```
-
-### Step 3: Tag Your First Icon
-
-**Example: Business_Administration**
-
-1. Click the icon card
-2. **Categories section:**
-   - Click "business" quick tag
-   - Click "corporate" quick tag
-3. **Tags section:**
-   - Type: `gear, settings, configuration, admin, manage`
-   - Click "Add Tags"
-4. Click "Save & Next →"
-
-### Step 4: Export
-
-```
-Click: Download icon-tags.json
-Save to: /dist/icon-tags.json
-```
-
-### Step 5: Update Main Viewer
-
-Add the code from `main-js-with-categories.js` to your `main.js` file.
-
-### Step 6: Test!
-
-```
-Open: index.html
-Select category: "Business"
-Result: All business icons appear
+Category: "Product"
+→ Shows all icons in the product category
 ```
 
 ---
 
-## 🎨 Tag Manager Features
+## 💾 Export & Sharing
 
-### Categories Section (Purple)
+### Individual Icon CSS
+1. Customize icon in viewer
+2. Click "Copy CSS" button
+3. Paste into your stylesheet
 
-**Quick Tags:**
-- Pre-defined common categories
-- Click to toggle on/off
-- Active = purple background
+### Master CSS Export
+1. Click "Export Master CSS" button
+2. Includes all color variations and size modifiers
+3. Ready to use in production
 
-**Common Categories:**
-- business
-- corporate
-- marketing
-- medical
-- dental
-- product
-- hs-cares
-- service
-- solutions
-- team-schein
-- diversity
-
-**Custom Categories:**
-- Type in the input field
-- Press Enter or click "Add"
-- Becomes available in category dropdown
-
-### Tags Section (Blue)
-
-**Purpose:**
-- Descriptive keywords
-- Search terms
-- Visual descriptions
-- Functional descriptions
-
-**Examples:**
-- Visual: `gear`, `person`, `heart`, `arrow`
-- Functional: `settings`, `admin`, `health`, `navigation`
-- Industry: `medical`, `dental`, `equipment`
+### Icon Metadata Export
+1. In tag-manager.html, click "Download icon-tags.json"
+2. Contains all categories and tags
+3. Share with team or version control
 
 ---
 
-## 🔍 Main Viewer Features
+## 🎯 Best Practices
 
-### Category Dropdown Filter
+### Tagging Icons
+- **Categories** (1-3): Broad organizational buckets (business, medical, product)
+- **Tags** (5-15): Specific descriptors (visual, functional, contextual)
 
-**How it Works:**
-1. Reads all categories from icon-tags.json
-2. Populates dropdown dynamically
-3. Shows "All Categories" + all unique categories
-4. Selecting filters icons to only show that category
+### Visual Descriptions
+Include what the icon looks like: `gear`, `person`, `heart`, `arrow`, `star`
 
-**Example:**
-```
-Select: "medical"
-Shows: Only icons with "medical" in their categories array
-```
+### Functional Descriptions
+Include what the icon represents: `settings`, `admin`, `health`, `navigation`
 
-### Search Box
-
-**Searches Across:**
-- Icon names
-- Tags
-- Categories
-
-**Examples:**
-```
-Search: "business"
-→ Icons with "business" category OR "business" tag
-
-Search: "gear"
-→ Icons with "gear" tag
-
-Search: "medical gloves"
-→ Icons matching both terms
-```
-
-### Combined Filtering
-
-```
-Category: "business"
-Search: "settings"
-→ Shows business icons that have "settings" tag
-```
+### Industry/Context Terms
+Add domain-specific language: `medical`, `dental`, `equipment`, `product`
 
 ---
 
-## 📋 Tagging Best Practices
+## 📝 Common Workflows
 
-### Categories vs Tags
+### Adding New Icons
+1. Place SVG files in appropriate `/svg` subdirectory
+2. Run `python generate.py`
+3. New icons appear in sprite
+4. Open tag-manager.html and tag new icons
+5. Export updated `icon-tags.json`
 
-**Categories (1-3 per icon):**
-- Broad organizational buckets
-- Think: "Where does this belong?"
-- Examples: `business`, `medical`, `product`
-
-**Tags (5-15 per icon):**
-- Specific descriptors
-- Think: "What does this look like? What is it for?"
-- Examples: `gear`, `settings`, `admin`, `configuration`
-
-### Example: Business_Administration
-
-**Categories:**
-```json
-["business", "corporate"]
-```
-
-**Why:**
-- Used in business contexts
-- Part of corporate materials
-
-**Tags:**
-```json
-["gear", "settings", "configuration", "admin", "manage", "mechanical", "tools", "system"]
-```
-
-**Why:**
-- Looks like a gear (visual)
-- Used for settings/configuration (functional)
-- Related to admin/management (context)
-
-### Example: Medical_Gloves
-
-**Categories:**
-```json
-["medical", "product"]
-```
-
-**Why:**
-- Medical equipment category
-- Actual product you can buy
-
-**Tags:**
-```json
-["gloves", "safety", "protection", "ppe", "hands", "hygiene", "protective"]
-```
-
-**Why:**
-- Depicts gloves (visual)
-- Used for safety/protection (functional)
-- PPE category (industry term)
-
----
-
-## 🔄 Workflow
-
-### Daily Tagging Workflow
-
-```
-1. Open tag-manager-categories-tags.html
-2. Tag 10-20 icons:
-   - Assign 1-3 categories (quick tags)
-   - Add 5-15 descriptive tags
-3. Export icon-tags.json
-4. Save to /dist folder
-5. Test in main viewer
-```
-
-### Python Script Workflow
-
-```
-1. Add new SVG files to /svg folder
-2. Run: python create-sprite-with-masks-no-categories.py
-3. Result:
-   ✅ New icons in sprite
-   ✅ New icons in config
-   ✅ icon-tags.json UNTOUCHED
-4. Open tag manager
-5. Tag the new icons
-6. Export icon-tags.json
-```
+### Updating Existing Icons
+1. Edit SVG source files
+2. Run `python generate.py` to regenerate sprite
+3. Tag changes handled separately in tag-manager.html
+4. Icon customization settings are independent
 
 ### Team Collaboration
-
-```
-Person A:
-1. Tags business icons
-2. Exports icon-tags.json
-3. Commits to Git
-
-Person B:
-1. Pulls latest icon-tags.json
-2. Tags medical icons
-3. Exports icon-tags.json
-4. Commits to Git
-
-Merge = All tags combined!
-```
+1. Each person can tag different icon sets
+2. Export individual `icon-tags.json` segments
+3. Merge updates in version control
+4. All tags combine without conflicts
 
 ---
 
-## 🎯 Category Suggestions
+## 🐛 Troubleshooting
 
-### Business & Corporate
-- `business`
-- `corporate`
-- `marketing`
-- `solutions`
+### Icons not appearing
+- Verify SVG files are in `/svg` subdirectories
+- Check that `generate.py` completed successfully
+- Ensure `dist/` folder contains generated files
 
-### Healthcare
-- `medical`
-- `dental`
-- `hs-cares`
+### Search not working
+- Confirm `icon-tags.json` is loaded
+- Check browser console for errors
+- Verify JSON syntax in `icon-tags.json`
 
-### Products & Equipment
-- `product`
-- `equipment`
-- `service`
+### Categories not showing
+- Open tag-manager.html and add categories
+- Export `icon-tags.json` to `/dist` folder
+- Refresh index.html browser page
 
-### Culture & Values
-- `team-schein`
-- `diversity`
-- `volunteerism`
-
-### Technical
-- `ui` (user interface icons)
-- `pictograph` (illustrative)
-- `wireblock` (decorative)
+### CSS not copying
+- Check browser console permissions
+- Ensure JavaScript is enabled
+- Try copying from different icon
 
 ---
 
-## 💡 Real-World Examples
+## 📄 License
 
-### Example 1: Business_Goal-Target
-
-```json
-{
-  "Business_Goal-Target": {
-    "tags": [
-      "target",
-      "aim",
-      "goal",
-      "objective",
-      "bullseye",
-      "focus",
-      "achievement",
-      "success",
-      "precision"
-    ],
-    "categories": [
-      "business",
-      "corporate"
-    ]
-  }
-}
-```
-
-**Usage:**
-- Category filter: "business" ✓
-- Search: "goal" ✓
-- Search: "target" ✓
-- Search: "success" ✓
-
-### Example 2: Medical_Bandage-Tape
-
-```json
-{
-  "Medical_Bandage-Tape": {
-    "tags": [
-      "bandage",
-      "tape",
-      "medical-tape",
-      "adhesive",
-      "wound-care",
-      "first-aid",
-      "treatment",
-      "healing"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  }
-}
-```
-
-**Usage:**
-- Category filter: "medical" ✓
-- Category filter: "product" ✓
-- Search: "first aid" ✓
-- Search: "wound" ✓
-
-### Example 3: Business_Team
-
-```json
-{
-  "Business_Team": {
-    "tags": [
-      "team",
-      "people",
-      "group",
-      "collaboration",
-      "users",
-      "staff",
-      "employees",
-      "organization",
-      "workforce",
-      "colleagues"
-    ],
-    "categories": [
-      "business",
-      "corporate",
-      "team-schein"
-    ]
-  }
-}
-```
-
-**Usage:**
-- Category filter: "business" ✓
-- Category filter: "team-schein" ✓
-- Search: "collaboration" ✓
-- Search: "people" ✓
+See [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🔧 Technical Details
+## 🤝 Contributing
 
-### File Locations
+To add improvements:
+1. Update source SVG files in `/svg`
+2. Run sprite generation
+3. Add/update tags via tag-manager
+4. Test in index.html viewer
+5. Submit changes with updated assets
 
-```
-/dist/
-  ├── hs-icons-master.svg              # From Python
-  ├── hs-icons-master-config.json      # From Python (no categories)
-  └── icon-tags.json                   # From Tag Manager (has categories & tags)
-```
+---
 
-### Main.js Integration
+## 📞 Support
 
-**Key Functions:**
-
-1. **loadIconTags()** - Loads icon-tags.json
-2. **setupFilters()** - Builds category dropdown from tags file
-3. **filterIcons()** - Filters by category and search
-4. **loadActualContent()** - Displays category/tag badges (optional)
+For issues or questions:
+1. Check the embedded help (? button in index.html)
+2. Review troubleshooting section above
+3. Inspect browser console for error messages
+4. Verify all files are in correct locations
 
 ### Data Flow
 
