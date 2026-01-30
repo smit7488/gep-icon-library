@@ -1,6 +1,10 @@
 # GEP Icon Library
 
-A comprehensive icon management system for GEP (Global Enablement & Procurement) with visual generation, customization, and organizational tools.
+A comprehensive icon management system for GEP with visual generation, customization, and organizational tools.
+
+**Live Demo:** https://www.henryschein.com/us-en/images/gep-icon-library/ (for designers)
+
+This repository is for developers who want to clone, modify, and run the tool locally.
 
 ## 📋 Overview
 
@@ -79,15 +83,30 @@ gep-icon-library/
 
 ## 🚀 Getting Started
 
-### View Icons
-1. Open `index.html` in a web browser
-2. Select icon categories from the dropdown
-3. Search for specific icons using tags or names
-4. Customize icons with color, scale, and positioning controls
-5. Copy CSS for individual icons or export the master CSS
+### Prerequisites
+Before you begin, ensure you have the following installed:
+- **Node.js & npm** - Required to run the local server ([install](https://nodejs.org/))
+- **Python 3.6+** - Required for sprite generation
+
+### View Icons Locally
+1. Install dependencies:
+   ```bash
+   npm install -g serve
+   ```
+
+2. Start the local server from the project directory:
+   ```bash
+   npx serve
+   ```
+
+3. Open your browser and navigate to the URL shown (typically `http://localhost:3000`)
+
+4. Access the icon viewer at `http://localhost:3000/index.html`
+
+5. Select icon categories from the dropdown, search for specific icons, customize them with colors and positioning, and copy CSS
 
 ### Manage Icon Metadata
-1. Open `tag-manager.html` in a web browser
+1. Navigate to `http://localhost:3000/tag-manager.html` (while server is running)
 2. Search for icons by filename
 3. Add categories and tags for organization
 4. Changes are saved to `icon-tags.json`
@@ -185,9 +204,9 @@ Each primary color includes shade variations:
 
 ## 📖 Usage Guide
 
-### For Designers
+### For Icon Viewers & Customizers
 
-1. **Open index.html** in your browser
+1. **Start the local server** using `npx serve` (see Getting Started)
 2. **Browse icons** by category dropdown
 3. **Search** for icons by name, tag, or category
 4. **Customize** individual icons:
@@ -199,9 +218,9 @@ Each primary color includes shade variations:
    - Toggle mobile visibility
 5. **Copy CSS** for individual icons or download master CSS
 
-### For Developers
+### For Developers Implementing Icons
 
-1. **Include Master CSS** from index.html
+1. **Include Master CSS** from the exported styles
 2. **Use icon classes** in your HTML:
    ```html
    <svg class="icon icon-blue">
@@ -216,33 +235,38 @@ Each primary color includes shade variations:
    ```
 4. **Size modifiers**: `icon-sm`, `icon-md`, `icon-lg`
 
-### For Icon Management
+### For Icon Management & Tagging
 
-1. **Open tag-manager.html**
-2. **Search for icons** by filename
-3. **Assign categories** (purple section):
+1. **Start the local server** using `npx serve`
+2. **Navigate to tag-manager.html** in your browser
+3. **Search for icons** by filename
+4. **Assign categories** (purple section):
    - Click quick tags for common categories
    - Add custom categories as needed
-4. **Add tags** (blue section):
+5. **Add tags** (blue section):
    - Enter descriptive keywords
    - Separate with commas
    - Can include visual, functional, and contextual terms
-5. **Save changes** - automatically updates `icon-tags.json`
+6. **Save changes** - automatically updates `icon-tags.json`
 
 ---
 
 ## ⚙️ Setup & Configuration
 
 ### Prerequisites
-- Python 3.6+ (for sprite generation)
-- Node.js with npm (for running local server)
+- **Node.js & npm** - Required for running the local server ([download](https://nodejs.org/))
+- **Python 3.6+** - Required for sprite generation
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 
 ### Installation
 
-1. **Clone or download** the repository
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd gep-icon-library
+   ```
 
-2. **Install dependencies**:
+2. **Install the serve package** (required for local development):
    ```bash
    npm install -g serve
    ```
@@ -253,25 +277,22 @@ Each primary color includes shade variations:
    - `svg/wireblocks/` - Wireframe/decorative
    - `svg/non-scaling/` - Icons with non-scaling strokes
 
-4. **Generate sprite sheet**:
+4. **Generate sprite sheet** (when adding or updating icons):
    ```bash
    cd python
    python generate.py
    ```
 
-5. **Start local server**:
+5. **Start the local server** from the project root directory:
    ```bash
    npx serve
    ```
-   Then open `http://localhost:3000` in your browser
 
-6. **Access the tools**:
-   - Icon Viewer: `http://localhost:3000/index.html`
+6. **Access the tools** in your browser:
+   - Icon Viewer & Customizer: `http://localhost:3000/index.html`
    - Tag Manager: `http://localhost:3000/tag-manager.html`
 
-7. **Tag icons** using the tag manager interface
-
-8. **Customize and export** your icon configurations
+**Important:** The application requires a web server to function properly due to JavaScript modules and local file references. Opening files directly (`file://`) will not work. Always use `npx serve`.
 
 ---
 
