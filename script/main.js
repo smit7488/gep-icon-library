@@ -1163,6 +1163,7 @@ function handleCopySuccess(btn) {
     }, 1500);
 }
 
+// UPDATED downloadSVG function - includes border if checkbox is checked
 function downloadSVG(iconId, safeId) {
     if (!spriteText) return;
     
@@ -1170,6 +1171,10 @@ function downloadSVG(iconId, safeId) {
     const card = document.getElementById(`card-${safeId}`);
     const colorClass = card.dataset.currentColor || 'hs-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
+    
+    // Check if border is enabled
+    const borderCheckbox = document.getElementById(`border-${safeId}`);
+    const hasBorder = borderCheckbox && borderCheckbox.checked;
     
     const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
     if (!match) return;
@@ -1181,19 +1186,27 @@ function downloadSVG(iconId, safeId) {
         .replace(/fill="currentColor"/g, `fill="${colorHex}"`)
         .replace(/stroke="currentColor"/g, `stroke="${colorHex}"`);
 
+    // Add border rectangle if enabled (square on the outside of artboard)
+    let borderElement = '';
+    if (hasBorder) {
+        borderElement = `<rect x="0.75" y="0.75" width="108.5" height="108.5" fill="none" stroke="${colorHex}" stroke-width="1.5"/>`;
+    }
+
     const svgString = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="110" height="110">
-${content}
+${borderElement}${content}
 </svg>`;
 
     const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${iconId}_${colorClass}.svg`;
+    const borderSuffix = hasBorder ? '_with-border' : '';
+    a.download = `${iconId}_${colorClass}${borderSuffix}.svg`;
     a.click();
     URL.revokeObjectURL(url);
 }
+
 
 function downloadMaskSVG(id, path) {
     fetch(path)
@@ -1209,11 +1222,16 @@ function downloadMaskSVG(id, path) {
         });
 }
 
+// UPDATED downloadPNG function - includes border if checkbox is checked
 function downloadPNG(iconId, safeId) {
     // Get color from card dataset
     const card = document.getElementById(`card-${safeId}`);
     const colorClass = card.dataset.currentColor || 'hs-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
+
+    // Check if border is enabled
+    const borderCheckbox = document.getElementById(`border-${safeId}`);
+    const hasBorder = borderCheckbox && borderCheckbox.checked;
 
     // Get the size from the size select
     const sizeSelect = document.getElementById(`size-${safeId}`);
@@ -1229,7 +1247,20 @@ function downloadPNG(iconId, safeId) {
         .replace(/sketch:type="[^"]*"/gi, '')
         .replace(/currentColor/g, colorHex);
 
-    const svgHeader = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="${size}" height="${size}">${cleanContent}</svg>`;
+    // Add border rectangle if enabled (square on the outside of artboard)
+    // Calculate stroke width to maintain 1.5px visual appearance at any output size
+    let borderElement = '';
+    if (hasBorder) {
+        // Scale stroke inversely: we want 1.5px at the output size, so divide by scale factor
+        const scaleFactor = size / 110;
+        const adjustedStroke = 1.5 / scaleFactor;
+        const offset = adjustedStroke / 2;
+        const rectSize = 110 - adjustedStroke;
+        
+        borderElement = `<rect x="${offset}" y="${offset}" width="${rectSize}" height="${rectSize}" fill="none" stroke="${colorHex}" stroke-width="${adjustedStroke}"/>`;
+    }
+
+    const svgHeader = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" width="${size}" height="${size}">${borderElement}${cleanContent}</svg>`;
     
     const canvas = document.createElement('canvas');
     canvas.width = size; 
@@ -1242,7 +1273,8 @@ function downloadPNG(iconId, safeId) {
         ctx.drawImage(img, 0, 0, size, size);
         const a = document.createElement("a");
         a.href = canvas.toDataURL("image/png");
-        a.download = `${iconId}_${size}px_${colorClass}.png`;
+        const borderSuffix = hasBorder ? '_with-border' : '';
+        a.download = `${iconId}_${size}px_${colorClass}${borderSuffix}.png`;
         a.click();
     };
     img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgHeader)));
