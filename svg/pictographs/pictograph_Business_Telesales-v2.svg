@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M80.7382,43.6433c6.1997,0,11.2253,5.0256,11.2253,11.225s-5.0256,11.2253-11.2253,11.2253v-22.4503Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M35.8375,43.6433c-6.1997,0-11.2253,5.0256-11.2253,11.225s5.0256,11.2253,11.2253,11.2253v-22.4503Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M35.8375,43.6433c0-12.3991,10.0512-22.4506,22.4503-22.4506s22.4504,10.0514,22.4504,22.4506" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M63.7653,83.0664c9.3737,0,16.9728-7.5989,16.9728-16.9728" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M63.7653,83.0664c0,3.0252-2.4523,5.4778-5.4775,5.4778s-5.4775-2.4526-5.4775-5.4778,2.4523-5.4775,5.4775-5.4775,5.4775,2.4526,5.4775,5.4775Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M41.5053,43.6433c0-9.2688,7.5137-16.7825,16.7825-16.7825s16.7825,7.5137,16.7825,16.7825" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="49.6075" cy="49.1933" r="2.4" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="66.6182" cy="49.1933" r="2.4" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M41.5053,43.6433c0-9.2688,7.5137-16.7825,16.7825-16.7825s16.7825,7.5137,16.7825,16.7825" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M68.3402,62.7621c-.5522,1.3051-1.351,2.4806-2.3381,3.4678-.9871.9871-2.1627,1.7858-3.4678,2.3378-1.3054.5522-2.7403.8575-4.2466.8575s-2.9414-.3053-4.2466-.8575c-1.3051-.552-2.4806-1.3507-3.4678-2.3378s-1.7858-2.1626-2.3381-3.4678" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

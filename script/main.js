@@ -33,11 +33,11 @@ function resetToDefaults(safeId) {
     document.getElementById(`hide-mobile-${safeId}`).checked = false;
     
     // Reset colors
-    card.dataset.currentColor = 'icon-blue';
+    card.dataset.currentColor = 'hs-blue';
     card.dataset.currentHex = '#0072BC';
     
     // Update the mask
-    updateMask(card.dataset.id, 'icon-blue', '#0072BC', card.dataset.path);
+    updateMask(card.dataset.id, 'hs-blue', '#0072BC', card.dataset.path);
 }
 
 // Increment/Decrement functions
@@ -74,8 +74,8 @@ function decrementValue(safeId, controlName, step = 1) {
 }
 
 function formatColorLabel(cls) {
-    // Remove 'icon-' prefix
-    let label = cls.replace('icon-', '');
+    // Remove 'hs-' prefix
+    let label = cls.replace('hs-', '');
     
     // Handle tint variations (t1, t2, t3, t4)
     const tintMatch = label.match(/-t(\d)$/);
@@ -117,12 +117,12 @@ async function loadIconTags() {
         const response = await fetch('./dist/icon-tags.json');
         if (response.ok) {
             iconTagsData = await response.json();
-            console.log('Ã¢Å“â€¦ Loaded icon tags & categories from icon-tags.json');
+            console.log('Loaded icon tags & categories from icon-tags.json');
         } else {
-            console.log('Ã¢â€žÂ¹Ã¯Â¸Â No icon-tags.json file found (tags/categories feature optional)');
+            console.log('No icon-tags.json file found (tags/categories feature optional)');
         }
     } catch (e) {
-        console.log('Ã¢â€žÂ¹Ã¯Â¸Â Tags file not available:', e.message);
+        console.log('Tags file not available:', e.message);
     }
 }
 
@@ -242,14 +242,19 @@ let filteredIconsGlobal = [];
 
 function updatePageSize() {
     const selector = document.getElementById('page-size-filter');
-    PAGE_SIZE = parseInt(selector.value);
-    
-    // Reset pagination to the new batch size
+    const rawValue = selector.value;
+
+    if (rawValue === "all") {
+        PAGE_SIZE = filteredIconsGlobal.length;  // show everything
+    } else {
+        PAGE_SIZE = parseInt(rawValue);
+    }
+
     itemsToShow = PAGE_SIZE;
-    
-    // Re-render the current filtered set with the new size
+
     renderIcons(true);
 }
+
 
 // *** UPDATED: Filter icons by category AND search in tags ***
 function filterIcons() {
@@ -450,7 +455,7 @@ function loadActualContent(card, item) {
     
     // Store item data on card for callbacks
     card.dataset.id = item.id;
-    card.dataset.currentColor = 'icon-blue';
+    card.dataset.currentColor = 'hs-blue';
     card.dataset.currentHex = '#0072BC';
     if (item.path) card.dataset.path = item.path;
     
@@ -460,11 +465,11 @@ function loadActualContent(card, item) {
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <div style="width: 200px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E; display: block; margin-bottom: 4px;">WIREBLOCK COLOR</label>
-                        ${createColorPicker(safeId, 'wireblock', 'icon-blue', 'updateMask')}
+                        ${createColorPicker(safeId, 'wireblock', 'hs-blue', 'updateMask')}
                     </div>
                     <div style="width: 200px;">
                         <label style="font-size: 11px; font-weight: bold; color: #002F6E; display: block; margin-bottom: 4px;">PREVIEW BG COLOR</label>
-                        ${createColorPicker(safeId, 'background', 'icon-blue-t1', 'updateMaskBackground')}
+                        ${createColorPicker(safeId, 'background', 'hs-blue-t1', 'updateMaskBackground')}
                     </div>
                 </div>
                  <div>
@@ -590,9 +595,9 @@ function loadActualContent(card, item) {
         // Re-store the data after innerHTML wipe
         card.dataset.id = item.id;
         card.dataset.path = item.path;
-        card.dataset.currentColor = 'icon-blue';
+        card.dataset.currentColor = 'hs-blue';
         card.dataset.currentHex = '#0072BC';
-        updateMask(item.id, 'icon-blue', '#0072BC', item.path);
+        updateMask(item.id, 'hs-blue', '#0072BC', item.path);
     }
     else {
         // Check if this is a wireblock to add the generate background button
@@ -605,7 +610,17 @@ function loadActualContent(card, item) {
                 <svg><use href="${currentConfig.spriteUrl}#${item.id}"></use></svg>
             </div>
             
-            ${createColorPicker(safeId, 'icon', 'icon-blue', 'updateIcon')}
+            ${createColorPicker(safeId, 'icon', 'hs-blue', 'updateIcon')}
+            
+            ${item.type === 'pictograph' ? `
+            <div style="margin-top: 10px;">
+                <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E;">
+                    <input type="checkbox" id="border-${safeId}" onchange="updateIconBorder('${safeId}')" 
+                           style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
+                    <span style="font-weight: 600;">Add border</span>
+                </label>
+            </div>
+            ` : ''}
             
             ${isWireblock ? `
             <button class="download-btn" style="background: #008996; width: 100%; margin-top: 10px;" onclick="openBackgroundGenerator('${item.id}')">
@@ -643,13 +658,13 @@ function loadActualContent(card, item) {
         card.classList.remove('is-loading');
         // Re-store the data after innerHTML wipe
         card.dataset.id = item.id;
-        card.dataset.currentColor = 'icon-blue';
+        card.dataset.currentColor = 'hs-blue';
         card.dataset.currentHex = '#0072BC';
-        updateIcon(item.id, 'icon-blue', '#0072BC');
+        updateIcon(item.id, 'hs-blue', '#0072BC');
     }
 }
 
-function createColorPicker(safeId, type, defaultColor = 'icon-blue', onChangeCallback) {
+function createColorPicker(safeId, type, defaultColor = 'hs-blue', onChangeCallback) {
     const pickerId = `color-picker-${type}-${safeId}`;
     const defaultColorData = findColorData(defaultColor);
     
@@ -673,7 +688,7 @@ function findColorData(colorClass) {
             return { class: colorClass, hex: colors[colorClass], group };
         }
     }
-    return { class: 'icon-blue', hex: '#0072BC', group: 'Primary Blues' };
+    return { class: 'hs-blue', hex: '#0072BC', group: 'Primary Blues' };
 }
 
 function buildColorGrid(safeId, type, selectedColor, onChangeCallback) {
@@ -769,9 +784,14 @@ function updateIcon(id, cls, hex) {
     const preview = document.getElementById(`preview-${safeId}`);
     if (preview) preview.style.color = hex;
     
+    // Check if border is enabled
+    const borderCheckbox = document.getElementById(`border-${safeId}`);
+    const hasBorder = borderCheckbox && borderCheckbox.checked;
+    
     const codeElement = document.getElementById(`code-${safeId}`);
     if (codeElement) {
-        const raw = `<svg class="icon ${cls}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
+        const borderClass = hasBorder ? ' hs-pictograph-border' : '';
+        const raw = `<svg class="hs-pictograph ${cls}${borderClass}">\n  <use href="${currentConfig.spriteUrl}#${id}"></use>\n</svg>`;
         
         // Remove existing highlighting classes before re-highlighting
         codeElement.className = '';
@@ -784,6 +804,26 @@ function updateIcon(id, cls, hex) {
             hljs.highlightElement(codeElement);
         }
     }
+}
+
+// New function for border checkbox
+function updateIconBorder(safeId) {
+    const card = document.getElementById(`card-${safeId}`);
+    const borderCheckbox = document.getElementById(`border-${safeId}`);
+    const preview = document.getElementById(`preview-${safeId}`);
+    
+    // Update preview SVG
+    if (preview && preview.querySelector('svg')) {
+        const svg = preview.querySelector('svg');
+        if (borderCheckbox.checked) {
+            svg.classList.add('hs-pictograph-border');
+        } else {
+            svg.classList.remove('hs-pictograph-border');
+        }
+    }
+    
+    // Update the code block
+    updateIcon(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex);
 }
 
 function updateMask(id, colorClass, hex, path) {
@@ -1128,7 +1168,7 @@ function downloadSVG(iconId, safeId) {
     
     // Get color from card dataset
     const card = document.getElementById(`card-${safeId}`);
-    const colorClass = card.dataset.currentColor || 'icon-blue';
+    const colorClass = card.dataset.currentColor || 'hs-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
     
     const match = spriteText.match(new RegExp(`<symbol[^>]*id="${iconId}"[^>]*>(.*?)</symbol>`, 's'));
@@ -1172,7 +1212,7 @@ function downloadMaskSVG(id, path) {
 function downloadPNG(iconId, safeId) {
     // Get color from card dataset
     const card = document.getElementById(`card-${safeId}`);
-    const colorClass = card.dataset.currentColor || 'icon-blue';
+    const colorClass = card.dataset.currentColor || 'hs-blue';
     const colorHex = card.dataset.currentHex || '#0072BC';
 
     // Get the size from the size select

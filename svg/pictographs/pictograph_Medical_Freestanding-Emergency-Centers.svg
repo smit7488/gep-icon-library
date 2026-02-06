@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <polygon points="64.1674 54.0073 58.3913 54.0073 58.3913 48.2314 52.6372 48.2314 52.6372 54.0073 46.8611 54.0073 46.8611 59.7614 52.6372 59.7614 52.6372 65.5373 58.3913 65.5373 58.3913 59.7614 64.1674 59.7614 64.1674 54.0073" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M24.3198,24.3036h62.3889c2.5012,0,4.5319,2.0307,4.5319,4.5319v.4532H19.7879v-.4532c0-2.5012,2.0307-4.5319,4.5319-4.5319Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M31.6372,15.6628h47.754c2.5012,0,4.5319,2.0307,4.5319,4.5319v.4532H27.1053v-.4532c0-2.5012,2.0307-4.5319,4.5319-4.5319Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <polygon points="91.0744 39.591 91.0744 33.6092 89.0804 33.6092 83.0981 33.6092 81.1042 33.6092 81.1042 39.591 83.0981 39.591 83.0981 90.7714 77.7809 90.7714 77.7809 33.6092 33.5799 33.6092 33.5799 90.7714 27.9303 90.7714 27.9303 39.591 29.9243 39.591 29.9243 33.6092 27.9303 33.6092 21.948 33.6092 19.9541 33.6092 19.9541 39.591 21.948 39.591 21.948 90.7714 19.9541 90.7714 19.9541 96.7532 21.948 96.7532 27.9303 96.7532 33.5799 96.7532 41.5561 96.7532 44.8794 96.7532 44.8794 82.4628 66.1491 82.4628 66.1491 96.7532 69.4723 96.7532 77.7809 96.7532 83.0981 96.7532 89.0804 96.7532 91.0744 96.7532 91.0744 90.7714 89.0804 90.7714 89.0804 39.591 91.0744 39.591" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="55.5142" y1="97.2517" x2="55.5142" y2="82.9613" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="51.9273" y1="92.7653" x2="51.9273" y2="88.7772" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="59.3611" y1="92.7653" x2="59.3611" y2="88.7772" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <circle cx="55.5142" cy="56.5404" r="15.9522" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

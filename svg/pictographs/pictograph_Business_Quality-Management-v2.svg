@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M61.23,79.3531h35.8712c.3342,0,.605.2708.605.6049v1.8443c-.0001,1.7426-1.4127,3.1553-3.1554,3.1553H13.3211c-1.7428,0-3.1558-1.4127-3.1561-3.1557l-.0004-1.8436c-.0001-.3342.2708-.605.605-.605h37.3292" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="52.6089" y1="31.4791" x2="55.2618" y2="31.4791" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="18.565" y1="35.6352" x2="89.3057" y2="35.6352" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M10.6067,79.3838l7.9584-8.8736v-36.9618c0-3.5406,2.8703-6.4109,6.4109-6.4109h57.9186c3.5406,0,6.4109,2.8703,6.4109,6.4109v36.9618l7.9584,8.8736" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="78.2524" y1="70.5412" x2="89.3057" y2="70.5412" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="18.565" y1="70.5412" x2="29.6181" y2="70.5412" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="34.0396" y1="75.2279" x2="35.808" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="21.66" y1="75.2279" x2="23.4284" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="27.8497" y1="75.2279" x2="29.6183" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="78.2524" y1="75.2279" x2="80.021" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="84.4423" y1="75.2279" x2="86.2108" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="72.0627" y1="75.2279" x2="73.8311" y2="75.2279" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <path d="M71.1971,66.498c.0242-.5089.016-1.0055-.0249-1.49-.0071-.0569-.0145-.1132-.022-.1696-.0082-.0816-.0167-.1623-.0264-.2431-.2714-1.9846-1.1231-3.7569-2.5543-5.3158l-.0072-.0078c-1.8744-2.0438-4.1975-3.1251-6.9696-3.2442-2.7749-.1162-5.1838.7643-7.2271,2.6419-1.6698,1.532-2.696,3.3638-3.0791,5.495-.0885.4791-.1438.9729-.1656,1.4819-.0213.5067-.0104,1.0009.0325,1.483.2054,2.1587,1.0755,4.0733,2.6096,5.7436,1.877,2.0416,4.2028,3.1206,6.9777,3.2372,2.7722.1187,5.1784-.7596,7.219-2.6349,1.6707-1.5344,2.6997-3.3684,3.0867-5.502.0817-.4768.1318-.9685.1507-1.4753Z" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M68.5694,59.2795l2.7246-2.5028-1.5988-1.7328c3.0974-3.3034,6.196-6.6069,9.2956-9.9109l.0003-.0071,4.5573,4.9607-.0146-.0006c-3.5467,2.8084-7.0937,5.6163-10.6409,8.4235l-1.599-1.7328" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <polyline points="57.0438 66.6614 59.3658 69.4478 66.0996 61.7852" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <polyline points="38.8928 54.0457 45.7396 57.999 45.7396 66.3527" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="47.2826 52.0814 40.0985 47.9225 34.1915 51.3334 34.1915 64.6773 45.7396 71.3557 45.752 71.3557 48.4883 69.777" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="40.0985 47.9225 45.752 44.643 57.3005 51.3334 57.3005 52.8647" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

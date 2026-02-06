@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M29.6758,62.6323s11.6152,10.5593,24.2864,0c0,0,15.6278,6.1244,11.404,28.9325,0,0-21.3298,7.3915-46.6721,0,0,0-4.0125-20.485,10.9817-28.9325Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="42.1358" cy="49.1164" r="13.0935" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <path d="M69.5571,29.2383l5.3871-16.58,5.3872,16.58h17.4333l-14.1038,10.247,5.3872,16.58-14.1038-10.2471-14.1037,10.2471,5.3871-16.58-14.1037-10.247h17.4333Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

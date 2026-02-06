@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <line x1="11.5636" y1="17.5346" x2="99.5532" y2="17.3525" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="11.3814" y1="76.923" x2="99.5532" y2="76.923" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="13.7497" y1="17.5346" x2="13.7497" y2="76.923" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="97.1849" y1="17.1703" x2="97.1849" y2="76.923" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="55.6495" y1="14.6199" x2="55.6495" y2="17.1703" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="22.8583" y="29.5581" width="28.0546" height="35.3416" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <polyline points="45.9844 28.4 47.775 22.3098 74.6904 30.2234 64.7212 64.1298 52.1392 60.4304" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="38.1609" y1="100.6055" x2="49.4556" y2="76.923" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="72.7737" y1="100.9699" x2="61.479" y2="76.923" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="55.2851" y1="96.9621" x2="55.2851" y2="76.923" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="72.7737" y1="49.2328" x2="93.1771" y2="49.2328" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="72.7737" y1="52.8762" x2="93.1771" y2="52.8762" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="72.7737" y1="56.5197" x2="93.1771" y2="56.5197" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="72.7737" y1="60.1631" x2="93.1771" y2="60.1631" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

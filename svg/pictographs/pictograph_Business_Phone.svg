@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M74.205,94.727h-38.3204c-3.9181,0-7.5034-1.981-9.5881-5.2973-2.0866-3.3163-2.3198-7.4058-.6238-10.9373l18.094-37.6787v-15.1703h6.1223v16.5654l-18.6958,38.9342c-.7932,1.6482-.6876,3.4797.285,5.0282.9726,1.5465,2.5789,2.4334,4.4064,2.4334h38.3204c1.8275,0,3.4358-.8869,4.4084-2.4354.9726-1.5465,1.0782-3.378.285-5.0262l-18.6958-38.9342v-16.5654h6.1223v15.1703l18.094,37.6787c1.696,3.5315,1.4628,7.621-.6238,10.9373s-5.6719,5.2973-9.5901,5.2973Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M69.0424,21.3368h-27.7697v-3.1871c0-1.6211,1.3142-2.9352,2.9352-2.9352h21.8992c1.6211,0,2.9352,1.3142,2.9352,2.9352v3.1871Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <path d="M73.4853,80.6957l-7.3712-15.3512h-9.8985c0,2.2864-1.8534,4.1398-4.1398,4.1398s-4.1398-1.8534-4.1398-4.1398h-3.4742l-7.3714,15.3512c-.5635,1.1733.292,2.5325,1.5936,2.5325h33.2077c1.3019,0,2.1571-1.3592,1.5936-2.5325Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="52.0759" cy="65.3445" r="4.1398" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <circle cx="61.1832" cy="73.7897" r="3.4774" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

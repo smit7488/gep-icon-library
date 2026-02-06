@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M76.0487,43.3627c8.3911,19.7684,5.9943,39.6951-5.3534,44.5075-11.3477,4.8124-27.3491-7.3119-35.7402-27.0803-.5252-1.2374-1.0082-2.4755-1.4494-3.7104" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M60.7562,21.7149c3.7696,3.1761,7.7538,8.0282,10.8671,13.0348" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M30.9506,47.9055c-2.7189-14.6605.6179-27.9167,9.3579-31.6232,4.0578-1.7208,8.7107-1.276,13.3978.9096" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M39.0148,37.0338c-14.4797,15.8599-18.8364,35.4517-9.7308,43.7594,4.852,4.4269,12.6995,4.6894,21.0213,1.6316" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M57.5033,78.9906c4.9835-2.9111,9.961-6.9161,14.4856-11.8719,14.4797-15.8599,18.8364-35.4517,9.7308-43.7594-7.4786-6.8233-22.2123-3.7026-35.0824,6.3423" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M87.0203,67.7841c2.6314-2.1942,4.4047-4.873,5.0565-7.9514,2.4549-11.5945-11.9302-24.4664-32.1299-28.7502-10.865-2.3041-21.9109-1.6216-29.524,1.2753" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M23.958,36.3896c-2.6174,2.1903-4.3814,4.8617-5.0311,7.9301-2.4549,11.5945,11.9302,24.4664,32.1299,28.7502,10.8649,2.3041,22.0514,1.4693,29.6645-1.4276" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <text transform="translate(37.6182 62.8558)" style="fill:none;font-family:AzoSans-Light, 'Azo Sans';font-size:6.0349px;font-weight:300;stroke:currentColor;stroke-width:1.5"><tspan x="0" y="0"> </tspan></text>
+    <path d="M44.3405,58.6522c-4.0785-3.7407-5.4693-9.3792-3.5414-14.4019,1.773-4.6178,6.0018-7.6021,10.7732-7.6021,1.6244,0,3.1588.4036,4.5451,1.065,1.3822-.6618,2.9161-1.065,4.5474-1.065,4.7001,0,8.9207,2.8924,10.7522,7.368,2.0157,4.925.7569,10.6251-3.2068,14.5217l-11.8707,11.6705-11.9991-11.5562Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M46.6466,56.1948c-3.0724-2.7987-4.1333-7.006-2.7013-10.7367,1.2684-3.3046,4.2622-5.4401,7.6272-5.4401,1.6427,0,3.2224.6436,4.5511,1.6025,1.3182-.9599,2.8919-1.6025,4.5415-1.6025,3.3773,0,6.3021,2.0212,7.6336,5.2742,1.4951,3.6538.5329,7.9097-2.4504,10.8432l-9.5327,9.3714-9.6689-9.312Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M51.5723,43.3881c1.7339,0,3.7342,1.5901,4.5732,3.2189.8069-1.6288,2.7852-3.2189,4.5196-3.2189,4.562,0,6.9784,6.2562,2.8204,10.3438l-7.1941,7.0727-7.344-7.0727c-4.2902-3.8632-1.9372-10.3438,2.625-10.3438h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

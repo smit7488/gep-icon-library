@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <rect x="66.476" y="42.0036" width="4.5261" height="3.9926" transform="translate(137.4781 87.9998) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="66.476" y="49.0935" width="4.5261" height="3.9926" transform="translate(137.4781 102.1796) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="73.9814" y="42.0036" width="4.5261" height="3.9926" transform="translate(152.4889 87.9998) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="66.476" y="34.9867" width="4.5261" height="3.9926" transform="translate(137.4781 73.9661) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="73.9814" y="34.9867" width="4.5261" height="3.9926" transform="translate(152.4889 73.9661) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="73.9814" y="49.0935" width="4.5261" height="3.9926" transform="translate(152.4889 102.1796) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <polyline points="26.8125 34.3102 26.8125 52.8885 21.907 52.8885 21.907 93.4461 26.8907 93.4461 26.8907 78.1803 37.8563 78.1803 37.8563 93.4461 86.9173 93.4461 86.9173 52.8885 82.0119 52.8885 82.0119 34.3102" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="32.0509" y1="78.1803" x2="32.0509" y2="93.4461" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <path d="M23.3254,32.1258l23.8034-10.4459c4.5747-2.0076,9.7812-2.0076,14.3559,0l23.8034,10.4459v-3.6203l-23.8034-10.4459c-4.5747-2.0076-9.7812-2.0076-14.3559,0l-23.8034,10.4459v3.6203Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M56.1955,55.2306v-9.4186c0-3.682-2.2243-6.8509-5.3977-8.2452-.2951-1.0795-1.2729-1.8773-2.446-1.8773-1.406,0-2.5459,1.1399-2.5459,2.5458s1.1399,2.5461,2.5459,2.5461c.6039,0,1.1513-.2191,1.5877-.5704,2.073,1.0228,3.5151,3.1376,3.5151,5.6011v9.4186c-.8158.4748-1.3704,1.3488-1.3704,2.3606,0,2.698-2.1955,4.8941-4.8948,4.8941h-6.668c-2.6993,0-4.8948-2.1961-4.8948-4.8941,0-1.0117-.5546-1.8858-1.3704-2.3606v-9.4186c0-2.4553,1.4331-4.5636,3.4953-5.5902.4344.3449.9768.5596,1.5746.5596,1.3789,0,2.4948-1.0981,2.5379-2.4665.005-.0475.0279-.089.0279-.1378,0-.0902-.0347-.169-.0513-.2543-.1557-1.2567-1.2154-2.2333-2.5145-2.2333-1.18,0-2.1629.8068-2.4517,1.896-3.1524,1.4032-5.359,4.5599-5.359,8.2265v9.4186c-.8158.4748-1.3704,1.3488-1.3704,2.3606,0,5.7212,4.6546,10.3758,10.3764,10.3758h.5929v5.661c0,1.5136,1.2272,2.7408,2.7408,2.7408s2.7408-1.2272,2.7408-2.7408v-5.661h.5935c5.7219,0,10.3764-4.6546,10.3764-10.3758,0-1.0117-.5546-1.8858-1.3704-2.3606Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M62.7478,88.8049h-8.7872c-6.29,0-11.4076-5.1176-11.4076-11.4076v-1.2043h2.7408v1.2043c0,4.779,3.8877,8.6668,8.6668,8.6668h8.7872c4.779,0,8.6668-3.8877,8.6668-8.6668v-10.9261h2.7408v10.9261c0,6.29-5.1176,11.4076-11.4076,11.4076Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M73.8843,69.5415c3.0091-.5836,5.281-3.2326,5.281-6.4123,0-3.6075-2.9245-6.532-6.532-6.532s-6.532,2.9245-6.532,6.532c0,2.985,2.0022,5.5023,4.7369,6.2822" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="72.7061" cy="63.1293" r="3.4038" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="86.9173" y1="93.4461" x2="93.6418" y2="93.4461" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="26.8907" y1="93.4461" x2="16.3582" y2="93.4461" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

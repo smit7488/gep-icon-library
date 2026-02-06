@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <line x1="54.1585" y1="7.9725" x2="54.1585" y2="24.5427" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="21.1085" y1="21.5338" x2="32.8254" y2="33.2507" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="6.3974" y1="55.7336" x2="22.9676" y2="55.7336" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="38.5631" y1="16.7449" x2="42.4619" y2="26.4921" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="16.2941" y1="38.9706" x2="25.9433" y2="43.106" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="101.9197" y1="55.7336" x2="85.3495" y2="55.7336" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="88.3584" y1="22.6836" x2="76.6415" y2="34.4005" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="93.1473" y1="40.1381" x2="83.4001" y2="44.037" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="70.9216" y1="17.8691" x2="66.7862" y2="27.5183" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="54.1585" y1="103.4948" x2="54.1585" y2="86.9246" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="87.2086" y1="89.9335" x2="75.4917" y2="78.2166" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="69.754" y1="94.7223" x2="65.8552" y2="84.9752" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="92.023" y1="72.4967" x2="83.3486" y2="68.3613" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="19.9587" y1="88.7837" x2="31.6756" y2="77.0668" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="15.1698" y1="71.3291" x2="23.9423" y2="67.4302" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="37.3955" y1="93.5981" x2="41.5309" y2="83.9489" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <rect x="38.6445" y="38.2624" width="31.2881" height="36.1016" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="38.6445" y1="43.0759" x2="69.9326" y2="43.0759" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="41.0512" y1="40.6692" x2="42.6558" y2="40.6692" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="44.2603" y1="40.6692" x2="45.8648" y2="40.6692" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="47.4693" y1="40.6692" x2="49.0738" y2="40.6692" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="38.6445" y1="60.7256" x2="69.9326" y2="60.7256" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="42.6558" y="64.7369" width="5.6158" height="5.6158" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="51.4806" y1="65.5392" x2="66.7235" y2="65.5392" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="51.4806" y1="68.7482" x2="59.5032" y2="68.7482" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <polygon points="60.48 59.2258 53.6449 52.3907 50.9108 55.1247 50.9108 45.5556 60.48 45.5556 57.7459 48.2896 64.581 55.1247 60.48 59.2258" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M51.5974,52.7268l-1.2708-9.2975,6.493,6.7749,8.4498-4.0816-4.4369,8.2688,6.493,6.7749-9.2352-1.6646-4.4368,8.2688-1.2708-9.2975-9.2351-1.6646,8.4498-4.0816Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <g>
+      <path d="M76.0325,46.562c8.247,19.829,5.7054,39.7376-5.677,44.4673-11.3824,4.7297-27.2952-7.5107-35.5423-27.3396-.5162-1.2412-.9902-2.4828-1.4223-3.7209" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M60.8979,24.8035c3.7464,3.2034,7.6952,8.0844,10.772,13.1135" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M30.9025,50.7767c-2.6121-14.6799.8209-27.9114,9.5877-31.5543,4.0702-1.6913,8.7197-1.2126,13.3908,1.007" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M39.0456,39.9639c-14.5947,15.7542-19.0938,35.3137-10.0489,43.6874,4.8197,4.4621,12.665,4.7817,21.0088,1.7845" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M57.2285,82.054c5.0045-2.8748,10.0111-6.8435,14.5715-11.7662,14.5947-15.7542,19.0938-35.3137,10.0489-43.6874-7.4287-6.8775-22.1848-3.8641-35.1276,6.087" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M86.8262,71.0626c2.6473-2.175,4.44-4.8409,5.1142-7.9144,2.5392-11.5763-11.7519-24.5525-31.92-28.9831-10.8479-2.3831-21.8985-1.781-29.5325,1.0605" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M23.9939,39.2102c-2.6332,2.1712-4.4166,4.8297-5.0886,7.8933-2.5392,11.5763,11.7519,24.5525,31.92,28.9831,10.8479,2.3831,22.0402,1.6296,29.6741-1.2118" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

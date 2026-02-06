@@ -160,7 +160,7 @@ background: linear-gradient(50deg,rgba(128, 13, 89, 1) 0%, rgba(0, 47, 110, 1) 1
         }
 
         .preview-area {
-            height: 120px;
+            height: 130px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -464,87 +464,95 @@ background: linear-gradient(50deg,rgba(128, 13, 89, 1) 0%, rgba(0, 47, 110, 1) 1
 }
 
 
-        /* ==========================================================================
+/* ==========================================================================
    GEP ICON SYSTEM - Master CSS
    ========================================================================== */
 
-.icon {
+.hs-icon,.hs-pictograph {
     display: inline-block;
-    width: 24px;
-    height: 24px;
     fill: currentColor;   
     stroke: currentColor;
     vertical-align: middle;
     transition: color 0.2s ease; 
 }
 
-.icon-sm { width: 16px; height: 16px; }
-.icon-md { width: 32px; height: 32px; }
-.icon-lg { width: 48px; height: 48px; }
+.hs-icon { width: 24px; height: 24px; }
+
+.hs-icon-sm { width: 16px; height: 16px; }
+.hs-icon-md { width: 32px; height: 32px; }
+.hs-icon-lg { width: 48px; height: 48px; }
+
+.hs-pictograph { width: 96px; height: 96px; }
+
+.hs-pictograph-sm { width: 64px; height: 64px; }
+.hs-pictograph-md { width: 128px; height: 128px; } 
+.hs-pictograph-lg { width: 256px; height: 256px; }
+
+.hs-pictograph-border { border: 1.5pt solid currentColor }
 
 /* DARK BLUE */
-.icon-dark-blue    { color: #002F6E; }
-.icon-dark-blue-s1 { color: #00285e; }
-.icon-dark-blue-t4 { color: #8098B7; }
-.icon-dark-blue-t3 { color: #B3C1D4; }
-.icon-dark-blue-t2 { color: #E6EBF1; }
-.icon-dark-blue-t1 { color: #F5F7F9; }
+.hs-dark-blue    { color: #002F6E; }
+.hs-dark-blue-s1 { color: #00285e; }
+.hs-dark-blue-t4 { color: #8098B7; }
+.hs-dark-blue-t3 { color: #B3C1D4; }
+.hs-dark-blue-t2 { color: #E6EBF1; }
+.hs-dark-blue-t1 { color: #F5F7F9; }
 
 /* BLUE - Primary Corporate */
-.icon-blue         { color: #0072BC; }
-.icon-blue-s1      { color: #0061a0; }
-.icon-blue-t4      { color: #80B9DE; }
-.icon-blue-t3      { color: #B3D5EB; }
-.icon-blue-t2      { color: #E6F1F9; }
-.icon-blue-t1      { color: #F5F9FC; }
+.hs-blue         { color: #0072BC; }
+.hs-blue-s1      { color: #0061a0; }
+.hs-blue-t4      { color: #80B9DE; }
+.hs-blue-t3      { color: #B3D5EB; }
+.hs-blue-t2      { color: #E6F1F9; }
+.hs-blue-t1      { color: #F5F9FC; }
 
 /* LIGHT BLUE */
-.icon-light-blue    { color: #3DB5E6; }
-.icon-light-blue-s1 { color: #349ac4; }
-.icon-light-blue-t4 { color: #9FDBF3; }
-.icon-light-blue-t3 { color: #C5E9F8; }
-.icon-light-blue-t2 { color: #ECF8FD; }
-.icon-light-blue-t1 { color: #F7FCFE; }
+.hs-light-blue    { color: #3DB5E6; }
+.hs-light-blue-s1 { color: #349ac4; }
+.hs-light-blue-t4 { color: #9FDBF3; }
+.hs-light-blue-t3 { color: #C5E9F8; }
+.hs-light-blue-t2 { color: #ECF8FD; }
+.hs-light-blue-t1 { color: #F7FCFE; }
 
 /* GREEN */
-.icon-green         { color: #008996; }
-.icon-green-s1      { color: #007480; }
-.icon-green-t4      { color: #80C5CB; }
-.icon-green-t3      { color: #B3DCE0; }
-.icon-green-t2      { color: #E6F4F5; }
-.icon-green-t1      { color: #F5FAFB; }
+.hs-green         { color: #008996; }
+.hs-green-s1      { color: #007480; }
+.hs-green-t4      { color: #80C5CB; }
+.hs-green-t3      { color: #B3DCE0; }
+.hs-green-t2      { color: #E6F4F5; }
+.hs-green-t1      { color: #F5FAFB; }
 
 /* RED */
-.icon-red    { color: #ED1C24; }
-.icon-red-s1 { color: #c9181f; }
-.icon-red-t4 { color: #F78E92; }
-.icon-red-t3 { color: #FABBB0; }
-.icon-red-t2 { color: #FEE9EA; }
-.icon-red-t1 { color: #FFF6F6; }
+.hs-red    { color: #ED1C24; }
+.hs-red-s1 { color: #c9181f; }
+.hs-red-t4 { color: #F78E92; }
+.hs-red-t3 { color: #FABBB0; }
+.hs-red-t2 { color: #FEE9EA; }
+.hs-red-t1 { color: #FFF6F6; }
 
 /* VIOLET */
-.icon-violet    { color: #831A5B; }
-.icon-violet-s1 { color: #6f164d; }
-.icon-violet-t4 { color: #C28DAE; }
-.icon-violet-t3 { color: #DABACE; }
-.icon-violet-t2 { color: #F3E9EF; }
-.icon-violet-t1 { color: #FAF6F8; }
+.hs-violet    { color: #831A5B; }
+.hs-violet-s1 { color: #6f164d; }
+.hs-violet-t4 { color: #C28DAE; }
+.hs-violet-t3 { color: #DABACE; }
+.hs-violet-t2 { color: #F3E9EF; }
+.hs-violet-t1 { color: #FAF6F8; }
 
 /* ORANGE */
-.icon-orange    { color: #F28B00; }
-.icon-orange-s1 { color: #ce7600; }
-.icon-orange-t1 { color: #FFFAF5; }
-.icon-orange-t2 { color: #FEF4E6; }
-.icon-orange-t3 { color: #FBDCB3; }
-.icon-orange-t4 { color: #F9C680; }
+.hs-orange    { color: #F28B00; }
+.hs-orange-s1 { color: #ce7600; }
+.hs-orange-t1 { color: #FFFAF5; }
+.hs-orange-t2 { color: #FEF4E6; }
+.hs-orange-t3 { color: #FBDCB3; }
+.hs-orange-t4 { color: #F9C680; }
 
 /* GRAYSCALE */
-.icon-dark-gray    { color: #474F50; }
-.icon-gray         { color: #6B6F70; }
-.icon-light-gray-1 { color: #F7F7F6; }
-.icon-light-gray-2 { color: #E6E6E6; }
-.icon-black        { color: #000000; }
-.icon-white        { color: #FFFFFF; }
+.hs-dark-gray    { color: #474F50; }
+.hs-gray         { color: #6B6F70; }
+.hs-light-gray-1 { color: #F7F7F6; }
+.hs-light-gray-2 { color: #E6E6E6; }
+.hs-black        { color: #000000; }
+.hs-white        { color: #FFFFFF; }
 
 /* Smooth scrolling for the whole page */
 html {
@@ -759,7 +767,7 @@ html {
 
 
 .full-background {position: relative !important;overflow: hidden!important;z-index: 1!important; display: flex; width: 100%; height: 100%;}     
-.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: #0072BC; /* icon-blue */opacity: .6; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
+.full-background::before {content: "" !important;position: absolute !important;top: 0!important;left: 0!important;width: 100%!important;height: 100%!important;background-color: #0072BC; /* hs-blue */opacity: .6; /* Adjust Transparency */-webkit-mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;mask-image: url('https://assets.henryschein.com/HS_US_EN_Banner_background_Business-Concepts_Evaluate.svg')!important;-webkit-mask-repeat: no-repeat!important;mask-repeat: no-repeat!important; -webkit-mask-position: center right!important; mask-position: center right!important; -webkit-mask-size: cover!important; mask-size: cover!important; z-index: -1!important;pointer-events: none!important;}
 .full-background > .maincontent {position: relative;z-index: 2;}
 
 pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <polygon points="53.9671 14.4142 16.5442 35.7987 91.3899 35.7987 53.9671 14.4142" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polygon points="54.0483 21.5796 39.3654 29.9698 68.7311 29.9698 54.0483 21.5796" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M22.425,35.7987h62.8169v4.2557c0,1.2657-1.0276,2.2933-2.2933,2.2933H24.7182c-1.2657,0-2.2933-1.0276-2.2933-2.2933v-4.2557h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="28.4393" y="42.3387" width="9.4894" height="32.6113" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="70.2727" y="42.3387" width="9.4894" height="32.6113" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M25.2762,74.959h57.6491c1.3523,0,2.4503,1.0979,2.4503,2.4503v4.4997H22.8259v-4.4997c0-1.3523,1.0979-2.4503,2.4503-2.4503Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M19.5847,81.9089h69.3315c1.3523,0,2.4503,1.0979,2.4503,2.4503v4.4997H17.1345v-4.4997c0-1.3523,1.0979-2.4503,2.4503-2.4503Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

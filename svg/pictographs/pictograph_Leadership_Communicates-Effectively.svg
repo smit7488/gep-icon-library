@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <text style="fill:none;font-family:AzoSans-Regular, 'Azo Sans';font-size:12.1px;stroke:currentColor;stroke-width:1.5"><tspan x="12.7979" y="130.5354">Communica</tspan><tspan x="80.5449" y="130.5354" style="letter-spacing:-.012em;fill:none;stroke:currentColor;stroke-width:1.5">t</tspan><tspan x="85.1065" y="130.5354">es </tspan><tspan x="27.7227" y="145.9348">Ef</tspan><tspan x="38.5518" y="145.9348" style="letter-spacing:-.008em;fill:none;stroke:currentColor;stroke-width:1.5">f</tspan><tspan x="42.6172" y="145.9348">ecti</tspan><tspan x="63.2598" y="145.9348" style="letter-spacing:-.032em;fill:none;stroke:currentColor;stroke-width:1.5">v</tspan><tspan x="69.4912" y="145.9348">ely</tspan></text>
+  <g>
+    <path d="M48.5183,22.3829c3.4092.307,6.6097,1.7727,9.6018,4.3964l-4.8763,5.5188,17.6803.124.0045-.017-2.2401-17.5249-4.6574,5.2276c-4.4704-2.9742-8.7949-4.1332-12.9724-3.4775-.3179.0518-.6345.1151-.9492.1894-.2526.0509-.5069.1087-.7609.172-3.3409.9185-6.5893,3.0233-9.7446,6.3129" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M28.9614,77.921c-2.5396-2.2975-4.2143-5.3925-5.0242-9.2849l7.2169-1.4654-14.0323-10.756-.0124.0109-8.7654,15.3344,6.8564-1.3767c1.774,5.0675,4.5252,8.5994,8.2544,10.5944.2845.1545.5749.2984.8704.4334.2326.1077.47.2103.712.309,3.2193,1.2807,7.0793,1.5594,11.5806.837" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M92.8646,70.1566c-2.0243,2.7624-4.9307,4.7463-8.7193,5.952l-2.1995-7.028-9.2565,15.0637.0122.0112,16.1542,7.1426-2.0742-6.6785c4.8583-2.2856,8.0886-5.3853,9.6898-9.2997.1245-.2989.2377-.6025.3416-.9104.0833-.2424.1609-.4891.2342-.74.943-3.3339.8234-7.2021-.3579-11.6053" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <path d="M46.6435,79.0764s7.3981,6.7255,15.4688,0c0,0,9.9538,3.9008,7.2636,18.428,0,0-13.5856,4.7079-29.7269,0,0,0-2.5557-13.0476,6.9946-18.428Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="54.5797" cy="70.4677" r="8.3397" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M77.1784,37.3823s7.3981,6.7255,15.4688,0c0,0,9.9538,3.9008,7.2636,18.428,0,0-13.5856,4.7079-29.7269,0,0,0-2.5557-13.0476,6.9946-18.428Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="85.1146" cy="28.7736" r="8.3397" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M18.9651,32.9291s7.3981,6.7255,15.4688,0c0,0,9.9538,3.9008,7.2636,18.428,0,0-13.5856,4.7079-29.7269,0,0,0-2.5557-13.0476,6.9946-18.428Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="26.9013" cy="24.3204" r="8.3397" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

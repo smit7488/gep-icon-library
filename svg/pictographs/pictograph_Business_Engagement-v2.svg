@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M64.2521,27.7807c2.8182,2.1152,4.8262,5.1318,6.0245,9.0492l-7.2579,2.1903,15.4107,9.6845.0131-.0124,7.5307-16.5551-6.9085,2.0539c-2.3026-5.0249-5.4607-8.3818-9.473-10.0703-.3064-.1269-.6178-.2429-.9336-.3483-.2487-.0922-.5026-.1794-.7593-.2615-3.4222-1.0054-7.4059-.9222-11.9499.2487" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M40.2516,81.3677c-2.8226-2.1122-4.8349-5.1245-6.0369-9.0368l7.2572-2.1917-15.4107-9.6838-.0117.0124-7.519,16.5552,6.8961-2.0663c2.3026,5.0246,5.4601,8.3818,9.473,10.0703.3064.1312.6177.2509.9336.361.2487.0882.5018.1707.7593.2487,3.4222,1.0051,7.4052.9219,11.9499-.2487" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <path d="M65.5059,73.9127s8.2816,7.5288,17.3162,0c0,0,11.1426,4.3667,8.1311,20.6288,0,0-15.2081,5.2701-33.2771,0,0,0-2.8609-14.6058,7.8299-20.6288Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="74.3898" cy="64.2758" r="9.3357" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M27.7087,32.0887s8.2816,7.5288,17.3162,0c0,0,11.1426,4.3667,8.1311,20.6288,0,0-15.2081,5.2701-33.2771,0,0,0-2.8609-14.6058,7.8299-20.6288Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="36.5926" cy="22.4519" r="9.3357" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

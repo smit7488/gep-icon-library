@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M48.5798,20.1708c3.5095.316,6.8042,1.8249,9.8844,4.5258l-5.0198,5.6812,18.2007.1276.0047-.0175-2.3061-18.0406-4.7944,5.3814c-4.6019-3.0617-9.0538-4.2548-13.3542-3.5798-.3273.0533-.6532.1185-.9772.195-.26.0524-.5218.1119-.7832.1771-3.4392.9455-6.7833,3.1122-10.0314,6.4987" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M28.4473,77.3434c-2.6144-2.3651-4.3384-5.5512-5.172-9.5582l7.4293-1.5086-14.4453-11.0725-.0128.0113-9.0233,15.7857,7.0582-1.4172c1.8262,5.2166,4.6584,8.8525,8.4973,10.9062.2929.1591.5918.3071.896.4461.2394.1109.4838.2165.7329.3181,3.3141,1.3184,7.2877,1.6053,11.9214.8616" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M94.2311,69.3504c-2.0838,2.8437-5.0758,4.886-8.9759,6.1272l-2.2643-7.2349-9.529,15.507.0125.0115,16.6297,7.3528-2.1353-6.8751c5.0012-2.3528,8.3267-5.5438,9.9749-9.5734.1281-.3077.2447-.6202.3517-.9372.0857-.2496.1656-.5035.2411-.7617.9707-3.432.8476-7.4141-.3684-11.9468" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <path d="M46.6498,78.5328s7.6158,6.9235,15.924,0c0,0,10.2467,4.0156,7.4774,18.9703,0,0-13.9854,4.8464-30.6018,0,0,0-2.6309-13.4315,7.2004-18.9703Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="54.8195" cy="69.6707" r="8.5851" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M78.0833,35.6117s7.6158,6.9235,15.924,0c0,0,10.2467,4.0156,7.4774,18.9703,0,0-13.9854,4.8464-30.6018,0,0,0-2.6309-13.4315,7.2004-18.9703Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="86.253" cy="26.7496" r="8.5851" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M18.1569,31.0274s7.6158,6.9235,15.924,0c0,0,10.2467,4.0156,7.4774,18.9703,0,0-13.9854,4.8464-30.6018,0,0,0-2.6309-13.4315,7.2004-18.9703Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="26.3266" cy="22.1653" r="8.5851" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

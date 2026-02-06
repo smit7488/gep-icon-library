@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <polygon points="47.962 22.005 50.3492 45.9873 29.9907 97.3349 19.7108 93.2591 47.962 22.005" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="37.1458" y1="48.9386" x2="47.4796" y2="53.0358" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M30.0057,97.9015c-1.1159,2.8144-4.4042,4.1508-7.3448,2.985-2.9405-1.1659-4.4197-4.3925-3.3038-7.207" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <circle cx="84.2619" cy="29.9158" r="8.3373" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="59.7893" cy="19.0715" r="8.3373" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="48.2775" y1="91.1332" x2="67.0205" y2="23.3458" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="39.4302" y1="87.2705" x2="76.4039" y2="27.4426" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

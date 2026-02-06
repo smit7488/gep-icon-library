@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M89.4655,91.8586v-32.1923h8.0637c2.6512,0,3.8432-3.3212,1.7974-5.0071l-9.8611-8.1257v-21.5708h-12.6353v11.1627l-21.8273-17.9841L10.6738,54.659c-2.0462,1.6856-.8542,5.0073,1.797,5.0073h8.0689v32.1878" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M57.6599,52.3925c-.005-.0851-.0136-.1693-.0214-.2537-.3718-4.0409-3.8324-7.2181-7.9155-7.2234-2.6091-.0034-4.9256,1.2483-6.3802,3.1846-1.4546-1.9363-3.7711-3.188-6.3802-3.1846-4.0831.0054-7.5437,3.1826-7.9155,7.2234-.0078.0844-.0163.1685-.0214.2537-.1022,1.7244.3449,3.3383,1.1827,4.684,2.2277,3.5781,3.2824,7.7612,2.744,11.9415l-.3256,2.5286c-.2438,1.8931,2.0494,3.0199,3.3991,1.6702l4.1932-7.0934c1.4046-2.3762,4.8427-2.3762,6.2473,0l4.1932,7.0934c1.3497,1.3497,3.6428.2229,3.399-1.6702l-.3256-2.5286c-.5383-4.1804.5164-8.3635,2.744-11.9415.8378-1.3456,1.2849-2.9596,1.1827-4.684Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <rect x="74.3652" y="74.4635" width="4.3244" height="4.3244" transform="translate(153.0547 153.2514) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="66.3342" y="74.4635" width="4.3244" height="4.3244" transform="translate(136.9928 153.2514) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="74.3652" y="82.4945" width="4.3244" height="4.3244" transform="translate(153.0547 169.3133) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="66.3342" y="82.4945" width="4.3244" height="4.3244" transform="translate(136.9928 169.3133) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="74.3652" y="58.4332" width="4.3244" height="4.3244" transform="translate(153.0547 121.1908) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="66.3342" y="58.4332" width="4.3244" height="4.3244" transform="translate(136.9928 121.1908) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="74.3652" y="66.4642" width="4.3244" height="4.3244" transform="translate(153.0547 137.2527) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="66.3342" y="66.4642" width="4.3244" height="4.3244" transform="translate(136.9928 137.2527) rotate(-180)" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

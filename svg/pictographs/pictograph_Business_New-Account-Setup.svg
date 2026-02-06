@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <polyline points="54.931 18.8484 54.9537 18.8374 74.5305 30.1619" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="35.3542" y1="52.7768" x2="35.3542" y2="30.1729" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="35.3542 30.1729 42.5815 25.996 47.8401 22.9459 54.931 18.8484" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="42.5815 25.996 62.1127 37.3322 62.1127 44.3314 67.3713 41.3043 67.3713 34.293 47.8401 22.9459" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="40.328 33.0299 54.931 41.4633 54.942 41.475 54.942 58.6497" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="74.5305 52.7879 74.5305 52.8111 54.9537 64.124 54.942 64.124 54.931 64.1127" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="54.931 64.1127 35.3542 52.7995 35.3542 52.7768" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="74.5305" y1="30.1619" x2="74.5305" y2="52.7879" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="47.5097" y1="43.3077" x2="42.2854" y2="40.3026" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M85.1653,41.3288c0-16.6735-13.5166-30.19-30.19-30.19s-30.1901,13.5166-30.1901,30.19c0,8.7387,3.717,16.6057,9.6513,22.1187l-.0262.0262,20.5485,20.5485,20.5485-20.5485-.0101-.0101c5.9442-5.5137,9.6682-13.3877,9.6682-22.1348Z" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M74.7699,78.5154c7.7617,1.4527,12.759,3.7165,12.759,6.2618,0,4.3842-14.8084,7.9381-33.0755,7.9381s-33.0756-3.554-33.0756-7.9381c0-2.7422,5.7941-5.1596,14.604-6.5857-14.532,1.6333-24.6022,5.173-24.6022,9.2787,0,5.6566,19.1067,10.2423,42.6761,10.2423s42.6761-4.5856,42.6761-10.2423c0-3.8521-8.8652-7.2059-21.9619-8.9548Z" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <rect x="58.919" y="35.1892" width="28.3418" height="28.3418" transform="translate(-13.4175 32.1835) rotate(-22.8021)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="59.919 71.8717 41.6144 28.2696 25.0379 26.516" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="91.2672" y1="64.356" x2="66.2308" y2="74.8814" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="61.0519" cy="77.6236" r="5.8604" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M62.7263,77.6236c0-.9247-.7497-1.6744-1.6744-1.6744s-1.6743.7497-1.6743,1.6744.7496,1.6744,1.6743,1.6744,1.6744-.7497,1.6744-1.6744Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="57.6774" y1="48.9129" x2="83.6783" y2="37.9821" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="37.1918" y1="42.0426" x2="18.3547" y2="42.0426" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="41.3778" y1="54.6006" x2="30.2151" y2="54.6006" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="39.2848" y1="66.3214" x2="22.5407" y2="66.3214" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="52.0344" y="29.2046" width="10.8982" height="10.8981" transform="translate(-8.9376 24.9857) rotate(-22.8019)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="63.8262" y="30.6336" width="5.7614" height="5.7615" transform="translate(-7.7752 28.4708) rotate(-22.8016)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

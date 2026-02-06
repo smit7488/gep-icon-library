@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M78.88,48.4282c9.3233,22.4166,6.4499,44.9233-6.4179,50.2702-12.8678,5.3469-30.8572-8.4908-40.1805-30.9073-.5836-1.4032-1.1194-2.8067-1.6079-4.2064" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M61.7704,23.8303c4.2353,3.6215,8.6994,9.1394,12.1777,14.8248" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M27.8606,53.1929c-2.953-16.5956.928-31.5538,10.8388-35.672,4.6014-1.912,9.8576-1.3709,15.1383,1.1384" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M37.0664,40.9691c-16.4993,17.8101-21.5855,39.9221-11.3603,49.3885,5.4487,5.0444,14.3178,5.4057,23.7505,2.0174" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M57.6221,88.5519c5.6576-3.2499,11.3175-7.7365,16.4731-13.3017,16.4993-17.8101,21.5855-39.9221,11.3603-49.3885-8.3982-7.775-25.0799-4.3684-39.7117,6.8813" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M91.0822,76.1261c2.9927-2.4589,5.0194-5.4726,5.7816-8.9472,2.8705-13.087-13.2855-27.7566-36.0855-32.7654-12.2636-2.6941-24.7562-2.0134-33.3864,1.1989" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M20.0504,40.1171c-2.9769,2.4545-4.993,5.46-5.7527,8.9234-2.8705,13.087,13.2855,27.7566,36.0855,32.7654,12.2635,2.6941,24.9164,1.8423,33.5465-1.3699" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <path d="M55.9537,41.1089l.0174-.0084,14.999,8.6764M40.9547,67.1034v-17.3182M40.9547,49.7852l5.5373-3.2001,4.0289-2.3369,5.4328-3.1393M46.492,46.5851l14.964,8.6853v5.3625l4.0289-2.3192v-5.3717l-14.964-8.6937M44.7654,51.9742l11.1882,6.4613.0084.0089v13.1586M70.97,67.1119v.0178l-14.999,8.6675h-.009l-.0084-.0087M55.9537,75.7885l-14.999-8.6677v-.0174M70.97,49.7768v17.3351M50.2677,59.8486l-4.0026-2.3024" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

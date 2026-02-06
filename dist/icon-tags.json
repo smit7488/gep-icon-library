@@ -675,24 +675,6 @@
       "business"
     ]
   },
-  "Business_Strategic-Planning": {
-    "tags": [
-      "strategic planning",
-      "strategy",
-      "goals",
-      "planning",
-      "objectives",
-      "aim",
-      "roadmap",
-      "vision",
-      "focus",
-      "direction"
-    ],
-    "categories": [
-      "corporate",
-      "business"
-    ]
-  },
   "Business_Success": {
     "tags": [
       "success",
@@ -984,25 +966,6 @@
       "business"
     ]
   },
-  "Corporate_WW-Business-Standards": {
-    "tags": [
-      "worldwide business standards",
-      "standards",
-      "compliance",
-      "quality",
-      "certification",
-      "global standards",
-      "international",
-      "best practices",
-      "excellence",
-      "network",
-      "hexagon"
-    ],
-    "categories": [
-      "corporate",
-      "business"
-    ]
-  },
   "Dental_Bur-Blocks": {
     "tags": [
       "dental bur blocks",
@@ -1033,42 +996,6 @@
       "rotary",
       "cutting",
       "drilling"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Dental_Burs-Diamond-Grey": {
-    "tags": [
-      "dental burs",
-      "diamond bur",
-      "dental drill",
-      "dental instrument",
-      "dentistry",
-      "tool",
-      "rotary",
-      "cutting",
-      "drilling",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Dental_Burs-Steel-Grey": {
-    "tags": [
-      "dental burs",
-      "steel bur",
-      "dental drill",
-      "dental instrument",
-      "dentistry",
-      "tool",
-      "rotary",
-      "cutting",
-      "drilling",
-      "grey"
     ],
     "categories": [
       "dental",
@@ -1106,25 +1033,6 @@
     "categories": [
       "dental",
       "product"
-    ]
-  },
-  "Dental_Patient-Team-Education-Grey": {
-    "tags": [
-      "patient education",
-      "dental education",
-      "training",
-      "presentation",
-      "learning",
-      "teaching",
-      "communication",
-      "information",
-      "monitor",
-      "screen"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "marketing"
     ]
   },
   "Dental_Stool": {
@@ -1401,22 +1309,6 @@
       "medical"
     ]
   },
-  "Medical_Orthopedics-Grey": {
-    "tags": [
-      "orthopedics",
-      "bone",
-      "skeletal",
-      "orthopedic",
-      "medical",
-      "surgery",
-      "treatment",
-      "joint",
-      "fracture"
-    ],
-    "categories": [
-      "medical"
-    ]
-  },
   "Medical_Tables": {
     "tags": [
       "medical tables",
@@ -1519,23 +1411,6 @@
       "product"
     ]
   },
-  "Product-Categories_Air-Motor-Grey": {
-    "tags": [
-      "air motor",
-      "dental motor",
-      "handpiece motor",
-      "dental equipment",
-      "air powered",
-      "motor",
-      "dentistry",
-      "tool",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
   "Product-Categories_Alginate": {
     "tags": [
       "alginate",
@@ -1561,22 +1436,6 @@
       "restorative",
       "dentistry",
       "materials"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Amalgamators-Grey": {
-    "tags": [
-      "amalgamators",
-      "amalgam mixer",
-      "dental equipment",
-      "mixing",
-      "dentistry",
-      "amalgam",
-      "device",
-      "grey"
     ],
     "categories": [
       "dental",
@@ -1617,23 +1476,6 @@
       "medical",
       "product",
       "corporate"
-    ]
-  },
-  "Product-Categories_Autoclaves-and-Accessories-Grey": {
-    "tags": [
-      "autoclaves",
-      "sterilization",
-      "autoclave accessories",
-      "sterilizer",
-      "dental equipment",
-      "infection control",
-      "medical",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
     ]
   },
   "Product-Categories_Bandage-Tape": {
@@ -1699,22 +1541,6 @@
       "product"
     ]
   },
-  "Product-Categories_Blood-Taking-Sets": {
-    "tags": [
-      "blood taking sets",
-      "phlebotomy sets",
-      "blood collection",
-      "medical supplies",
-      "venipuncture",
-      "tubes",
-      "needles",
-      "laboratory"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Bur-Blocks": {
     "tags": [
       "bur blocks",
@@ -1766,22 +1592,6 @@
       "corporate"
     ]
   },
-  "Product-Categories_CADCAM-Grey": {
-    "tags": [
-      "cadcam",
-      "cad cam",
-      "digital dentistry",
-      "dental technology",
-      "computer aided design",
-      "milling",
-      "dental lab",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
   "Product-Categories_Canal-Prep-Solution": {
     "tags": [
       "canal prep",
@@ -1795,23 +1605,6 @@
     ],
     "categories": [
       "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Capital-Equipment-Grey": {
-    "tags": [
-      "capital equipment",
-      "major equipment",
-      "medical equipment",
-      "dental equipment",
-      "large equipment",
-      "investment",
-      "machinery",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
       "product"
     ]
   },
@@ -1896,22 +1689,6 @@
       "product"
     ]
   },
-  "Product-Categories_Controlled-Substance-Grey": {
-    "tags": [
-      "controlled substance",
-      "pharmaceuticals",
-      "medication",
-      "drugs",
-      "prescription",
-      "regulated",
-      "medical",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Core-Material": {
     "tags": [
       "core material",
@@ -1937,22 +1714,6 @@
       "fixed prosthetics",
       "dental lab",
       "prosthesis"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Curing-Lights-Grey": {
-    "tags": [
-      "curing lights",
-      "dental curing",
-      "polymerization",
-      "dental light",
-      "uv light",
-      "dental equipment",
-      "light cure",
-      "grey"
     ],
     "categories": [
       "dental",
@@ -1989,105 +1750,6 @@
     "categories": [
       "dental",
       "product"
-    ]
-  },
-  "Product-Categories_Dental-Misc-Grey": {
-    "tags": [
-      "dental miscellaneous",
-      "dental supplies",
-      "misc",
-      "various",
-      "dentistry",
-      "general supplies",
-      "grey",
-      "tooth"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Dental-Pharmacy-Supplies-Grey": {
-    "tags": [
-      "dental pharmacy",
-      "pharmacy supplies",
-      "medication",
-      "pharmaceuticals",
-      "dental",
-      "drugs",
-      "prescriptions",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Desensitizing-Grey": {
-    "tags": [
-      "desensitizing",
-      "sensitivity relief",
-      "dental treatment",
-      "pain relief",
-      "tooth sensitivity",
-      "dentistry",
-      "treatment",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Diabetes-Care-Grey": {
-    "tags": [
-      "diabetes care",
-      "diabetic supplies",
-      "glucose monitoring",
-      "diabetes",
-      "blood sugar",
-      "medical",
-      "healthcare",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Diabetes-Grey": {
-    "tags": [
-      "diabetes",
-      "diabetic",
-      "glucose",
-      "medical",
-      "healthcare",
-      "blood sugar",
-      "monitoring",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Diagnostics-Grey": {
-    "tags": [
-      "diagnostics",
-      "diagnostic tools",
-      "testing",
-      "medical diagnostics",
-      "examination",
-      "healthcare",
-      "analysis",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product",
-      "business"
     ]
   },
   "Product-Categories_Dialysis": {
@@ -2155,21 +1817,6 @@
       "business"
     ]
   },
-  "Product-Categories_Discover-Grey": {
-    "tags": [
-      "discover",
-      "search",
-      "find",
-      "magnifying glass",
-      "exploration",
-      "lookup",
-      "grey",
-      "research"
-    ],
-    "categories": [
-      "product"
-    ]
-  },
   "Product-Categories_Disposable-Syringe-Tips": {
     "tags": [
       "disposable syringes",
@@ -2214,55 +1861,6 @@
       "healthcare"
     ],
     "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Dry-Mouth-Relief-Grey": {
-    "tags": [
-      "dry mouth",
-      "xerostomia",
-      "mouth relief",
-      "saliva substitute",
-      "dental",
-      "oral care",
-      "relief",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Endo-Endodontics-Accessories-Grey": {
-    "tags": [
-      "endodontics",
-      "endo accessories",
-      "root canal",
-      "dental",
-      "endodontic supplies",
-      "dentistry",
-      "accessories",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Equipment-Grey": {
-    "tags": [
-      "equipment",
-      "medical equipment",
-      "dental equipment",
-      "tools",
-      "machinery",
-      "devices",
-      "healthcare",
-      "grey"
-    ],
-    "categories": [
-      "dental",
       "medical",
       "product"
     ]
@@ -2316,55 +1914,6 @@
       "product"
     ]
   },
-  "Product-Categories_Eyewear-Grey": {
-    "tags": [
-      "eyewear",
-      "safety glasses",
-      "protective eyewear",
-      "ppe",
-      "eye protection",
-      "safety",
-      "glasses",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Fistula-Needles-Grey": {
-    "tags": [
-      "fistula needles",
-      "dialysis needles",
-      "av fistula",
-      "medical needles",
-      "dialysis",
-      "renal",
-      "vascular access",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Fluoride-Grey": {
-    "tags": [
-      "fluoride",
-      "dental fluoride",
-      "preventive",
-      "oral care",
-      "dental treatment",
-      "cavity prevention",
-      "dentistry",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Furniture": {
     "tags": [
       "furniture",
@@ -2380,22 +1929,6 @@
       "dental",
       "medical",
       "product"
-    ]
-  },
-  "Product-Categories_GC-Grey": {
-    "tags": [
-      "gc",
-      "dental products",
-      "dental materials",
-      "dentistry",
-      "brand",
-      "supplies",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product",
-      "marketing"
     ]
   },
   "Product-Categories_Gingival-Masking-Material": {
@@ -2544,38 +2077,6 @@
       "product"
     ]
   },
-  "Product-Categories_Incontinence-Supplies": {
-    "tags": [
-      "incontinence",
-      "incontinence supplies",
-      "adult diapers",
-      "protective underwear",
-      "medical supplies",
-      "healthcare",
-      "personal care",
-      "absorbent"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Infection-Control-and-PPE-Grey": {
-    "tags": [
-      "infection control",
-      "ppe",
-      "personal protective equipment",
-      "safety",
-      "protective gear",
-      "healthcare",
-      "medical",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Infection-Control": {
     "tags": [
       "infection control",
@@ -2612,23 +2113,6 @@
       "business"
     ]
   },
-  "Product-Categories_Instruments-Grey": {
-    "tags": [
-      "instruments",
-      "medical instruments",
-      "surgical instruments",
-      "tools",
-      "dental instruments",
-      "healthcare tools",
-      "equipment",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Irrigating": {
     "tags": [
       "irrigating",
@@ -2646,22 +2130,6 @@
       "product"
     ]
   },
-  "Product-Categories_Lab-Coats-Grey": {
-    "tags": [
-      "lab coats",
-      "laboratory coat",
-      "medical coat",
-      "protective clothing",
-      "ppe",
-      "workwear",
-      "healthcare apparel",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Lab-Scales": {
     "tags": [
       "lab scales",
@@ -2674,40 +2142,6 @@
       "balance"
     ],
     "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Laboratory-Crown-Bridge-Grey2": {
-    "tags": [
-      "laboratory",
-      "crown and bridge",
-      "dental lab",
-      "prosthetics",
-      "dental laboratory",
-      "restorations",
-      "lab work",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Laboratory-Lab-Vision-Grey": {
-    "tags": [
-      "laboratory",
-      "lab vision",
-      "dental lab",
-      "microscope",
-      "magnification",
-      "precision work",
-      "dental laboratory",
-      "grey"
-    ],
-    "categories": [
-      "dental",
       "medical",
       "product"
     ]
@@ -2757,22 +2191,6 @@
     ],
     "categories": [
       "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Medicaments-Grey": {
-    "tags": [
-      "medicaments",
-      "medication",
-      "medicine",
-      "pharmaceuticals",
-      "drugs",
-      "treatment",
-      "medical supplies",
-      "grey"
-    ],
-    "categories": [
-      "medical",
       "product"
     ]
   },
@@ -2888,23 +2306,6 @@
       "product"
     ]
   },
-  "Product-Categories_Mouth-Wash-Grey": {
-    "tags": [
-      "mouthwash",
-      "oral rinse",
-      "mouth rinse",
-      "oral care",
-      "dental hygiene",
-      "antiseptic",
-      "oral health",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Nebulizers": {
     "tags": [
       "nebulizers",
@@ -3003,39 +2404,6 @@
       "product"
     ]
   },
-  "Product-Categories_Oral-Cleaning-Aids-Grey": {
-    "tags": [
-      "oral cleaning aids",
-      "dental hygiene",
-      "cleaning tools",
-      "oral care",
-      "dental cleaning",
-      "hygiene products",
-      "dentistry",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Oral-Rinses-Grey": {
-    "tags": [
-      "oral rinses",
-      "mouth rinse",
-      "mouthwash",
-      "oral care",
-      "dental hygiene",
-      "antiseptic rinse",
-      "oral health",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Organizers": {
     "tags": [
       "organizers",
@@ -3117,38 +2485,6 @@
       "product"
     ]
   },
-  "Product-Categories_Pharmaceuticals-Grey": {
-    "tags": [
-      "pharmaceuticals",
-      "medication",
-      "drugs",
-      "medicine",
-      "pharmacy",
-      "prescription",
-      "pills",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Pharmaceuticals-Respiratory-Grey": {
-    "tags": [
-      "pharmaceuticals",
-      "respiratory",
-      "breathing medication",
-      "pulmonary",
-      "inhalers",
-      "medical",
-      "lung treatment",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Pins-Posts": {
     "tags": [
       "pins",
@@ -3177,23 +2513,6 @@
       "medical lab"
     ],
     "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Pit-Fissure-Sealants-Grey": {
-    "tags": [
-      "pit and fissure sealants",
-      "dental sealants",
-      "preventive",
-      "cavity prevention",
-      "dental",
-      "sealant",
-      "tooth protection",
-      "grey"
-    ],
-    "categories": [
-      "dental",
       "medical",
       "product"
     ]
@@ -3296,22 +2615,6 @@
       "product"
     ]
   },
-  "Product-Categories_Promotions-EVR-Grey": {
-    "tags": [
-      "promotions",
-      "evr",
-      "special offers",
-      "deals",
-      "discounts",
-      "marketing",
-      "sales",
-      "grey"
-    ],
-    "categories": [
-      "product",
-      "marketing"
-    ]
-  },
   "Product-Categories_Promotions-NA": {
     "tags": [
       "promotions",
@@ -3328,22 +2631,6 @@
       "marketing"
     ]
   },
-  "Product-Categories_Promotions-UK-Grey": {
-    "tags": [
-      "promotions",
-      "uk",
-      "special offers",
-      "deals",
-      "discounts",
-      "marketing",
-      "sales",
-      "grey"
-    ],
-    "categories": [
-      "product",
-      "marketing"
-    ]
-  },
   "Product-Categories_Prophy-Angle": {
     "tags": [
       "prophy angle",
@@ -3354,38 +2641,6 @@
       "polishing tool",
       "dentistry",
       "handpiece"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Prophy-Cups-Grey": {
-    "tags": [
-      "prophy cups",
-      "prophylaxis cups",
-      "polishing cups",
-      "dental cleaning",
-      "dental hygiene",
-      "rubber cups",
-      "dentistry",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Prophy-Paste-Grey": {
-    "tags": [
-      "prophy paste",
-      "prophylaxis paste",
-      "polishing paste",
-      "dental cleaning",
-      "dental hygiene",
-      "cleaning paste",
-      "dentistry",
-      "grey"
     ],
     "categories": [
       "dental",
@@ -3471,22 +2726,6 @@
       "product"
     ]
   },
-  "Product-Categories_Rotary-Kits": {
-    "tags": [
-      "rotary kits",
-      "dental rotary",
-      "endodontic files",
-      "root canal",
-      "dental instruments",
-      "rotary files",
-      "dentistry",
-      "endo"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
   "Product-Categories_Rubber-Dam": {
     "tags": [
       "rubber dam",
@@ -3535,22 +2774,6 @@
       "product"
     ]
   },
-  "Product-Categories_Sin-Equip-Handpieces-Grey": {
-    "tags": [
-      "handpieces",
-      "dental handpieces",
-      "drills",
-      "dental equipment",
-      "rotary instruments",
-      "dentistry",
-      "tools",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
   "Product-Categories_Small-Equipment": {
     "tags": [
       "small equipment",
@@ -3568,38 +2791,6 @@
       "product"
     ]
   },
-  "Product-Categories_Smart-Devices-Grey": {
-    "tags": [
-      "smart devices",
-      "digital devices",
-      "technology",
-      "smart equipment",
-      "connected devices",
-      "iot",
-      "medical technology",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Specimen-Cups": {
-    "tags": [
-      "specimen cups",
-      "sample containers",
-      "urine specimen",
-      "collection cups",
-      "medical supplies",
-      "laboratory",
-      "testing",
-      "containers"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Spirometers": {
     "tags": [
       "spirometers",
@@ -3612,23 +2803,6 @@
       "diagnostic"
     ],
     "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Supplies-Grey": {
-    "tags": [
-      "supplies",
-      "medical supplies",
-      "dental supplies",
-      "healthcare supplies",
-      "general supplies",
-      "materials",
-      "products",
-      "grey"
-    ],
-    "categories": [
-      "dental",
       "medical",
       "product"
     ]
@@ -3681,38 +2855,6 @@
       "product"
     ]
   },
-  "Product-Categories_Syringe-Grey": {
-    "tags": [
-      "syringe",
-      "injection",
-      "needle",
-      "medical device",
-      "injectable",
-      "hypodermic",
-      "medical supplies",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Syringes-Grey": {
-    "tags": [
-      "syringes",
-      "injection",
-      "needles",
-      "medical devices",
-      "injectable",
-      "hypodermic",
-      "medical supplies",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
   "Product-Categories_Temporary_Filling": {
     "tags": [
       "temporary filling",
@@ -3723,38 +2865,6 @@
       "dental material",
       "restorative",
       "temporary"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Toothbrush-Grey": {
-    "tags": [
-      "toothbrush",
-      "dental hygiene",
-      "oral care",
-      "brushing",
-      "teeth cleaning",
-      "dental care",
-      "hygiene product",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Topical-Anesthetic-Grey": {
-    "tags": [
-      "topical anesthetic",
-      "numbing gel",
-      "anesthetic",
-      "pain relief",
-      "dental",
-      "topical",
-      "local anesthetic",
-      "grey"
     ],
     "categories": [
       "dental",
@@ -3792,71 +2902,6 @@
       "dental",
       "medical",
       "product"
-    ]
-  },
-  "Product-Categories_Ultrasonic-Scalers-and-Polishers-Grey": {
-    "tags": [
-      "ultrasonic scalers",
-      "polishers",
-      "dental scalers",
-      "cleaning equipment",
-      "dental hygiene",
-      "ultrasonic",
-      "dental equipment",
-      "grey"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Unisex-Pants-Grey": {
-    "tags": [
-      "unisex pants",
-      "medical pants",
-      "scrubs",
-      "healthcare apparel",
-      "uniform",
-      "workwear",
-      "clothing",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Unisex-Top-Grey": {
-    "tags": [
-      "unisex top",
-      "medical top",
-      "scrubs",
-      "healthcare apparel",
-      "uniform",
-      "workwear",
-      "clothing",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Uowrap-Grey": {
-    "tags": [
-      "uowrap",
-      "wrapping",
-      "packaging",
-      "protective wrap",
-      "medical supplies",
-      "storage",
-      "organization",
-      "grey"
-    ],
-    "categories": [
-      "medical",
-      "product",
-      "corporate"
     ]
   },
   "Product-Categories_Vinyl-Polysiloxane": {
@@ -4180,21 +3225,6 @@
       "navigation"
     ],
     "categories": []
-  },
-  "half-circle-filled": {
-    "tags": [
-      "half circle",
-      "semicircle",
-      "partial",
-      "arc",
-      "filled",
-      "shape",
-      "geometric",
-      "circle"
-    ],
-    "categories": [
-      "design-elements"
-    ]
   },
   "hamburger-filter": {
     "tags": [
@@ -4560,21 +3590,6 @@
       "business"
     ]
   },
-  "Business-Concepts_Contract": {
-    "tags": [
-      "contract",
-      "agreement",
-      "document",
-      "legal",
-      "terms",
-      "binding",
-      "deal",
-      "signature"
-    ],
-    "categories": [
-      "business"
-    ]
-  },
   "Business-Concepts_Customer-Experience": {
     "tags": [
       "customer experience",
@@ -4588,22 +3603,6 @@
     ],
     "categories": [
       "business"
-    ]
-  },
-  "Business-Concepts_Customer-Voice": {
-    "tags": [
-      "customer voice",
-      "feedback",
-      "opinion",
-      "voice of customer",
-      "voc",
-      "communication",
-      "input",
-      "listening"
-    ],
-    "categories": [
-      "business",
-      "marketing"
     ]
   },
   "Business-Concepts_Customer": {
@@ -5420,22 +4419,6 @@
       "business"
     ]
   },
-  "Business-Concepts_Orthopedic": {
-    "tags": [
-      "orthopedic",
-      "bone",
-      "skeletal",
-      "medical",
-      "musculoskeletal",
-      "joint",
-      "orthopedics",
-      "healthcare"
-    ],
-    "categories": [
-      "medical",
-      "business"
-    ]
-  },
   "Business-Concepts_Packaging": {
     "tags": [
       "packaging",
@@ -5494,23 +4477,6 @@
       "growth"
     ],
     "categories": [
-      "business"
-    ]
-  },
-  "Business-Concepts_PPE-Google": {
-    "tags": [
-      "ppe",
-      "personal protective equipment",
-      "goggles",
-      "eye protection",
-      "safety glasses",
-      "protective eyewear",
-      "safety",
-      "protection"
-    ],
-    "categories": [
-      "medical",
-      "product",
       "business"
     ]
   },
@@ -6210,553 +5176,6 @@
       "hs-cares"
     ]
   },
-  "Design-Elements_Design-01": {
-    "tags": [
-      "design element",
-      "graphic",
-      "shape",
-      "geometric",
-      "visual",
-      "decoration",
-      "pattern",
-      "abstract"
-    ],
-    "categories": [
-      "business",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-02": {
-    "tags": [
-      "design element",
-      "circles",
-      "geometric",
-      "pattern",
-      "decoration",
-      "visual",
-      "abstract",
-      "shapes"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-03": {
-    "tags": [
-      "design element",
-      "square",
-      "box",
-      "geometric",
-      "frame",
-      "border",
-      "container",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-04": {
-    "tags": [
-      "design element",
-      "diamond",
-      "geometric",
-      "pattern",
-      "decoration",
-      "abstract",
-      "interlocking",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-05": {
-    "tags": [
-      "design element",
-      "grid",
-      "pattern",
-      "dots",
-      "geometric",
-      "texture",
-      "design",
-      "layout"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-06": {
-    "tags": [
-      "design element",
-      "folder",
-      "document",
-      "file",
-      "geometric",
-      "shape",
-      "abstract",
-      "angle"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-07": {
-    "tags": [
-      "design element",
-      "curve",
-      "flowing",
-      "wave",
-      "organic",
-      "smooth",
-      "line",
-      "abstract"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-08": {
-    "tags": [
-      "design element",
-      "flag",
-      "banner",
-      "ribbon",
-      "geometric",
-      "decoration",
-      "marker",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-09": {
-    "tags": [
-      "design element",
-      "layers",
-      "stacked",
-      "geometric",
-      "depth",
-      "3d",
-      "abstract",
-      "circles"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-10": {
-    "tags": [
-      "design element",
-      "grid",
-      "squares",
-      "tiles",
-      "pattern",
-      "geometric",
-      "layout",
-      "structure"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-11": {
-    "tags": [
-      "design element",
-      "hexagon",
-      "geometric",
-      "shape",
-      "honeycomb",
-      "pattern",
-      "abstract",
-      "structure"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-12": {
-    "tags": [
-      "design element",
-      "pie chart",
-      "segment",
-      "arc",
-      "geometric",
-      "circular",
-      "shape",
-      "graph"
-    ],
-    "categories": [
-      "business",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-13": {
-    "tags": [
-      "design element",
-      "triangle",
-      "mountain",
-      "peak",
-      "geometric",
-      "shape",
-      "abstract",
-      "angular"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-15": {
-    "tags": [
-      "design element",
-      "percent",
-      "percentage",
-      "discount",
-      "sale",
-      "number",
-      "symbol",
-      "diagonal"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-16": {
-    "tags": [
-      "design element",
-      "network",
-      "nodes",
-      "connections",
-      "web",
-      "linked",
-      "geometric",
-      "pattern"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-17": {
-    "tags": [
-      "design element",
-      "megaphone",
-      "announcement",
-      "broadcast",
-      "communication",
-      "marketing",
-      "speaker",
-      "alert"
-    ],
-    "categories": [
-      "marketing",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-18": {
-    "tags": [
-      "design element",
-      "angle",
-      "corner",
-      "geometric",
-      "shape",
-      "bracket",
-      "frame",
-      "abstract"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-19": {
-    "tags": [
-      "design element",
-      "layers",
-      "cards",
-      "stacked",
-      "overlap",
-      "depth",
-      "geometric",
-      "abstract"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-20": {
-    "tags": [
-      "design element",
-      "document",
-      "paper",
-      "file",
-      "page",
-      "form",
-      "geometric",
-      "chip"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-21": {
-    "tags": [
-      "design element",
-      "card",
-      "layers",
-      "stacked",
-      "payment",
-      "geometric",
-      "rectangle",
-      "abstract"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-22": {
-    "tags": [
-      "design element",
-      "target",
-      "focus",
-      "aim",
-      "bullseye",
-      "circular",
-      "geometric",
-      "circles"
-    ],
-    "categories": [
-      "business",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-23": {
-    "tags": [
-      "design element",
-      "sphere",
-      "globe",
-      "circular",
-      "geometric",
-      "3d",
-      "ball",
-      "network"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-24": {
-    "tags": [
-      "design element",
-      "dome",
-      "semicircle",
-      "arch",
-      "geometric",
-      "half circle",
-      "curved",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-25": {
-    "tags": [
-      "design element",
-      "arch",
-      "curve",
-      "rainbow",
-      "bridge",
-      "geometric",
-      "semicircle",
-      "shape"
-    ],
-    "categories": [
-      "dental",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-26": {
-    "tags": [
-      "design element",
-      "screen",
-      "monitor",
-      "display",
-      "device",
-      "rectangle",
-      "frame",
-      "geometric"
-    ],
-    "categories": [
-      "product",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-27": {
-    "tags": [
-      "design element",
-      "shapes",
-      "geometric",
-      "squares",
-      "circles",
-      "mixed",
-      "pattern",
-      "abstract"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-29": {
-    "tags": [
-      "design element",
-      "dome",
-      "hemisphere",
-      "arch",
-      "geometric",
-      "curved",
-      "semicircle",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-30": {
-    "tags": [
-      "design element",
-      "lens",
-      "oval",
-      "eye",
-      "geometric",
-      "ellipse",
-      "curved",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-31": {
-    "tags": [
-      "design element",
-      "curve",
-      "wave",
-      "flowing",
-      "organic",
-      "smooth",
-      "abstract",
-      "line"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-32": {
-    "tags": [
-      "design element",
-      "arrow",
-      "down",
-      "direction",
-      "pointer",
-      "navigation",
-      "geometric",
-      "chevron"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-33": {
-    "tags": [
-      "design element",
-      "scissors",
-      "cut",
-      "trim",
-      "divide",
-      "separate",
-      "tool",
-      "infinity"
-    ],
-    "categories": [
-      "product",
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-34": {
-    "tags": [
-      "design element",
-      "arc",
-      "curve",
-      "semicircle",
-      "geometric",
-      "quarter circle",
-      "corner",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-35": {
-    "tags": [
-      "design element",
-      "star",
-      "badge",
-      "award",
-      "geometric",
-      "pattern",
-      "decoration",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-36": {
-    "tags": [
-      "design element",
-      "shapes",
-      "circles",
-      "geometric",
-      "pattern",
-      "grouped",
-      "abstract",
-      "cluster"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-37": {
-    "tags": [
-      "design element",
-      "crescent",
-      "moon",
-      "curve",
-      "arc",
-      "geometric",
-      "semicircle",
-      "shape"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
-  "Design-Elements_Design-38": {
-    "tags": [
-      "design element",
-      "line",
-      "bar",
-      "stripe",
-      "horizontal",
-      "geometric",
-      "simple",
-      "divider"
-    ],
-    "categories": [
-      "design-elements"
-    ]
-  },
   "Diversity-Inclusion_Black-Legacy": {
     "tags": [
       "diversity",
@@ -6887,37 +5306,6 @@
       "hs-cares"
     ]
   },
-  "Diversity-Inclusion_Collapse": {
-    "tags": [
-      "diversity",
-      "inclusion",
-      "collapse",
-      "globe",
-      "world",
-      "international",
-      "global",
-      "dei"
-    ],
-    "categories": [
-      "diversity"
-    ]
-  },
-  "Diversity-Inclusion_Elevation": {
-    "tags": [
-      "diversity",
-      "inclusion",
-      "elevation",
-      "rise",
-      "uplift",
-      "growth",
-      "advancement",
-      "dei"
-    ],
-    "categories": [
-      "business",
-      "diversity"
-    ]
-  },
   "Diversity-Inclusion_Vet": {
     "tags": [
       "diversity",
@@ -6932,32 +5320,6 @@
     ],
     "categories": [
       "diversity"
-    ]
-  },
-  "Diversity-Inclusion_WE-N": {
-    "tags": [
-      "diversity",
-      "inclusion",
-      "we-n",
-      "women",
-      "network",
-      "empowerment",
-      "equality",
-      "dei"
-    ],
-    "categories": [
-      "diversity"
-    ]
-  },
-  "Product-Categories_Sm-Equip-Handpieces-Grey": {
-    "tags": [
-      "equipment",
-      "handpiece",
-      "tilted",
-      "small"
-    ],
-    "categories": [
-      "product"
     ]
   },
   "Business-Concepts_Customer-Violet": {
@@ -7005,35 +5367,6 @@
       "diversity"
     ]
   },
-  "Product-Categories_Promotions-EUR-Grey": {
-    "tags": [
-      "promotions",
-      "uk",
-      "special",
-      "offers",
-      "euro",
-      "europe",
-      "tag",
-      "deal",
-      "discounts",
-      "marketing",
-      "sales"
-    ],
-    "categories": [
-      "product",
-      "marketing"
-    ]
-  },
-  "Product-Categories_EZ-Scan-Grey": {
-    "tags": [
-      "barcode",
-      "scan",
-      "label"
-    ],
-    "categories": [
-      "product"
-    ]
-  },
   "Product-Categories_Fistula-Needles": {
     "tags": [
       "fistula needles",
@@ -7051,53 +5384,6 @@
       "cannulation"
     ],
     "categories": [
-      "medical",
-      "product"
-    ]
-  },
-  "Product-Categories_Endodontics-Accessories-Grey": {
-    "tags": [
-      "endodontics",
-      "endo accessories",
-      "root canal",
-      "dental",
-      "endodontic supplies",
-      "dentistry",
-      "accessories"
-    ],
-    "categories": [
-      "dental",
-      "product"
-    ]
-  },
-  "Product-Categories_Dry-Mouth-Grey": {
-    "tags": [
-      "dry mouth",
-      "xerostomia",
-      "mouth relief",
-      "saliva substitute",
-      "dental",
-      "oral care",
-      "relief",
-      "grey",
-      "moisture",
-      "hydration",
-      "salivary",
-      "oral health",
-      "mouth moisturizer",
-      "mouthwash",
-      "oral rinse",
-      "mouth rinse",
-      "dental hygiene",
-      "antiseptic",
-      "freshen breath",
-      "gargle",
-      "dental care",
-      "antibacterial",
-      "fluoride rinse"
-    ],
-    "categories": [
-      "dental",
       "medical",
       "product"
     ]
@@ -7149,36 +5435,6 @@
     "categories": [
       "diversity",
       "hs-cares"
-    ]
-  },
-  "Business_Plug-110": {
-    "tags": [
-      "plug",
-      "outlet",
-      "wall",
-      "electricity",
-      "power",
-      "marketing",
-      "connection"
-    ],
-    "categories": [
-      "business",
-      "marketing"
-    ]
-  },
-  "Business_Plug-220": {
-    "tags": [
-      "plug",
-      "outlet",
-      "wall",
-      "electricity",
-      "power",
-      "marketing",
-      "connection"
-    ],
-    "categories": [
-      "business",
-      "marketing"
     ]
   },
   "Design-Elements_Design02": {
@@ -7664,20 +5920,4981 @@
       "business-concepts"
     ]
   },
-  "Product-Categories_Unwrap-Grey": {
+  "Ambulatory-Surgery-Center": {
     "tags": [
-      "hand",
+      "ambulatory",
+      "surgery",
+      "center",
+      "medical",
+      "healthcare",
+      "outpatient",
+      "surgical",
+      "facility",
+      "hospital",
+      "clinic",
+      "procedure",
+      "operating room",
+      "medical building",
+      "health center"
+    ],
+    "categories": [
+      "medical"
+    ]
+  },
+  "Business_24-7": {
+    "tags": [
+      "24/7",
+      "customer service",
+      "support",
+      "helpdesk",
+      "headset",
+      "communication",
+      "call center",
+      "contact",
+      "assistance",
+      "always open",
+      "round the clock",
+      "availability",
+      "chat support",
+      "operator"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Account-Transfer": {
+    "tags": [
+      "account transfer",
+      "people",
+      "users",
+      "team",
+      "collaboration",
+      "sharing",
+      "exchange",
+      "transition",
+      "handoff",
+      "customer handoff",
+      "user migration",
+      "account management",
+      "team transition"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Affordable": {
+    "tags": [
+      "affordable",
+      "calculator",
+      "pricing",
+      "cost",
+      "budget",
+      "financial",
+      "payment",
+      "money",
+      "value",
+      "economics",
+      "price tag",
+      "cost effective",
+      "billing",
+      "finance"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Ambulatory-Surgery-Centers": {
+    "tags": [
+      "ambulatory",
+      "surgery",
+      "centers",
+      "medical",
+      "healthcare",
+      "calendar",
+      "scheduling",
+      "appointment",
+      "planning",
+      "surgical facility",
+      "outpatient",
+      "medical schedule",
+      "procedure booking"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Awareness": {
+    "tags": [
+      "awareness",
+      "presentation",
+      "training",
+      "education",
+      "teaching",
+      "board",
+      "demonstration",
+      "meeting",
+      "seminar",
+      "knowledge",
+      "learning",
+      "instructor",
+      "workshop",
+      "classroom",
+      "projector",
+      "overhead"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Backorders-Cancel-Release": {
+    "tags": [
+      "backorders",
+      "cancel",
+      "release",
+      "shipping",
+      "delivery",
+      "warehouse",
+      "inventory",
+      "logistics",
+      "supply chain",
+      "order management",
+      "fulfillment",
+      "package tracking",
+      "distribution"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Boxes": {
+    "tags": [
+      "boxes",
+      "packaging",
+      "shipping",
+      "storage",
+      "container",
+      "inventory",
+      "warehouse",
+      "logistics",
+      "supply",
+      "delivery",
+      "stacking",
+      "organization",
+      "materials",
+      "products"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Business": {
+    "tags": [
+      "business",
+      "settings",
+      "gears",
+      "people",
+      "team",
+      "management",
+      "operations",
+      "workforce",
+      "configuration",
+      "processes",
+      "optimization",
+      "team settings",
+      "human resources"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Care-Admired": {
+    "tags": [
+      "care",
+      "admired",
+      "heart",
+      "healthcare",
+      "compassion",
+      "patient care",
+      "love",
+      "wellness",
+      "health",
+      "caring",
+      "empathy",
+      "medical care",
+      "trusted care",
+      "quality care"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_CDT-Coding-Support": {
+    "tags": [
+      "cdt",
+      "coding",
+      "support",
+      "dental coding",
+      "laptop",
+      "computer",
+      "technology",
+      "digital",
+      "dental software",
+      "billing codes",
+      "claims",
+      "documentation",
+      "dental records"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Climate-Adaption": {
+    "tags": [
+      "climate",
+      "adaptation",
+      "environment",
+      "sustainability",
+      "eco",
+      "green",
+      "nature",
+      "environmental",
+      "earth",
+      "conservation",
+      "climate change",
+      "renewable",
+      "sustainable practices"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Climate-Change": {
+    "tags": [
+      "climate change",
+      "global",
+      "world",
+      "environment",
+      "earth",
+      "international",
+      "sustainability",
+      "worldwide",
+      "planet",
+      "ecological",
+      "environmental impact",
+      "carbon",
+      "emissions"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Code-Of-Ethics-v2": {
+    "tags": [
+      "code of ethics",
+      "compliance",
+      "integrity",
+      "values",
+      "standards",
+      "principles",
+      "certification",
+      "badge",
+      "professional conduct",
+      "ethical standards",
+      "accreditation",
+      "trust"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Collaboration": {
+    "tags": [
+      "collaboration",
+      "team",
+      "teamwork",
+      "people",
+      "group",
+      "partnership",
+      "cooperation",
+      "working together",
+      "collective",
+      "unity",
+      "meeting",
+      "brainstorming",
+      "synergy"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Community-Health-Centers": {
+    "tags": [
+      "community",
+      "health centers",
+      "medical facility",
+      "clinic",
+      "hospital",
+      "building",
+      "healthcare",
+      "medical building",
+      "local health",
+      "primary care",
+      "wellness center"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Community": {
+    "tags": [
+      "community",
+      "support",
+      "people",
+      "team",
+      "protection",
+      "care",
+      "shield",
+      "group support",
+      "collective care",
+      "social",
+      "network",
+      "belonging",
+      "solidarity",
+      "heart"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Compliance": {
+    "tags": [
+      "compliance",
+      "checklist",
+      "clipboard",
+      "audit",
+      "regulations",
+      "requirements",
+      "standards",
+      "documentation",
+      "verification",
+      "inspection",
+      "quality control",
+      "assessment",
+      "review"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Controlled-Substance-v2": {
+    "tags": [
+      "controlled substance",
+      "prescription",
+      "medication",
+      "pharmacy",
+      "drugs",
+      "pills",
+      "bottle",
+      "pharmaceutical",
+      "medicine",
+      "rx",
+      "controlled medication",
+      "regulation"
+    ],
+    "categories": [
+      "business",
+      "medical",
+      "dental",
+      "product"
+    ]
+  },
+  "Business_Conversions": {
+    "tags": [
+      "conversions",
+      "transformation",
+      "change",
+      "process",
+      "gears",
+      "optimization",
+      "efficiency",
+      "workflow",
+      "improvement",
+      "automation",
+      "system change",
+      "modification"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Corporate-2": {
+    "tags": [
+      "corporate",
+      "office building",
+      "headquarters",
+      "business building",
+      "company",
+      "enterprise",
+      "organization",
+      "commercial",
+      "skyscraper",
+      "office",
+      "workplace"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Cost-Euro-v2": {
+    "tags": [
+      "cost",
+      "euro",
+      "currency",
+      "pricing",
+      "european",
+      "money",
+      "financial",
+      "payment",
+      "price",
+      "economics",
+      "invoice",
+      "billing",
+      "european union",
+      "€"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Cost-UK": {
+    "tags": [
+      "cost",
+      "uk",
+      "pound",
+      "british",
+      "currency",
+      "sterling",
+      "pricing",
+      "money",
+      "financial",
+      "payment",
+      "great britain",
+      "£",
+      "british pound",
+      "united kingdom"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Cost-US": {
+    "tags": [
+      "cost",
+      "us",
+      "dollar",
+      "american",
+      "currency",
+      "usd",
+      "pricing",
+      "money",
+      "financial",
+      "payment",
+      "united states",
+      "$",
+      "american dollar",
+      "usa"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Credit-Card-Payments": {
+    "tags": [
+      "credit card",
+      "payment",
+      "transactions",
+      "card processing",
+      "payment method",
+      "finance",
+      "billing",
+      "checkout",
+      "merchant services",
+      "pos",
+      "credit",
+      "debit",
+      "pay",
+      "charge",
+      "recurring payment"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Credit-Rebill": {
+    "tags": [
+      "credit",
+      "rebill",
+      "refund",
+      "reimbursement",
+      "payment adjustment",
+      "credit memo",
+      "billing correction",
+      "account credit",
+      "chargeback",
+      "return",
+      "financial adjustment",
+      "money back"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Credits": {
+    "tags": [
+      "credits",
+      "savings",
+      "piggy bank",
+      "discount",
+      "rewards",
+      "points",
+      "loyalty",
+      "account balance",
+      "promotional credit",
+      "store credit",
+      "incentive",
+      "bonus"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Custom-Quote": {
+    "tags": [
+      "custom quote",
+      "quotation",
+      "estimate",
+      "pricing",
+      "proposal",
+      "bid",
+      "cost estimate",
+      "price quote",
+      "dollar",
+      "currency",
+      "refresh",
+      "update quote",
+      "recalculate"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Customer-Loyalty": {
+    "tags": [
+      "customer loyalty",
+      "rewards",
+      "loyalty program",
+      "card",
+      "membership",
+      "points",
+      "retention",
+      "vip",
+      "benefits",
+      "perks",
+      "loyalty card",
+      "customer rewards"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Customer-Service": {
+    "tags": [
+      "customer service",
+      "support",
+      "help",
+      "assistance",
+      "headset",
+      "call center",
+      "service desk",
+      "care",
+      "helpdesk",
+      "contact",
+      "representative",
+      "operator",
+      "chat support"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "Business_Customers-v2": {
+    "tags": [
+      "customers",
+      "clients",
+      "users",
+      "people",
+      "group",
+      "audience",
+      "target market",
+      "demographics",
+      "user base",
+      "clientele",
+      "stakeholders",
+      "search",
+      "magnifying glass",
+      "find customers"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Data": {
+    "tags": [
+      "data",
+      "analytics",
+      "insights",
+      "analysis",
+      "magnifying glass",
+      "search",
+      "research",
+      "investigation",
+      "metrics",
+      "chart",
+      "graph",
+      "statistics",
+      "business intelligence"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Date-Time": {
+    "tags": [
+      "date",
+      "time",
+      "calendar",
+      "scheduling",
+      "appointment",
+      "clock",
+      "timing",
+      "schedule",
+      "deadline",
+      "event",
+      "reminder",
+      "planner",
+      "booking"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Disaster-Preparedness": {
+    "tags": [
+      "disaster preparedness",
+      "emergency",
+      "contingency",
+      "disaster recovery",
+      "business continuity",
+      "crisis management",
+      "backup plan",
+      "emergency response",
+      "preparedness",
+      "safety plan",
+      "clipboard",
+      "checklist"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Distribution-2": {
+    "tags": [
+      "distribution",
+      "delivery",
+      "shipping",
+      "logistics",
+      "speed",
+      "fast delivery",
+      "express",
+      "transport",
+      "quick ship",
+      "rapid",
+      "dispatch",
+      "package"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Distribution-Capabilities": {
+    "tags": [
+      "distribution",
+      "capabilities",
+      "logistics network",
+      "supply chain",
+      "warehousing",
+      "network",
+      "infrastructure",
+      "delivery network",
+      "distribution center",
+      "hub",
+      "shipping capacity"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Distribution-v2": {
+    "tags": [
+      "distribution",
+      "delivery",
+      "shipping",
+      "fast",
+      "speed lines",
+      "express delivery",
+      "quick ship",
+      "rapid",
+      "transport",
+      "logistics",
+      "package"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Doctors-Office": {
+    "tags": [
+      "doctors office",
+      "medical office",
+      "clinic",
+      "physician",
+      "healthcare provider",
+      "practice",
+      "medical practice",
+      "doctor",
+      "stethoscope",
+      "primary care",
+      "health professional"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Ecommerce": {
+    "tags": [
+      "ecommerce",
+      "online shopping",
+      "shopping cart",
+      "retail",
+      "webstore",
+      "online store",
+      "digital commerce",
+      "buy online",
+      "checkout",
+      "merchandise",
+      "cart",
+      "purchase",
+      "laptop"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Economical": {
+    "tags": [
+      "economical",
+      "cost effective",
+      "savings",
+      "budget friendly",
+      "affordable",
+      "value",
+      "efficiency",
+      "money saving",
+      "hands",
+      "dollar",
+      "financial",
+      "thrifty"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Email": {
+    "tags": [
+      "email",
+      "mail",
+      "message",
+      "communication",
+      "inbox",
+      "correspondence",
+      "electronic mail",
+      "contact",
+      "envelope",
+      "messaging",
+      "send",
+      "receive"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Emergency-Medical-Services-EMS": {
+    "tags": [
+      "emergency",
+      "medical services",
+      "ems",
+      "ambulance",
+      "paramedic",
+      "emergency response",
+      "urgent care",
+      "emergency vehicle",
+      "first responder",
+      "medical transport",
+      "rescue",
+      "critical care"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Engagement-v2": {
+    "tags": [
+      "engagement",
+      "interaction",
+      "people",
+      "user engagement",
+      "participation",
+      "involvement",
+      "activity",
+      "connection",
+      "active users",
+      "communication",
+      "exchange",
+      "hands"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Environment": {
+    "tags": [
+      "environment",
+      "nature",
+      "sustainability",
+      "eco friendly",
+      "green",
+      "leaf",
+      "plant",
+      "environmental",
+      "conservation",
+      "hands",
+      "care",
+      "protection",
+      "earth care"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Evaluate-Opportunities": {
+    "tags": [
+      "evaluate",
+      "opportunities",
+      "assessment",
+      "magnifying glass",
+      "search",
+      "analysis",
+      "investigation",
+      "research",
+      "discovery",
+      "examination",
+      "opportunity",
+      "alert",
+      "notification"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Fee-Analysis": {
+    "tags": [
+      "fee analysis",
+      "cost analysis",
+      "magnifying glass",
+      "search",
+      "financial review",
+      "pricing review",
+      "audit",
+      "fee structure",
+      "cost breakdown",
+      "dollar",
+      "money",
+      "investigation"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Field-Sales-Consultant-FSC": {
+    "tags": [
+      "field sales",
+      "consultant",
+      "fsc",
+      "sales representative",
+      "territory",
+      "outside sales",
+      "sales team",
+      "representative",
+      "briefcase",
+      "business",
+      "account manager",
+      "sales force"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Financial": {
+    "tags": [
+      "financial",
+      "money",
+      "currency",
+      "dollar",
+      "sun",
+      "growth",
+      "prosperity",
+      "wealth",
+      "finance",
+      "investment",
+      "economic growth",
+      "profit"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Flex-Program": {
+    "tags": [
+      "flex program",
+      "flexible",
+      "program",
+      "chat",
+      "communication",
+      "messaging",
+      "package",
+      "shipping",
+      "flexible delivery",
+      "options",
+      "customizable",
+      "dialogue"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Form": {
+    "tags": [
+      "form",
+      "document",
+      "paper",
+      "file",
+      "paperwork",
+      "template",
+      "application",
+      "blank form",
+      "page",
+      "sheet",
+      "documentation"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_FSC-Personal-Orders": {
+    "tags": [
+      "fsc",
+      "personal orders",
+      "field sales consultant",
+      "user",
+      "package",
+      "order",
+      "delivery",
+      "personal delivery",
+      "representative order",
+      "sales order",
+      "shipping"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Fulfillment-v2": {
+    "tags": [
+      "fulfillment",
+      "completion",
+      "done",
+      "verified",
+      "approved",
+      "checkmark",
+      "confirmation",
+      "success",
+      "order complete",
+      "delivered",
+      "finished",
+      "clipboard"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Fulfillment-v3": {
+    "tags": [
+      "fulfillment",
+      "completion",
+      "badge",
+      "verified",
+      "certified",
+      "approved",
+      "checkmark",
+      "confirmation",
+      "quality",
+      "seal",
+      "guarantee",
+      "ribbon"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Gains-v2": {
+    "tags": [
+      "gains",
+      "growth",
+      "increase",
+      "upward trend",
+      "chart",
+      "graph",
+      "bar chart",
+      "progress",
+      "improvement",
+      "analytics",
+      "rising",
+      "performance",
+      "metrics",
+      "statistics"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Geopolitical": {
+    "tags": [
+      "geopolitical",
+      "global",
+      "world",
+      "international",
+      "globe",
+      "geography",
+      "politics",
+      "worldwide",
+      "earth",
+      "nations",
+      "countries",
+      "international relations"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Global-Logistics": {
+    "tags": [
+      "global logistics",
+      "international shipping",
+      "worldwide delivery",
+      "global supply chain",
+      "international freight",
+      "world",
+      "globe",
+      "shipping",
+      "transport",
+      "export",
+      "import"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Governance-v2": {
+    "tags": [
+      "governance",
+      "government",
+      "institution",
+      "building",
+      "pillars",
+      "authority",
+      "compliance",
+      "regulatory",
+      "official",
+      "structure",
+      "banking",
+      "columns"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Growth-Expansion": {
+    "tags": [
+      "growth",
+      "expansion",
+      "upward",
+      "increase",
+      "scaling",
+      "arrow",
+      "rising",
+      "development",
+      "progress",
+      "world",
+      "globe",
+      "global growth",
+      "international expansion"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Handshake-Partner": {
+    "tags": [
+      "handshake",
+      "partner",
+      "partnership",
+      "agreement",
+      "collaboration",
+      "deal",
+      "cooperation",
+      "alliance",
+      "business relationship",
+      "trust",
+      "contract",
+      "mutual"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Home-Health_care": {
+    "tags": [
+      "home health",
+      "care",
+      "home healthcare",
+      "house",
+      "medical",
+      "nursing",
+      "home care services",
+      "elderly care",
+      "patient care",
+      "in-home",
+      "residential care",
+      "cross"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_HSPAs": {
+    "tags": [
+      "hspa",
+      "health spending account",
+      "magnifying glass",
+      "search",
+      "dollar",
+      "money",
+      "financial",
+      "healthcare savings",
+      "benefits",
+      "reimbursement",
+      "account"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Identify": {
+    "tags": [
+      "identify",
+      "identification",
+      "person",
+      "user",
+      "checkmark",
+      "verified",
+      "authentication",
+      "profile",
+      "verification",
+      "confirmed",
+      "validated",
+      "approved user"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Implementations": {
+    "tags": [
+      "implementations",
+      "deployment",
+      "calendar",
+      "planning",
+      "schedule",
+      "gear",
+      "settings",
+      "configuration",
+      "setup",
+      "project plan",
+      "rollout",
+      "installation"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Inconvenient": {
+    "tags": [
+      "inconvenient",
+      "warning",
+      "alert",
+      "caution",
+      "issue",
+      "problem",
+      "triangle",
+      "attention",
+      "notification",
+      "exclamation",
+      "disclaimer"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Informal-RFP-Contracts": {
+    "tags": [
+      "informal rfp",
+      "request for proposal",
+      "contracts",
+      "document",
+      "clipboard",
+      "checkmark",
+      "agreement",
+      "proposal",
+      "bid",
+      "procurement",
+      "contract",
+      "rfp"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Installation": {
+    "tags": [
+      "installation",
+      "setup",
+      "install",
+      "person",
+      "technician",
+      "wrench",
+      "tool",
+      "service",
+      "equipment setup",
+      "assembly",
+      "mounting",
+      "configuration"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "Business_Leadership-Featured": {
+    "tags": [
+      "leadership",
+      "featured",
+      "leader",
+      "person",
+      "user",
       "star",
-      "gift",
-      "unwrap",
-      "present",
-      "reveal",
-      "special",
-      "premium",
+      "vip",
+      "excellence",
+      "recognition",
+      "top performer",
+      "featured leader",
+      "executive"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Merch-Setup-Orders": {
+    "tags": [
+      "merchandise",
+      "setup",
+      "orders",
+      "gear",
+      "settings",
+      "configuration",
+      "product setup",
+      "inventory setup",
+      "catalog",
+      "merch",
+      "organization"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Natural-Disasters-72": {
+    "tags": [
+      "natural disasters",
+      "emergency",
+      "72 hours",
+      "disaster preparedness",
+      "crisis",
+      "badge",
+      "alert",
+      "warning",
+      "preparedness",
+      "emergency plan",
+      "disaster response"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Negotiation": {
+    "tags": [
+      "negotiation",
+      "discussion",
+      "deal",
+      "agreement",
+      "badge",
+      "handshake",
+      "partnership",
+      "contract",
+      "bargaining",
+      "compromise",
+      "business deal"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Lost-Damaged-Package": {
+    "tags": [
+      "lost",
+      "damaged",
+      "package",
+      "shipping issue",
+      "broken",
+      "box",
+      "delivery problem",
+      "missing",
+      "claim",
+      "damaged goods",
+      "shipment error"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_New-Account-Setup": {
+    "tags": [
+      "new account",
+      "setup",
+      "account creation",
+      "onboarding",
+      "registration",
+      "badge",
+      "new",
+      "initialization",
+      "configuration",
+      "account management",
+      "user setup"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Occupational-and-Employee-Health": {
+    "tags": [
+      "occupational health",
+      "employee health",
+      "workplace safety",
+      "worker wellness",
+      "health services",
+      "heart",
+      "healthcare",
+      "safety",
+      "wellness program",
+      "employee benefits",
+      "occupational medicine"
+    ],
+    "categories": [
+      "business",
+      "medical",
+      "corporate"
+    ]
+  },
+  "Business_Office-Design": {
+    "tags": [
+      "office design",
+      "workspace",
+      "architecture",
+      "blueprints",
+      "planning",
+      "layout",
+      "interior design",
+      "office planning",
+      "space design",
+      "floor plan",
+      "workplace design"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Order-Tracking": {
+    "tags": [
+      "order tracking",
+      "tracking",
+      "shipment",
+      "delivery status",
+      "package tracking",
+      "location",
+      "magnifying glass",
+      "search",
+      "trace",
+      "monitor",
+      "logistics"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Phone": {
+    "tags": [
+      "phone",
+      "laboratory",
+      "science",
+      "research",
+      "flask",
+      "beaker",
+      "testing",
+      "experiment",
+      "lab equipment",
+      "chemistry",
+      "medical research"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Physician-Office-Laboratory-POL": {
+    "tags": [
+      "physician office",
+      "laboratory",
+      "pol",
+      "doctor",
+      "medical office",
+      "clinic lab",
+      "healthcare provider",
+      "physician",
+      "stethoscope",
+      "medical testing",
+      "diagnostic"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Physician-Office": {
+    "tags": [
+      "physician office",
+      "doctor",
+      "medical office",
+      "healthcare",
+      "clinic",
+      "stethoscope",
+      "world",
+      "globe",
+      "global health",
+      "international healthcare",
+      "medical practice"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Practice-Acquisition-Development": {
+    "tags": [
+      "practice acquisition",
+      "development",
+      "growth",
+      "expansion",
+      "person",
+      "user",
+      "business development",
+      "practice growth",
+      "acquisition",
+      "professional development"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Print": {
+    "tags": [
+      "print",
+      "printing",
+      "person",
+      "user",
+      "document",
+      "profile",
+      "id",
+      "identity",
+      "credentials",
+      "badge",
+      "user profile"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Prioritize": {
+    "tags": [
+      "prioritize",
+      "priority",
+      "calendar",
+      "scheduling",
+      "important",
+      "urgent",
+      "planning",
+      "time management",
+      "task priority",
+      "schedule",
+      "deadline"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Product-Category-Management": {
+    "tags": [
+      "product category",
+      "management",
+      "catalog",
+      "organization",
+      "boxes",
+      "classification",
+      "categorization",
+      "inventory",
+      "product management",
+      "sorting",
+      "taxonomy"
+    ],
+    "categories": [
+      "business",
+      "product"
+    ]
+  },
+  "Business_Product-Dental-Medical": {
+    "tags": [
+      "product",
+      "dental",
+      "medical",
+      "tools",
+      "instruments",
+      "equipment",
+      "dental tools",
+      "medical equipment",
+      "supplies",
+      "healthcare products"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "medical",
+      "product"
+    ]
+  },
+  "Business_Product-Dental": {
+    "tags": [
+      "product",
+      "dental",
+      "tooth",
+      "dentistry",
+      "dental care",
+      "oral health",
+      "dental supplies",
+      "dental equipment",
+      "dental products",
+      "wrench",
+      "tools"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "product"
+    ]
+  },
+  "Business_Product-Medical": {
+    "tags": [
+      "product",
+      "medical",
+      "wrench",
+      "tools",
+      "medical equipment",
+      "healthcare supplies",
+      "medical devices",
+      "instruments",
+      "medical products",
+      "maintenance"
+    ],
+    "categories": [
+      "business",
+      "medical",
+      "product"
+    ]
+  },
+  "Business_Product-Offerings": {
+    "tags": [
+      "product offerings",
+      "catalog",
+      "products",
+      "hand",
+      "package",
+      "box",
+      "delivery",
+      "merchandise",
+      "inventory",
+      "product line",
+      "offerings"
+    ],
+    "categories": [
+      "business",
+      "product"
+    ]
+  },
+  "Business_Products-Shipped": {
+    "tags": [
+      "products shipped",
+      "shipping",
+      "delivery",
+      "package",
+      "box",
+      "world",
+      "globe",
+      "international shipping",
+      "logistics",
+      "sent",
+      "dispatched"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Progress-v2": {
+    "tags": [
+      "progress",
+      "growth",
+      "increase",
+      "person",
+      "user",
+      "arrow",
+      "upward",
+      "improvement",
+      "development",
+      "advancement",
+      "rising",
+      "career growth"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Progress": {
+    "tags": [
+      "progress",
+      "settings",
+      "gear",
+      "configuration",
+      "process",
+      "workflow",
+      "optimization",
+      "improvement",
+      "development",
+      "operations",
+      "mechanics"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Projects": {
+    "tags": [
+      "projects",
+      "shopping bag",
+      "gear",
+      "settings",
+      "project management",
+      "operations",
+      "workflow",
+      "configuration",
+      "tasks",
+      "project setup"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Proposal-Summary": {
+    "tags": [
+      "proposal",
+      "summary",
+      "chart",
+      "graph",
+      "analytics",
+      "report",
+      "presentation",
+      "data",
+      "business proposal",
+      "metrics",
+      "statistics",
+      "analysis"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Providers-and-Specialties": {
+    "tags": [
+      "providers",
+      "specialties",
+      "doctor",
+      "physician",
+      "healthcare providers",
+      "medical professionals",
+      "person",
+      "specialist",
+      "practitioner",
+      "medical staff"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Rebates": {
+    "tags": [
+      "rebates",
+      "refund",
+      "discount",
+      "savings",
+      "money back",
+      "hand",
+      "dollar",
+      "incentive",
+      "cashback",
+      "reimbursement",
+      "promotion"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Recommend": {
+    "tags": [
+      "recommend",
+      "recommendation",
+      "alert",
+      "notification",
+      "warning",
+      "triangle",
+      "suggestion",
+      "attention",
+      "advisory",
+      "exclamation"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Repair-Services": {
+    "tags": [
+      "repair",
+      "services",
+      "maintenance",
+      "fix",
+      "service",
+      "wrench",
+      "cloud",
+      "repair service",
+      "technical support",
+      "maintenance service",
+      "equipment repair"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "Business_Retail-Health": {
+    "tags": [
+      "retail health",
+      "shopping",
+      "healthcare",
+      "cart",
+      "pharmacy",
+      "health products",
+      "medical retail",
+      "wellness retail",
+      "health store",
+      "medical supplies"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Returns": {
+    "tags": [
+      "returns",
+      "return",
+      "package",
+      "box",
+      "refund",
+      "send back",
+      "return policy",
+      "merchandise return",
+      "product return",
+      "reverse logistics"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Sales-Tools": {
+    "tags": [
+      "sales tools",
+      "target",
+      "goal",
+      "bullseye",
+      "gear",
+      "settings",
+      "sales automation",
+      "sales optimization",
+      "sales configuration",
+      "crm",
+      "sales software"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Sales": {
+    "tags": [
+      "sales",
+      "dollar",
+      "money",
+      "currency",
+      "revenue",
+      "finance",
+      "earnings",
+      "income",
+      "transactions",
+      "commerce",
+      "payment"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Savings": {
+    "tags": [
+      "savings",
+      "save money",
+      "dollar",
+      "hands",
+      "financial",
+      "cost savings",
+      "budget",
+      "economy",
+      "discount",
+      "preserve",
+      "protect funds"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Selfie-Cookie": {
+    "tags": [
+      "selfie",
+      "cookie",
+      "camera",
+      "photo",
+      "person",
+      "user",
+      "profile picture",
+      "photography",
+      "image",
+      "portrait",
+      "refresh"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Selfie": {
+    "tags": [
+      "selfie",
+      "camera",
+      "photo",
+      "document",
+      "file",
+      "image",
+      "picture",
+      "photography",
+      "capture",
+      "snapshot"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Site-Administration": {
+    "tags": [
+      "site administration",
+      "admin",
+      "management",
+      "building",
+      "facility",
+      "laptop",
+      "computer",
+      "system admin",
+      "operations",
+      "administration",
+      "facility management"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Social-Media": {
+    "tags": [
+      "social media",
+      "share",
+      "network",
+      "connection",
+      "like",
+      "thumbs up",
+      "social networking",
+      "engagement",
+      "sharing",
+      "online",
+      "social"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Solutions-v2": {
+    "tags": [
+      "solutions",
+      "problem solving",
+      "lightbulb",
+      "idea",
+      "innovation",
+      "thinking",
+      "brainstorming",
+      "strategy",
+      "smart solution",
+      "answers",
+      "resolution"
+    ],
+    "categories": [
+      "business",
+      "solutions"
+    ]
+  },
+  "Business_Speaker": {
+    "tags": [
+      "speaker",
+      "presentation",
+      "speech",
+      "person",
+      "user",
+      "chat",
+      "communication",
+      "presenter",
+      "public speaking",
+      "talking",
+      "lecture"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Sports-Medicine": {
+    "tags": [
+      "sports medicine",
+      "athletics",
+      "medical",
+      "healthcare",
+      "sports injury",
+      "physical therapy",
+      "athletic care",
+      "sports health",
+      "fitness",
+      "orthopedics"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Strategic-Planning-v2": {
+    "tags": [
+      "strategic planning",
+      "strategy",
+      "planning",
+      "sun",
+      "brightness",
+      "vision",
+      "future",
+      "direction",
+      "goals",
+      "roadmap",
+      "business strategy"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Strategy-Gameplan": {
+    "tags": [
+      "strategy",
+      "gameplan",
+      "planning",
+      "clipboard",
+      "playbook",
+      "tactics",
+      "plan",
+      "checklist",
+      "strategic plan",
+      "business plan",
+      "roadmap"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Success-v2": {
+    "tags": [
+      "success",
+      "achievement",
+      "badge",
+      "award",
+      "recognition",
+      "excellence",
+      "accomplishment",
+      "winner",
+      "medal",
+      "trophy",
+      "victory"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Suppliers-v2": {
+    "tags": [
+      "suppliers",
+      "vendors",
+      "supply chain",
+      "people",
+      "group",
+      "team",
+      "network",
+      "sourcing",
+      "procurement",
+      "partners",
+      "vendor management"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Support": {
+    "tags": [
+      "support",
+      "help",
+      "customer service",
+      "headset",
+      "assistance",
+      "helpdesk",
+      "service desk",
+      "care",
+      "operator",
+      "call center",
+      "technical support"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "Business_Talent-Acquisition": {
+    "tags": [
+      "talent acquisition",
+      "recruiting",
+      "hiring",
+      "people",
+      "group",
+      "search",
+      "magnifying glass",
+      "recruitment",
+      "hr",
+      "human resources",
+      "staffing"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Talent": {
+    "tags": [
+      "talent",
+      "star",
+      "excellence",
+      "people",
+      "group",
+      "skills",
+      "expertise",
+      "skilled workers",
+      "top talent",
+      "human capital",
+      "workforce"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Team-Schein-Members": {
+    "tags": [
+      "team schein",
+      "members",
+      "star",
+      "excellence",
+      "team",
+      "employees",
+      "staff",
+      "recognition",
+      "featured",
+      "vip members",
+      "top performers"
+    ],
+    "categories": [
+      "business",
+      "corporate",
+      "team-schein"
+    ]
+  },
+  "Business_Technology-v2": {
+    "tags": [
+      "technology",
+      "tech",
+      "innovation",
+      "gear",
+      "settings",
+      "digital",
+      "it",
+      "systems",
+      "automation",
+      "technical",
+      "mechanics"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Telesales-v2": {
+    "tags": [
+      "telesales",
+      "phone sales",
+      "telephone",
+      "call",
+      "communication",
+      "sales call",
+      "telemarketing",
+      "remote sales",
+      "phone support",
+      "call center"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Temperature-Control-v2": {
+    "tags": [
+      "temperature control",
+      "thermometer",
+      "temperature",
+      "climate control",
+      "heating",
+      "cooling",
+      "hvac",
+      "thermal",
+      "cold chain",
+      "temperature monitoring"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Thumbs-Down": {
+    "tags": [
+      "thumbs down",
+      "dislike",
+      "negative",
+      "disapprove",
+      "bad",
+      "reject",
+      "poor",
+      "unfavorable",
+      "feedback",
+      "decline"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Thumbs-Up": {
+    "tags": [
+      "thumbs up",
+      "like",
+      "approve",
+      "positive",
+      "good",
+      "agree",
+      "accept",
+      "favorable",
+      "feedback",
+      "success"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Traceability": {
+    "tags": [
+      "traceability",
+      "tracking",
+      "trace",
+      "magnifying glass",
+      "search",
+      "refresh",
+      "monitoring",
+      "track record",
+      "audit trail",
+      "verification",
+      "history"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Training": {
+    "tags": [
+      "training",
+      "education",
+      "learning",
+      "laptop",
+      "computer",
+      "person",
+      "user",
+      "e-learning",
+      "online training",
+      "development",
+      "instruction"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Trends": {
+    "tags": [
+      "trends",
+      "checkmark",
+      "verified",
+      "approved",
+      "trending",
+      "popular",
+      "confirmation",
+      "success",
+      "validated",
+      "current"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Trust": {
+    "tags": [
+      "trust",
+      "security",
+      "shield",
+      "protection",
+      "checkmark",
+      "verified",
+      "safe",
+      "reliable",
+      "trustworthy",
+      "confidence",
+      "integrity"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Urgent-Care-Centers": {
+    "tags": [
+      "urgent care",
+      "centers",
+      "emergency",
+      "medical",
+      "healthcare",
+      "clinic",
+      "building",
+      "immediate care",
+      "walk-in clinic",
+      "medical facility",
+      "urgent medical"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Video": {
+    "tags": [
+      "video",
+      "play",
+      "media",
+      "presentation",
+      "screen",
+      "monitor",
+      "video content",
+      "multimedia",
+      "playback",
+      "streaming",
+      "visual"
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ]
+  },
+  "Business_Warehouse": {
+    "tags": [
+      "warehouse",
+      "storage",
+      "inventory",
+      "facility",
+      "magnifying glass",
+      "search",
+      "logistics",
+      "distribution center",
+      "stock",
+      "fulfillment",
+      "supply chain"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Warranty": {
+    "tags": [
+      "warranty",
+      "guarantee",
+      "shield",
+      "protection",
+      "checkmark",
+      "verified",
+      "coverage",
+      "assurance",
+      "secure",
+      "guaranteed",
+      "insurance"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Wipe-Clean": {
+    "tags": [
+      "wipe clean",
+      "sanitize",
+      "cleaning",
+      "hygiene",
+      "disinfect",
+      "hand",
+      "clean",
+      "sanitation",
+      "sterilize",
+      "infection control",
+      "wipe"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "Business_Worldwide-Business-Standards": {
+    "tags": [
+      "worldwide",
+      "business standards",
+      "global",
+      "international",
+      "hexagon",
+      "network",
+      "standards",
+      "compliance",
+      "universal",
+      "globe",
+      "worldwide standards"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Years-in-Business-v2": {
+    "tags": [
+      "years in business",
+      "experience",
+      "anniversary",
+      "longevity",
+      "established",
+      "milestone",
+      "badge",
+      "seal",
+      "heritage",
+      "legacy",
+      "tenure"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Years-in-Business-v3": {
+    "tags": [
+      "years in business",
+      "experience",
+      "anniversary",
+      "established",
+      "longevity",
+      "plane",
+      "flight",
+      "milestone",
+      "journey",
+      "progress",
+      "heritage"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Corporate_Assets": {
+    "tags": [
+      "corporate assets",
+      "resources",
+      "badge",
+      "certification",
+      "gear",
+      "settings",
+      "asset management",
+      "property",
+      "investments",
+      "valuables",
+      "holdings"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Corporate_Brand-Guidelines": {
+    "tags": [
+      "brand guidelines",
+      "branding",
+      "style guide",
+      "identity",
+      "document",
+      "standards",
+      "brand standards",
+      "logo",
+      "corporate identity",
+      "brand book",
+      "visual identity"
+    ],
+    "categories": [
+      "corporate",
+      "marketing"
+    ]
+  },
+  "Corporate_Templates": {
+    "tags": [
+      "templates",
+      "documents",
+      "forms",
+      "layouts",
+      "id card",
+      "badge",
+      "corporate templates",
+      "business templates",
+      "standardized",
+      "formats"
+    ],
+    "categories": [
+      "corporate",
+      "business"
+    ]
+  },
+  "Corporate_Training": {
+    "tags": [
+      "training",
+      "education",
+      "learning",
+      "laptop",
+      "computer",
+      "corporate training",
+      "professional development",
+      "e-learning",
+      "online training",
+      "instruction",
+      "development"
+    ],
+    "categories": [
+      "corporate",
+      "business"
+    ]
+  },
+  "CSR_Battery": {
+    "tags": [
+      "battery",
+      "power",
+      "energy",
+      "charging",
+      "electric",
+      "sustainability",
+      "renewable energy",
+      "green energy",
+      "charge",
+      "electricity",
+      "eco"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Circularity-in-Operations": {
+    "tags": [
+      "circularity",
+      "operations",
+      "circular economy",
+      "sustainability",
+      "recycling",
+      "cycle",
+      "gear",
+      "sustainable operations",
+      "reuse",
+      "loop",
+      "eco operations"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Climate-Impact-mitigation": {
+    "tags": [
+      "climate impact",
+      "mitigation",
+      "climate change",
+      "globe",
+      "world",
+      "environment",
+      "sustainability",
+      "carbon reduction",
+      "climate action",
+      "environmental impact",
+      "earth"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Code-of-Ethics-For-Financial-Officers": {
+    "tags": [
+      "code of ethics",
+      "financial officers",
+      "ethics",
+      "compliance",
+      "integrity",
+      "badge",
+      "financial ethics",
+      "corporate governance",
+      "standards",
+      "accountability"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Employee-Recruitment": {
+    "tags": [
+      "employee recruitment",
+      "hiring",
+      "recruiting",
+      "people",
+      "team",
+      "talent acquisition",
+      "hr",
+      "human resources",
+      "staffing",
+      "workforce",
+      "employment"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Environmental-Footprint": {
+    "tags": [
+      "environmental footprint",
+      "sustainability",
+      "eco friendly",
+      "carbon footprint",
+      "leaf",
+      "plant",
+      "environment",
+      "green",
+      "ecological impact",
+      "nature",
+      "conservation"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Medical-Institution": {
+    "tags": [
+      "medical institution",
+      "hospital",
+      "healthcare facility",
+      "medical building",
+      "clinic",
+      "cross",
+      "health center",
+      "medical center",
+      "healthcare",
+      "facility"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "CSR_Recycle": {
+    "tags": [
+      "recycle",
+      "recycling",
+      "sustainability",
+      "reuse",
+      "arrows",
+      "circular",
+      "eco friendly",
+      "green",
+      "waste reduction",
+      "environmental",
+      "reduce reuse recycle"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Supplier-Code-of-Conduct": {
+    "tags": [
+      "supplier code of conduct",
+      "ethics",
+      "compliance",
+      "standards",
+      "badge",
+      "supplier ethics",
+      "vendor standards",
+      "code",
+      "integrity",
+      "guidelines"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "CSR_Supply-Chain-Action": {
+    "tags": [
+      "supply chain",
+      "action",
+      "logistics",
+      "network",
+      "hexagon",
+      "operations",
+      "supply network",
+      "chain management",
+      "distribution",
+      "procurement"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "CSR_Waste-management-v2": {
+    "tags": [
+      "waste management",
+      "trash",
+      "garbage",
+      "truck",
+      "disposal",
+      "recycling",
+      "sanitation",
+      "waste disposal",
+      "collection",
+      "environmental",
+      "cleanup"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "CSR_Waste-management": {
+    "tags": [
+      "waste management",
+      "disposal",
+      "trash",
+      "building",
+      "facility",
+      "waste facility",
+      "recycling center",
+      "sanitation",
+      "garbage",
+      "environmental"
+    ],
+    "categories": [
+      "business",
+      "service"
+    ]
+  },
+  "Dental_Billing": {
+    "tags": [
+      "dental billing",
+      "billing",
+      "invoice",
+      "payment",
+      "dental invoice",
+      "claims",
+      "dental claims",
+      "statement",
+      "financial",
+      "insurance",
+      "dental insurance"
+    ],
+    "categories": [
+      "business",
+      "dental"
+    ]
+  },
+  "Dental_Burs-Diamond": {
+    "tags": [
+      "dental burs",
+      "diamond",
+      "drill",
+      "dental tool",
+      "dental equipment",
+      "bur",
+      "rotary instrument",
+      "dental supplies",
+      "dentistry",
+      "procedure"
+    ],
+    "categories": [
+      "dental",
+      "product"
+    ]
+  },
+  "Dental_Dentist": {
+    "tags": [
+      "dentist",
+      "dental professional",
+      "doctor",
+      "tooth",
+      "person",
+      "dental care",
+      "oral health",
+      "dentistry",
+      "dental practitioner",
+      "dds",
+      "dental doctor"
+    ],
+    "categories": [
+      "dental",
+      "business"
+    ]
+  },
+  "Dental_Equipment": {
+    "tags": [
+      "dental equipment",
+      "chair",
+      "dental chair",
+      "dentistry",
+      "dental office",
+      "patient chair",
+      "examination",
+      "dental tools",
+      "practice equipment",
+      "treatment"
+    ],
+    "categories": [
+      "dental",
+      "product"
+    ]
+  },
+  "Dental_Patient-Team-Education": {
+    "tags": [
+      "patient education",
+      "team education",
+      "dental education",
+      "tooth",
+      "people",
+      "training",
+      "learning",
+      "teaching",
+      "patient care",
+      "dental training",
+      "oral health education"
+    ],
+    "categories": [
+      "dental",
+      "business"
+    ]
+  },
+  "Dental_Real-Estate": {
+    "tags": [
+      "real estate",
+      "property",
+      "dental practice",
+      "building",
+      "facility",
+      "office space",
+      "commercial property",
+      "practice location",
+      "dental office",
+      "real property"
+    ],
+    "categories": [
+      "dental",
+      "business"
+    ]
+  },
+  "HS-Cares_Corporate-Citizenship": {
+    "tags": [
+      "corporate citizenship",
+      "csr",
+      "responsibility",
+      "globe",
+      "world",
+      "hands",
+      "care",
+      "social responsibility",
+      "community",
+      "giving back",
+      "impact"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "business"
+    ]
+  },
+  "HS-Cares_Empowering-Team-Schein": {
+    "tags": [
+      "empowering",
+      "team schein",
+      "star",
+      "excellence",
+      "people",
+      "team",
+      "employee empowerment",
+      "workforce",
+      "recognition",
+      "engagement"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "team-schein"
+    ]
+  },
+  "HS-Cares_Environmental-Sustainability": {
+    "tags": [
+      "environmental sustainability",
+      "sustainability",
+      "eco friendly",
+      "water",
+      "droplet",
+      "conservation",
+      "environment",
+      "green",
+      "nature",
+      "ecological",
+      "preservation"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "business"
+    ]
+  },
+  "HS-Cares_Environmental": {
+    "tags": [
+      "environmental",
+      "sustainability",
+      "leaf",
+      "nature",
+      "eco",
+      "green",
+      "environment",
+      "conservation",
+      "ecological",
+      "earth care",
+      "plant"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "business"
+    ]
+  },
+  "HS-Cares_Ethical-Governance": {
+    "tags": [
+      "ethical governance",
+      "ethics",
+      "balance",
+      "scales",
+      "justice",
+      "integrity",
+      "fairness",
+      "compliance",
+      "corporate governance",
+      "accountability",
+      "standards"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "business"
+    ]
+  },
+  "HS-Cares_Governance": {
+    "tags": [
+      "governance",
+      "government",
+      "institution",
+      "building",
+      "pillars",
+      "columns",
+      "corporate governance",
+      "structure",
+      "authority",
+      "official",
+      "compliance"
+    ],
+    "categories": [
+      "hs-cares",
+      "corporate",
+      "business"
+    ]
+  },
+  "HS-Cares_Supply-Chain-Resilience-v2": {
+    "tags": [
+      "supply chain",
+      "resilience",
+      "shield",
+      "protection",
+      "checkmark",
+      "verified",
+      "reliability",
+      "security",
+      "continuity",
+      "robust",
+      "supply security"
+    ],
+    "categories": [
+      "hs-cares",
+      "business"
+    ]
+  },
+  "Leadership_Builds-Collaborative-Connections": {
+    "tags": [
+      "leadership",
+      "collaboration",
+      "connections",
+      "people",
+      "network",
+      "teamwork",
+      "relationships",
+      "partnership",
+      "team building",
+      "connectivity",
+      "cooperation"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Leadership_Communicates-Effectively": {
+    "tags": [
+      "leadership",
+      "communication",
+      "effectively",
+      "people",
+      "chat",
+      "speech",
+      "dialogue",
+      "messaging",
+      "conversation",
+      "clarity",
+      "effective communication"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Leadership_Prioritizes-Development": {
+    "tags": [
+      "leadership",
+      "development",
+      "prioritize",
+      "people",
+      "growth",
+      "training",
+      "professional development",
+      "learning",
+      "skill building",
+      "improvement",
+      "advancement"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Leadership_Thinks-Creatively-and-Strategically": {
+    "tags": [
+      "leadership",
+      "creative thinking",
+      "strategic",
+      "lightbulb",
+      "idea",
+      "innovation",
+      "creativity",
+      "strategy",
+      "brainstorming",
+      "vision",
+      "problem solving"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Marketing_Brand-Excellence": {
+    "tags": [
+      "brand excellence",
+      "branding",
+      "quality",
+      "megaphone",
+      "marketing",
+      "promotion",
+      "brand awareness",
+      "advertising",
+      "excellence",
+      "premium brand"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Campaign": {
+    "tags": [
+      "campaign",
+      "marketing campaign",
+      "megaphone",
+      "announcement",
+      "promotion",
+      "advertising",
+      "communication",
+      "outreach",
+      "broadcast",
+      "message",
+      "publicity"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Design-and-Production-Excellence": {
+    "tags": [
+      "design excellence",
+      "production",
+      "creative",
+      "cpu",
+      "chip",
+      "technology",
+      "digital design",
+      "graphics",
+      "production quality",
+      "creative services"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Marketing-Automation-v2": {
+    "tags": [
+      "marketing automation",
+      "automation",
+      "clock",
+      "paper plane",
+      "scheduling",
+      "email automation",
+      "timing",
+      "automated marketing",
+      "campaigns",
+      "workflow",
+      "scheduled"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Multimedia-Excellence": {
+    "tags": [
+      "multimedia excellence",
+      "multimedia",
+      "media",
+      "cpu",
+      "chip",
+      "digital",
+      "content",
+      "production",
+      "audio visual",
+      "creative",
+      "technology"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Operational-Excellence": {
+    "tags": [
+      "operational excellence",
+      "operations",
+      "efficiency",
+      "excellence",
+      "gear",
+      "optimization",
+      "processes",
+      "workflow",
+      "performance",
       "quality"
     ],
     "categories": [
-      "product"
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Print-Marketing-v2": {
+    "tags": [
+      "print marketing",
+      "printing",
+      "document",
+      "paper",
+      "brochure",
+      "flyer",
+      "printed materials",
+      "collateral",
+      "publication",
+      "print media",
+      "newsletter"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Social-Media-Marketing": {
+    "tags": [
+      "social media",
+      "marketing",
+      "social",
+      "phone",
+      "mobile",
+      "social networking",
+      "digital marketing",
+      "online marketing",
+      "engagement",
+      "social platforms"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Strategic-Excellence": {
+    "tags": [
+      "strategic excellence",
+      "strategy",
+      "lightbulb",
+      "idea",
+      "innovation",
+      "planning",
+      "strategic thinking",
+      "vision",
+      "excellence",
+      "smart strategy"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Marketing_Trade-Shows": {
+    "tags": [
+      "trade shows",
+      "exhibition",
+      "booth",
+      "person",
+      "badge",
+      "expo",
+      "conference",
+      "convention",
+      "event",
+      "display",
+      "vendor"
+    ],
+    "categories": [
+      "marketing",
+      "business"
+    ]
+  },
+  "Medical_Freestanding-Emergency-Centers": {
+    "tags": [
+      "freestanding emergency",
+      "emergency center",
+      "urgent care",
+      "building",
+      "medical facility",
+      "er",
+      "emergency room",
+      "hospital",
+      "medical center",
+      "emergency services"
+    ],
+    "categories": [
+      "medical",
+      "business"
+    ]
+  },
+  "Medical_Microscopic": {
+    "tags": [
+      "microscopic",
+      "microscope",
+      "lab",
+      "science",
+      "research",
+      "laboratory",
+      "analysis",
+      "testing",
+      "medical research",
+      "pathology",
+      "diagnostic"
+    ],
+    "categories": [
+      "medical",
+      "business"
+    ]
+  },
+  "Medical_Orthopedics": {
+    "tags": [
+      "orthopedics",
+      "bone",
+      "orthopedic",
+      "skeleton",
+      "joint",
+      "fracture",
+      "musculoskeletal",
+      "orthopedic surgery",
+      "bones",
+      "injury"
+    ],
+    "categories": [
+      "medical",
+      "business"
+    ]
+  },
+  "Product-Categories_Air-Motor": {
+    "tags": [
+      "air motor",
+      "dental handpiece",
+      "drill",
+      "rotary",
+      "dental tool",
+      "dental equipment",
+      "handpiece",
+      "air powered",
+      "dental instrument"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Amalgamators": {
+    "tags": [
+      "amalgamators",
+      "mixing",
+      "dental equipment",
+      "amalgam",
+      "dental supplies",
+      "mixer",
+      "dental lab",
+      "materials",
+      "mixing device"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_CADCAM": {
+    "tags": [
+      "cadcam",
+      "cad cam",
+      "digital dentistry",
+      "dental technology",
+      "3d scanning",
+      "design",
+      "manufacturing",
+      "dental lab",
+      "digital design",
+      "restorations"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Capital-Equipment": {
+    "tags": [
+      "capital equipment",
+      "equipment",
+      "machinery",
+      "major equipment",
+      "dental equipment",
+      "medical equipment",
+      "large equipment",
+      "investment",
+      "practice equipment"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Controlled-Substance": {
+    "tags": [
+      "controlled substance",
+      "medication",
+      "prescription",
+      "drugs",
+      "pharmacy",
+      "pharmaceutical",
+      "pills",
+      "medicine",
+      "rx",
+      "regulated",
+      "bottle"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Curing-Lights": {
+    "tags": [
+      "curing lights",
+      "dental light",
+      "uv light",
+      "polymerization",
+      "dental tool",
+      "composite curing",
+      "dental equipment",
+      "light cure",
+      "wrench"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Dental-Misc": {
+    "tags": [
+      "dental miscellaneous",
+      "tooth",
+      "dental",
+      "supplies",
+      "dental products",
+      "oral care",
+      "dental supplies",
+      "dentistry",
+      "various",
+      "assorted"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Dental-Pharmacy-Supplies": {
+    "tags": [
+      "dental pharmacy",
+      "supplies",
+      "medication",
+      "pills",
+      "prescription",
+      "pharmaceutical",
+      "dental medications",
+      "drugs",
+      "pharmacy",
+      "medicine"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Desensitizing": {
+    "tags": [
+      "desensitizing",
+      "sensitivity",
+      "dental treatment",
+      "tooth sensitivity",
+      "pain relief",
+      "dental care",
+      "comfort",
+      "protection",
+      "soothing"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Diabetes-Care": {
+    "tags": [
+      "diabetes care",
+      "diabetes",
+      "blood sugar",
+      "glucose",
+      "medical",
+      "healthcare",
+      "diabetic supplies",
+      "monitoring",
+      "chronic care",
+      "insulin"
+    ],
+    "categories": [
+      "product",
+      "medical"
+    ]
+  },
+  "Product-Categories_Diabetes": {
+    "tags": [
+      "diabetes",
+      "glucose",
+      "blood sugar",
+      "medical",
+      "diabetic",
+      "healthcare",
+      "chronic condition",
+      "monitoring",
+      "treatment",
+      "insulin"
+    ],
+    "categories": [
+      "product",
+      "medical"
+    ]
+  },
+  "Product-Categories_Diagnostics": {
+    "tags": [
+      "diagnostics",
+      "testing",
+      "medical testing",
+      "analysis",
+      "diagnosis",
+      "lab",
+      "diagnostic tools",
+      "examination",
+      "screening",
+      "assessment"
+    ],
+    "categories": [
+      "product",
+      "medical",
+      "dental"
+    ]
+  },
+  "Product-Categories_Discover": {
+    "tags": [
+      "discover",
+      "search",
+      "magnifying glass",
+      "find",
+      "explore",
+      "look",
+      "investigation",
+      "research",
+      "browse",
+      "seeking"
+    ],
+    "categories": [
+      "product",
+      "business"
+    ]
+  },
+  "Product-Categories_Dry-Mouth": {
+    "tags": [
+      "dry mouth",
+      "xerostomia",
+      "oral health",
+      "dental care",
+      "mouth care",
+      "saliva",
+      "dental treatment",
+      "oral condition",
+      "dentistry"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Endodontics-Accessories": {
+    "tags": [
+      "endodontics",
+      "accessories",
+      "root canal",
+      "dental tools",
+      "endo",
+      "dental equipment",
+      "dental supplies",
+      "endodontic instruments",
+      "dentistry"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Eyewear": {
+    "tags": [
+      "eyewear",
+      "glasses",
+      "safety glasses",
+      "protective eyewear",
+      "eye protection",
+      "safety equipment",
+      "ppe",
+      "vision",
+      "spectacles"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_EZ-Scan": {
+    "tags": [
+      "ez scan",
+      "scanning",
+      "barcode",
+      "scanner",
+      "digital scanning",
+      "inventory",
+      "tracking",
+      "scan",
+      "reader",
+      "identification"
+    ],
+    "categories": [
+      "product",
+      "business"
+    ]
+  },
+  "Product-Categories_Fluoride": {
+    "tags": [
+      "fluoride",
+      "dental treatment",
+      "cavity prevention",
+      "tooth protection",
+      "oral health",
+      "dental care",
+      "preventive care",
+      "teeth",
+      "enamel"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_GC": {
+    "tags": [
+      "gc",
+      "dental products",
+      "dental materials",
+      "dental supplies",
+      "brand",
+      "manufacturer",
+      "dentistry",
+      "dental equipment"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Infection-Control-and-PPE": {
+    "tags": [
+      "infection control",
+      "ppe",
+      "personal protective equipment",
+      "safety",
+      "protection",
+      "hygiene",
+      "sanitization",
+      "medical safety",
+      "sterilization",
+      "contamination prevention"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Instruments": {
+    "tags": [
+      "instruments",
+      "dental instruments",
+      "medical instruments",
+      "tools",
+      "equipment",
+      "surgical instruments",
+      "dental tools",
+      "hand instruments",
+      "scissors"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Lab-Coats": {
+    "tags": [
+      "lab coats",
+      "coat",
+      "apparel",
+      "medical clothing",
+      "professional wear",
+      "ppe",
+      "uniform",
+      "protective clothing",
+      "healthcare apparel"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Mouth-Wash": {
+    "tags": [
+      "mouthwash",
+      "rinse",
+      "oral rinse",
+      "dental care",
+      "oral hygiene",
+      "fresh breath",
+      "antiseptic",
+      "oral health",
+      "dental products"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Oral-Rinses": {
+    "tags": [
+      "oral rinses",
+      "mouthwash",
+      "rinse",
+      "dental care",
+      "oral hygiene",
+      "antiseptic",
+      "oral health",
+      "fresh breath",
+      "dental products"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Pharmaceuticals": {
+    "tags": [
+      "pharmaceuticals",
+      "medication",
+      "drugs",
+      "medicine",
+      "prescription",
+      "pharmacy",
+      "pills",
+      "pharmaceutical products",
+      "medical supplies"
+    ],
+    "categories": [
+      "product",
+      "medical",
+      "dental"
+    ]
+  },
+  "Product-Categories_Pharmaceuticals-Respiratory": {
+    "tags": [
+      "pharmaceuticals",
+      "respiratory",
+      "breathing",
+      "lung care",
+      "inhaler",
+      "respiratory care",
+      "medication",
+      "asthma",
+      "pulmonary"
+    ],
+    "categories": [
+      "product",
+      "medical"
+    ]
+  },
+  "Product-Categories_Promotions-EUR": {
+    "tags": [
+      "promotions",
+      "eur",
+      "euro",
+      "discounts",
+      "sales",
+      "offers",
+      "deals",
+      "special pricing",
+      "european",
+      "savings"
+    ],
+    "categories": [
+      "product",
+      "business",
+      "marketing"
+    ]
+  },
+  "Product-Categories_Promotions-UK": {
+    "tags": [
+      "promotions",
+      "uk",
+      "united kingdom",
+      "discounts",
+      "sales",
+      "offers",
+      "deals",
+      "special pricing",
+      "british",
+      "savings"
+    ],
+    "categories": [
+      "product",
+      "business",
+      "marketing"
+    ]
+  },
+  "Product-Categories_Promotions": {
+    "tags": [
+      "promotions",
+      "discounts",
+      "sales",
+      "offers",
+      "deals",
+      "special pricing",
+      "savings",
+      "marketing",
+      "promotional"
+    ],
+    "categories": [
+      "product",
+      "business",
+      "marketing"
+    ]
+  },
+  "Product-Categories_Prophy-Cups": {
+    "tags": [
+      "prophy cups",
+      "prophylaxis",
+      "dental cleaning",
+      "polishing",
+      "dental hygiene",
+      "dental tools",
+      "cleaning cups",
+      "dental supplies",
+      "hygienist tools"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Prophy-Paste": {
+    "tags": [
+      "prophy paste",
+      "prophylaxis paste",
+      "dental cleaning",
+      "polishing paste",
+      "dental hygiene",
+      "teeth cleaning",
+      "dental products",
+      "cleaning paste"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Syringe": {
+    "tags": [
+      "syringe",
+      "injection",
+      "needle",
+      "medical",
+      "dental",
+      "medication delivery",
+      "injection device",
+      "medical equipment"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Syringes": {
+    "tags": [
+      "syringes",
+      "injection",
+      "needles",
+      "medical supplies",
+      "dental supplies",
+      "medication delivery",
+      "injection devices",
+      "medical equipment"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Topical-Anesthetic": {
+    "tags": [
+      "topical anesthetic",
+      "anesthetic",
+      "numbing",
+      "pain relief",
+      "dental anesthesia",
+      "topical pain relief",
+      "gel",
+      "pain management"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Ultrasonic-Scalers-and-Polishers": {
+    "tags": [
+      "ultrasonic scalers",
+      "polishers",
+      "dental equipment",
+      "scaling",
+      "cleaning",
+      "dental tools",
+      "hygiene equipment",
+      "dental hygiene",
+      "periodontal"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Unwrap": {
+    "tags": [
+      "unwrap",
+      "unpack",
+      "open",
+      "package",
+      "star",
+      "reveal",
+      "opening",
+      "new product",
+      "unboxing"
+    ],
+    "categories": [
+      "product",
+      "business"
+    ]
+  },
+  "Service-First_Break-Fix": {
+    "tags": [
+      "break fix",
+      "repair",
+      "service",
+      "maintenance",
+      "fixing",
+      "technical support",
+      "equipment repair",
+      "troubleshooting",
+      "fix"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Service-First_Emergency": {
+    "tags": [
+      "emergency",
+      "urgent",
+      "emergency service",
+      "immediate",
+      "critical",
+      "alert",
+      "priority",
+      "emergency response",
+      "urgent care"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Service-First_Installation": {
+    "tags": [
+      "installation",
+      "install",
+      "setup",
+      "service",
+      "mounting",
+      "equipment installation",
+      "professional installation",
+      "assembly",
+      "implementation"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Service-First_Preventive-Maintenance": {
+    "tags": [
+      "preventive maintenance",
+      "maintenance",
+      "prevention",
+      "shield",
+      "protection",
+      "service",
+      "upkeep",
+      "scheduled maintenance",
+      "pm"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Service-First_Tech-Support": {
+    "tags": [
+      "tech support",
+      "technical support",
+      "help",
+      "assistance",
+      "support",
+      "troubleshooting",
+      "it support",
+      "customer service",
+      "helpdesk"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Service-First_TechAdvisor-Line": {
+    "tags": [
+      "tech advisor",
+      "advisor line",
+      "support line",
+      "consultation",
+      "expert advice",
+      "technical consultation",
+      "helpline",
+      "advisory service"
+    ],
+    "categories": [
+      "service",
+      "business"
+    ]
+  },
+  "Solutions_Business-Solutions": {
+    "tags": [
+      "business solutions",
+      "solutions",
+      "services",
+      "business services",
+      "consulting",
+      "strategy",
+      "optimization",
+      "business tools"
+    ],
+    "categories": [
+      "solutions",
+      "business"
+    ]
+  },
+  "Solutions_Clinical-Solutions": {
+    "tags": [
+      "clinical solutions",
+      "healthcare solutions",
+      "medical solutions",
+      "clinical services",
+      "patient care",
+      "medical services",
+      "healthcare"
+    ],
+    "categories": [
+      "solutions",
+      "medical"
+    ]
+  },
+  "Solutions_Financial": {
+    "tags": [
+      "financial",
+      "solutions",
+      "finance",
+      "financial services",
+      "money",
+      "payment",
+      "financial management",
+      "accounting"
+    ],
+    "categories": [
+      "solutions",
+      "business"
+    ]
+  },
+  "Solutions_Operational": {
+    "tags": [
+      "operational",
+      "solutions",
+      "operations",
+      "workflow",
+      "efficiency",
+      "processes",
+      "operational excellence",
+      "management"
+    ],
+    "categories": [
+      "solutions",
+      "business"
+    ]
+  },
+  "Solutions_Supply-Chain": {
+    "tags": [
+      "supply chain",
+      "solutions",
+      "logistics",
+      "supply management",
+      "procurement",
+      "distribution",
+      "supply network",
+      "inventory"
+    ],
+    "categories": [
+      "solutions",
+      "business"
+    ]
+  },
+  "Solutions_Technology-Solutions-v2": {
+    "tags": [
+      "technology solutions",
+      "tech solutions",
+      "it solutions",
+      "digital solutions",
+      "technology services",
+      "software",
+      "systems",
+      "innovation"
+    ],
+    "categories": [
+      "solutions",
+      "business"
+    ]
+  },
+  "Design-Elements_Design34": {
+    "tags": [
+      "design element",
+      "shape",
+      "geometric",
+      "graphic",
+      "decoration",
+      "visual element",
+      "abstract"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Design-Elements_Design35": {
+    "tags": [
+      "design element",
+      "shape",
+      "geometric",
+      "hexagon",
+      "graphic",
+      "decoration",
+      "visual element",
+      "abstract"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Design-Elements_Design36": {
+    "tags": [
+      "design element",
+      "shape",
+      "geometric",
+      "circles",
+      "graphic",
+      "decoration",
+      "visual element",
+      "abstract"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Design-Elements_Design37": {
+    "tags": [
+      "design element",
+      "shape",
+      "geometric",
+      "arc",
+      "curved",
+      "graphic",
+      "decoration",
+      "visual element",
+      "abstract"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Design-Elements_Design38": {
+    "tags": [
+      "design element",
+      "shape",
+      "rectangle",
+      "bar",
+      "graphic",
+      "decoration",
+      "visual element",
+      "abstract",
+      "horizontal"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Product-Categories_Autoclaves-and-Accessories": {
+    "tags": [
+      "autoclaves",
+      "accessories",
+      "sterilization",
+      "autoclave equipment",
+      "dental supplies",
+      "infection control",
+      "sterilize",
+      "medical supplies",
+      "sanitization",
+      "cleaning equipment"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Incontinence-Products": {
+    "tags": [
+      "incontinence products",
+      "personal care",
+      "medical supplies",
+      "hygiene products",
+      "adult care",
+      "disposable products",
+      "care supplies",
+      "patient care"
+    ],
+    "categories": [
+      "product",
+      "medical"
+    ]
+  },
+  "Product-Categories_Laboratory-Crown-Bridge2": {
+    "tags": [
+      "laboratory",
+      "crown",
+      "bridge",
+      "dental lab",
+      "dental restoration",
+      "prosthetics",
+      "dental work",
+      "crown and bridge",
+      "dental laboratory"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Laboratory-Lab-Vision": {
+    "tags": [
+      "laboratory",
+      "lab vision",
+      "dental lab",
+      "lab equipment",
+      "vision system",
+      "dental technology",
+      "lab tools",
+      "precision",
+      "magnification"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Medicaments": {
+    "tags": [
+      "medicaments",
+      "medication",
+      "drugs",
+      "medicine",
+      "pharmaceutical",
+      "dental medications",
+      "medical supplies",
+      "treatments",
+      "remedies"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Oral-Cleaning-Aids": {
+    "tags": [
+      "oral cleaning aids",
+      "dental cleaning",
+      "oral hygiene",
+      "toothbrush",
+      "floss",
+      "cleaning tools",
+      "dental care",
+      "oral health",
+      "hygiene products"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Sm-Equip-Handpieces": {
+    "tags": [
+      "handpieces",
+      "dental equipment",
+      "dental handpieces",
+      "drill",
+      "dental tools",
+      "rotary instruments",
+      "dental equipment",
+      "small equipment"
+    ],
+    "categories": [
+      "product",
+      "dental"
+    ]
+  },
+  "Product-Categories_Smart-Devices": {
+    "tags": [
+      "smart devices",
+      "technology",
+      "digital devices",
+      "smart technology",
+      "connected devices",
+      "iot",
+      "mobile devices",
+      "digital",
+      "intelligent devices"
+    ],
+    "categories": [
+      "product",
+      "business"
+    ]
+  },
+  "Product-Categories_Unisex-Pants": {
+    "tags": [
+      "unisex pants",
+      "pants",
+      "scrubs",
+      "medical apparel",
+      "uniform",
+      "professional wear",
+      "healthcare clothing",
+      "work pants"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Product-Categories_Unisex-Top": {
+    "tags": [
+      "unisex top",
+      "top",
+      "scrubs",
+      "medical apparel",
+      "uniform",
+      "professional wear",
+      "healthcare clothing",
+      "work shirt"
+    ],
+    "categories": [
+      "product",
+      "dental",
+      "medical"
+    ]
+  },
+  "Team-Schein_Business": {
+    "tags": [
+      "team schein",
+      "business",
+      "people",
+      "team",
+      "gear",
+      "settings",
+      "operations",
+      "business team",
+      "workforce"
+    ],
+    "categories": [
+      "team-schein",
+      "business"
+    ]
+  },
+  "Team-Schein_Community": {
+    "tags": [
+      "team schein",
+      "community",
+      "people",
+      "team",
+      "group",
+      "network",
+      "collaboration",
+      "collective",
+      "unity",
+      "team community"
+    ],
+    "categories": [
+      "team-schein",
+      "business"
+    ]
+  },
+  "Team-Schein_Featured": {
+    "tags": [
+      "team schein",
+      "featured",
+      "star",
+      "person",
+      "recognition",
+      "spotlight",
+      "excellence",
+      "featured member",
+      "highlighted"
+    ],
+    "categories": [
+      "team-schein",
+      "business"
+    ]
+  },
+  "Team-Schein_Team-Schein-Members": {
+    "tags": [
+      "team schein",
+      "members",
+      "team",
+      "people",
+      "star",
+      "employees",
+      "staff",
+      "team members",
+      "excellence"
+    ],
+    "categories": [
+      "team-schein",
+      "business"
+    ]
+  },
+  "half-circle-tilted": {
+    "tags": [
+      "half circle",
+      "tilted",
+      "semicircle",
+      "shape",
+      "geometric",
+      "design element",
+      "circular",
+      "arc",
+      "angled"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "Business_Partnership-Alliances": {
+    "tags": [
+      "partnership",
+      "alliances",
+      "handshake",
+      "collaboration",
+      "agreement",
+      "cooperation",
+      "business relationship",
+      "deal",
+      "mutual",
+      "strategic alliance"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Quality-Management-v2": {
+    "tags": [
+      "quality management",
+      "qms",
+      "quality assurance",
+      "laptop",
+      "computer",
+      "checkmark",
+      "verified",
+      "standards",
+      "compliance",
+      "certification"
+    ],
+    "categories": [
+      "business",
+      "corporate"
+    ]
+  },
+  "Business_Integrated-Delivery-System-IDS": {
+    "tags": [
+      "integrated delivery system",
+      "ids",
+      "healthcare network",
+      "medical building",
+      "healthcare system",
+      "hospital network",
+      "integrated care",
+      "health system",
+      "medical center",
+      "facility",
+      "cross",
+      "medical complex"
+    ],
+    "categories": [
+      "business",
+      "medical"
+    ]
+  },
+  "CSR_Fluorecent-Bulb": {
+    "tags": [
+      "fluorescent bulb",
+      "lightbulb",
+      "lighting",
+      "energy",
+      "efficient",
+      "energy saving",
+      "light",
+      "illumination",
+      "power",
+      "cfl",
+      "eco bulb",
+      "sustainability",
+      "green energy",
+      "pencil"
+    ],
+    "categories": [
+      "business"
+    ]
+  },
+  "CSR_Healthcare-Accessability": {
+    "tags": [
+      "healthcare accessibility",
+      "access",
+      "medical care",
+      "globe",
+      "world",
+      "shield",
+      "protection",
+      "health equity",
+      "universal healthcare",
+      "medical access",
+      "global health",
+      "international health",
+      "care access"
+    ],
+    "categories": [
+      "corporate",
+      "business"
+    ]
+  },
+  "ThriveLive_Business": {
+    "tags": [
+      "thrivelive",
+      "business",
+      "gear",
+      "settings",
+      "operations",
+      "people",
+      "team",
+      "business solutions",
+      "platform",
+      "business tools",
+      "management",
+      "workflow"
+    ],
+    "categories": [
+      "dental",
+      "marketing",
+      "business"
+    ]
+  },
+  "ThriveLive_Clinical-and-Technology": {
+    "tags": [
+      "thrivelive",
+      "clinical",
+      "technology",
+      "healthcare technology",
+      "medical technology",
+      "clinical systems",
+      "health tech",
+      "people",
+      "team",
+      "laptop",
+      "computer",
+      "digital health"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "marketing"
+    ]
+  },
+  "ThriveLive_Concierge": {
+    "tags": [
+      "thrivelive",
+      "concierge",
+      "service",
+      "bell",
+      "hospitality",
+      "assistance",
+      "support",
+      "dedicated service",
+      "premium service",
+      "hotel service",
+      "customer care"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "marketing"
+    ]
+  },
+  "ThriveLive_Designated-Buffet": {
+    "tags": [
+      "thrivelive",
+      "designated buffet",
+      "buffet",
+      "food",
+      "catering",
+      "dining",
+      "meal service",
+      "hospitality",
+      "covered dish",
+      "food service",
+      "restaurant"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_Drink-Tokens": {
+    "tags": [
+      "thrivelive",
+      "drink tokens",
+      "tokens",
+      "beverage",
+      "drinks",
+      "vouchers",
+      "tickets",
+      "complimentary drinks",
+      "drink vouchers",
+      "cocktail tokens",
+      "bar credits"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "marketing"
+    ]
+  },
+  "ThriveLive_Practice-Design": {
+    "tags": [
+      "thrivelive",
+      "practice design",
+      "design",
+      "office design",
+      "planning",
+      "layout",
+      "design services",
+      "practice planning",
+      "heart",
+      "care",
+      "wrench",
+      "tools",
+      "configuration"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "marketing"
+    ]
+  },
+  "ThriveLive_Premier-Entertainment": {
+    "tags": [
+      "thrivelive",
+      "premier entertainment",
+      "entertainment",
+      "microphone",
+      "music",
+      "performance",
+      "events",
+      "shows",
+      "live entertainment",
+      "concert",
+      "stage",
+      "singing"
+    ],
+    "categories": [
+      "business",
+      "dental",
+      "marketing"
+    ]
+  },
+  "ThriveLive_Renowned-Speakers": {
+    "tags": [
+      "thrivelive",
+      "renowned speakers",
+      "speakers",
+      "presenters",
+      "experts",
+      "thought leaders",
+      "keynote speakers",
+      "education",
+      "speech",
+      "talking",
+      "communication",
+      "lecture"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_Round-Trip-Uber": {
+    "tags": [
+      "thrivelive",
+      "round trip",
+      "uber",
+      "car",
+      "transportation",
+      "travel",
+      "ride",
+      "car service",
+      "shuttle",
+      "rideshare",
+      "vehicle",
+      "taxi",
+      "transport"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_Software-Training": {
+    "tags": [
+      "thrivelive",
+      "software training",
+      "training",
+      "education",
+      "computer",
+      "monitor",
+      "learning",
+      "software education",
+      "technology training",
+      "tutorial",
+      "digital training",
+      "screen"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_Team-Development": {
+    "tags": [
+      "thrivelive",
+      "team development",
+      "training",
+      "team building",
+      "people",
+      "professional development",
+      "growth",
+      "team training",
+      "hands",
+      "collaboration",
+      "group development"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_VIP-Bars": {
+    "tags": [
+      "thrivelive",
+      "vip bars",
+      "vip",
+      "drinks",
+      "cocktails",
+      "beverage service",
+      "premium",
+      "exclusive",
+      "bar service",
+      "alcohol",
+      "martini",
+      "champagne",
+      "bartender"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_VIP-Comedy-Seating": {
+    "tags": [
+      "thrivelive",
+      "vip comedy seating",
+      "comedy",
+      "seating",
+      "chairs",
+      "entertainment",
+      "reserved seating",
+      "premium seats",
+      "theater seating",
+      "front row",
+      "audience"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_VIP-Entrance": {
+    "tags": [
+      "thrivelive",
+      "vip entrance",
+      "entrance",
+      "vip",
+      "door",
+      "access",
+      "exclusive entry",
+      "special entrance",
+      "badge",
+      "pass",
+      "credentials",
+      "priority access"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_VIP-Registration-Line": {
+    "tags": [
+      "thrivelive",
+      "vip registration line",
+      "registration",
+      "check in",
+      "line",
+      "queue",
+      "express registration",
+      "priority",
+      "fast track",
+      "express lane",
+      "booth"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
+    ]
+  },
+  "ThriveLive_World-Class-Education": {
+    "tags": [
+      "thrivelive",
+      "world class education",
+      "education",
+      "learning",
+      "training",
+      "presentation",
+      "teaching",
+      "excellence",
+      "professional education",
+      "classroom",
+      "instructor",
+      "seminar",
+      "presentation board"
+    ],
+    "categories": [
+      "business",
+      "marketing",
+      "dental"
     ]
   }
 }

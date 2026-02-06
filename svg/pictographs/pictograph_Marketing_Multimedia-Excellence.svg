@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <line x1="54.6762" y1="8.3744" x2="54.6762" y2="24.9446" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="21.6262" y1="21.9357" x2="33.3431" y2="33.6526" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="6.915" y1="56.1356" x2="23.4852" y2="56.1356" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="39.0807" y1="17.1469" x2="42.9796" y2="26.894" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="16.8117" y1="39.3725" x2="26.4609" y2="43.5079" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="102.4374" y1="56.1356" x2="85.8672" y2="56.1356" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="88.876" y1="23.0855" x2="77.1591" y2="34.8024" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="93.6649" y1="40.5401" x2="83.9177" y2="44.439" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="71.4392" y1="18.2711" x2="67.3039" y2="27.9203" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="54.6762" y1="103.8967" x2="54.6762" y2="87.3265" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="87.7262" y1="90.3354" x2="76.0093" y2="78.6185" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="70.2717" y1="95.1243" x2="66.3728" y2="85.3771" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="92.5407" y1="72.8986" x2="83.8662" y2="68.7632" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="20.4764" y1="89.1856" x2="32.1933" y2="77.4687" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="15.6875" y1="71.7311" x2="24.46" y2="67.8322" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="37.9132" y1="94.0001" x2="42.0485" y2="84.3509" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <polygon points="53.6734 55.1125 61.2449 50.4369 53.6734 45.7612 53.6734 55.1125" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <line x1="47.2006" y1="58.925" x2="72.152" y2="58.925" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="38.2746" y1="58.925" x2="41.4426" y2="58.925" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <circle cx="44.4855" cy="58.7368" r="1.6939" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M55.5213,67.5808h24.7358c.1909,0,.3455.1547.3455.3455v1.0533c0,.9952-.8068,1.802-1.802,1.802h-46.39c-.9953,0-1.8022-.8068-1.8024-1.8022l-.0002-1.0529c0-.1909.1547-.3455.3455-.3455h21.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="54.8477" y1="40.2402" x2="56.3628" y2="40.2402" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="35.4054" y1="42.6137" x2="75.8051" y2="42.6137" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M30.8605,67.5983l4.545-5.0676v-21.1087c0-2.022,1.6392-3.6612,3.6612-3.6612h33.0771c2.022,0,3.6612,1.6392,3.6612,3.6612v21.1087l4.545,5.0676" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="64.511" y1="62.5484" x2="75.8051" y2="62.5484" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="35.4054" y1="62.5484" x2="62.2968" y2="62.5484" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="44.2429" y1="65.2249" x2="45.2528" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="50.4024" y1="65.2249" x2="51.4123" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="56.5619" y1="65.2249" x2="57.5719" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="37.1729" y1="65.2249" x2="38.1829" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="40.7079" y1="65.2249" x2="41.7179" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="69.4926" y1="65.2249" x2="70.5026" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="73.0276" y1="65.2249" x2="74.0376" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="65.9577" y1="65.2249" x2="66.9676" y2="65.2249" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

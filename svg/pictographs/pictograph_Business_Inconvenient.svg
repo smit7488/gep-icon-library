@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <rect x="95.5632" y="64.322" width="5.7225" height="22.2225" rx="1.4762" ry="1.4762" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M68.6349,80.929c-1.7016,0-3.0809-1.3794-3.0809-3.0809h0c0-1.7015,1.3794-3.0809,3.0809-3.0809h3.4532" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M69.8402,74.7671c-1.7016,0-3.0809-1.3794-3.0809-3.0809h0c0-1.7016,1.3794-3.081,3.0809-3.081h3.4532" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M95.5631,85.2175c-2.0808.1335-4.0599,1.086-5.3416,2.7411-2.3949,3.0928-2.6872,7.0077-3.451,10.0127-.7465,2.9366-4.978,3.3213-6.0981.506-1.0785-2.7107-.417-6.4976,1.1533-10.4191.1853-.4626-.1433-.9673-.6417-.9673h-12.883c-1.7016,0-3.0809-1.3794-3.0809-3.0809h0c0-1.7016,1.3794-3.081,3.0809-3.081h3.4145" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M71.0455,68.6052c-1.7015,0-3.0809-1.3794-3.0809-3.0809h0c0-1.7016,1.3794-3.0809,3.0809-3.0809h15.3017c3.5676.3092,5.6414,3.2386,8.765,3.2386" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <path d="M84.3921,58.233L56.8717,11.7126c-1.0848-1.8337-3.7382-1.8337-4.8229,0L13.6171,76.6775c-1.0893,1.8414.2539,4.1568,2.4115,4.1568h42.4217" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <line x1="54.4603" y1="31.6248" x2="54.4603" y2="60.8845" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M55.6471,65.5796c.5003,1.0789-.3903,2.1305-1.4472,1.9301-.5205-.0987-.9463-.5244-1.0449-1.0449-.2004-1.0569.8512-1.9475,1.9301-1.4472.2455.1139.4481.3165.562.562Z" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+  </g>
+</svg>

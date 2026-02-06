@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <rect x="66.9538" y="39.7178" width="4.9787" height="4.3919" transform="translate(138.8863 83.8274) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="66.9538" y="47.5167" width="4.9787" height="4.3919" transform="translate(138.8863 99.4252) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="75.2097" y="39.7178" width="4.9787" height="4.3919" transform="translate(155.3982 83.8274) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="66.9538" y="31.9992" width="4.9787" height="4.3919" transform="translate(138.8863 68.3904) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="75.2097" y="31.9992" width="4.9787" height="4.3919" transform="translate(155.3982 68.3904) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="75.2097" y="47.5167" width="4.9787" height="4.3919" transform="translate(155.3982 99.4252) rotate(-180)" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <polyline points="23.3239 31.2551 23.3239 51.6912 17.9279 51.6912 17.9279 96.3045 23.4099 96.3045 23.4099 79.5121 35.4721 79.5121 35.4721 96.3045 89.4393 96.3045 89.4393 51.6912 84.0432 51.6912 84.0432 31.2551" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="29.0862" y1="79.5121" x2="29.0862" y2="96.3045" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <path d="M19.4881,28.8522l26.1838-11.4905c5.0322-2.2083,10.7593-2.2083,15.7915,0l26.1838,11.4905v-3.9824l-26.1838-11.4905c-5.0322-2.2083-10.7593-2.2083-15.7915,0l-26.1838,11.4905v3.9824Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M55.6452,54.2675v-10.3605c0-4.0502-2.4468-7.536-5.9374-9.0697-.3246-1.1874-1.4002-2.065-2.6906-2.065-1.5466,0-2.8005,1.2539-2.8005,2.8003s1.2539,2.8007,2.8005,2.8007c.6643,0,1.2664-.2411,1.7465-.6275,2.2803,1.1251,3.8666,3.4514,3.8666,6.1612v10.3605c-.8973.5222-1.5075,1.4837-1.5075,2.5966,0,2.9678-2.415,5.3835-5.3843,5.3835h-7.3348c-2.9693,0-5.3843-2.4158-5.3843-5.3835,0-1.1129-.6101-2.0744-1.5075-2.5966v-10.3605c0-2.7008,1.5765-5.0199,3.8448-6.1492.4779.3794,1.0745.6155,1.732.6155,1.5167,0,2.7443-1.2079,2.7917-2.7131.0055-.0523.0306-.0979.0306-.1516,0-.0992-.0382-.1859-.0564-.2797-.1712-1.3823-1.337-2.4566-2.7659-2.4566-1.298,0-2.3792.8875-2.6968,2.0856-3.4677,1.5435-5.8949,5.0159-5.8949,9.0491v10.3605c-.8973.5222-1.5075,1.4837-1.5075,2.5966,0,6.2933,5.12,11.4134,11.4141,11.4134h.6521v6.2271c0,1.665,1.3499,3.0149,3.0149,3.0149s3.0149-1.3499,3.0149-3.0149v-6.2271h.6529c6.2941,0,11.4141-5.12,11.4141-11.4134,0-1.1129-.6101-2.0744-1.5075-2.5966Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M62.8527,91.1992h-9.6659c-6.919,0-12.5484-5.6294-12.5484-12.5484v-1.3247h3.0149v1.3247c0,5.2569,4.2765,9.5335,9.5335,9.5335h9.6659c5.2569,0,9.5335-4.2765,9.5335-9.5335v-12.0188h3.0149v12.0188c0,6.919-5.6294,12.5484-12.5484,12.5484Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M75.1029,70.0095c3.31-.642,5.8091-3.5559,5.8091-7.0535,0-3.9682-3.2169-7.1852-7.1852-7.1852s-7.1852,3.2169-7.1852,7.1852c0,3.2835,2.2025,6.0525,5.2106,6.9104" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="73.8069" cy="62.956" r="3.7442" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="89.4393" y1="96.3045" x2="96.8362" y2="96.3045" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="23.4099" y1="96.3045" x2="11.8242" y2="96.3045" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

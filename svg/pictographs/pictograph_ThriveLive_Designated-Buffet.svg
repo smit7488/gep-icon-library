@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <g>
+        <path d="M84.2582,29.7691c4.9741,6.2881,7.9423,14.2362,7.9423,22.8764v.9452" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+        <path d="M59.1893,15.9576c5.9993.6204,11.5718,2.6843,16.3658,5.8372" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+        <path d="M18.4,53.5906v-.9452c0-19.068,14.4636-34.7541,33.0112-36.6879" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+        <path d="M36.1607,29.5483c-3.3259,2.7546-6.0318,6.2134-7.9063,10.1412" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+        <path d="M42.1561,25.691c-.7754.376-1.5312.7842-2.2659,1.2228" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      </g>
+      <path d="M91.4043,59.8612H19.2009c-3.4653,0-6.2746-2.8092-6.2746-6.2746h84.7525c0,3.4654-2.8092,6.2746-6.2746,6.2746Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="55.3026" cy="13.3232" r="4.6928" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M39.3365,88.1634c-.0045-4.0303.4127-8.9956-2.9681-14.2826-4.4911-7.0231-7.7439-9.1244-9.4592-13.354.072-.2519.1844-.4723.3374-.6657" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M35.8695,59.8612c3.3331,2.546,6.014,9.2212,9.7205,10.2333,2.3705.6477,4.4936-.8142,11.2364-10.2333" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M58.8343,91.5429c6.6919-11.914,11.4059-12.0832,15.1756-15.8897,2.6124-2.6378,12.9803-14.8149,13.2748-15.792" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="78.8222" y1="59.8612" x2="66.2094" y2="72.1096" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="68.5393" y1="59.8631" x2="58.6464" y2="69.6497" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <polygon points="59.5921 98.579 33.1037 93.7008 35.4112 87.4405 61.8995 92.3187 59.5921 98.579" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <line x1="85.8742" y1="17.6112" x2="72.9051" y2="33.8211" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="78.2439" y1="15.3998" x2="80.5354" y2="36.0325" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="69.0733" y1="26.8619" x2="89.706" y2="24.5704" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

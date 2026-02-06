@@ -1024,7 +1024,61 @@
       "path": "https://assets.henryschein.com/HS_US_EN_Wireblock_non-scaling-stroke-2_Diversity-Inclusion_WLN.svg"
     },
     {
+      "id": "Ambulatory-Surgery-Center",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_110",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_220",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_24-7",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Account-Transfer",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Administration",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Affordable",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Ambulatory-Surgery-Centers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Awareness",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Backorders-Cancel-Release",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1036,7 +1090,31 @@
       "path": null
     },
     {
+      "id": "Business_Boxes",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Business-Strategy",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Business",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Care-Admired",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_CDT-Coding-Support",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1048,13 +1126,73 @@
       "path": null
     },
     {
+      "id": "Business_Climate-Adaption",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Climate-Change",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Code-Of-Ethics-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Code-of-Ethics",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Business_Collaboration",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Community-Health-Centers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Community",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Compliance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Controlled-Substance-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Controlled-Substance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Conversions",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Corporate-2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1072,7 +1210,25 @@
       "path": null
     },
     {
+      "id": "Business_Cost-Euro-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Cost-Euro",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Cost-UK",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Cost-US",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1084,7 +1240,79 @@
       "path": null
     },
     {
+      "id": "Business_Credit-Card-Payments",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Credit-Rebill",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Credits",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Custom-Quote",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Customer-Loyalty",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Customer-Service",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Customers-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Customers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Data",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Date-Time",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Disaster-Preparedness",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Distribution-2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Distribution-Capabilities",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1096,7 +1324,31 @@
       "path": null
     },
     {
+      "id": "Business_Distribution-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Distribution",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Doctors-Office",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Ecommerce",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Economical",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1114,7 +1366,67 @@
       "path": null
     },
     {
+      "id": "Business_Email",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Emergency-Medical-Services-EMS",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Engagement-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Engagement",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Environment",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Evaluate-Opportunities",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Fee-Analysis",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Field-Sales-Consultant-FSC",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Financial",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Flex-Program",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Form",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1126,13 +1438,49 @@
       "path": null
     },
     {
+      "id": "Business_FSC-Personal-Orders",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Fulfillment-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Fulfillment-v3",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Fulfillment",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Business_Gains-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Gems",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Geopolitical",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Global-Logistics",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1156,7 +1504,73 @@
       "path": null
     },
     {
+      "id": "Business_Governance-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Governance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Growth-Expansion",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Handshake-Partner",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Home-Health_care",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_HSPAs",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Identify",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Implementations",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Inconvenient",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Informal-RFP-Contracts",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Installation",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Integrated-Delivery-System-IDS",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1168,19 +1582,91 @@
       "path": null
     },
     {
+      "id": "Business_Leadership-Featured",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Lost-Damaged-Package",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Marketplace",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Business_Plug-110",
+      "id": "Business_Merch-Setup-Orders",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Business_Plug-220",
+      "id": "Business_Natural-Disasters-72",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Negotiation",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_New-Account-Setup",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Occupational-and-Employee-Health",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Office-Design",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Order-Tracking",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Partnership-Alliances",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Phone",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Physician-Office-Laboratory-POL",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Physician-Office",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Practice-Acquisition-Development",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1198,13 +1684,115 @@
       "path": null
     },
     {
+      "id": "Business_Print",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Prioritize",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Private-Brand",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Business_Product-Category-Management",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Product-Dental-Medical",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Product-Dental",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Product-Medical",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Product-Offerings",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Products-Shipped",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Progress-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Progress",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Projects",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Proposal-Summary",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Providers-and-Specialties",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Quality-Management-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Quality-Management",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Rebates",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Recommend",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Repair-Services",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1222,6 +1810,48 @@
       "path": null
     },
     {
+      "id": "Business_Retail-Health",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Returns",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Sales-Tools",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Sales",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Savings",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Selfie-Cookie",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Selfie",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Shareholder-Stakeholder",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1234,13 +1864,55 @@
       "path": null
     },
     {
+      "id": "Business_Site-Administration",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Social-Media",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Solutions-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Solutions",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Business_Strategic-Planning",
+      "id": "Business_Speaker",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Sports-Medicine",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Strategic-Planning-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Strategy-Gameplan",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Success-v2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1252,13 +1924,43 @@
       "path": null
     },
     {
+      "id": "Business_Suppliers-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Suppliers",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Business_Support",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Talent-Acquisition",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Talent",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Team-Schein-Member",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Team-Schein-Members",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1282,7 +1984,19 @@
       "path": null
     },
     {
+      "id": "Business_Technology-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Technology",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Telesales-v2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1294,7 +2008,73 @@
       "path": null
     },
     {
+      "id": "Business_Temperature-Control-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Temperature-Control",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Thumbs-Down",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Thumbs-Up",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Traceability",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Training",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Trends",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Trust",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Urgent-Care-Centers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Video",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Warehouse",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Warranty",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1312,6 +2092,30 @@
       "path": null
     },
     {
+      "id": "Business_Wipe-Clean",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Worldwide-Business-Standards",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Years-in-Business-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Business_Years-in-Business-v3",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Business_Years-in-Business",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1319,6 +2123,18 @@
     },
     {
       "id": "Corporate_Admired-Honor",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Corporate_Assets",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Corporate_Brand-Guidelines",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1342,7 +2158,103 @@
       "path": null
     },
     {
-      "id": "Corporate_WW-Business-Standards",
+      "id": "Corporate_Templates",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Corporate_Training",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Battery",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Circularity-in-Operations",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Climate-Impact-mitigation",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Code-of-Ethics-For-Financial-Officers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Employee-Recruitment",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Environmental-Footprint",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Fluorecent-Bulb",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Healthcare-Accessability",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Medical-Institution",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Recycle",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Supplier-Code-of-Conduct",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Supply-Chain-Action",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Waste-management-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "CSR_Waste-management",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Dental_Billing",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1360,13 +2272,7 @@
       "path": null
     },
     {
-      "id": "Dental_Burs-Diamond-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Dental_Burs-Steel-Grey",
+      "id": "Dental_Burs-Diamond",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1378,13 +2284,31 @@
       "path": null
     },
     {
+      "id": "Dental_Dentist",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Dental_Discs-Diamond",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Dental_Patient-Team-Education-Grey",
+      "id": "Dental_Equipment",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Dental_Patient-Team-Education",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Dental_Real-Estate",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1402,13 +2326,103 @@
       "path": null
     },
     {
+      "id": "HS-Cares_Corporate-Citizenship",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Empowering-Team-Schein",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Environmental-Sustainability",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Environmental",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Ethical-Governance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Governance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "HS-Cares_Supply-Chain-Resilience-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "HS-Cares_Supply-Chain-Resilience",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Leadership_Builds-Collaborative-Connections",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Leadership_Communicates-Effectively",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Leadership_Prioritizes-Development",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Leadership_Thinks-Creatively-and-Strategically",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Brand-Excellence",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Campaign",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Design-and-Production-Excellence",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Marketing_Digital-Marketing",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Marketing-Automation-v2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1426,13 +2440,49 @@
       "path": null
     },
     {
+      "id": "Marketing_Multimedia-Excellence",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Marketing_Omnichannel",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
+      "id": "Marketing_Operational-Excellence",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Print-Marketing-v2",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Marketing_Print-Marketing",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Social-Media-Marketing",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Strategic-Excellence",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Marketing_Trade-Shows",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1468,6 +2518,12 @@
       "path": null
     },
     {
+      "id": "Medical_Freestanding-Emergency-Centers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Medical_Gloves",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -1486,7 +2542,13 @@
       "path": null
     },
     {
-      "id": "Medical_Orthopedics-Grey",
+      "id": "Medical_Microscopic",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Medical_Orthopedics",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1528,7 +2590,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Air-Motor-Grey",
+      "id": "Product-Categories_Air-Motor",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1546,7 +2608,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Amalgamators-Grey",
+      "id": "Product-Categories_Amalgamators",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1564,7 +2626,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Autoclaves-and-Accessories-Grey",
+      "id": "Product-Categories_Autoclaves-and-Accessories",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1618,7 +2680,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_CADCAM-Grey",
+      "id": "Product-Categories_CADCAM",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1630,7 +2692,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Capital-Equipment-Grey",
+      "id": "Product-Categories_Capital-Equipment",
       "viewBox": "0 0 111 110",
       "type": "pictograph",
       "path": null
@@ -1666,7 +2728,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Controlled-Substance-Grey",
+      "id": "Product-Categories_Controlled-Substance",
       "viewBox": "0 0 111 110",
       "type": "pictograph",
       "path": null
@@ -1684,7 +2746,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Curing-Lights-Grey",
+      "id": "Product-Categories_Curing-Lights",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1702,37 +2764,37 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Dental-Misc-Grey (1)",
+      "id": "Product-Categories_Dental-Misc",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Dental-Pharmacy-Supplies-Grey",
+      "id": "Product-Categories_Dental-Pharmacy-Supplies",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Desensitizing-Grey",
+      "id": "Product-Categories_Desensitizing",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Diabetes-Care-Grey",
+      "id": "Product-Categories_Diabetes-Care",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Diabetes-Grey",
+      "id": "Product-Categories_Diabetes",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Diagnostics-Grey",
+      "id": "Product-Categories_Diagnostics",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1762,7 +2824,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Discover-Grey",
+      "id": "Product-Categories_Discover",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1786,19 +2848,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Dry-Mouth-Grey",
+      "id": "Product-Categories_Dry-Mouth",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Endodontics-Accessories-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Equipment-Grey",
+      "id": "Product-Categories_Endodontics-Accessories",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1822,13 +2878,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Eyewear-Grey",
+      "id": "Product-Categories_Eyewear",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_EZ-Scan-Grey",
+      "id": "Product-Categories_EZ-Scan",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1840,7 +2896,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Fluoride-Grey",
+      "id": "Product-Categories_Fluoride",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1852,7 +2908,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_GC-Grey",
+      "id": "Product-Categories_GC",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1918,7 +2974,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Infection-Control-and-PPE-Grey",
+      "id": "Product-Categories_Infection-Control-and-PPE",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1936,7 +2992,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Instruments-Grey",
+      "id": "Product-Categories_Instruments",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1948,7 +3004,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Lab-Coats-Grey",
+      "id": "Product-Categories_Lab-Coats",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1960,13 +3016,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Laboratory-Crown-Bridge-Grey2",
+      "id": "Product-Categories_Laboratory-Crown-Bridge2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Laboratory-Lab-Vision-Grey",
+      "id": "Product-Categories_Laboratory-Lab-Vision",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -1990,7 +3046,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Medicaments-Grey (1)",
+      "id": "Product-Categories_Medicaments",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2038,7 +3094,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Mouth-Wash-Grey",
+      "id": "Product-Categories_Mouth-Wash",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2080,13 +3136,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Oral-Cleaning-Aids-Grey",
+      "id": "Product-Categories_Oral-Cleaning-Aids",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Oral-Rinses-Grey",
+      "id": "Product-Categories_Oral-Rinses",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2122,13 +3178,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Pharmaceuticals-Grey",
+      "id": "Product-Categories_Pharmaceuticals-Respiratory",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Pharmaceuticals-Respiratory-Grey (1)",
+      "id": "Product-Categories_Pharmaceuticals",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2141,12 +3197,6 @@
     },
     {
       "id": "Product-Categories_Pipettes",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Pit-Fissure-Sealants-Grey",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2188,7 +3238,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Promotions-EUR-Grey",
+      "id": "Product-Categories_Promotions-EUR",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2200,7 +3250,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Promotions-UK-Grey",
+      "id": "Product-Categories_Promotions-UK",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Product-Categories_Promotions",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2212,13 +3268,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Prophy-Cups-Grey",
+      "id": "Product-Categories_Prophy-Cups",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Prophy-Paste-Grey",
+      "id": "Product-Categories_Prophy-Paste",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2254,12 +3310,6 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Rotary-Kits",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
       "id": "Product-Categories_Rubber-Dam",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
@@ -2278,7 +3328,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Sm-Equip-Handpieces-Grey",
+      "id": "Product-Categories_Sm-Equip-Handpieces",
       "viewBox": "0 0 111 110",
       "type": "pictograph",
       "path": null
@@ -2290,13 +3340,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Smart-Devices-Grey",
-      "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Specimen-Cups",
+      "id": "Product-Categories_Smart-Devices",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2304,12 +3348,6 @@
     {
       "id": "Product-Categories_Spirometers",
       "viewBox": "0 0 110 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Supplies-Grey",
-      "viewBox": "0 0 111 110",
       "type": "pictograph",
       "path": null
     },
@@ -2332,13 +3370,13 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Syringe-Grey",
+      "id": "Product-Categories_Syringe",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Syringes-Grey",
+      "id": "Product-Categories_Syringes",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2350,13 +3388,7 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Toothbrush-Grey",
-      "viewBox": "0 0 111 110",
-      "type": "pictograph",
-      "path": null
-    },
-    {
-      "id": "Product-Categories_Topical-Anesthetic-Grey",
+      "id": "Product-Categories_Topical-Anesthetic",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2374,25 +3406,25 @@
       "path": null
     },
     {
-      "id": "Product-Categories_Ultrasonic-Scalers-and-Polishers-Grey",
+      "id": "Product-Categories_Ultrasonic-Scalers-and-Polishers",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Unisex-Pants-Grey",
+      "id": "Product-Categories_Unisex-Pants",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Unisex-Top-Grey",
+      "id": "Product-Categories_Unisex-Top",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
     },
     {
-      "id": "Product-Categories_Unwrap-Grey",
+      "id": "Product-Categories_Unwrap",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2410,7 +3442,55 @@
       "path": null
     },
     {
+      "id": "Service-First_Break-Fix",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Service-First_Emergency",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Service-First_Installation",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Service-First_Preventive-Maintenance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Service-First_Tech-Support",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Service-First_TechAdvisor-Line",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Service-First_Virtual-Service",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Solutions_Business-Solutions",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Solutions_Clinical-Solutions",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2422,7 +3502,31 @@
       "path": null
     },
     {
+      "id": "Solutions_Financial",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Solutions_Operational",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
       "id": "Solutions_Supply-Chain-Solutions",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Solutions_Supply-Chain",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Solutions_Technology-Solutions-v2",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -2471,6 +3575,126 @@
     },
     {
       "id": "Team-Schein-Values_Shared-Success",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Team-Schein_Business",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Team-Schein_Community",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Team-Schein_Featured",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "Team-Schein_Team-Schein-Members",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Business",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Clinical-and-Technology",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Concierge",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Designated-Buffet",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Drink-Tokens",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Practice-Design",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Premier-Entertainment",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Renowned-Speakers",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Round-Trip-Uber",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Software-Training",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_Team-Development",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_VIP-Bars",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_VIP-Comedy-Seating",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_VIP-Entrance",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_VIP-Registration-Line",
+      "viewBox": "0 0 110 110",
+      "type": "pictograph",
+      "path": null
+    },
+    {
+      "id": "ThriveLive_World-Class-Education",
       "viewBox": "0 0 110 110",
       "type": "pictograph",
       "path": null
@@ -3612,67 +4836,67 @@
   ],
   "colors": {
     "Quick Colors: Primary": {
-      "icon-blue": "#0072BC",
-      "icon-dark-blue": "#002F6E",
-      "icon-light-blue": "#3DB5E6",
-      "icon-green": "#008996",
-      "icon-red": "#ED1C24",
-      "icon-orange": "#F28B00",
-      "icon-violet": "#831A5B"
+      "hs-blue": "#0072BC",
+      "hs-dark-blue": "#002F6E",
+      "hs-light-blue": "#3DB5E6",
+      "hs-green": "#008996",
+      "hs-red": "#ED1C24",
+      "hs-orange": "#F28B00",
+      "hs-violet": "#831A5B"
     },
     "Primary Blues": {
-      "icon-blue": "#0072BC",
-      "icon-blue-s1": "#0061a0",
-      "icon-blue-t4": "#80B9DE",
-      "icon-blue-t3": "#B3D5EB",
-      "icon-blue-t2": "#E6F1F9",
-      "icon-blue-t1": "#F5F9FC",
-      "icon-dark-blue": "#002F6E",
-      "icon-dark-blue-s1": "#00285e",
-      "icon-dark-blue-t4": "#8098B7",
-      "icon-dark-blue-t3": "#B3C1D4",
-      "icon-dark-blue-t2": "#E6EBF1",
-      "icon-dark-blue-t1": "#F5F7F9",
-      "icon-light-blue": "#3DB5E6",
-      "icon-light-blue-s1": "#349ac4",
-      "icon-light-blue-t4": "#9FDBF3",
-      "icon-light-blue-t3": "#C5E9F8",
-      "icon-light-blue-t2": "#ECF8FD",
-      "icon-light-blue-t1": "#F7FCFE"
+      "hs-blue": "#0072BC",
+      "hs-blue-s1": "#0061a0",
+      "hs-blue-t4": "#80B9DE",
+      "hs-blue-t3": "#B3D5EB",
+      "hs-blue-t2": "#E6F1F9",
+      "hs-blue-t1": "#F5F9FC",
+      "hs-dark-blue": "#002F6E",
+      "hs-dark-blue-s1": "#00285e",
+      "hs-dark-blue-t4": "#8098B7",
+      "hs-dark-blue-t3": "#B3C1D4",
+      "hs-dark-blue-t2": "#E6EBF1",
+      "hs-dark-blue-t1": "#F5F7F9",
+      "hs-light-blue": "#3DB5E6",
+      "hs-light-blue-s1": "#349ac4",
+      "hs-light-blue-t4": "#9FDBF3",
+      "hs-light-blue-t3": "#C5E9F8",
+      "hs-light-blue-t2": "#ECF8FD",
+      "hs-light-blue-t1": "#F7FCFE"
     },
     "Brand Accents": {
-      "icon-green": "#008996",
-      "icon-green-s1": "#007480",
-      "icon-green-t4": "#80C5CB",
-      "icon-green-t3": "#B3DCE0",
-      "icon-green-t2": "#E6F4F5",
-      "icon-green-t1": "#F5FAFB",
-      "icon-red": "#ED1C24",
-      "icon-red-s1": "#c9181f",
-      "icon-red-t4": "#F78E92",
-      "icon-red-t3": "#FABBB0",
-      "icon-red-t2": "#FEE9EA",
-      "icon-red-t1": "#FFF6F6",
-      "icon-orange": "#F28B00",
-      "icon-orange-s1": "#ce7600",
-      "icon-orange-t1": "#FFFAF5",
-      "icon-orange-t2": "#FEF4E6",
-      "icon-orange-t3": "#FBDCB3",
-      "icon-orange-t4": "#F9C680",
-      "icon-violet": "#831A5B",
-      "icon-violet-s1": "#6f164d",
-      "icon-violet-t4": "#C28DAE",
-      "icon-violet-t3": "#DABACE",
-      "icon-violet-t2": "#F3E9EF",
-      "icon-violet-t1": "#FAF6F8"
+      "hs-green": "#008996",
+      "hs-green-s1": "#007480",
+      "hs-green-t4": "#80C5CB",
+      "hs-green-t3": "#B3DCE0",
+      "hs-green-t2": "#E6F4F5",
+      "hs-green-t1": "#F5FAFB",
+      "hs-red": "#ED1C24",
+      "hs-red-s1": "#c9181f",
+      "hs-red-t4": "#F78E92",
+      "hs-red-t3": "#FABBB0",
+      "hs-red-t2": "#FEE9EA",
+      "hs-red-t1": "#FFF6F6",
+      "hs-orange": "#F28B00",
+      "hs-orange-s1": "#ce7600",
+      "hs-orange-t1": "#FFFAF5",
+      "hs-orange-t2": "#FEF4E6",
+      "hs-orange-t3": "#FBDCB3",
+      "hs-orange-t4": "#F9C680",
+      "hs-violet": "#831A5B",
+      "hs-violet-s1": "#6f164d",
+      "hs-violet-t4": "#C28DAE",
+      "hs-violet-t3": "#DABACE",
+      "hs-violet-t2": "#F3E9EF",
+      "hs-violet-t1": "#FAF6F8"
     },
     "Neutrals": {
-      "icon-dark-gray": "#474F50",
-      "icon-gray": "#6B6F70",
-      "icon-light-gray-1": "#F7F7F6",
-      "icon-light-gray-2": "#E6E6E6",
-      "icon-black": "#000000",
-      "icon-white": "#FFFFFF"
+      "hs-dark-gray": "#474F50",
+      "hs-gray": "#6B6F70",
+      "hs-light-gray-1": "#F7F7F6",
+      "hs-light-gray-2": "#E6E6E6",
+      "hs-black": "#000000",
+      "hs-white": "#FFFFFF"
     }
   }
 }

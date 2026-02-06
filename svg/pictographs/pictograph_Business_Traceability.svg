@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M52.1483,57.9623l-3.141,3.415,2.1806,1.9968c-3.5225,4.4548-7.0463,8.9098-10.5714,13.3655l.0004.0089-6.2182-5.7186.0183-.0008c4.136-3.8835,8.2726-7.7664,12.4094-11.6486l2.1809,1.9968" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <circle cx="62.5682" cy="46.9015" r="13.7466" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <circle cx="65.3349" cy="44.0509" r="1.2224" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M56.144,44.0509c0-.3219-.1304-.6368-.358-.8644s-.5424-.358-.8643-.358-.6367.1303-.8643.358c-.2276.2276-.358.5425-.358.8644s.1304.6367.358.8643.5424.358.8643.358.6367-.1304.8643-.358.358-.5425.358-.8643Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="60.1283" cy="44.0509" r="1.2224" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <path d="M11.8987,54.0167c1.1546-26.5095,26.8924-47.3216,54.6586-39.8816" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.3193,92.9407c-23.8329,15.0345-57.1676,3.3584-64.9356-25.6322" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.3148,19.1837c22.7993,14.0848,28.1807,47.1121,7.7052,67.5876" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="62.3365 7.4936 66.5572 14.1352 59.3025 18.2136" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="93.8863 86.559 86.02 86.7713 86.2444 78.4518" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="9.6345 74.2271 13.3837 67.3086 20.4764 71.6626" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

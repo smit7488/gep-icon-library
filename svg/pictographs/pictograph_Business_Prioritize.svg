@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g id="vaccination_schedule" data-name="vaccination schedule">
+    <polyline points="18.8504 74.4992 18.8504 29.6086 58.1296 29.6086 100.2145 29.6086 100.2145 70.2907 84.7834 85.7218 44.1013 85.7218" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="84.7834 85.7218 84.7834 70.2907 100.2145 70.2907" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M41.2956,21.1917c0,1.5508-1.2548,2.8057-2.8057,2.8057h0c-1.5508,0-2.8057-1.2548-2.8057-2.8057v-5.6113c0-1.5508,1.2548-2.8057,2.8057-2.8057h0c1.5508,0,2.8057,1.2548,2.8057,2.8057v5.6113Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M83.3805,21.1917c0,1.5508-1.2548,2.8057-2.8057,2.8057h0c-1.5508,0-2.8057-1.2548-2.8057-2.8057v-5.6113c0-1.5508,1.2548-2.8057,2.8057-2.8057h0c1.5508,0,2.8057,1.2548,2.8057,2.8057v5.6113Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M88.9919,18.386h5.6113c3.0989,0,5.6113,1.1096,5.6113,4.2085v8.417" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="46.907" y1="18.386" x2="72.1579" y2="18.386" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M18.8504,31.0115v-7.0141c0-3.0989,2.5125-5.6113,5.6113-5.6113h5.6113" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="70.7551 59.0681 72.1579 60.4709 76.3664 54.8596" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="28.6702 43.6369 30.073 45.0398 34.2815 39.4284" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <line x1="39.8928" y1="73.0964" x2="52.5183" y2="60.4709" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="16.0447" y1="96.9445" x2="20.2532" y2="92.736" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="13.239" y1="94.1388" x2="18.8504" y2="99.7501" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="17.4475" y1="82.9162" x2="30.073" y2="95.5416" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M27.2673,92.736l12.905-12.905c.6969-.6969.977-1.7083.738-2.6644l-1.0175-4.0702-4.0702-1.0175c-.9561-.239-1.9675.0411-2.6644.738l-12.905,12.905" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <circle cx="45.5041" cy="42.2341" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="59.5324" cy="42.2341" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="73.5607" cy="42.2341" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="87.589" cy="42.2341" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="31.4758" cy="57.6652" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="45.5041" cy="57.6652" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="59.5324" cy="57.6652" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="59.5324" cy="73.0964" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="73.5607" cy="73.0964" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    <circle cx="87.589" cy="57.6652" r="1.4028" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+  </g>
+</svg>

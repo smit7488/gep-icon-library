@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M84.9704,37.4125v52.4488c0,1.4949-1.2489,2.7438-2.7438,2.7438H30.2564c-1.4949,0-2.7438-1.2341-2.7438-2.7438V22.2749c0-1.5098,1.2341-2.7439,2.7438-2.7439h36.8325" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M84.9704,37.4118h-15.1377c-1.5097,0-2.7438-1.2341-2.7438-2.7437v-15.1371l17.8815,17.8808h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <g>
+      <polyline points="38.5878 42.1559 38.5878 29.9038 50.8399 29.9038" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="45.056 36.697 49.2179 43.4297 58.2883 31.1775" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <polyline points="38.5878 63.5229 38.5878 51.271 50.8399 51.271" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="45.056 58.0641 49.2179 64.7967 58.2883 52.5447" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="45.056 79.0363 49.2179 85.769 58.2883 73.517" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <polyline points="38.5878 84.8901 38.5878 72.638 50.8399 72.638" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M50.3359,57.6635v1.6822c0,1.6722,1.5432,3.3643,3.4013,3.3643h3.3273c1.8581,0,3.3643-1.6921,3.3643-3.3643v-.509c0-1.3033-.9082-2.4603-2.2819-2.8725l-5.5015-1.6479c-1.3737-.4121-2.3096-1.5691-2.3096-2.8725v-.509c0-1.6722,1.5062-3.3643,3.3643-3.3643h3.3643c1.8581,0,3.3643,1.6921,3.3643,3.3643v1.6822" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="55.3824" y1="47.5705" x2="55.3824" y2="42.524" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="55.3824" y1="62.71" x2="55.3824" y2="67.7565" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M78.1,39.9991v42.1729c0,1.202-1.0042,2.2062-2.2062,2.2062h-41.7876c-1.202,0-2.2062-.9923-2.2062-2.2062V27.828c0-1.214.9923-2.2063,2.2062-2.2063h29.6159" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.1,39.9991h-12.1717c-1.2139,0-2.2062-.9923-2.2062-2.2061v-12.1713l14.3779,14.3774h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

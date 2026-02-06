@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g id="alert_adverse_effect_vaccine_reactions_incidence" data-name="alert adverse effect vaccine reactions incidence">
+    <g>
+      <line x1="83.1869" y1="71.5052" x2="95.1568" y2="59.5353" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="60.5772" y1="94.1149" x2="64.5671" y2="90.125" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="57.9172" y1="91.455" x2="63.2371" y2="96.7749" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="61.9071" y1="80.8151" x2="73.877" y2="92.7849" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M71.217,90.125l12.2349-12.2349c.6607-.6607.9263-1.6196.6997-2.526l-.9647-3.8589-3.8589-.9647c-.9065-.2266-1.8654.039-2.526.6997l-12.2349,12.2349" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <path d="M83.8591,62.2038L56.3387,15.6833c-1.0848-1.8337-3.7382-1.8337-4.8229,0L13.084,80.6482c-1.0893,1.8414.2539,4.1568,2.4115,4.1568h42.4217" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M84.5169,84.805h7.842c2.1576,0,3.5008-2.3154,2.4115-4.1568l-4.6989-7.943" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <line x1="53.9272" y1="35.5955" x2="53.9272" y2="64.8552" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M55.1141,69.5503c.5003,1.0789-.3903,2.1305-1.4472,1.9301-.5205-.0987-.9463-.5244-1.0449-1.0449-.2004-1.0569.8512-1.9475,1.9301-1.4472.2455.1139.4481.3165.562.562Z" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <polyline points="51.8025 11.307 51.8424 11.2877 86.2964 31.218" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="17.3484 31.2374 30.0681 23.8864 39.3229 18.5184 51.8025 11.307" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="30.0681 23.8864 64.4417 43.8373 64.4417 56.1555 73.6965 50.828 73.6965 38.4886 39.3229 18.5184" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="26.102 36.2656 51.8025 51.1079 51.8218 51.1285 51.8218 59.2987" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="86.2964" y1="31.218" x2="86.2964" y2="71.0384" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="17.3484" y1="71.0189" x2="17.3484" y2="31.2374" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="33.8162 81.5324 17.3484 71.0588 17.3484 71.0189" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <g>
+    <g>
+      <path d="M71.8764,98.5452v4.0894c0,.851-.711,1.562-1.562,1.562h-29.5859c-.851,0-1.562-.7025-1.562-1.562v-38.476c0-.8595.7025-1.5621,1.562-1.5621h20.9683" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="71.8764" y1="72.7759" x2="71.8764" y2="81.8527" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M71.8764,72.7759h-8.6177c-.8595,0-1.562-.7025-1.562-1.562v-8.6173l10.1797,10.1793h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <g>
+        <polyline points="45.4715 75.4766 45.4715 68.5016 52.4464 68.5016" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="49.1537 72.3689 51.523 76.2017 56.6867 69.2268" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <g>
+        <polyline points="45.4715 87.6406 45.4715 80.6657 52.4464 80.6657" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="49.1537 84.5329 51.523 88.3657 56.6867 81.3908" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <polyline points="45.4715 99.8046 45.4715 92.8297 52.4464 92.8297" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="81.6958" y1="75.9558" x2="86.3339" y2="80.5939" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M84.3779,73.2737l-20.8475,20.8482-3.4368,8.0745,8.0745-3.4368,20.8479-20.8479c.4398-.4398.4398-1.1529,0-1.5928l-3.0453-3.0454c-.4398-.4398-1.1529-.4398-1.5928,0Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="86.4111" y1="80.7596" x2="81.773" y2="76.1215" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="68.2385" y1="98.4463" x2="63.6004" y2="93.8082" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="64.0504" y1="100.5263" x2="61.754" y2="98.2299" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

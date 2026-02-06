@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M71.2687,82.0354s9.1109-3.8244,15.3023-6.3983c6.5115-2.707,10.3126.1145,12.8601,4.4083l-32.3125,17.8799-32.4869-8.2927" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M23.6114,74.8999c8.4494-6.3952,14.3063-8.1613,20.6271-6.5479,5.2883,1.3498,7.946,2.6927,11.6837,6.8727,3.455.8819,8.1245,2.0739,9.6793,2.4708,1.5547.3969,6.5115,2.3981,4.5812,9.9604l-20.3756-5.2011" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="20.1571" y1="70.4404" x2="36.3072" y2="97.6617" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="10.5689 76.129 20.1571 70.4404 36.3072 97.6617 26.7191 103.3502" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <path d="M17.2515,80.413c-.9776.58-1.2999,1.8428-.7199,2.8204s1.8427,1.2998,2.8203.7198,1.3-1.8426.72-2.8202-1.8428-1.2999-2.8204-.7199Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <polyline points="69.7599 6.665 69.7914 6.6498 96.9311 22.3491" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="42.6202" y1="53.7006" x2="42.6202" y2="22.3643" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="42.6202 22.3643 52.6395 16.5739 59.9296 12.3454 69.7599 6.665" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="52.6395 16.5739 79.7159 32.2894 79.7159 41.9925 87.006 37.796 87.006 28.0762 59.9296 12.3454" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="49.5155 26.3251 69.7599 38.0165 69.7752 38.0327 69.7752 61.8422" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="96.9311 53.7159 96.9311 53.7482 69.7914 69.4314 69.7752 69.4314 69.7599 69.4157" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="69.7599 69.4157 42.6202 53.732 42.6202 53.7006" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <line x1="96.9311" y1="22.3491" x2="96.9311" y2="53.7159" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M44.9888,88.7198s-7.8755-2.038-13.2243-3.4026c-5.6254-1.4352-8.3886,1.3133-9.9561,5.1129l28.4415,10.7447,25.4873-10.5997" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M82.9729,77.268c-7.6407-4.2107-12.6214-4.9568-17.5803-2.8945-4.1489,1.7255-6.1554,3.1339-8.7061,6.9818-2.7106,1.1273-6.374,2.6508-7.5938,3.1581-1.2198.5073-5.0215,2.7242-2.5541,8.6569l15.9854-6.648" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="85.2597" y1="73.226" x2="75.3219" y2="97.3148" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="93.7445 76.7264 85.2597 73.226 75.3219 97.3148 83.8068 100.8152" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <path d="M88.8067,81.0074c.8651.3569,1.2772,1.3475.9203,2.2126s-1.3476,1.2771-2.2127.9202c-.8651-.3569-1.2771-1.3476-.9202-2.2127.3569-.8651,1.3475-1.277,2.2126-.9201Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M32.092,36.7671c0,12.9098,6.2944,24.3213,15.9529,31.4267,9.6577-7.1054,15.9521-18.5169,15.9521-31.4267s-6.2944-24.3213-15.9521-31.4264c-9.6585,7.1051-15.9529,18.5167-15.9529,31.4264Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="48.0445" y1="5.3406" x2="48.0445" y2="78.9407" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <g>
+      <line x1="37.7202" y1="16.6891" x2="48.0445" y2="24.6033" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="58.3688" y1="16.6891" x2="48.0445" y2="24.6033" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="54.7925" y1="11.8458" x2="48.0371" y2="17.0242" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="41.2817" y1="11.8458" x2="48.0371" y2="17.0242" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="34.9586" y1="22.0705" x2="48.0445" y2="32.1017" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="61.1304" y1="22.0705" x2="48.0445" y2="32.1017" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="33.3139" y1="27.721" x2="48.0445" y2="39.0129" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="62.7751" y1="27.721" x2="48.0445" y2="39.0129" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="63.797" y1="34.3282" x2="48.0445" y2="46.1494" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="32.292" y1="34.3282" x2="48.0445" y2="46.1494" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="32.4642" y1="42.191" x2="48.0445" y2="54.1344" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="63.6249" y1="42.191" x2="48.0445" y2="54.1344" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="61.5005" y1="50.4126" x2="48.0445" y2="60.7275" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <line x1="34.5884" y1="50.4126" x2="48.0445" y2="60.7275" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

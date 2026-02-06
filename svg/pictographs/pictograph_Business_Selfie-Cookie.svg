@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M70.7589,13.096s-.4327.3115-.9562.9c-1.5706,1.7653-3.959,6.0228,2.0638,11.8379,0,0-3.8767,8.0304,2.4922,14.3993,0,0,4.4306,4.9844,14.1224,2.7691,0,0,2.5441,5.5122,8.3744,4.4787" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M70.3543,12.946c-.6305-.2205-1.2679-.4265-1.9117-.6173-3.7857-1.1224-7.7948-1.7249-11.9447-1.7249-23.1694,0-41.9518,18.7825-41.9518,41.9518s18.7825,41.9518,41.9518,41.9518,41.9518-18.7825,41.9518-41.9518c0-.7666-.0206-1.5284-.0612-2.2849-.0074-.137-.0154-.2739-.024-.4105l-.2609-2.4274-1.6615.1385" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <path d="M46.1342,50.5482s8.7817,7.9834,18.3617,0c0,0,11.8154,4.6304,8.622,21.8744,0,0-16.1264,5.5884-35.2865,0,0,0-3.0337-15.4877,8.3027-21.8744Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="55.5546" cy="40.3294" r="9.8994" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

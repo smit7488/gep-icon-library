@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M47.7479,74.8791s8.0708,7.3371,16.8754,0c0,0,10.8589,4.2555,7.9241,20.1037,0,0-14.821,5.136-32.43,0,0,0-2.7881-14.234,7.6306-20.1037Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M69.1722,66.2214s.1013,2.6714-2.0544,6.0164c0,0,8.6578,5.136,8.8045,14.9677,0,0,11.1524.4402,16.4351-1.9076,0,0,3.8153-13.5003-7.3371-20.2504,0,0-7.4839,6.4567-15.8482,1.1739Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M43.6766,66.2214s-.1013,2.6714,2.0544,6.0164c0,0-8.6578,5.136-8.8045,14.9677,0,0-11.1524.4402-16.4351-1.9076,0,0-3.8153-13.5003,7.3371-20.2504,0,0,7.4839,6.4567,15.8482,1.1739Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="56.4057" cy="65.4876" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="76.4148" cy="55.9077" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="36.4911" cy="55.9077" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <path d="M39.8241,19.5843l2.2377-6.8869,2.2377,6.8869h7.2414l-5.8584,4.2564,2.2377,6.8869-5.8584-4.2564-5.8583,4.2564,2.2377-6.8869-5.8583-4.2564h7.2414Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M56.9778,22.2884c0-7.4253-6.5554-13.4447-14.6418-13.4447s-14.6418,6.0194-14.6418,13.4447,6.5554,13.4447,14.6418,13.4447c1.3621,0,2.6791-.1744,3.9303-.494l5.6549,4.378v-7.1702c3.0958-2.4651,5.0566-6.1004,5.0566-10.1585Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M59.4244,21.4603c.4881-.0451.9834-.0682,1.4845-.0682,8.0865,0,14.6418,6.0194,14.6418,13.4447,0,7.4253-6.5554,13.4447-14.6418,13.4447-1.3621,0-2.6791-.1744-3.9303-.494l-5.6549,4.378v-7.1702c-2.2987-1.8304-3.9716-4.3059-4.6807-7.1207" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <circle cx="57.2991" cy="34.2392" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="62.677" cy="34.2392" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="68.0549" cy="34.2392" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

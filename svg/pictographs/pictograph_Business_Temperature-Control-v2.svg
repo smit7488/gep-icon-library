@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M44.1602,22.0431v51.3331c-3.7494,2.3013-6.2213,6.4815-6.0691,11.2381.2102,6.5696,5.6312,12.0281,12.1993,12.279,7.243.2767,13.2018-5.5129,13.2018-12.6944,0-4.5839-2.4361-8.5886-6.0758-10.8227V22.0431" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M55.2267,76.9436c2.5547,1.5677,4.0795,4.2802,4.0795,7.2554,0,4.6971-3.8216,8.5182-8.5182,8.5182s-8.5182-3.8211-8.5182-8.5182c0-2.9752,1.5255-5.6873,4.0803-7.2554l1.9959-1.2251v-38.4512" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="37.7165" y1="34.8711" x2="29.6691" y2="34.8711" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="37.7165" y1="43.6502" x2="29.6691" y2="43.6502" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="37.7165" y1="52.4293" x2="29.6691" y2="52.4293" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <line x1="37.7165" y1="61.2084" x2="29.6691" y2="61.2084" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <polyline points="72.7122 75.8166 77.8201 85.4181 82.9278 75.8166 77.8201 75.8166 77.8201 43.3236 72.7122 43.3236 77.8201 33.7221 82.9278 43.3236" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="77.82" cy="24.5155" r="3.4714" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="50.7346" cy="21.8992" r="6.6141" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

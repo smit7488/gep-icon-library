@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <circle cx="55.4384" cy="28.3151" r="15.0147" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polygon points="63.2239 25.9571 57.2874 25.9571 57.2874 20.0207 53.5893 20.0207 53.5893 25.9571 47.6528 25.9571 47.6528 29.6552 53.5893 29.6552 53.5893 35.5916 57.2874 35.5916 57.2874 29.6552 63.2239 29.6552 63.2239 25.9571" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M75.2025,22.2953h13.2198c3.3122,0,5.9972,2.685,5.9972,5.9972v68.407H15.5806V28.2925c0-3.3122,2.685-5.9972,5.9972-5.9972h13.2198" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="27.8991" y="74.0334" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="49.5798" y="74.0334" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="71.2605" y="74.0334" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="27.8991" y="53.3381" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="49.5798" y="53.3381" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="71.2605" y="53.3381" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <polyline points="35.6431 32.6427 27.8992 32.6427 27.8992 44.9616 40.2176 44.9616 40.2176 41.9912" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="71.2605 41.6716 71.2605 44.9616 83.5791 44.9616 83.5791 32.6427 75.5446 32.6427" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

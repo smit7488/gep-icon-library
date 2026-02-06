@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M54.6745,83.2346l-34.2861.0318c-.8791.0008-1.5989-.7177-1.5998-1.5968l-.0522-56.1929c-.0008-.8791.7177-1.5989,1.5968-1.5998l8.7338-.0081" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M74.744,23.8265l8.2611-.0077c.8791-.0008,1.5989.7177,1.5998,1.5968l.0202,21.7816" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="37.7072" y1="23.8609" x2="64.8301" y2="23.8357" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M29.0712,28.2992l-.0085-9.1802c-.0022-2.3761,8.638-2.3841,8.6402-.008l.0085,9.1802c.0022,2.3761-8.638,2.3841-8.6402.008Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M66.1079,28.2648l-.0085-9.1802c-.0022-2.3761,8.638-2.3841,8.6402-.008l.0085,9.1802c.0022,2.3761-8.638,2.3841-8.6402.008Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <rect x="32.9929" y="44.5332" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="43.5543" y="44.5234" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="54.1952" y="44.5135" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <rect x="64.524" y="44.5039" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-width:1.5" />
+  <g>
+    <rect x="32.8092" y="55.0948" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="43.3706" y="55.085" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="54.3312" y="55.0748" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <g>
+    <rect x="32.819" y="65.6562" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <rect x="43.3804" y="65.6464" width="5.4189" height="5.4189" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <circle cx="78.0996" cy="72.6648" r="17.1583" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="78.0893 61.5945 78.1002 73.3041 84.0709 78.6653" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

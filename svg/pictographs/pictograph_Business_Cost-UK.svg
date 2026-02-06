@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M78.1,39.9991v42.1729c0,1.202-1.0042,2.2062-2.2062,2.2062h-41.7876c-1.202,0-2.2062-.9923-2.2062-2.2062V27.828c0-1.214.9923-2.2063,2.2062-2.2063h29.6159" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.1,39.9991h-12.1717c-1.2139,0-2.2062-.9923-2.2062-2.2061v-12.1713l14.3779,14.3774h0Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <path d="M61.4924,47.2961s-1.9579-1.2148-4.4362-.8794-3.8199,2.0497-4.0435,2.4596-1.2298,2.3292-.7826,4.882,1.2205,3.8478.8478,5.823-2.8696,4.3975-4.3975,4.9193h13.4907" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="48.1583" y1="56.19" x2="59.2699" y2="56.19" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

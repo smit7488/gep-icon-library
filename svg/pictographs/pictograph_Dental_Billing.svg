@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M56.948,48.1756l2.2318-5.6291s.9098-2.0302.1058-7.4559,4.7117-6.2184,6.472-2.7533" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+      <g>
+        <polyline points="59.2582 49.5761 52.2234 67.319 46.9464 65.2267 53.9258 47.6235" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+        <path d="M52.2267,67.621c-.5985,1.5095-2.3073,2.248-3.8168,1.6495s-2.248-2.3073-1.6495-3.8168" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      </g>
+      <circle cx="56.8914" cy="47.9108" r="2.9283" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <polyline points="64.4876 61.1122 57.4528 78.855 52.1758 76.7627 59.1552 59.1595" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M57.4561,79.157c-.5985,1.5095-2.3073,2.248-3.8168,1.6495s-2.248-2.3073-1.6495-3.8168" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <circle cx="62.1208" cy="59.4468" r="2.9283" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="62.0101" y1="59.726" x2="65.8568" y2="50.0239" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="67.3788" cy="45.8669" r="2.3699" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="67.35" cy="45.8504" r="4.2799" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <path d="M61.2709,77.8901l35.2713-.0327c.3286-.0003.5952.2658.5955.5942l.0017,1.8134c.0015,1.7135-1.3862,3.1039-3.0997,3.1054l-79.8715.0741c-1.7137.0016-3.1043-1.3862-3.1062-3.1l-.0021-1.8128c-.0004-.3286.2657-.5952.5943-.5955l36.705-.0342" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="63.2461 34.9014 65.0747 34.8997 88.8371 34.8777" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="19.2794 34.9422 51.9061 34.9119 54.8331 34.9092" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M11.4941,77.9665l7.8172-8.7324-.0337-36.3437c-.0032-3.4814,2.8164-6.3063,6.2978-6.3095l56.95-.0529c3.4814-.0032,6.3063,2.8164,6.3096,6.2978l.0337,36.3437,7.8334,8.7179" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="78.0005" y1="69.2101" x2="88.8689" y2="69.2" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="19.3113" y1="69.2646" x2="30.1795" y2="69.2545" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="34.5313" y1="73.8587" x2="36.2702" y2="73.8571" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="22.3587" y1="73.87" x2="24.0976" y2="73.8684" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="28.445" y1="73.8644" x2="30.184" y2="73.8628" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="78.0048" y1="73.8184" x2="79.7438" y2="73.8168" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="84.0912" y1="73.8127" x2="85.8301" y2="73.8111" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <path d="M32.7491,58.0364v1.6822c0,1.6722,1.5432,3.3643,3.4013,3.3643h3.3273c1.8581,0,3.3643-1.6921,3.3643-3.3643v-.509c0-1.3033-.9082-2.4603-2.2819-2.8725l-5.5015-1.6479c-1.3737-.4121-2.3096-1.5691-2.3096-2.8725v-.509c0-1.6722,1.5062-3.3643,3.3643-3.3643h3.3643c1.8581,0,3.3643,1.6921,3.3643,3.3643v1.6822" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="37.7956" y1="47.9434" x2="37.7956" y2="42.8968" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="37.7956" y1="63.0829" x2="37.7956" y2="68.1294" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M12.5197,54.797c1.1546-26.5095,26.8924-47.3216,54.6586-39.8816" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.9403,93.721c-23.8329,15.0345-57.1676,3.3584-64.9356-25.6322" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M78.9359,19.964c22.7993,14.0848,28.1807,47.1121,7.7052,67.5876" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="62.9576 8.2739 67.1783 14.9154 59.9235 18.9938" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="94.5074 87.3393 86.641 87.5516 86.8655 79.2321" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="10.2555 75.0073 14.0048 68.0888 21.0974 72.4429" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <rect x="30.5984" y="40.4242" width="52.4788" height="32.944" rx="2.4845" ry="2.4845" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="30.5984" y1="44.3905" x2="83.0773" y2="44.3905" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="30.5984" y1="49.8806" x2="83.0773" y2="49.8806" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="35.5616" y1="68.0311" x2="39.4285" y2="68.0311" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="42.1459" y1="68.0311" x2="46.0128" y2="68.0311" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="48.7303" y1="68.0311" x2="52.5971" y2="68.0311" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="55.3146" y1="68.0311" x2="59.1814" y2="68.0311" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

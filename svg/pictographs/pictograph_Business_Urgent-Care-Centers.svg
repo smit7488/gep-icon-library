@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <polygon points="48.5834 72.2369 45.6136 72.2369 45.6136 69.2673 42.6551 69.2673 42.6551 72.2369 39.6853 72.2369 39.6853 75.1955 42.6551 75.1955 42.6551 78.1652 45.6136 78.1652 45.6136 75.1955 48.5834 75.1955 48.5834 72.2369" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <polygon points="70.858 72.2369 67.8882 72.2369 67.8882 69.2673 64.9297 69.2673 64.9297 72.2369 61.9599 72.2369 61.9599 75.1955 64.9297 75.1955 64.9297 78.1652 67.8882 78.1652 67.8882 75.1955 70.858 75.1955 70.858 72.2369" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <polygon points="81.9575 33.8077 28.8929 33.8077 28.8929 92.4058 33.7875 92.4058 33.7875 57.475 53.4977 57.475 53.4977 92.4058 57.0456 92.4058 57.0456 57.475 76.7558 57.475 76.7558 92.4058 81.9575 92.4058 81.9575 33.8077" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M23.2975,24.4594h62.2845c2.1757,0,3.9421,1.7664,3.9421,3.9421v.3942H19.3555v-.3942c0-2.1757,1.7664-3.9421,3.9421-3.9421Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="14.2308" cy="83.5903" r="6.7015" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="95.8314" cy="83.5903" r="6.7015" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

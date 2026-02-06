@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M82.0408,99.6817v-11.5825c0-6.5477-12.0041-9.9279-18.2011-9.9279s-18.2011,3.3801-18.2011,9.9279v11.5825" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="73.7676" y1="99.6817" x2="73.7676" y2="91.4084" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="53.9119" y1="91.4084" x2="53.9119" y2="99.6817" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="40.6748" y1="99.6817" x2="87.0048" y2="99.6817" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="37.3655" y1="99.6817" x2="34.0562" y2="99.6817" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="30.7469" y1="99.6817" x2="27.4377" y2="99.6817" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="93.6233" y1="99.6817" x2="90.314" y2="99.6817" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <circle cx="64.3861" cy="64.5595" r="9.1706" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M52.4539,65.5718c-2.8904,0-5.6852-.3702-8.3402-1.0482l-1.532,8.5701-10.4679-14.4953c-6.5694-5.2311-10.7303-12.9453-10.7303-21.5567,0-15.7568,13.9107-28.5302,31.0705-28.5302,17.1598,0,31.0705,12.7734,31.0705,28.5302,0,7.8973-3.4944,15.0451-9.1409,20.211" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="64.7345" cy="37.0121" r="3.804" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="53.3224" cy="37.0121" r="3.804" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <circle cx="41.9103" cy="37.0121" r="3.804" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

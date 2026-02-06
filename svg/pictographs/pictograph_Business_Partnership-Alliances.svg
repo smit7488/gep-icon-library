@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <path d="M71.4093,84.9125v5.2431c0,2.9605-2.4003,5.3608-5.3608,5.3608H23.1622c-2.9605,0-5.3608-2.4003-5.3608-5.3608v-28.1443" style="fill:none;stroke:currentColor;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M17.8014,37.8879v-20.1029c0-2.9605,2.4003-5.3608,5.3608-5.3608h42.8863c2.9605,0,5.3608,2.4003,5.3608,5.3608v46.0333" style="fill:none;stroke:currentColor;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="63.3681 57.234 63.3681 20.4653 25.8426 20.4653 25.8426 35.2075" style="fill:none;stroke:currentColor;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="25.8426 64.6919 25.8426 79.434 59.8258 79.434" style="fill:none;stroke:currentColor;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="39.2446" y1="87.4751" x2="49.9662" y2="87.4751" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="19.1416" y1="45.9291" x2="33.8838" y2="45.9291" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="23.1622" y1="53.9702" x2="37.9044" y2="53.9702" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <path d="M43.0459,30.145l-.0013.0025c-7.759,7.7552-3.1404,24.956,10.3196,38.415,13.4565,13.4561,30.6543,18.076,38.4124,10.3169,2.3522-2.3512,3.4199-7.6931,3.4199-7.6931.1775-.8782-.3351-1.8596-1.1364-2.1826l-14.0895-5.6271c-.7986-.3216-1.9869-.0542-2.6354.5964l-4.0789,4.0795c-.7788.7788-1.9018.9736-2.7909.5721-.0699-.0345-.1375-.0704-.209-.1058-.0293-.0189-.061-.0372-.0864-.0531-3.1031-1.6903-6.3855-4.1524-9.4728-7.2388-3.0877-3.0889-5.549-6.3699-7.2375-9.4692-.016-.0291-.033-.0543-.0463-.0834-.0409-.0718-.0768-.142-.1127-.2117-.4014-.8918-.2094-2.0148.5684-2.7913l4.086-4.0859c.6507-.6479.918-1.8348.5974-2.6398l-5.6309-14.0816c-.3189-.8001-1.3016-1.3124-2.1824-1.1365,0,0-5.3408,1.0666-7.6933,3.4175Z" style="fill:none;stroke:currentColor;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <g>
+        <path d="M25.4832,61.3566s-1.0114-7.2799-1.7147-12.2175c-.7396-5.1929-3.9873-6.5537-7.7009-6.5537l.8257,27.4569,17.635,17.635" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <path d="M48.1358,89.1355c.8841-7.8325-.2089-12.2495-3.64-15.6807-2.8707-2.8707-4.7384-4.0612-8.8311-4.8658-1.8755-1.8755-4.4103-4.4103-5.2542-5.2542-.844-.844-4.0055-3.2554-8.1104.8497l11.0604,11.0606" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <line x1="52.2996" y1="89.6527" x2="28.7562" y2="89.6527" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="52.2996 97.9455 52.2996 89.6527 28.7562 89.6527 28.7562 97.9455" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <path d="M47.0227,95.2965c0,.8455-.6854,1.531-1.5309,1.531s-1.531-.6855-1.531-1.531.6855-1.531,1.531-1.531,1.5309.6855,1.5309,1.531Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <g>
+        <path d="M87.2086,61.3566s1.0114-7.2799,1.7147-12.2175c.7397-5.1929,3.9873-6.5537,7.701-6.5537l-.8257,27.4569-17.635,17.635" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <path d="M64.5561,89.1355c-.8842-7.8325.2089-12.2495,3.64-15.6807,2.8706-2.8707,4.7384-4.0612,8.831-4.8658,1.8755-1.8755,4.4103-4.4103,5.2542-5.2542.844-.844,4.0055-3.2554,8.1105.8497l-11.0606,11.0606" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <line x1="60.3922" y1="89.6527" x2="83.9357" y2="89.6527" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="60.3922 97.9455 60.3922 89.6527 83.9357 89.6527 83.9357 97.9455" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <path d="M65.6691,95.2965c0,.8455.6855,1.531,1.531,1.531s1.5309-.6855,1.5309-1.531-.6853-1.531-1.5309-1.531-1.531.6855-1.531,1.531Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <path d="M57.3054,19.0416l-4.6542,3.8563-6.6491-2.6595,4.9203,9.9735s1.3299,1.3299,6.3831,1.3299,6.3831-1.3299,6.3831-1.3299l4.9203-9.9735-6.649,2.6595-4.6544-3.8563Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M50.9223,30.2119l-1.1968,3.8565s3.5905,1.9316,7.5799,1.9316,7.5799-1.9316,7.5799-1.9316l-1.1968-3.8565" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M49.7255,34.0684s-17.0214,20.8779-2.3936,31.2504c5.7829,4.1006,9.9735,3.7234,9.9735,3.7234,0,0,4.1907.3772,9.9736-3.7234,14.6278-10.3725-2.3937-31.2504-2.3937-31.2504" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <path d="M62.0201,47.2463c0-1.4923-1.221-2.7133-2.7133-2.7133h-4.0028c-1.4923,0-2.7133,1.221-2.7133,2.7133v1.6002c0,1.4923,1.221,2.7133,2.7133,2.7133h4.0028c1.4923,0,2.7133,1.221,2.7133,2.7133v1.6002c0,1.4924-1.221,2.7133-2.7133,2.7133h-4.0028c-1.4923,0-2.7133-1.2209-2.7133-2.7133" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="57.3054" y1="44.533" x2="57.3054" y2="41.7688" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="57.3054" y1="61.3508" x2="57.3054" y2="58.5866" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

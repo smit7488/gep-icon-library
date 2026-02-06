@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <circle cx="54.1087" cy="27.2707" r="15.0147" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <polygon points="61.8943 24.9127 55.9578 24.9127 55.9578 18.9763 52.2597 18.9763 52.2597 24.9127 46.3232 24.9127 46.3232 28.6108 52.2597 28.6108 52.2597 34.5472 55.9578 34.5472 55.9578 28.6108 61.8943 28.6108 61.8943 24.9127" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <path d="M73.8728,21.2509h13.2198c3.3122,0,5.9972,2.685,5.9972,5.9972v68.407H14.2509V27.2481c0-3.3122,2.685-5.9972,5.9972-5.9972h13.2198" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="26.5695" y="72.9889" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="48.2502" y="72.9889" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="69.9309" y="72.9889" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="26.5695" y="52.2937" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="48.2502" y="52.2937" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <rect x="69.9309" y="52.2937" width="12.3186" height="12.3186" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <g>
+    <polyline points="34.3135 31.5983 26.5696 31.5983 26.5696 43.9172 38.888 43.9172 38.888 40.9468" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <polyline points="69.9308 40.6272 69.9308 43.9172 82.2494 43.9172 82.2494 31.5983 74.2149 31.5983" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

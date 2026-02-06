@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <rect x="58.2347" y="31.9259" width="35.231" height="35.231" transform="translate(-13.272 33.2674) rotate(-22.8021)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="59.4778 77.5249 36.7238 23.3242 16.118 21.1444" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="98.4459" y1="68.1823" x2="67.3238" y2="81.2662" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <circle cx="60.886" cy="84.675" r="7.2849" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M62.9674,84.675c0-1.1495-.9319-2.0814-2.0814-2.0814s-2.0813.9319-2.0813,2.0814.9318,2.0814,2.0813,2.0814,2.0814-.9319,2.0814-2.0814Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="56.6913" y1="48.9855" x2="89.0124" y2="35.3977" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="31.2261" y1="40.4451" x2="7.8103" y2="40.4451" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="36.4296" y1="56.0556" x2="22.5536" y2="56.0556" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="33.8279" y1="70.6255" x2="13.0138" y2="70.6255" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="49.6767" y="24.4865" width="13.5473" height="13.5472" transform="translate(-7.7032 24.3201) rotate(-22.8019)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <rect x="64.3347" y="26.2629" width="7.1619" height="7.1619" transform="translate(-6.2583 28.6524) rotate(-22.8016)" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

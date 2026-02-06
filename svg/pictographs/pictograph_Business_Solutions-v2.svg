@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M13.9839,56.0388c1.1546-26.5095,26.8924-47.3216,54.6586-39.8816" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M80.4046,94.9628c-23.8329,15.0345-57.1676,3.3584-64.9356-25.6322" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M80.4001,21.2058c22.7993,14.0848,28.1807,47.1121,7.7052,67.5876" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="64.4218 9.5157 68.6425 16.1572 61.3877 20.2356" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="95.9716 88.5811 88.1053 88.7934 88.3297 80.4739" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <polyline points="11.7197 76.2491 15.469 69.3306 22.5616 73.6847" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+  <g>
+    <g>
+      <path d="M64.2868,55.9551c.0074.0158.0151.0313.0235.0469.2706.4437.6264.6609,1.0672.6507l1.8552-.0428c.0471.2398.0868.483.1185.7313.127,1.0394.1033,2.0387-.0708,2.9961l-1.8867-.0058c-.4405-.0015-.791.2219-1.051.6695-.0105.0203-.0205.0403-.0302.0613l-.4909,1.0264c-.0079.0204-.0153.0409-.0219.0626-.1709.4846-.1113.8948.1779,1.2299l1.1793,1.413c-.8373,1.0103-1.798,1.8031-2.8825,2.3798l-1.1806-1.4816c-.2707-.3478-.6606-.4854-1.1693-.4123-.0231.0024-.0463.0057-.0693.0101l-1.0995.273c-.0183.0039-.0361.0089-.0537.0139-.4935.1674-.785.4675-.8748.9009l-.3669,1.8085c-1.28-.0183-2.4923-.2836-3.6367-.7967l.42-1.822c.0966-.4299-.0453-.821-.4251-1.1747-.0127-.0175-.0258-.0341-.0391-.0508l-.8836-.6857c-.022-.0141-.0444-.0278-.067-.0401-.4336-.2769-.8453-.3125-1.2352-.1084l-1.6393.8281c-.7644-.9819-1.3076-2.0903-1.6292-3.3238l1.6601-.8064c.3994-.1868.6202-.5362.6631-1.0471.0027-.0225.0046-.0442.0063-.0665l-.0141-1.1359c-.0007-.0203-.0022-.0398-.004-.0589-.0567-.5108-.2871-.8543-.691-1.0309l-1.6896-.7611c.2917-1.1836.8221-2.3022,1.5915-3.3548l1.6713.8067c.3971.1923.8104.1447,1.2391-.1434.0204-.0137.0405-.0291.0604-.0449l.8588-.7116c.0179-.0158.0354-.0316.0524-.0477.3625-.3605.4867-.753.3731-1.1778l-.4517-1.8266c.8761-.3966,1.8282-.6608,2.8564-.7909.2655-.0339.528-.0586.7875-.0717l.4063,1.7661c.0907.4356.3813.7336.8719.893.0265.0072.053.013.0803.0174l1.1139.2414c.0213.0061.0424.0107.0641.0139.5151.0586.9056-.0918,1.1716-.4501l1.1026-1.4484c.539.2782,1.0623.6133,1.5698,1.004.5125.3992.9734.8295,1.3821,1.2893l-1.1721,1.4584c-.277.3421-.3215.7548-.134,1.2375.0086.0216.0182.0433.0277.065l.508,1.0246Z" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M58.5104,54.8869c-1.0153-.2201-1.961-.0499-2.8376.5099-.8764.5593-1.4247,1.3466-1.6447,2.3615-.2202,1.0157-.0471,1.9594.519,2.8319.5662.872,1.3566,1.4185,2.3719,1.6386s1.961.0499,2.8374-.5094c.8765-.5598,1.4248-1.3471,1.645-2.3628.22-1.0148.0469-1.9585-.5193-2.8305-.5661-.8725-1.3567-1.419-2.3717-1.639Z" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <g>
+      <line x1="58.1751" y1="27.3704" x2="58.1751" y2="39.5136" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="36.5872" y1="36.8151" x2="44.8183" y2="45.0462" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="27.1425" y1="58.4031" x2="39.2857" y2="58.4031" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="36.5872" y1="79.991" x2="44.8183" y2="71.76" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="79.7631" y1="79.991" x2="71.532" y2="71.76" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="89.2078" y1="58.4031" x2="77.0646" y2="58.4031" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="79.7631" y1="36.8151" x2="71.532" y2="45.0462" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="63.5721 88.0865 62.2229 88.0865 60.8736 89.4358 58.1751 89.4358 55.4766 89.4358 54.1274 88.0865 52.7782 88.0865" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="50.0797" y1="79.991" x2="66.2706" y2="79.991" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="51.4289" y1="84.0388" x2="64.9214" y2="84.0388" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M64.9214,77.2925v-2.6985c0-2.4371.8469-4.6836,2.5389-6.4097,2.5495-2.6009,4.2074-5.8175,4.2074-9.7812,0-7.4516-6.0409-13.4925-13.4925-13.4925s-13.4925,6.0408-13.4925,13.4925c0,3.9637,1.6578,7.1803,4.2073,9.7812,1.692,1.7261,2.5389,3.9726,2.5389,6.4097v2.6985" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="48.8811" y1="35.9654" x2="50.9464" y2="40.9515" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="35.7374" y1="49.1091" x2="40.7236" y2="51.1744" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="35.7374" y1="67.6971" x2="40.7236" y2="65.6318" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="80.6128" y1="67.6971" x2="75.6267" y2="65.6318" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="80.6128" y1="49.1091" x2="75.6267" y2="51.1744" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="67.4691" y1="35.9654" x2="65.4039" y2="40.9515" style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

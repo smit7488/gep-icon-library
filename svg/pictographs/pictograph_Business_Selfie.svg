@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M44.5078,48.6731s11.2859,10.2599,23.5978,0c0,0,15.1846,5.9507,11.0807,28.1121,0,0-20.725,7.1819-45.3487,0,0,0-3.8988-19.9042,10.6703-28.1121Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="56.6145" cy="35.5404" r="12.7223" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <polyline points="40.1399 94.1461 15.2144 94.1461 15.2144 10.8752 40.1419 10.8752" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  <polyline points="75.8633 10.8752 98.4853 10.8752 98.4853 94.1461 75.5884 94.1461" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+</svg>

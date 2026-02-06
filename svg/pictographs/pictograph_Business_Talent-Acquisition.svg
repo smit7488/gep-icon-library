@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M36.7558,78.9628s7.9257,7.2052,16.5719,0c0,0,10.6637,4.179,7.7816,19.7422,0,0-14.5545,5.0436-31.8469,0,0,0-2.738-13.9781,7.4934-19.7422Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M57.7949,70.4607s.0995,2.6234-2.0175,5.9083c0,0,8.5021,5.0436,8.6462,14.6986,0,0,10.9519.4323,16.1396-1.8733,0,0,3.7467-13.2575-7.2052-19.8863,0,0-7.3493,6.3406-15.5632,1.1528Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <path d="M32.7576,70.4607s-.0995,2.6234,2.0175,5.9083c0,0-8.5021,5.0436-8.6462,14.6986,0,0-10.9519.4323-16.1396-1.8733,0,0-3.7467-13.2575,7.2052-19.8863,0,0,7.3493,6.3406,15.5632,1.1528Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="45.2579" cy="69.7402" r="8.9344" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="64.9073" cy="60.3325" r="8.9344" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <circle cx="25.7014" cy="60.3325" r="8.9344" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+  <g>
+    <g>
+      <path d="M46.9722,43.4731s-2.3574-12.0349,6.4517-16.9978c0,0,6.8239,6.2036,14.2682,0,0,0,9.1813,3.5981,6.6999,16.9978" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="60.7441" cy="18.5347" r="7.6924" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M76.5434,44.0787l5.0822,4.3233,2.748-3.2447c6.5976,4.8137,13.1957,9.6293,19.7948,14.4467l.0127-.001-7.8714,9.2539-.0021-.0262c-5.8109-5.7271-11.621-11.4551-17.43-17.1835l2.748-3.2451" style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M80.1558,28.7053c-.0961,11.0354-8.9029,19.9053-19.671,19.8115-10.7677-.0938-19.4187-9.1157-19.3226-20.1511.0961-11.035,8.9029-19.9051,19.6706-19.8113,10.7681.0938,19.4191,9.1158,19.323,20.1509Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <path d="M64.2936,12.8743l-4.3996,3.6454-6.2854-2.514,4.6511,9.4279s1.2571,1.2571,6.0339,1.2571,6.0339-1.2571,6.0339-1.2571l4.6511-9.4279-6.2853,2.514-4.3998-3.6454Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M58.2598,23.4336l-1.1314,3.6455s3.3941,1.826,7.1653,1.826,7.1653-1.826,7.1653-1.826l-1.1314-3.6455" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M57.1284,27.0791s-16.0903,19.7358-2.2626,29.5409c5.4666,3.8763,9.4279,3.5198,9.4279,3.5198,0,0,3.9615.3565,9.428-3.5198,13.8276-9.8051-2.2628-29.5409-2.2628-29.5409" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <g>
+      <path d="M68.7504,39.5362c0-1.4106-1.1542-2.5649-2.5649-2.5649h-3.7838c-1.4106,0-2.5649,1.1542-2.5649,2.5649v1.5126c0,1.4106,1.1542,2.5649,2.5649,2.5649h3.7838c1.4106,0,2.5649,1.1542,2.5649,2.5649v1.5126c0,1.4108-1.1542,2.5649-2.5649,2.5649h-3.7838c-1.4106,0-2.5649-1.1541-2.5649-2.5649" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="64.2936" y1="36.9713" x2="64.2936" y2="34.3583" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="64.2936" y1="52.8691" x2="64.2936" y2="50.2561" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <g>
+      <path d="M72.3365,74.0992s9.1109-3.8244,15.3023-6.3983c6.5115-2.707,10.3126.1145,12.8601,4.4083l-32.3125,17.8799-32.4869-8.2927" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M24.6791,66.9637c8.4494-6.3952,14.3063-8.1613,20.6271-6.5479,5.2883,1.3498,7.946,2.6927,11.6837,6.8727,3.455.8819,8.1245,2.0739,9.6793,2.4708,1.5547.3969,6.5115,2.3981,4.5812,9.9604l-20.3756-5.2011" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <line x1="21.2248" y1="62.5042" x2="37.375" y2="89.7254" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <polyline points="11.6367 68.1928 21.2248 62.5042 37.375 89.7254 27.7869 95.414" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    </g>
+    <path d="M18.3192,72.4768c-.9776.58-1.2999,1.8428-.7199,2.8204s1.8427,1.2998,2.8203.7198,1.3-1.8426.72-2.8202-1.8428-1.2999-2.8204-.7199Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>

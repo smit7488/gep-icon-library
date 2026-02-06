@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <text style="fill:none;font-family:AzoSans-Regular, 'Azo Sans';font-size:12.1px;stroke:currentColor;stroke-width:1.5"><tspan x="30.1693" y="124.7722">Builds </tspan><tspan x="10.2348" y="140.1716">Collabo</tspan><tspan x="52.7777" y="140.1716" style="letter-spacing:-.017em;fill:none;stroke:currentColor;stroke-width:1.5">r</tspan><tspan x="57.0121" y="140.1716">ati</tspan><tspan x="71.1566" y="140.1716" style="letter-spacing:-.032em;fill:none;stroke:currentColor;stroke-width:1.5">v</tspan><tspan x="77.3881" y="140.1716">e </tspan><tspan x="13.1449" y="155.572">Connections</tspan></text>
+  <g>
+    <g>
+      <path d="M46.3235,75.7326s8.0708,7.3371,16.8754,0c0,0,10.8589,4.2555,7.9241,20.1037,0,0-14.821,5.136-32.43,0,0,0-2.7881-14.234,7.6306-20.1037Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M67.7478,67.0748s.1013,2.6714-2.0544,6.0164c0,0,8.6578,5.136,8.8045,14.9677,0,0,11.1524.4402,16.4351-1.9076,0,0,3.8153-13.5003-7.3371-20.2504,0,0-7.4839,6.4567-15.8482,1.1739Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <path d="M42.2522,67.0748s-.1013,2.6714,2.0544,6.0164c0,0-8.6578,5.136-8.8045,14.9677,0,0-11.1524.4402-16.4351-1.9076,0,0-3.8153-13.5003,7.3371-20.2504,0,0,7.4839,6.4567,15.8482,1.1739Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="54.9813" cy="66.3411" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="74.9904" cy="56.7611" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="35.0667" cy="56.7611" r="9.098" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <path d="M38.3997,20.4377l2.2377-6.8869,2.2377,6.8869h7.2414l-5.8584,4.2564,2.2377,6.8869-5.8584-4.2564-5.8583,4.2564,2.2377-6.8869-5.8583-4.2564h7.2414Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M55.5534,23.1418c0-7.4253-6.5554-13.4447-14.6418-13.4447s-14.6418,6.0194-14.6418,13.4447,6.5554,13.4447,14.6418,13.4447c1.3621,0,2.6791-.1744,3.9303-.494l5.6549,4.378v-7.1702c3.0958-2.4651,5.0566-6.1004,5.0566-10.1585Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <path d="M58,22.3137c.4881-.0451.9834-.0682,1.4845-.0682,8.0865,0,14.6418,6.0194,14.6418,13.4447,0,7.4253-6.5554,13.4447-14.6418,13.4447-1.3621,0-2.6791-.1744-3.9303-.494l-5.6549,4.378v-7.1702c-2.2987-1.8304-3.9716-4.3059-4.6807-7.1207" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      <circle cx="55.8747" cy="35.0926" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="61.2526" cy="35.0926" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+      <circle cx="66.6305" cy="35.0926" r="1.7926" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+</svg>

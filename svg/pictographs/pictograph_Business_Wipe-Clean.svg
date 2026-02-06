@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M24.3946,65.3766l18.9092-19.2884c1.643-1.643,4.3166-1.643,5.9596,0,1.643,1.643,1.2347,1.9055,1.2347,2.9847s-.4083,2.1583-1.2347,2.9847l-12.7261,12.7261" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M49.2634,52.0575l5.6776-5.6776c1.643-1.643,4.3166-1.643,5.9596,0,.8263.8263,1.2347,1.9055,1.2347,2.9847s-.4083,2.1583-1.2347,2.9847l-5.6776,5.6776-6.7665,6.7665" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M42.4969,70.7529l12.7261-12.7261c1.643-1.643,4.3166-1.643,5.9596,0,.8263.8263,1.2347,1.9055,1.2347,2.9847s-.4084,2.1583-1.2347,2.9847l-5.9596,5.9596-3.043,3.043" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M46.9301,90.0511l14.2622-14.1358c.8263-.8263,1.2347-1.9055,1.2347-2.9847s-.4084-2.1583-1.2347-2.9847c-1.643-1.643-4.3166-1.643-5.9596,0l-6.7665,6.7665" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <path d="M46.9301,90.0511c-7.4471,7.4471-19.5315,7.4471-26.9785,0-7.4471-7.4471-6.2124-10.4414-5.3957-16.1774.2625-1.8569.4181-3.7333.4181-5.6096v-13.8927c0-2.5471,2.0708-4.618,4.618-4.618s2.4305.5153,3.2666,1.3513c.8361.8361,1.3513,1.993,1.3513,3.2666l.1848,11.0053" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polyline points="50.2356 24.136 96.065 35.6954 81.8418 92.1024 52.3647 84.665" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <line x1="38.2581" y1="27.0623" x2="30.0527" y2="59.6115" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polygon points="41.8747 11.7404 45.7537 18.8278 52.8508 22.7069 45.7537 26.5859 41.8747 33.683 37.9956 26.5859 30.9083 22.7069 37.9956 18.8278 41.8747 11.7404" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polygon points="74.4628 68.7113 76.9517 73.2709 81.5015 75.7597 76.9517 78.2485 74.4628 82.7984 71.9739 78.2485 67.424 75.7597 71.9739 73.2709 74.4628 68.7113" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <polygon points="76.0086 37.737 78.4974 42.2869 83.0473 44.7758 78.4974 47.2645 76.0086 51.8145 73.5295 47.2645 68.9796 44.7758 73.5295 42.2869 76.0086 37.737" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+</svg>

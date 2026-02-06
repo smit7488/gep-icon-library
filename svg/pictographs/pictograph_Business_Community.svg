@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <g>
+    <g>
+      <g>
+        <path d="M25.4161,52.801s-.988-7.1113-1.675-11.9346c-.7225-5.0727-3.8949-6.402-7.5226-6.402l.8066,26.8212,17.2267,17.2267" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <path d="M47.5442,79.9367c.8636-7.6511-.204-11.9659-3.5557-15.3176-2.8042-2.8042-4.6286-3.9672-8.6267-4.7531-1.8321-1.8321-4.3081-4.3082-5.1326-5.1326-.8244-.8244-3.9127-3.18-7.9226.83l10.8043,10.8045" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <line x1="51.6117" y1="80.442" x2="28.6133" y2="80.442" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="51.6117 88.5427 51.6117 80.442 28.6133 80.442 28.6133 88.5427" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <path d="M46.4569,85.9551c0,.8259-.6695,1.4955-1.4954,1.4955s-1.4955-.6696-1.4955-1.4955.6696-1.4955,1.4955-1.4955,1.4954.6696,1.4954,1.4955Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+    <g>
+      <g>
+        <path d="M85.7123,52.801s.988-7.1113,1.675-11.9346c.7225-5.0727,3.8949-6.402,7.5227-6.402l-.8066,26.8212-17.2267,17.2267" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <path d="M63.5843,79.9367c-.8637-7.6511.204-11.9659,3.5557-15.3176,2.8041-2.8042,4.6286-3.9672,8.6265-4.7531,1.8321-1.8321,4.3082-4.3082,5.1326-5.1326s3.9128-3.18,7.9227.83l-10.8045,10.8045" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <line x1="59.5169" y1="80.442" x2="82.5152" y2="80.442" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+        <polyline points="59.5169 88.5427 59.5169 80.442 82.5152 80.442 82.5152 88.5427" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+      </g>
+      <path d="M64.6716,85.9551c0,.8259.6696,1.4955,1.4955,1.4955s1.4954-.6696,1.4954-1.4955-.6695-1.4955-1.4954-1.4955-1.4955.6696-1.4955,1.4955Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    </g>
+  </g>
+  <g>
+    <path d="M73.3535,54.0458v-16.6159h4.162c1.3684,0,1.9837-1.7142.9277-2.5844l-5.0898-4.194v-11.1337h-6.5217v5.7616l-11.2661-9.2824-22.8803,18.8484c-1.0562.87-.4409,2.5845.9275,2.5845h4.1647v16.6136" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+    <path d="M64.6566,36.9468c-2.5616-2.5787-6.723-2.4242-9.0923.2551-2.3693-2.6793-6.5307-2.8338-9.0922-.2551-2.3377,2.3532-2.2941,6.1811-.0969,8.6659l4.7915,5.4184,3.3679,3.8085c.5471.6188,1.5124.6188,2.0595,0l3.3679-3.8085,4.7915-5.4184c2.1974-2.4848,2.2409-6.3126-.0968-8.6659Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  </g>
+</svg>

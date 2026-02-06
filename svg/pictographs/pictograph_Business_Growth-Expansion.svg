@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="110" height="110" viewBox="0 0 110 110">
+  <path d="M56.8559,94.826h4.4773c11.1272,0,20.1476-9.0204,20.1476-20.1476V27.4865h-6.7159l12.3124-12.3124,12.3124,12.3124h-6.7159v47.1918c0,11.1272-9.0204,20.1476-20.1476,20.1476H16.9596" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5" />
+  <g>
+    <circle cx="38.9026" cy="49.4893" r="28.2924" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <ellipse cx="38.9026" cy="49.4893" rx="12.202" ry="28.2924" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="16.0475" y1="32.8146" x2="61.7615" y2="32.8146" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="16.0475" y1="65.3461" x2="61.7615" y2="65.3461" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+    <line x1="10.6102" y1="49.4893" x2="67.195" y2="49.4893" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.5" />
+  </g>
+</svg>
