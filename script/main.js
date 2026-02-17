@@ -32,6 +32,28 @@ function resetToDefaults(safeId) {
     
     document.getElementById(`hide-mobile-${safeId}`).checked = false;
     
+    // Reset second wireblock controls
+    const showTwoCheckbox = document.getElementById(`show-two-${safeId}`);
+    if (showTwoCheckbox) {
+        showTwoCheckbox.checked = false;
+        const controls = document.getElementById(`second-wireblock-controls-${safeId}`);
+        if (controls) controls.style.display = 'none';
+    }
+    
+    const scale2 = document.getElementById(`scale2-${safeId}`);
+    if (scale2) {
+        scale2.value = 150;
+        document.getElementById(`scale2-input-${safeId}`).value = 150;
+        document.getElementById(`h-pos2-${safeId}`).value = 50;
+        document.getElementById(`h-pos2-input-${safeId}`).value = 50;
+        document.getElementById(`v-pos2-${safeId}`).value = -25;
+        document.getElementById(`v-pos2-input-${safeId}`).value = -25;
+        document.getElementById(`rotation2-${safeId}`).value = 0;
+        document.getElementById(`rotation2-input-${safeId}`).value = 0;
+        document.getElementById(`opacity2-${safeId}`).value = 60;
+        document.getElementById(`opacity2-input-${safeId}`).value = 60;
+    }
+    
     // Reset colors
     card.dataset.currentColor = 'hs-blue';
     card.dataset.currentHex = '#0072BC';
@@ -572,14 +594,103 @@ function loadActualContent(card, item) {
                
             </div>
 
-             <div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #E6EBF1; align-items: center; flex-wrap: wrap; juston-content: space-between;">
-                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E; flex: 1; min-width: 200px;">
+             <div style="display: flex; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #E6EBF1; align-items: center; flex-wrap: wrap; ">
+                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E;min-width: 200px;">
                         <input type="checkbox" id="hide-mobile-${safeId}" onchange="updateMaskMobile(\'${safeId}\')" 
                                style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
                         <span style="font-weight: 600;">Hide on mobile (&#x2264;991px)</span>
                     </label>
-     
+                    <label style="display: flex; align-items: center; cursor: pointer; font-size: 13px; color: #002F6E; min-width: 200px;">
+                        <input type="checkbox" id="show-two-${safeId}" onchange="toggleSecondWireblock(\'${safeId}\')" 
+                               style="margin-right: 8px; width: 18px; height: 18px; cursor: pointer;">
+                        <span style="font-weight: 600;">Show two wireblocks</span>
+                    </label>
                 </div>
+
+            <div id="second-wireblock-controls-${safeId}" style="display: none; margin-top: 20px; padding-top: 15px; border-top: 2px dashed #E6EBF1;">
+                <h4 style="margin: 0 0 15px 0; font-size: 13px; font-weight: bold; color: #002F6E; text-transform: uppercase; letter-spacing: 0.5px;">Second Wireblock (::after)</h4>
+                <div class="grid" style="margin-bottom: 0;">
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">SCALE</label>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue2(\'${safeId}\', \'scale2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
+                                <input type="number" id="scale2-input-${safeId}" min="100" max="300" value="150"
+                                   oninput="updateMask2ScaleFromInput('${safeId}')"
+                                   style="width: 70px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue2(\'${safeId}\', \'scale2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
+                        </div>
+                        <input type="range" id="scale2-${safeId}" min="100" max="300" value="150" step="1"
+                               oninput="updateMask2Scale('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">HORIZONTAL</label>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue2(\'${safeId}\', \'h-pos2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
+                                <input type="number" id="h-pos2-input-${safeId}" min="-300" max="300" value="50"
+                                   oninput="updateMask2PositionFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue2(\'${safeId}\', \'h-pos2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
+                        </div>
+                        <input type="range" id="h-pos2-${safeId}" min="-300" max="300" value="50" step="1"
+                               oninput="updateMask2Position('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">VERTICAL</label>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue2(\'${safeId}\', \'v-pos2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
+                                <input type="number" id="v-pos2-input-${safeId}" min="-300" max="300" value="-25"
+                                   oninput="updateMask2PositionFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue2(\'${safeId}\', \'v-pos2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
+                        </div>
+                        <input type="range" id="v-pos2-${safeId}" min="-300" max="300" value="-25" step="1"
+                               oninput="updateMask2Position('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+              
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">ROTATION</label>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue2(\'${safeId}\', \'rotation2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
+                                <input type="number" id="rotation2-input-${safeId}" min="-180" max="180" value="0"
+                                   oninput="updateMask2RotationFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue2(\'${safeId}\', \'rotation2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
+                        </div>
+                        <input type="range" id="rotation2-${safeId}" min="-180" max="180" value="0" step="1"
+                               oninput="updateMask2Rotation('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label style="font-size: 11px; font-weight: bold; color: #002F6E;">OPACITY</label>
+                            <div style="display: flex; align-items: center; gap: 4px;">
+                                <button onclick="decrementValue2(\'${safeId}\', \'opacity2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">&ndash;</button>
+                                <input type="number" id="opacity2-input-${safeId}" min="0" max="100" value="60"
+                                   oninput="updateMask2OpacityFromInput('${safeId}')"
+                                   style="width: 60px; padding: 4px 8px; border: 1px solid #E6EBF1; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <button onclick="incrementValue2(\'${safeId}\', \'opacity2\', 1)" style="width: 24px; height: 24px; padding: 0; border: 1px solid #E6EBF1; background: white; border-radius: 4px; cursor: pointer; font-weight: bold; color: #002F6E;">+</button>
+                            </div>
+                        </div>
+                        <input type="range" id="opacity2-${safeId}" min="0" max="100" value="60" step="1"
+                               oninput="updateMask2Opacity('${safeId}')" 
+                               style="width: 100%;">
+                    </div>
+                </div>
+            </div>
             <p class="small mb-0">Put the following CSS into a RichText component within a style tag at the top of your page in Sitecore to apply the background wireblock mask:</p>
 
             <div class="code-block">
@@ -838,6 +949,14 @@ function updateMask(id, colorClass, hex, path) {
     const opacity = document.getElementById(`opacity-${safeId}`)?.value || '60';
     const rotation = document.getElementById(`rotation-${safeId}`)?.value || '0';
     const hideMobile = document.getElementById(`hide-mobile-${safeId}`)?.checked || false;
+    const showTwo = document.getElementById(`show-two-${safeId}`)?.checked || false;
+
+    // Get second wireblock values
+    const scale2 = document.getElementById(`scale2-${safeId}`)?.value || '150';
+    const hPos2 = document.getElementById(`h-pos2-${safeId}`)?.value || '50';
+    const vPos2 = document.getElementById(`v-pos2-${safeId}`)?.value || '-25';
+    const opacity2 = document.getElementById(`opacity2-${safeId}`)?.value || '60';
+    const rotation2 = document.getElementById(`rotation2-${safeId}`)?.value || '0';
 
     // Create or update the dynamic style element
     let styleEl = document.getElementById(`style-${safeId}`);
@@ -851,7 +970,7 @@ function updateMask(id, colorClass, hex, path) {
     const transformOrigin = '50% 50%';
 
     // Update the preview with dynamic CSS
-    styleEl.textContent = `
+    let previewCSS = `
         #preview-bg-${safeId}::before {
             content: "" !important;
             position: absolute !important;
@@ -875,6 +994,35 @@ function updateMask(id, colorClass, hex, path) {
             pointer-events: none !important;
         }
     `;
+
+    if (showTwo) {
+        previewCSS += `
+        #preview-bg-${safeId}::after {
+            content: "" !important;
+            position: absolute !important;
+            top: ${vPos2}% !important;
+            width: ${scale2}% !important;
+            right: ${hPos2}% !important;
+            height: ${scale2}% !important;
+            background-color: ${hex};
+            opacity: ${parseFloat(opacity2) / 100};
+            mask-image: url('${path}') !important;
+            -webkit-mask-image: url('${path}') !important;
+            mask-repeat: no-repeat !important;
+            -webkit-mask-repeat: no-repeat !important;
+            mask-position: center right !important;
+            -webkit-mask-position: center right !important;
+            mask-size: contain !important;
+            -webkit-mask-size: contain !important;
+            transform: rotate(${rotation2}deg) !important;
+            transform-origin: ${transformOrigin} !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+        }
+        `;
+    }
+
+    styleEl.textContent = previewCSS;
 
     // Update the code block
     if (codeElement) {
@@ -917,13 +1065,47 @@ function updateMask(id, colorClass, hex, path) {
   z-index: 2;
 }`;
 
+        if (showTwo) {
+            cssCode += `
+
+.full-background::after {
+    content: "" !important;
+    position: absolute !important;
+    top: ${vPos2}% !important;
+    width: ${scale2}% !important;
+    right: ${hPos2}% !important;
+    height: ${scale2}% !important;
+    background-color: ${hex};
+    opacity: ${parseFloat(opacity2) / 100};
+    transform: rotate(${rotation2}deg);
+    transform-origin: center center;
+    mask-image: url('${path}') !important;
+    -webkit-mask-image: url('${path}') !important;
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center right !important;
+    -webkit-mask-position: center right !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}`;
+        }
+
         if (hideMobile) {
             cssCode += `
 
 @media (max-width: 991px) {
   .full-background::before {
     display: none !important;
-  }
+  }`;
+            if (showTwo) {
+                cssCode += `
+  .full-background::after {
+    display: none !important;
+  }`;
+            }
+            cssCode += `
 }`;
         }
         
@@ -940,6 +1122,128 @@ function updateMask(id, colorClass, hex, path) {
 
 // New function for mobile checkbox
 function updateMaskMobile(safeId) {
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Toggle second wireblock controls visibility
+function toggleSecondWireblock(safeId) {
+    const showTwo = document.getElementById(`show-two-${safeId}`).checked;
+    const controls = document.getElementById(`second-wireblock-controls-${safeId}`);
+    controls.style.display = showTwo ? 'block' : 'none';
+    
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Second wireblock increment/decrement
+function incrementValue2(safeId, controlName, step = 1) {
+    const input = document.getElementById(`${controlName}-input-${safeId}`);
+    const slider = document.getElementById(`${controlName}-${safeId}`);
+    
+    let currentValue = parseInt(input.value) || 0;
+    let min = parseInt(slider.min);
+    let max = parseInt(slider.max);
+    
+    let newValue = currentValue + step;
+    newValue = Math.max(min, Math.min(max, newValue));
+    
+    input.value = newValue;
+    slider.value = newValue;
+    
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function decrementValue2(safeId, controlName, step = 1) {
+    incrementValue2(safeId, controlName, -step);
+}
+
+// Second wireblock scale functions
+function updateMask2Scale(safeId) {
+    const slider = document.getElementById(`scale2-${safeId}`);
+    const input = document.getElementById(`scale2-input-${safeId}`);
+    input.value = slider.value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMask2ScaleFromInput(safeId) {
+    const slider = document.getElementById(`scale2-${safeId}`);
+    const input = document.getElementById(`scale2-input-${safeId}`);
+    let value = parseInt(input.value) || 150;
+    value = Math.max(100, Math.min(300, value));
+    input.value = value;
+    slider.value = value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Second wireblock position functions
+function updateMask2Position(safeId) {
+    const hSlider = document.getElementById(`h-pos2-${safeId}`);
+    const vSlider = document.getElementById(`v-pos2-${safeId}`);
+    const hInput = document.getElementById(`h-pos2-input-${safeId}`);
+    const vInput = document.getElementById(`v-pos2-input-${safeId}`);
+    hInput.value = hSlider.value;
+    vInput.value = vSlider.value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMask2PositionFromInput(safeId) {
+    const hSlider = document.getElementById(`h-pos2-${safeId}`);
+    const vSlider = document.getElementById(`v-pos2-${safeId}`);
+    const hInput = document.getElementById(`h-pos2-input-${safeId}`);
+    const vInput = document.getElementById(`v-pos2-input-${safeId}`);
+    let hValue = parseInt(hInput.value) || 50;
+    let vValue = parseInt(vInput.value) || -25;
+    hValue = Math.max(-300, Math.min(300, hValue));
+    vValue = Math.max(-300, Math.min(300, vValue));
+    hInput.value = hValue;
+    vInput.value = vValue;
+    hSlider.value = hValue;
+    vSlider.value = vValue;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Second wireblock rotation functions
+function updateMask2Rotation(safeId) {
+    const slider = document.getElementById(`rotation2-${safeId}`);
+    const input = document.getElementById(`rotation2-input-${safeId}`);
+    input.value = slider.value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMask2RotationFromInput(safeId) {
+    const slider = document.getElementById(`rotation2-${safeId}`);
+    const input = document.getElementById(`rotation2-input-${safeId}`);
+    let value = parseInt(input.value) || 0;
+    value = Math.max(-180, Math.min(180, value));
+    input.value = value;
+    slider.value = value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+// Second wireblock opacity functions
+function updateMask2Opacity(safeId) {
+    const slider = document.getElementById(`opacity2-${safeId}`);
+    const input = document.getElementById(`opacity2-input-${safeId}`);
+    input.value = slider.value;
+    const card = document.getElementById(`card-${safeId}`);
+    updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
+}
+
+function updateMask2OpacityFromInput(safeId) {
+    const slider = document.getElementById(`opacity2-${safeId}`);
+    const input = document.getElementById(`opacity2-input-${safeId}`);
+    let value = parseInt(input.value) || 60;
+    value = Math.max(0, Math.min(100, value));
+    input.value = value;
+    slider.value = value;
     const card = document.getElementById(`card-${safeId}`);
     updateMask(card.dataset.id, card.dataset.currentColor, card.dataset.currentHex, card.dataset.path);
 }
